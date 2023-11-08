@@ -1,0 +1,1138 @@
+{
+    "eng-8905243": {
+        "articles": {
+            "results": [
+                {
+                    "uri": "7733286059",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-09-15",
+                    "time": "18:11:57",
+                    "dateTime": "2023-09-15T18:11:57Z",
+                    "dateTimePub": "2023-09-15T18:07:14Z",
+                    "dataType": "news",
+                    "sim": 0.7960784435272217,
+                    "url": "https://havanatimes.org/news/exxon-leaders-secretly-undermined-science-after-publicly-acknowledging-climate-crisis/",
+                    "title": "Exxon Leaders Secretly Undermined Science After Publicly Acknowledging Climate Crisis - Havana Times",
+                    "body": "HAVANA TIMES - Internal documents from Exxon reveal that executives -- including former CEO Rex Tillerson -- secretly worked to sow doubt about the severity of climate change, even as the oil giant publicly acknowledged the link between fossil fuels and the climate crisis. Tillerson would go on to become secretary of state under former President Trump. The Wall Street Journal reports between 2006 and 2016, Exxon executives in their internal communications worked to counter the notion that humans should curtail oil and gas use to help the planet.\n\nIn a statement, the Center for Climate Integrity demanded Exxon be held accountable, adding, \"This damning new evidence of Exxon's climate lies shows that for decades it has been official company policy for executives to undermine climate science, minimize the dangers of their oil and gas business, and protect company profits at all costs -- with no concern for the catastrophic impact their actions would have on humanity.\"",
+                    "source": {
+                        "uri": "havanatimes.org",
+                        "dataType": "news",
+                        "title": "Havana Times"
+                    },
+                    "authors": [
+                        {
+                            "uri": "circles_robinson@havanatimes.org",
+                            "name": "Circles Robinson",
+                            "type": "author",
+                            "isAgency": false
+                        }
+                    ],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/ExxonMobil",
+                            "type": "org",
+                            "score": 5,
+                            "label": {
+                                "eng": "ExxonMobil"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Rex_Tillerson",
+                            "type": "person",
+                            "score": 4,
+                            "label": {
+                                "eng": "Rex Tillerson"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Fossil_fuel",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Fossil fuel"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Chief_executive_officer",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Chief executive officer"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Climate change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Petroleum",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Petroleum"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Havana",
+                            "type": "loc",
+                            "score": 3,
+                            "label": {
+                                "eng": "Havana"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Havana"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "Cuba"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/United_States_Secretary_of_State",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "United States Secretary of State"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/The_Wall_Street_Journal",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "The Wall Street Journal"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_crisis",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Climate crisis"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Donald_Trump",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Donald Trump"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climatology",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Climatology"
+                            }
+                        }
+                    ],
+                    "image": "https://havanatimes.org/wp-content/uploads/2023/09/h4-exxon-tillerson.jpg",
+                    "eventUri": "eng-8905243",
+                    "sentiment": -0.3019607843137255,
+                    "wgt": 432497517,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7731333120",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-09-14",
+                    "time": "21:10:16",
+                    "dateTime": "2023-09-14T21:10:16Z",
+                    "dateTimePub": "2023-09-14T20:53:00Z",
+                    "dataType": "news",
+                    "sim": 0.8392156958580017,
+                    "url": "https://www.gpb.org/news/2023/09/14/exxon-minimized-climate-change-internally-after-conceding-fossil-fuels-cause-it",
+                    "title": "Exxon minimized climate change internally after conceding that fossil fuels cause it",
+                    "body": "Executives at ExxonMobil continued in recent years to raise doubts internally about the dangers of climate change and the need to cut back on oil and gas use, even though the company had previously conceded publicly that burning fossil fuels contributes to global warming, according to a report in The Wall Street Journal.\n\nThe effort to minimize concerns about climate change under former chief executive Rex Tillerson, who led Exxon from 2006 until 2016, was happening at the same time that scientists at the company were modeling troubling increases in carbon dioxide emissions without big reductions in fossil fuel consumption, the Journal reported. The newspaper cited internal company documents that were part of a New York state lawsuit and interviews with former executives.\n\nExxon, along with other oil and gas companies, is a defendant in multiple state and local lawsuits that accuse it of misleading the public about climate change and the dangers of fossil fuels.\n\nRichard Wiles, president of the Center for Climate Integrity, a group that is trying to hold fossil fuel companies accountable for their role in driving climate change, says the documents obtained by The Wall Street Journal are likely to be used against Exxon in court.\n\n\"As communities pay an ever-greater price for our worsening climate crisis, it's more clear than ever that Exxon must be held accountable to pay for the harm it has caused,\" Wiles said in a statement.\n\nEarlier investigations found Exxon worked for decades to sow confusion about climate change, even though its own scientists had begun warning executives as early as 1977 that carbon emissions from burning fossil fuels were warming the planet, posing dire risks to human beings.\n\nBy the late 1980s, concern was growing domestically and overseas that fossil fuel use was heating the planet, increasing the risks of extreme weather. In response, the Journal reported, Exxon executive Frank Sprow sent a memo to colleagues warning that if there were a global consensus on addressing climate change, \"substantial negative impacts on Exxon could occur.\"\n\nAccording to the Journal, Sprow wrote: \"Any additional R&D efforts within Corporate Research on Greenhouse should have two primary purposes: 1. Protect the value of our resources (oil, gas, coal). 2. Preserve Exxon's business options.\"\n\nSprow told the Journal that the approach in his memo was adopted as policy, in \"what would become a central pillar of Exxon's strategy,\" the paper said.\n\nA few years after the memo, Exxon became the architect of a highly effective strategy of climate change denial that succeeded for decades in politicizing climate policy and delaying meaningful action to cut heat-trapping pollution.\n\nAn Exxon spokesperson said in an emailed statement that the company has repeatedly acknowledged that \"climate change is real, and we have an entire business dedicated to reducing emissions -- both our own and others.\"\n\nLast year, Exxon said it plans to spend about $17 billion on \"lower emission initiatives\" through 2027. That represents, at most, 17% of the total capital investments the company plans to make during that period.\n\nExxon recently bought a company called Denbury that specializes in capturing carbon dioxide emissions and injecting them into oil wells to boost production. It's also planning to build a hydrogen plant and a facility to capture and store carbon emissions in Texas.\n\nThe company could spend more on \"lower emission initiatives\" if it sees \"additional supportive government policies and new and improved technology,\" the spokesperson said.\n\nMany scientists and environmental activists have questioned the feasibility of the carbon capture technology Exxon is relying on. Previous carbon capture projects by other companies have either been hugely over budget, or have closed. They contend that the more effective solution is to make deep cuts in fossil fuel use.\n\nInvestors seemed unfazed by the latest revelations about Exxon. The company's stock price was up almost 2% on Thursday afternoon.\n\nScientists with the United Nations recently warned that the world is running out of time to prevent global warming that would cause more dangerous impacts, like storms and droughts. Climate scientists say the world needs to limit warming to 1.5 degrees Celsius (2.7 degrees Fahrenheit). Currently, it is headed for about 2.5 degrees Celsius of warming.",
+                    "source": {
+                        "uri": "gpb.org",
+                        "dataType": "news",
+                        "title": "Georgia Public Broadcasting"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Fossil_fuel",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Fossil fuel"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/ExxonMobil",
+                            "type": "org",
+                            "score": 5,
+                            "label": {
+                                "eng": "ExxonMobil"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Climate change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/The_Wall_Street_Journal",
+                            "type": "org",
+                            "score": 4,
+                            "label": {
+                                "eng": "The Wall Street Journal"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Greenhouse_gas_emissions",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Greenhouse gas emissions"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Rex_Tillerson",
+                            "type": "person",
+                            "score": 3,
+                            "label": {
+                                "eng": "Rex Tillerson"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Research_and_development",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Research and development"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change_mitigation",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Climate change mitigation"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Extreme_weather",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Extreme weather"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Coal",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Coal"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Petroleum",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Petroleum"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Politics_of_climate_change",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Politics of climate change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Fahrenheit",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Fahrenheit"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Environmental_movement",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Environmental movement"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Pollution",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Pollution"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Carbon_capture_and_storage",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Carbon capture and storage"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hydrogen",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Hydrogen"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Drought",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Drought"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change_denial",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Climate change denial"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Investment",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Investment"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Oil_well",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Oil well"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Celsius",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Celsius"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/United_Nations",
+                            "type": "org",
+                            "score": 1,
+                            "label": {
+                                "eng": "United Nations"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Texas",
+                            "type": "loc",
+                            "score": 1,
+                            "label": {
+                                "eng": "Texas"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Texas"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "image": "https://www.gpb.org/sites/default/files/styles/three_two_702x468/public/npr_story_images/2023/09/14/gettyimages-81259886-be505dc1592a6fc8f635c1f5ba5d1b8d3f233da0.jpg?h=57df046f&itok=It-_2VW8",
+                    "eventUri": "eng-8905243",
+                    "sentiment": -0.3960784313725491,
+                    "wgt": 432421816,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7731089082",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-09-14",
+                    "time": "18:15:20",
+                    "dateTime": "2023-09-14T18:15:20Z",
+                    "dateTimePub": "2023-09-14T18:03:36Z",
+                    "dataType": "news",
+                    "sim": 0.8196078538894653,
+                    "url": "https://www.theguardian.com/us-news/2023/sep/14/exxonmobil-documents-wall-street-journal-climate-science",
+                    "title": "New files shed light on ExxonMobil's efforts to undermine climate science",
+                    "body": "Executives privately sought to downplay link between fossil fuels and climate change despite public pronouncements, WSJ reports\n\nExxonMobil executives privately sought to undermine climate science even after the oil and gas giant publicly acknowledged the link between fossil fuel emissions and climate change, according to previously unreported documents revealed by the Wall Street Journal.\n\nThe new revelations are based on previously unreported documents subpoenaed by New York's attorney general as part of an investigation into the company announced in 2015. They add to a slew of documents that document a decades-long misinformation campaign waged by Exxon, which are cited in a growing number of state and municipal lawsuits against big oil.\n\nMany of the newly released documents date back to the 2006-16 tenure of former chief executive Rex Tillerson, who oversaw a major shift in the company's climate messaging. In 2006, Exxon publicly accepted that the climate crisis posed risks, and it went on to support the Paris agreement. Yet behind closed doors, the company behaved differently, the documents show.\n\nIn 2008, Exxon pledged to stop funding climate-denier groups. But that very same year, company leadership said it would support the company in directing a scientist to help the nation's top oil and gas lobbying group write a paper about the \"uncertainty\" of measuring greenhouse gas emissions.\n\nThe company's preoccupation with climate uncertainty continued. Before one meeting with company scientists in 2012, one researcher expressed an interest in finding \"'skeptic' arguments that we consider to be not yet disproven\". During a board meeting about climate science and policy that same year, the Exxon board member Peter Brabeck-Letmathe, who is the former chief executive of Nestl\u00e9, said there was \"still uncertainty in predicting future climate changes and impacts\" and also said that \"money and effort spent on climate change is misplaced\".\n\nThe documents also show Exxon's displeasure with scientific warnings from top authorities. After the Intergovernmental Panel on Climate Change, the United Nations' top climate body, sounded the alarm about the urgent need to curb greenhouse-gas emissions in 2011, Tillerson told a leading Exxon researcher that the IPCC's warning was \"not credible\", and said he was \"dissatisfied\" with the media's coverage of the warning about the worst-case climate scenarios.\n\nTillerson also wanted to engage with the scientists \"to influence [the group], in addition to gathering info\", the Exxon researcher told colleagues in a 2012 email about the findings.\n\nYears later, Tillerson expressed doubt about the United Nations' Paris accord months before it was signed. The international agreement aims to keep global heating \"well below\" 2C over pre-industrial temperatures.\n\nAfter a climate science presentation to Exxon's board of directors in April 2015, Tillerson called the 2C goal \"something magical\", according to a summary of the meeting.\n\n\"Who is to say 2.5 is not good enough?\" he said, noting that meeting such targets would be \"very expensive\".\n\nThat December, Exxon publicly endorsed the Paris agreement; during his Senate confirmation hearing to become secretary of state in 2017 under President Trump, Tillerson maintained his support for it.\n\nWhen asked by the Journal about the new documents, the Exxon chief executive, Darren Woods, said: \"When taken out of context, it seems bad.\"\n\nWoods claimed Exxon is \"building an entire business dedicated to reducing emissions - both our own and others - and spending billions of dollars on solutions that have a real, sustainable impact\".\n\nTillerson declined to comment, the WSJ said.\n\nThe documents could bolster legal efforts to hold oil companies accountable for their alleged attempts to sow doubt about climate science. More than two dozen US cities and states are suing big oil, claiming the industry knew for decades about the dangers of burning coal, oil and gas but hid that information.\n\nIn July, progressive senators led by Vermont's Bernie Sanders also urged the justice department to sue oil majors for allegedly violating US consumer protection laws, racketeering laws, and other legal standards.",
+                    "source": {
+                        "uri": "theguardian.com",
+                        "dataType": "news",
+                        "title": "The Guardian"
+                    },
+                    "authors": [
+                        {
+                            "uri": "dharna_noor@theguardian.com",
+                            "name": "Dharna Noor",
+                            "type": "author",
+                            "isAgency": false
+                        }
+                    ],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Rex_Tillerson",
+                            "type": "person",
+                            "score": 5,
+                            "label": {
+                                "eng": "Rex Tillerson"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Fossil_fuel",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Fossil fuel"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/The_Wall_Street_Journal",
+                            "type": "org",
+                            "score": 5,
+                            "label": {
+                                "eng": "The Wall Street Journal"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/ExxonMobil",
+                            "type": "org",
+                            "score": 5,
+                            "label": {
+                                "eng": "ExxonMobil"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Climate change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climatology",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Climatology"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Attorney_General_of_New_York",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Attorney General of New York"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Paris_Agreement",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Paris Agreement"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Subpoena",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Subpoena"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Misinformation",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Misinformation"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Greenhouse_gas_emissions",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Greenhouse gas emissions"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Lawsuit",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Lawsuit"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Nestl\u00e9",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "Nestl\u00e9"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Intergovernmental Panel on Climate Change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Lobbying",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Lobbying"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Big_Oil",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Big Oil"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/United_Nations",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "United Nations"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Advice_and_consent",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Advice and consent"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bernie_Sanders",
+                            "type": "person",
+                            "score": 1,
+                            "label": {
+                                "eng": "Bernie Sanders"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Racketeering",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Racketeering"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Board_of_directors",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Board of directors"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Consumer_protection",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Consumer protection"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/United_States_Secretary_of_State",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "United States Secretary of State"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Petroleum_industry",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Petroleum industry"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Coal",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Coal"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Treaty",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Treaty"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Donald_Trump",
+                            "type": "person",
+                            "score": 1,
+                            "label": {
+                                "eng": "Donald Trump"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Vermont",
+                            "type": "loc",
+                            "score": 1,
+                            "label": {
+                                "eng": "Vermont"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Vermont"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Paris",
+                            "type": "loc",
+                            "score": 1,
+                            "label": {
+                                "eng": "Paris"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Paris"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "France"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "image": "https://i.guim.co.uk/img/media/0c1a5b8f725e87e0991b96aed6fd3f99f6b39bcc/0_165_2982_1789/master/2982.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&s=dcc0dfe5a85e0ee287df7fdd0f863594",
+                    "eventUri": "eng-8905243",
+                    "sentiment": -0.02745098039215688,
+                    "wgt": 432411320,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7730896873",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-09-14",
+                    "time": "16:29:53",
+                    "dateTime": "2023-09-14T16:29:53Z",
+                    "dateTimePub": "2023-09-14T16:20:52Z",
+                    "dataType": "news",
+                    "sim": 0.7607843279838562,
+                    "url": "https://www.theverge.com/2023/9/14/23873601/you-cant-teach-an-oil-company-new-tricks",
+                    "title": "You can't teach an oil company new tricks. - The Verge",
+                    "body": "Exxon kept trying to mislead people on climate change even after finally admitting publicly in 2006 that fossil fuels are to blame, according to a Wall Street Journal investigation. Exxon continued to support research that questioned mainstream climate science after pledging to stop funding climate denial, according to the report. Before that, Exxon had already spent decades studying climate change while sowing doubt about the risks of burning fossil fuels.",
+                    "source": {
+                        "uri": "theverge.com",
+                        "dataType": "news",
+                        "title": "The Verge"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/ExxonMobil",
+                            "type": "org",
+                            "score": 4,
+                            "label": {
+                                "eng": "ExxonMobil"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/The_Verge",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "The Verge"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Petroleum",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Petroleum"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Fossil_fuel",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Fossil fuel"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/The_Wall_Street_Journal",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "The Wall Street Journal"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Climate change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climatology",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Climatology"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change_denial",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Climate change denial"
+                            }
+                        }
+                    ],
+                    "image": "https://cdn.vox-cdn.com/uploads/chorus_asset/file/23966628/the_verge_social_share.png",
+                    "eventUri": "eng-8905243",
+                    "sentiment": -0.2941176470588235,
+                    "wgt": 432404993,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7730379840",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-09-14",
+                    "time": "16:04:20",
+                    "dateTime": "2023-09-14T16:04:20Z",
+                    "dateTimePub": "2023-09-14T12:24:09Z",
+                    "dataType": "news",
+                    "sim": 0.8509804010391235,
+                    "url": "https://www.livemint.com/special-report/inside-exxon-s-strategy-to-downplay-climate-change-11694693866358.html",
+                    "title": "Inside Exxon's Strategy to Downplay Climate Change",
+                    "body": "Exxon Mobil issued its first public statement that burning fossil fuels contributes to climate change in 2006, following years of denial. In public forums, the company argued that the risk of serious impact on the environment justified global action.\n\nYet behind closed doors, Exxon took a very different tack: Its executives strategized over how to diminish concerns about warming temperatures, and they sought to muddle scientific findings that might hurt its oil-and-gas business, according to internal Exxon documents reviewed by The Wall Street Journal and interviews with former executives.\n\nExxon's public acceptance in 2006 of the risks posed by climate change was an early act of Rex Tillerson, an Exxon lifer who became CEO that year. Some viewed him as a moderating force who brought Exxon in line with the scientific consensus.\n\nThe documents reviewed by the Journal, which haven't been previously reported, cast Tillerson's decadelong tenure in a different light. They show that Tillerson, as well as some of Exxon's board directors and other top executives, sought to cast doubt on the severity of climate change's impacts. Exxon scientists supported research that questioned the findings of mainstream climate science, even after the company said it would stop funding think tanks and others that promoted climate-change denial.\n\nExxon is now a defendant in dozens of lawsuits around the U.S. that accuse it and other oil companies of deception over climate change and that aim to collect billions of dollars in damages. Prosecutors and attorneys involved in some of the cases are seeking some of the documents reviewed by the Journal, which were part of a previous investigation by New York's attorney general but never made public.\n\nOne of the lawsuits is from Hawaii's Maui County, where wildfires killed more than 100 people in August. The lawsuit, filed in 2020, alleged the island faced increased climate-related risks, including more dangerous wildfires, caused by fossil-fuel companies. Some of the lawsuits may go to trial as soon as next year.\n\n\"I know how this information looks -- when taken out of context, it seems bad,\" Exxon CEO Darren Woods said in response to the Journal's inquiry about the documents. \"But having worked with some of these colleagues earlier in my career, I have the benefit of knowing they are people of good intent. None of these old emails and notes matter though. All that does is that we're building an entire business dedicated to reducing emissions -- both our own and others -- and spending billions of dollars on solutions that have a real, sustainable impact.\"\n\nUnder Woods, who became CEO in 2017, Exxon has committed to spend $17 billion over five years on emissions-reducing technologies. Exxon didn't address detailed questions sent by the Journal.\n\nTillerson declined to comment through a representative.\n\nExxon turned millions of pages of documents over to the New York attorney general during that office's yearslong investigation, announced in 2015, into whether the company misled investors about the impact of climate regulation on its business. The Journal reviewed summaries of the documents that Exxon's lawyers had determined were the most significant. After the attorney general narrowed the focus of the case, the documents weren't made public.\n\nThe documents summarize emails between top executives, board meetings and Tillerson's edits of speeches, among other things.\n\nAfter a nearly three-week trial in 2019, Justice Barry Ostrager of the New York State Supreme Court ruled the New York attorney general failed to prove its case.\n\n\"Nothing in this opinion is intended to absolve Exxon Mobil from responsibility for contributing to climate change,\" Ostrager wrote.\n\nThroughout Tillerson's tenure between 2006 and 2016, Exxon executives in their internal communications attempted to push back against the notion that humans needed to curtail oil and gas use to help the planet -- despite the company's public statements that action was needed.\n\nIn 2012, after the pre-eminent scientific authority on climate change warned of global calamity if carbon emissions continued unabated, Tillerson disagreed and directed Exxon researchers to \"influence\" the group.\n\nAs pressure mounted to stop drilling in the Arctic due to rapid glacial melting and other environmental impacts, Exxon fretted about a key project in Russia's far north and worked to \"de-couple climate change and the Arctic.\"\n\n\"The general perception is that Tillerson was softer and stopped funding the bad guys\" that were espousing climate change denial, said Lee Wasserman, the director of the Rockefeller Family Fund, a charity that partly focuses on environmental issues. \"This is the first X-ray into Tillerson's head and shows he wanted to throw climate mitigation off the rails. It's obituary-changing.\"\n\nThe fund has issued grants financing litigation and other support for around two dozen cases against Exxon, whose predecessor, Standard Oil, was founded by family patriarch John D. Rockefeller. The fund has invested millions of dollars in a broader campaign against big oil companies.\n\nSeminal warning\n\nA study published earlier this year in the journal Science determined Exxon's climate modelers had predicted warming temperatures with precision since the 1970s, in line with the scientific consensus. The study was funded, in part, by a grant from the Rockefeller Family Fund.\n\nIn the summer of 1988, NASA scientist James Hansen issued what's now seen as a seminal warning on climate change when he testified before Congress that Earth was warming dangerously and humans were causing it.\n\nFrank Sprow, then Exxon's head of corporate research, sent a memo to colleagues a few months later articulating what would become a central pillar of Exxon's strategy.\n\n\"If a worldwide consensus emerges that action is needed to mitigate against Greenhouse gas effects, substantial negative impacts on Exxon could occur,\" wrote Sprow. \"Any additional R&D efforts within Corporate Research on Greenhouse should have two primary purposes: 1. Protect the value of our resources (oil, gas, coal). 2. Preserve Exxon's business options.\"\n\nSprow's memo was adopted by Exxon as policy, he said in a recent interview.\n\nExxon stopped most internal climate research, instead funding it through university and research organizations, Sprow said. Exxon's corporate research division was redirected from broader scientific study to focus on \"science to support our business.\"\n\nSprow said he and former Exxon CEO Lee Raymond acknowledged the climate was changing but questioned to what extent human activity was causing it and how serious and rapid the impacts would be. The January study in Science said that Exxon's climate modelers mostly attributed the changes to humans.\n\nMartin Hoffert, who worked as a consultant to Exxon on climate science in the 1980s, said Sprow's memo sent another message: \"It's an oblique way of saying we're in the oil business and we're not going to get out of the oil business, and we'll do everything we can to make money on the oil business.\"\n\nBy the time Tillerson became CEO in 2006, Exxon's positions on climate change had become a public-relations nightmare, according to Sprow, who retired from the company in 2005.\n\nPublic shift\n\nExxon's public shift on climate change came after the Royal Society, a British scientific academy, criticized the company for spreading \"inaccurate and misleading\" views on climate science in 2006. Exxon responded in a letter that it recognized \"the accumulation of greenhouse gases in the Earth's atmosphere poses risks that may prove significant for society and ecosystems.\"\n\nAn Eagle Scout and a civil engineer by training, Tillerson spent his entire career at Exxon before becoming CEO in 2006. He left in 2017 to become then-President Trump's Secretary of State.\n\nHis views on climate change were influenced by the previous generation of Exxon executives, said former company executives who worked with him. During his tenure, Tillerson took little action to curb the company's emissions and instead believed the onus was on governments to push companies to address climate change, they said.\n\nIn 2011, scientists working for the Intergovernmental Panel on Climate Change, convened by the United Nations, warned of global calamity if carbon emissions caused temperatures to rise more than 4 degrees Celsius above preindustrial levels by 2100, its worst-case scenario.\n\nTillerson told a top Exxon climate researcher the scenario was \"not credible,\" the documents show. Tillerson was \"dissatisfied with media coverage,\" the researcher, Haroon Kheshgi, told colleagues in a 2012 email about the findings. Further, Tillerson wanted to engage with IPCC \"to influence [the group], in addition to gathering info.\"\n\nChris Field was the co-chair of an IPCC working group during Tillerson's tenure at Exxon. He rejected Tillerson's criticism that the worst-case scenario laid out by the group wasn't credible. Though emissions reductions are preventing the worst case, Field said, the science has held up over time.\n\n\"I'm honestly flattered that he thought IPCC was consequential enough to want to influence it,\" said Field, who is now director of the Stanford Woods Institute for the Environment. He added that the IPCC process is structured to prevent undue influence from individual businesses or other entities and that the Exxon scientists he'd dealt with were professional.\n\nWhile Tillerson and others played down the risks posed by climate change, Exxon's scientists were themselves modeling alarming increases in carbon emissions without dramatic reductions in fossil-fuel consumption.\n\n\"It's almost reluctantly that we address C02 emissions,\" Scott Nauman, a corporate planning manager, wrote in a January 2009 email as the company was preparing its annual energy outlook. \"It is not a positive story. Global emissions continue to rise throughout the outlook timeframe - that's clearly a cause for concern.\"\n\nExxon routinely pushed back against the idea that dramatic curtailment of fossil-fuel consumption was necessary. Instead, it suggested that technological solutions, including making cars and other machines more efficient, were the most effective measure to halt global warming. Fossil fuels are responsible for more than 75% of the world's greenhouse gas emissions, according to the IPCC.\n\nBefore giving a speech at an event hosted by Stanford University's Global Climate & Energy Project in February 2009, Tillerson appeared to make edits to avoid embracing positions that would hurt Exxon's business.\n\nIn one part of the draft speech he crossed out \"oil, natural gas and coal will not meet all of the world's needs to the year 2030.\" Later, he added, \"the most cost effective steps we can take to address this energy and environmental challenge is to extend our energy efficiency gains.\"\n\nWeeks earlier, Nauman had concluded in his January email that emissions would increase through 2030 despite such gains.\n\n\"We would like them to be lower, but given the state of technology, given the need for energy, given the practical choices for energy, emissions rise despite aggressive efficiency gains,\" Nauman wrote.\n\n'Skeptic arguments'\n\nIn 2008, Exxon announced it would stop funding think tanks and other groups that questioned climate science, saying their positions \"could divert attention from the important discussion on how the world will secure the energy required for economic growth in an environmentally responsible manner.\"\n\nExxon researchers continued to support scientific research that cast doubt on climate science and its impacts, documents show.\n\nLater in 2008, Gene Tunison, a manager of global regulatory affairs and research planning, said Exxon should direct a scientist to help the American Petroleum Institute, the industry's influential lobbying group, write a paper about climate science uncertainty.\n\n\"I support [Exxon] co-authoring a paper on uncertainty in measuring GHGs,\" Tunison wrote in an email.\n\nTillerson also pushed back against some of the dire consequences of rising temperatures predicted by climate scientists. After a 2011 meeting, Tillerson's chief of staff, William Colton, emailed colleagues about the CEO's feedback on a draft disclosure about carbon emissions. Tillerson wanted the words \"weather extremes and storms\" deleted.\n\n\"His view was that even mentioning a possible connection between climate change and weather was possibly giving the notion more credibility than he would like,\" Colton wrote.\n\nDuring a 2012 board meeting about \"Developments in Climate Science and Policy,\" Exxon board member Peter Brabeck-Letmathe said there was \"still uncertainty in predicting future climate changes and impacts.\"\n\n\"Money and effort spent on climate change is misplaced,\" said Brabeck-Letmathe, the former CEO of Nestl\u00e9.\n\nIn December 2015, Exxon publicly stated its support of the just-signed Paris climate agreement, a nonbinding United Nations treaty that commits countries to work to limit global warming to well below 2 degrees Celsius. Climate scientists have warned that if Earth warms more than 2 degrees it could cross irreversible climate tipping points. During his Senate confirmation hearing to become Secretary of State in 2017, Tillerson said he supported staying in the agreement.\n\nMonths before the treaty was signed, Tillerson had expressed skepticism about its aims.\n\nFollowing a presentation on climate science to Exxon's board of directors in April 2015, Tillerson called the 2 degrees target \"something magical,\" according to a summary of the meeting.\n\n\"Who is to say 2.5 is not good enough,\" said Tillerson, noting that it was \"very expensive\" to cut the emissions needed to meet such a target.\n\n\"When people like Tillerson argue that 2 degrees is magical, it's in the context of how you try,\" said Field, the former IPCC co-chair. \"Two degrees can be affordable with the right costs and benefits globally, even if it is not the right costs and benefits for Exxon.\"\n\nLast week, the United Nations warned countries are far from meeting the Paris agreement's goals. Exxon said in August that the world isn't currently on track to reach the targets of the agreement, which it continues to support publicly.\n\nShortly after replacing Tillerson in 2017, Darren Woods spread the word that he was in search of transformative new ideas. A plan to invest in offshore wind projects made its way to the most senior levels of the company, according to people familiar with the proposal. Karen Hughes, a former top official in the George W. Bush administration and an adviser to Exxon, said she counseled that investing in renewable energy would be good for the environment and improve the company's reputation.\n\nTo date, Woods hasn't invested in renewable energy, arguing it's a low-return business outside Exxon's skill set. Instead the company has vowed to spend about $3.4 billion a year on average through 2027 curbing its emissions and helping other companies do the same, and investing in areas including carbon capture, biofuels and lithium mining.\n\nExxon currently plans to spend as much as $25 billion a year in capital expenditures through 2027, mostly on oil and gas.\n\nWrite to Christopher M. Matthews at christopher.matthews@wsj.com and Collin Eaton at collin.eaton@wsj.com",
+                    "source": {
+                        "uri": "livemint.com",
+                        "dataType": "news",
+                        "title": "mint"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Rex_Tillerson",
+                            "type": "person",
+                            "score": 5,
+                            "label": {
+                                "eng": "Rex Tillerson"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Attorney_General_of_New_York",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Attorney General of New York"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Intergovernmental Panel on Climate Change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Fossil_fuel",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Fossil fuel"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climatology",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Climatology"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Chief_executive_officer",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Chief executive officer"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/ExxonMobil",
+                            "type": "org",
+                            "score": 5,
+                            "label": {
+                                "eng": "ExxonMobil"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Climate change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Petroleum",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Petroleum"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Lawsuit",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Lawsuit"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Scientific_consensus",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Scientific consensus"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Environmental_issues",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Environmental issues"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Wildfire",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Wildfire"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change_denial",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Climate change denial"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Arctic",
+                            "type": "loc",
+                            "score": 4,
+                            "label": {
+                                "eng": "Arctic"
+                            },
+                            "location": null
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Greenhouse_gas_emissions",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Greenhouse gas emissions"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Lee_Raymond",
+                            "type": "person",
+                            "score": 3,
+                            "label": {
+                                "eng": "Lee Raymond"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Rockefeller_family",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Rockefeller family"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/New_York_Supreme_Court",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "New York Supreme Court"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Damages",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Damages"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Climate_change_mitigation",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Climate change mitigation"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Attorney_general",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Attorney general"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Effects_of_climate_change",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Effects of climate change"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Think_tank",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Think tank"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hawaii",
+                            "type": "loc",
+                            "score": 3,
+                            "label": {
+                                "eng": "Hawaii"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Hawaii"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/James_Hansen",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "James Hansen"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/John_D._Rockefeller",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "John D. Rockefeller"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Standard_Oil",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "Standard Oil"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Royal_Society",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "Royal Society"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/NASA",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "NASA"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/The_Wall_Street_Journal",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "The Wall Street Journal"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Stanford_University",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Stanford University"
+                            },
+                            "location": null
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/United_States_Congress",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "United States Congress"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Earth",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Earth"
+                            },
+                            "location": null
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/United_Nations",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "United Nations"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/United_Kingdom",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "United Kingdom"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "United Kingdom"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Peter_Brabeck-Letmathe",
+                            "type": "person",
+                            "score": 1,
+                            "label": {
+                                "eng": "Peter Brabeck-Letmathe"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Karen_Hughes",
+                            "type": "person",
+                            "score": 1,
+                            "label": {
+                                "eng": "Karen Hughes"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/American_Petroleum_Institute",
+                            "type": "org",
+                            "score": 1,
+                            "label": {
+                                "eng": "American Petroleum Institute"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Presidency_of_George_W._Bush",
+                            "type": "person",
+                            "score": 1,
+                            "label": {
+                                "eng": "Presidency of George W. Bush"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Nestl\u00e9",
+                            "type": "org",
+                            "score": 1,
+                            "label": {
+                                "eng": "Nestl\u00e9"
+                            }
+                        }
+                    ],
+                    "image": "https://www.livemint.com/lm-img/img/2023/09/14/600x338/im-847676_1694693870667_1694693888243.jpg",
+                    "eventUri": "eng-8905243",
+                    "sentiment": -0.07450980392156858,
+                    "wgt": 432403460,
+                    "relevance": 1
+                }
+            ]
+        }
+    }
+}
