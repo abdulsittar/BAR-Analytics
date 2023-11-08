@@ -1,0 +1,11 @@
+,path,name,continent,country,culture,dateFrom,dateTo,economic,group,lang,polalign,source,url,religions,militarydefenseblocs,economicblocs
+0,/Event,Event,,,,,,,0,,,,,,,
+1,/Event/7444808547,7444808547,,,,2023-03-13T15:01:00,2023-03-13T15:01:00,,0,eng,,nampa.org,,,,
+2,/Event/7444808547/7444823970,7444823970,,,,2023-03-13T15:01:00,2023-03-13T15:10:00,,7444808547,eng,,english.news.cn,,,,
+3,/Event/7444808547/7444998893,7444998893,,,,2023-03-13T15:01:00,2023-03-13T17:05:00,,7444808547,eng,,middleeastmonitor.com,,,,
+4,/Event/7444808547/7445026349,7445026349,AS,CN,C18,2023-03-13T15:01:00,2023-03-13T17:25:00,C9,7444808547,eng,Chinese-Communist-Party,chinadaily.com.cn,ChatGPT,Irreligion,,
+5,/Event/7444808547/7445036353,7445036353,AS,TR,C14,2023-03-13T15:01:00,2023-03-13T17:33:00,C12,7444808547,eng,,dailysabah.com,,Muslim,NATO,
+6,/Event/7444808547/7445251438,7445251438,,,,2023-03-13T15:01:00,2023-03-13T20:33:00,,7444808547,eng,,socialnews.xyz,,,,
+7,/Event/7444808547/7445363828,7445363828,AS,MY,C18,2023-03-13T15:01:00,2023-03-13T22:22:00,C9,7444808547,eng,Center-right,thestar.com.my,ChatGPT,Muslim,,ASEAN
+8,/Event/7444808547/7445566919,7445566919,,,,2023-03-13T15:01:00,2023-03-14T02:27:00,,7444808547,eng,,mangalorean.com,,,,
+9,/Event/7444808578,7444808578,,,,2023-03-13T15:01:00,2023-03-13T15:01:00,,0,eng,,nampa.org,,,,

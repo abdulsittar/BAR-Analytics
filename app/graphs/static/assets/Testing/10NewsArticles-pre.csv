@@ -1,0 +1,8 @@
+,path,name,country,culture,dateFrom,dateTo,economic,group,language,polalign,source,url
+0,/Event,Event,,,,,,0,,,,
+1,/Event/371374401,371374401,,,2016-02-02T03:14:00,2016-02-02T03:14:00,,0,,,bleacherreport.com,
+2,/Event/371374401/371349417,371349417,,,2016-02-02T03:14:00,2016-02-02T03:29:00,,371374401,,,ramaponews.com,
+3,/Event/371374401/371350611,371350611,,,2016-02-02T03:14:00,2016-02-02T03:32:00,,371374401,,,scout.com,
+4,/Event/371374401/371353159,371353159,United-Kingdom,C4,2016-02-02T03:14:00,2016-02-02T03:38:00,C2,371374401,unknown,unknown,dailymail.co.uk,unknown
+5,/Event/371374401/371404461,371404461,United-States,C4,2016-02-02T03:14:00,2016-02-02T04:08:00,C2,371374401,unknown,unknown,espn.go.com,unknown
+6,/Event/371374401/371372244,371372244,United-States,C4,2016-02-02T03:14:00,2016-02-02T04:25:00,C2,371374401,unknown,unknown,nypost.com,unknown

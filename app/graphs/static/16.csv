@@ -1,0 +1,258 @@
+,uri,lang,isDuplicate,date,time,dateTime,dateTimePub,dataType,sim,url,title,body,authors,concepts,image,eventUri,sentiment,wgt,relevance,source.uri,source.dataType,source.title,all_concepts,con-name,country,lang-name,language,Political-Alignment,wiki-url,Cultural-Class,Economic-Class,Continent-name,Continent,Religions,2019Rank-From,SafetyandSecurity,PersonalFreedom,Governance,SocialCapital,InvestmentEnvironment,EnterpriseConditions,MarketAccessandInfrastructure,EconomicQuality,LivingConditions,Health,Education,NaturalEnvironment,PowerDistance,Individualism,Masculinity,UncertaintyAvoidance,LongTermOrientation,Indulgence,economicblocs-name,economicblocs,militarydefenseblocs-name,militarydefenseblocs,politicalregionalblocs-name,politicalregionalblocs,linguisticblocs-name,linguisticblocs,proScore,destination,parent,count,status,year,month,day,min,hour,MD
+126,7441443588,eng,False,2023-03-11,08:26:00,2023-03-11 08:26:00,2023-03-11T07:47:00Z,news,0.9372549057006836,https://www.dailymail.co.uk/wires/reuters/article-11847427/Indonesias-Merapi-volcano-erupts-spews-hot-cloud.html,"Indonesia's Merapi volcano erupts, spews hot cloud","JAKARTA, March 11 (Reuters) - Indonesia's Merapi volcano erupted on Saturday, spewing hot cloud up to seven kilometres, the country's disaster management agency said in a statement.
+
+The volcano located in Indonesia's Yogyakarta special region erupted around 12 p.m local time (0500 GMT) and a lava flow of 1.5 km was observed, the local authority said.
+
+Residents in the nearby community have been warned to stop any activities in the danger zones, range between three to seven kilometres radius from the crater, the statement said.
+
+The 2,963 metre-high (9,721 feet) Merapi is one of Indonesia's most active volcanoes and was already on the country's second-highest alert level.
+
+Official at local monitoring post, Yulianto said no residents have been evacuated.
+
+""This has only been observed as one time event, there have been 5-6 avalanches. If the coverage continue to increase and the distance is further than 7 kilometres, it is likely that the residents will be recommended to evacuate,"" he said.
+
+Located on the Pacific Ring of Fire, Indonesia has more volcanoes than any other country. Merapi last violently erupted in 2010, killing more than 350 people.
+
+(Reporting by Bernadette Christina Editing by Shri Navaratnam)","[{'uri': 'reuters@dailymail.co.uk', 'name': 'Reuters', 'type': 'author', 'isAgency': True}]","[{'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 4, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Lava', 'type': 'org', 'score': 3, 'label': {'eng': 'Lava'}}, {'uri': 'http://en.wikipedia.org/wiki/Emergency_management', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Emergency management'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcano', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Jakarta', 'type': 'loc', 'score': 3, 'label': {'eng': 'Jakarta'}, 'location': {'type': 'place', 'label': {'eng': 'Jakarta'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Yogyakarta', 'type': 'loc', 'score': 3, 'label': {'eng': 'Yogyakarta'}, 'location': {'type': 'place', 'label': {'eng': 'Yogyakarta'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_crater', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Volcanic crater'}}, {'uri': 'http://en.wikipedia.org/wiki/Local_government', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Local government'}}, {'uri': 'http://en.wikipedia.org/wiki/Ring_of_Fire', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Ring of Fire'}}, {'uri': 'http://en.wikipedia.org/wiki/Avalanche', 'type': 'org', 'score': 1, 'label': {'eng': 'Avalanche'}}, {'uri': 'http://en.wikipedia.org/wiki/Reuters', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Reuters'}}]",,eng-8468195,-0.1294117647058823,416219160,1,dailymail.co.uk,news,Daily Mail Online,Indonesia Mount Merapi Lava Emergency management Volcano Jakarta Yogyakarta Volcanic crater Local government Ring of Fire Avalanche Reuters,United-Kingdom,UK,?,,Center-left,ChatGPT,C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,11,26,8,03-11
+111,7441588862,eng,False,2023-03-11,10:38:00,2023-03-11 10:38:00,2023-03-11T10:18:00Z,news,0.8156862854957581,https://www.dailymail.co.uk/wires/ap/article-11847619/Indonesia-s-Merapi-volcano-spews-hot-clouds-new-eruption.html,Indonesia´s Merapi volcano spews hot clouds in new eruption,"MOUNT MERAPI, Indonesia (AP) - Indonesia´s Mount Merapi erupted Saturday with avalanches of searing gas clouds and lava, forcing authorities to halt tourism and mining activities on the slopes of the country´s most active volcano.
+
+Merapi, on the densely populated island of Java, unleashed clouds of hot ash and a mixture of rock, lava and gas that traveled up to 7 kilometers (4.3 miles) down its slopes. A column of hot clouds rose 100 meters (yards) into the air, said the National Disaster Management Agency´s spokesperson Abdul Muhari.
+
+The eruption throughout the day blocked out the sun and blanketed several villages with falling ash. No casualties have been reported.
+
+It was Merapi´s biggest lava flow since authorities raised the alert level to the second-highest in November 2020, said Hanik Humaida, the head of Yogyakarta´s Volcanology and Geological Hazard Mitigation Center.
+
+She said residents living on Merapi´s slopes were advised to stay 7 kilometers (4.3 miles) away from the crater´s mouth and be aware of the danger posed by lava.
+
+Tourism and mining activities were halted.
+
+Men watch as Mount Merapi releases volcanic materials during an eruption in Sleman, Indonesia, Saturday, March 11, 2023. (AP Photo/Slamet Riyadi)
+
+The 2,968-meter (9,737-foot) mountain is about 30 kilometers (18 miles) from Yogyakarta, an ancient center of Javanese culture and the seat of royal dynasties going back centuries. About a quarter million people live within 10 kilometers (6 miles) of the volcano.
+
+Merapi is the most active of more than 120 active volcanoes in Indonesia and has repeatedly erupted with lava and gas clouds recently. Its last major eruption in 2010 killed 347 people and displaced 20,000 villagers.
+
+Indonesia, an archipelago of 270 million people, is prone to earthquakes and volcanic activity because it sits along the ""Ring of Fire,"" a horseshoe-shaped series of seismic fault lines around the Pacific Ocean.
+
+An eruption in December 2021 of Mount Semeru, the highest volcano on Java island, left 48 people dead and 36 missing.
+
+Mount Merapi releases volcanic materials during an eruption in Sleman, Indonesia, Saturday, March 11, 2023. (AP Photo/Slamet Riyadi)",[],"[{'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 5, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Lava', 'type': 'org', 'score': 5, 'label': {'eng': 'Lava'}}, {'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_ash', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Volcanic ash'}}, {'uri': 'http://en.wikipedia.org/wiki/Mining', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Mining'}}, {'uri': 'http://en.wikipedia.org/wiki/Active_volcano', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Active volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcano', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Rock_(geology)', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Rock (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/Avalanche', 'type': 'org', 'score': 3, 'label': {'eng': 'Avalanche'}}, {'uri': 'http://en.wikipedia.org/wiki/Yogyakarta', 'type': 'loc', 'score': 3, 'label': {'eng': 'Yogyakarta'}, 'location': {'type': 'place', 'label': {'eng': 'Yogyakarta'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanology', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Volcanology'}}, {'uri': 'http://en.wikipedia.org/wiki/River_delta', 'type': 'wiki', 'score': 2, 'label': {'eng': 'River delta'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_crater', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Volcanic crater'}}, {'uri': 'http://en.wikipedia.org/wiki/Java', 'type': 'loc', 'score': 2, 'label': {'eng': 'Java'}, 'location': {'type': 'place', 'label': {'eng': 'Java'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Javanese_culture', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Javanese culture'}}, {'uri': 'http://en.wikipedia.org/wiki/Semeru', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Semeru'}}, {'uri': 'http://en.wikipedia.org/wiki/Fault_(geology)', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Fault (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/Ring_of_Fire', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Ring of Fire'}}, {'uri': 'http://en.wikipedia.org/wiki/Archipelago', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Archipelago'}}, {'uri': 'http://en.wikipedia.org/wiki/Earthquake', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Earthquake'}}, {'uri': 'http://en.wikipedia.org/wiki/Pacific_Ocean', 'type': 'loc', 'score': 1, 'label': {'eng': 'Pacific Ocean'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Sleman', 'type': 'loc', 'score': 1, 'label': {'eng': 'Sleman'}, 'location': {'type': 'place', 'label': {'eng': 'Sleman'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}]",https://i.dailymail.co.uk/1s/2023/03/11/10/wire-68580441-1678529921-769_636x382.jpg,eng-8468195,-0.1058823529411764,416227080,1,dailymail.co.uk,news,Daily Mail Online,Mount Merapi Lava Indonesia Volcanic ash Mining Active volcano Volcano Rock (geology) Avalanche Yogyakarta Volcanology River delta Volcanic crater Java Javanese culture Semeru Fault (geology) Ring of Fire Archipelago Earthquake Pacific Ocean Sleman,United-Kingdom,UK,?,,Center-left,ChatGPT,C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,11,38,10,03-11
+104,7441614281,eng,False,2023-03-11,11:01:00,2023-03-11 11:01:00,2023-03-11T10:47:00Z,news,0.7882353067398071,https://www.mirror.co.uk/news/world-news/breaking-doomsday-volcano-blow-hot-29430447,'Doomsday' volcano about to blow as hot smoke spews for miles,"A mountain branded a ""doomsday"" volcano in Indonesia may be about to blow as hot smoke blankets the local area.
+
+Indonesia's Mount Merapi erupted Saturday with avalanches of searing gas clouds and lava, forcing authorities to halt tourism and mining activities on the slopes of the country's most active volcano.
+
+Merapi, on the densely populated island of Java, unleashed clouds of hot ash and a mixture of rock, lava and gas that traveled up to 4.3 miles down its slopes.
+
+A column of hot clouds rose 100 meters (yards) into the air, said the National Disaster Management Agency's spokesperson Abdul Muhari.
+
+The eruption throughout the day blocked out the sun and blanketed several villages with falling ash. No casualties have been reported.
+
+Searing-hot cloud gathers over a road near Mt Merapi ( Image: AFP via Getty Images) Rock, lava and gas also poured down the slopes ( Image: AFP via Getty Images)
+
+It was Merapi's biggest lava flow since authorities raised the alert level to the second-highest in November 2020, said Hanik Humaida, the head of Yogyakarta's Volcanology and Geological Hazard Mitigation Center.
+
+She said residents living on Merapi's slopes were advised to stay 7 kilometers (4.3 miles) away from the crater's mouth and be aware of the danger posed by lava.
+
+Tourism and mining activities were halted.
+
+The 2,968-meter (9,737-foot) mountain is about 30 kilometers (18 miles) from Yogyakarta, an ancient center of Javanese culture and the seat of royal dynasties going back centuries. About a quarter million people live within 10 kilometers (6 miles) of the volcano.
+
+Merapi is the most active of more than 120 active volcanoes in Indonesia and has repeatedly erupted with lava and gas clouds recently. Its last major eruption in 2010 killed 347 people and displaced 20,000 villagers.
+
+Indonesia, an archipelago of 270 million people, is prone to earthquakes and volcanic activity because it sits along the ""Ring of Fire,"" a horseshoe-shaped series of seismic fault lines around the Pacific Ocean.
+
+An eruption in December 2021 of Mount Semeru, the highest volcano on Java island, left 48 people dead and 36 missing.
+
+Experts have previously warned that an eruption at Merapi could have far-reaching consequences, including the collapse of the global economy.
+
+The monster mountain sits several miles from the Strait of Malacca, which is often described as the world's chokepoint that sees 90,000 ships travel through the narrow each year carrying grain, crude oil and almost every other commodity.
+
+It's thought that the eruption, which has been due for several months, could cover the earth in a volcanic winter lasting three years.
+
+This could lead to a sharp temperature drop, causing global food shortages, inflation and further climate fluctuations, costing the world more than $2.5 trillion.
+
+Please check back regularly for updates on this developing story HERE.
+
+Get email updates on the day's biggest stories straight to your inbox by signing up for our newsletters.
+
+Get all the big headlines, pictures, analysis, opinion and video on the stories that matter to you by following The Mirror every time you see our name.
+
+Follow The Mirror on Google News - CLICK HERE and click the star
+
+Follow The Mirror on Apple News - CLICK HERE available on Apple devices
+
+Follow The Mirror on Flipboard - CLICK HERE and click follow
+
+You can sign up for Twitter alerts for breaking news here @MirrorBreaking_ and follow us @DailyMirror, for all the latest updates.
+
+Keep up-to-date with your must-see news, features, videos and pictures throughout the day by following us on Facebook at facebook.com/dailymirror
+
+See all our social accounts you can follow here: mirror.co.uk/social","[{'uri': 'ryan_fahey@mirror.co.uk', 'name': 'Ryan Fahey', 'type': 'author', 'isAgency': False}]","[{'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 5, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Lava', 'type': 'org', 'score': 5, 'label': {'eng': 'Lava'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcano', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Mountain', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Mountain'}}, {'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_ash', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Volcanic ash'}}, {'uri': 'http://en.wikipedia.org/wiki/Getty_Images', 'type': 'org', 'score': 4, 'label': {'eng': 'Getty Images'}}, {'uri': 'http://en.wikipedia.org/wiki/Mining', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Mining'}}, {'uri': 'http://en.wikipedia.org/wiki/Cloud', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Cloud'}}, {'uri': 'http://en.wikipedia.org/wiki/Rock_(geology)', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Rock (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/Avalanche', 'type': 'org', 'score': 3, 'label': {'eng': 'Avalanche'}}, {'uri': 'http://en.wikipedia.org/wiki/Tourism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Tourism'}}, {'uri': 'http://en.wikipedia.org/wiki/Java', 'type': 'loc', 'score': 3, 'label': {'eng': 'Java'}, 'location': {'type': 'place', 'label': {'eng': 'Java'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Yogyakarta', 'type': 'loc', 'score': 3, 'label': {'eng': 'Yogyakarta'}, 'location': {'type': 'place', 'label': {'eng': 'Yogyakarta'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Javanese_culture', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Javanese culture'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanology', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Volcanology'}}, {'uri': 'http://en.wikipedia.org/wiki/Fault_(geology)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Fault (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/River_delta', 'type': 'wiki', 'score': 2, 'label': {'eng': 'River delta'}}, {'uri': 'http://en.wikipedia.org/wiki/Ring_of_Fire', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Ring of Fire'}}, {'uri': 'http://en.wikipedia.org/wiki/Archipelago', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Archipelago'}}, {'uri': 'http://en.wikipedia.org/wiki/Earthquake', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Earthquake'}}, {'uri': 'http://en.wikipedia.org/wiki/Pacific_Ocean', 'type': 'loc', 'score': 2, 'label': {'eng': 'Pacific Ocean'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_winter', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Volcanic winter'}}, {'uri': 'http://en.wikipedia.org/wiki/Strait_of_Malacca', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Strait of Malacca'}}, {'uri': 'http://en.wikipedia.org/wiki/Semeru', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Semeru'}}, {'uri': 'http://en.wikipedia.org/wiki/Grain', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Grain'}}, {'uri': 'http://en.wikipedia.org/wiki/Daily_Mirror', 'type': 'org', 'score': 1, 'label': {'eng': 'Daily Mirror'}}, {'uri': 'http://en.wikipedia.org/wiki/Commodity', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Commodity'}}, {'uri': 'http://en.wikipedia.org/wiki/Email', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Email'}}, {'uri': 'http://en.wikipedia.org/wiki/Facebook', 'type': 'org', 'score': 1, 'label': {'eng': 'Facebook'}}, {'uri': 'http://en.wikipedia.org/wiki/Agence_France-Presse', 'type': 'org', 'score': 1, 'label': {'eng': 'Agence France-Presse'}}, {'uri': 'http://en.wikipedia.org/wiki/Google', 'type': 'org', 'score': 1, 'label': {'eng': 'Google'}}, {'uri': 'http://en.wikipedia.org/wiki/Apple_Inc.', 'type': 'org', 'score': 1, 'label': {'eng': 'Apple Inc.'}}, {'uri': 'http://en.wikipedia.org/wiki/Twitter', 'type': 'org', 'score': 1, 'label': {'eng': 'Twitter'}}]",https://i2-prod.mirror.co.uk/incoming/article29430453.ece/ALTERNATES/s1200/0_GettyImages-1248014850.jpg,eng-8468195,-0.1058823529411764,416228460,1,mirror.co.uk,news,Mirror,Mount Merapi Lava Volcano Mountain Indonesia Volcanic ash Getty Images Mining Cloud Rock (geology) Avalanche Tourism Java Yogyakarta Javanese culture Volcanology Fault (geology) River delta Ring of Fire Archipelago Earthquake Pacific Ocean Volcanic winter Strait of Malacca Semeru Grain Daily Mirror Commodity Email Facebook Agence France-Presse Google Apple Inc. Twitter,United-Kingdom,UK,?,,unknown,?,C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,11,1,11,03-11
+103,7441614281,eng,False,2023-03-11,11:01:00,2023-03-11 11:01:00,2023-03-11T10:47:00Z,news,0.7882353067398071,https://www.mirror.co.uk/news/world-news/breaking-doomsday-volcano-blow-hot-29430447,'Doomsday' volcano about to blow as hot smoke spews for miles,"A mountain branded a ""doomsday"" volcano in Indonesia may be about to blow as hot smoke blankets the local area.
+
+Indonesia's Mount Merapi erupted Saturday with avalanches of searing gas clouds and lava, forcing authorities to halt tourism and mining activities on the slopes of the country's most active volcano.
+
+Merapi, on the densely populated island of Java, unleashed clouds of hot ash and a mixture of rock, lava and gas that traveled up to 4.3 miles down its slopes.
+
+A column of hot clouds rose 100 meters (yards) into the air, said the National Disaster Management Agency's spokesperson Abdul Muhari.
+
+The eruption throughout the day blocked out the sun and blanketed several villages with falling ash. No casualties have been reported.
+
+Searing-hot cloud gathers over a road near Mt Merapi ( Image: AFP via Getty Images) Rock, lava and gas also poured down the slopes ( Image: AFP via Getty Images)
+
+It was Merapi's biggest lava flow since authorities raised the alert level to the second-highest in November 2020, said Hanik Humaida, the head of Yogyakarta's Volcanology and Geological Hazard Mitigation Center.
+
+She said residents living on Merapi's slopes were advised to stay 7 kilometers (4.3 miles) away from the crater's mouth and be aware of the danger posed by lava.
+
+Tourism and mining activities were halted.
+
+The 2,968-meter (9,737-foot) mountain is about 30 kilometers (18 miles) from Yogyakarta, an ancient center of Javanese culture and the seat of royal dynasties going back centuries. About a quarter million people live within 10 kilometers (6 miles) of the volcano.
+
+Merapi is the most active of more than 120 active volcanoes in Indonesia and has repeatedly erupted with lava and gas clouds recently. Its last major eruption in 2010 killed 347 people and displaced 20,000 villagers.
+
+Indonesia, an archipelago of 270 million people, is prone to earthquakes and volcanic activity because it sits along the ""Ring of Fire,"" a horseshoe-shaped series of seismic fault lines around the Pacific Ocean.
+
+An eruption in December 2021 of Mount Semeru, the highest volcano on Java island, left 48 people dead and 36 missing.
+
+Experts have previously warned that an eruption at Merapi could have far-reaching consequences, including the collapse of the global economy.
+
+The monster mountain sits several miles from the Strait of Malacca, which is often described as the world's chokepoint that sees 90,000 ships travel through the narrow each year carrying grain, crude oil and almost every other commodity.
+
+It's thought that the eruption, which has been due for several months, could cover the earth in a volcanic winter lasting three years.
+
+This could lead to a sharp temperature drop, causing global food shortages, inflation and further climate fluctuations, costing the world more than $2.5 trillion.
+
+Please check back regularly for updates on this developing story HERE.
+
+Get email updates on the day's biggest stories straight to your inbox by signing up for our newsletters.
+
+Get all the big headlines, pictures, analysis, opinion and video on the stories that matter to you by following The Mirror every time you see our name.
+
+Follow The Mirror on Google News - CLICK HERE and click the star
+
+Follow The Mirror on Apple News - CLICK HERE available on Apple devices
+
+Follow The Mirror on Flipboard - CLICK HERE and click follow
+
+You can sign up for Twitter alerts for breaking news here @MirrorBreaking_ and follow us @DailyMirror, for all the latest updates.
+
+Keep up-to-date with your must-see news, features, videos and pictures throughout the day by following us on Facebook at facebook.com/dailymirror
+
+See all our social accounts you can follow here: mirror.co.uk/social","[{'uri': 'ryan_fahey@mirror.co.uk', 'name': 'Ryan Fahey', 'type': 'author', 'isAgency': False}]","[{'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 5, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Lava', 'type': 'org', 'score': 5, 'label': {'eng': 'Lava'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcano', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Mountain', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Mountain'}}, {'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_ash', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Volcanic ash'}}, {'uri': 'http://en.wikipedia.org/wiki/Getty_Images', 'type': 'org', 'score': 4, 'label': {'eng': 'Getty Images'}}, {'uri': 'http://en.wikipedia.org/wiki/Mining', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Mining'}}, {'uri': 'http://en.wikipedia.org/wiki/Cloud', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Cloud'}}, {'uri': 'http://en.wikipedia.org/wiki/Rock_(geology)', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Rock (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/Avalanche', 'type': 'org', 'score': 3, 'label': {'eng': 'Avalanche'}}, {'uri': 'http://en.wikipedia.org/wiki/Tourism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Tourism'}}, {'uri': 'http://en.wikipedia.org/wiki/Java', 'type': 'loc', 'score': 3, 'label': {'eng': 'Java'}, 'location': {'type': 'place', 'label': {'eng': 'Java'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Yogyakarta', 'type': 'loc', 'score': 3, 'label': {'eng': 'Yogyakarta'}, 'location': {'type': 'place', 'label': {'eng': 'Yogyakarta'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Javanese_culture', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Javanese culture'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanology', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Volcanology'}}, {'uri': 'http://en.wikipedia.org/wiki/Fault_(geology)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Fault (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/River_delta', 'type': 'wiki', 'score': 2, 'label': {'eng': 'River delta'}}, {'uri': 'http://en.wikipedia.org/wiki/Ring_of_Fire', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Ring of Fire'}}, {'uri': 'http://en.wikipedia.org/wiki/Archipelago', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Archipelago'}}, {'uri': 'http://en.wikipedia.org/wiki/Earthquake', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Earthquake'}}, {'uri': 'http://en.wikipedia.org/wiki/Pacific_Ocean', 'type': 'loc', 'score': 2, 'label': {'eng': 'Pacific Ocean'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_winter', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Volcanic winter'}}, {'uri': 'http://en.wikipedia.org/wiki/Strait_of_Malacca', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Strait of Malacca'}}, {'uri': 'http://en.wikipedia.org/wiki/Semeru', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Semeru'}}, {'uri': 'http://en.wikipedia.org/wiki/Grain', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Grain'}}, {'uri': 'http://en.wikipedia.org/wiki/Daily_Mirror', 'type': 'org', 'score': 1, 'label': {'eng': 'Daily Mirror'}}, {'uri': 'http://en.wikipedia.org/wiki/Commodity', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Commodity'}}, {'uri': 'http://en.wikipedia.org/wiki/Email', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Email'}}, {'uri': 'http://en.wikipedia.org/wiki/Facebook', 'type': 'org', 'score': 1, 'label': {'eng': 'Facebook'}}, {'uri': 'http://en.wikipedia.org/wiki/Agence_France-Presse', 'type': 'org', 'score': 1, 'label': {'eng': 'Agence France-Presse'}}, {'uri': 'http://en.wikipedia.org/wiki/Google', 'type': 'org', 'score': 1, 'label': {'eng': 'Google'}}, {'uri': 'http://en.wikipedia.org/wiki/Apple_Inc.', 'type': 'org', 'score': 1, 'label': {'eng': 'Apple Inc.'}}, {'uri': 'http://en.wikipedia.org/wiki/Twitter', 'type': 'org', 'score': 1, 'label': {'eng': 'Twitter'}}]",https://i2-prod.mirror.co.uk/incoming/article29430453.ece/ALTERNATES/s1200/0_GettyImages-1248014850.jpg,eng-8468195,-0.1058823529411764,416228460,1,mirror.co.uk,news,Mirror,Mount Merapi Lava Volcano Mountain Indonesia Volcanic ash Getty Images Mining Cloud Rock (geology) Avalanche Tourism Java Yogyakarta Javanese culture Volcanology Fault (geology) River delta Ring of Fire Archipelago Earthquake Pacific Ocean Volcanic winter Strait of Malacca Semeru Grain Daily Mirror Commodity Email Facebook Agence France-Presse Google Apple Inc. Twitter,United-Kingdom,UK,?,,Center-left,ChatGPT,C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,11,1,11,03-11
+88,7441738770,eng,False,2023-03-11,12:50:00,2023-03-11 12:50:00,2023-03-11T12:50:00Z,news,0.5686274766921997,https://www.reuters.com/video/watch/indonesias-merapi-volcano-erupts-spews-h-id762342853?chan=8gwsyvzx,"Indonesia's Merapi volcano erupts, spews hot cloud | Reuters Video","Indonesia's Merapi volcano erupted on Saturday, spewing hot cloud up to seven kilometers, the country's disaster management agency said in a statement.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 3, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 3, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Cloud', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Cloud'}}]",https://static.reuters.com/resources/r/?d=20230311&i=OV659211032023RP1&r=OV659211032023RP1&t=2,eng-8468195,-0.6235294117647059,416235000,1,reuters.com,news,Reuters,Mount Merapi Indonesia Cloud,United-Kingdom,UK,?,,unknown,?,C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,11,50,12,03-11
+86,7441763944,eng,False,2023-03-11,13:12:00,2023-03-11 13:12:00,2023-03-11T13:12:00Z,news,0.6823529601097107,https://www.ladbible.com/news/doomsday-volcano-mount-merapi-indonesia-erupts-875224-20230311,Fears 'Doomsday' volcano is about to blow as hot smoke spews for miles,"Authorities have expressed concerns that the 'doomsday' volcano is about to blow after it erupted and spewed hot smoke over the surrounding area on Saturday (11 March).
+
+Mount Merapi, located in border between the province of Central Java and the Special Region of Yogyakarta, Indonesia, is the most active volcano in the country.
+
+It makes up part of the Pacific Ring of Fire, a horseshoe-shaped belt around the rim of the Pacific Ocean where volcanic activity and earthquakes are frequent.
+
+Scientists have long feared a doomsday scenario should Merapi have a major eruption, with researchers at the University of Cambridge warning it could cause a volcanic winter on earth and lead to economic collapse.
+
+Concerns were reignited today when the 9,551-foot-high volcano exploded at around 12:00pm local time, causing hot clouds of rock, lava and gas to reach up to seven kilometres from the peak.
+
+Indonesia's Research and Development Center for Geological Disaster Technology (BPPTKG) shared the news, stating that the eruption was still occurring at around 12:30pm.
+
+The agency also observed a lava flow with a sliding distance of over 4,900 feet, and it is monitoring the status of seismicity, the frequency of earthquakes in a region.
+
+Right now, the main risk factors are lava avalanches and hot clouds flowing down from Merapi to rivers including Boyong, Bedog, Krasak and Bebeng.
+
+""The distance is seven kilometres from the peak of Mount Merapi in the Kali Bebeng and Krasak channels,"" the BPPTKG said in a statement. ""Currently the eruption is still ongoing.""
+
+As such, the public has been urged not to carry about any activities in potentially hazardous areas and to be wary of ash and lava risks around the volcano site.
+
+BBPTKG also said that if there is a significant change in activity, the status of the volcano will be reviewed immediately.
+
+Reports continue to flood in to the Mount Merapi Observation Post in Babadan as several locations have been hit by ash.
+
+Yulianto, an official at the local monitoring spot, told the agency that the post is 'now definitely affected by volcanic ash', adding: ""It's quite thick.""
+
+He said there have been no reports of residents fleeing the affected areas, however, and explained that his team and the BBPTKG would instruct when to evacuate should the hot clouds extend further.
+
+""This event has only been observed once. There have been five to six avalanches,"" said Yulianto.
+
+""If the coverage continues to grow and the distance is further than seven kilometres, it is likely that there will be recommendations for residents to evacuate.""",[],"[{'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 5, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Volcano', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Lava', 'type': 'org', 'score': 4, 'label': {'eng': 'Lava'}}, {'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 4, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Active_volcano', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Active volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_winter', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Volcanic winter'}}, {'uri': 'http://en.wikipedia.org/wiki/Ring_of_Fire', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Ring of Fire'}}, {'uri': 'http://en.wikipedia.org/wiki/Province', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Province'}}, {'uri': 'http://en.wikipedia.org/wiki/Earthquake', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Earthquake'}}, {'uri': 'http://en.wikipedia.org/wiki/Special_Region_of_Yogyakarta', 'type': 'loc', 'score': 3, 'label': {'eng': 'Special Region of Yogyakarta'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Pacific_Ocean', 'type': 'loc', 'score': 3, 'label': {'eng': 'Pacific Ocean'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Central_Java', 'type': 'loc', 'score': 3, 'label': {'eng': 'Central Java'}, 'location': {'type': 'place', 'label': {'eng': 'Central Java'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Seismicity', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Seismicity'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_ash', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Volcanic ash'}}, {'uri': 'http://en.wikipedia.org/wiki/Great_Depression', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Great Depression'}}, {'uri': 'http://en.wikipedia.org/wiki/Rock_(geology)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Rock (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/River', 'type': 'wiki', 'score': 2, 'label': {'eng': 'River'}}, {'uri': 'http://en.wikipedia.org/wiki/Avalanche', 'type': 'org', 'score': 2, 'label': {'eng': 'Avalanche'}}]",https://images.ladbible.com/resize?type=jpeg&quality=70&width=1200&fit=contain&gravity=auto&dpr=1&url=https://eu-images.contentstack.com/v3/assets/bltcd74acc1d0a99f3a/blt03c75207832efb48/640c780f04be267c4de1b2d7/DOOMSDAY.png,eng-8468195,-0.1372549019607843,416236320,1,ladbible.com,news,LADbible,Mount Merapi Volcano Lava Indonesia Active volcano Volcanic winter Ring of Fire Province Earthquake Special Region of Yogyakarta Pacific Ocean Central Java Seismicity Volcanic ash Great Depression Rock (geology) River Avalanche,United-Kingdom,UK,?,,unknown,?,C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,11,12,13,03-11
+63,7442192308,eng,False,2023-03-11,20:20:00,2023-03-11 20:20:00,2023-03-11T20:18:00Z,news,0.6784313917160034,https://www.thescottishsun.co.uk/uncategorized/10351394/volcano-eruption-indonesia-lava-smoke/,Volcano eruption blocks out the sun as hot ash cloud is blown 4 miles into sky,"LOCAL residents have been warned to stay away from their homes in Indonesia after a massive volcano began erupting.
+
+Massive plumes of hot ash blocked out the sun after the volcano suddenly blew its top.
+
+Merapi is one of the most active volcanoes in Indonesia, which has over 147 of the lava spewing wonders, with 76 of them erupting regularly.
+
+The country is prone to earthquakes and volcanic activity because it sits along the Pacific Ring of Fire, a horseshoe-shaped series of fault lines.
+
+Merapi was already being monitored on the second-highest alert level in Indonesia before it erupted.
+
+No residents have been officially evacuated from the picturesque villages but are warned to remain five or more miles away.
+
+Officials at the monitoring post in a nearby village warned: ""This has only been observed as one time event, there have been 5-6 avalanches.
+
+""If the coverage continue to increase and the distance is further than 7 kilometres, it is likely that the residents will be recommended to evacuate.""
+
+The eruption began late morning on March 11, and has been erupting throughout the night.
+
+Glowing lava can be seen on a livestream YouTube video of the massive volcano.
+
+Some reports have claimed the lava flow is a mile long.
+
+On Twitter, one user showed that local flights were avoiding the massive ash cloud as they landed on Java.
+
+They said: ""The direction of Merapi ash is tracked through the Flightradar24 application.""
+
+Some locals have reported road damage on Twitter which is allegedly slowing down citizens trying to leave the affected areas.
+
+Merati is a stratovolcano, and has erupted regularly since the mid 1500s.
+
+Stratovolcanoes can be more dangerous, as they're built of layers of lava and ash.
+
+This means when it erupts, hot ash can be expelled without warning, as well as deadly lava flows.
+
+Merapi made headlines in 2018 after another large eruption, resulting in thousands of people evacuating their homes.
+
+The 2018 eruption didn't result in any casualties, and citizens only had to go 3miles away from the eruption's centre, rather than the four recommended today.
+
+The volcano hasn't had a massive eruption since 2010, when more than 300 people were tragically killed.
+
+280,000 people were forced to leave their homes after the tragic 2010 eruption.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 5, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Lava', 'type': 'org', 'score': 5, 'label': {'eng': 'Lava'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcano', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_ash', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Volcanic ash'}}, {'uri': 'http://en.wikipedia.org/wiki/Fault_(geology)', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Fault (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/Ring_of_Fire', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Ring of Fire'}}, {'uri': 'http://en.wikipedia.org/wiki/Earthquake', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Earthquake'}}, {'uri': 'http://en.wikipedia.org/wiki/Stratovolcano', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Stratovolcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Avalanche', 'type': 'org', 'score': 2, 'label': {'eng': 'Avalanche'}}, {'uri': 'http://en.wikipedia.org/wiki/Twitter', 'type': 'org', 'score': 2, 'label': {'eng': 'Twitter'}}, {'uri': 'http://en.wikipedia.org/wiki/Java', 'type': 'loc', 'score': 1, 'label': {'eng': 'Java'}, 'location': {'type': 'place', 'label': {'eng': 'Java'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}]",https://www.thescottishsun.co.uk/wp-content/uploads/sites/2/2023/03/newspress-collage-21680094-1678565159664.jpg?1678565989&strip=all&quality=100&w=1920&h=1080&crop=1,eng-8468195,-0.03529411764705881,416262000,1,thescottishsun.co.uk,news,The Scottish Sun,Mount Merapi Lava Volcano Indonesia Volcanic ash Fault (geology) Ring of Fire Earthquake Stratovolcano Avalanche Twitter Java,United-Kingdom,UK,?,,Conservative-Populism-Euroscepticism,https:en.wikipedia.orgwikiThe_Sun_(United_Kingdom),C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,11,20,20,03-11
+34,7442656491,eng,False,2023-03-12,07:06:00,2023-03-12 07:06:00,2023-03-12T07:03:00Z,news,0.729411780834198,https://www.dailymail.co.uk/news/article-11849917/Horror-moment-Indonesias-Mount-Merapi-erupts-Java-shooting-giant-ash-cloud-sky.html,Horror moment Indonesia's Mount Merapi erupts leading to nearby panic,"Indonesia's Mount Merapi has erupted in spectacular fashion, spewing a giant ash cloud into the sky and closing down all mining and tourism.
+
+The dramatic eruption on Saturday sent avalanches of lava and boiling gas clouds seven kilometres down the mountain's slopes leading to the urgent shut-down orders.
+
+The eruption sent hot clouds 100 metres into the air and the ash spewed out blocked out the sun and blanketed villages with debris.
+
+Merapi is Indonesia's most active volcano and is located on the heavily-populated island of Java.
+
+With more than 151.6 million residents, Java is considered world's most populated island.
+
+Indonesia's Mount Merapi has erupted in spectacular fashion, spewing a giant ash cloud into the sky and closing down all mining and tourism
+
+The eruption sent hot clouds 100 metres into the air and the ash spewed out blocked out the sun and blanketed villages with debris
+
+Around 250,000 people live within 10 kilometres of the crater and they were told to keep at least 7km away from it
+
+People living on Merapi's slopes were told keep 7 kilometres away from the crater be aware of the huge dangers posed by lava flows.
+
+Approximately a quarter of a million people live within 10 kilometres of the 2,968-metre mountain.
+
+Merapi is the most active of Indonesia's 120 live volcanoes, repeatedly erupting recently with lava and dangerous gas clouds.
+
+It's last big eruption in 2010 killed 347 people and made 20,000 villagers homeless.
+
+The latest eruption is understood to be Merapi's biggest lava flow since the alert level for the peak were raised in November 2020.
+
+No casualties have been reported yet.","[{'uri': 'peter_vincent@dailymail.co.uk', 'name': 'Peter Vincent', 'type': 'author', 'isAgency': False}]","[{'uri': 'http://en.wikipedia.org/wiki/Volcanic_ash', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Volcanic ash'}}, {'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 5, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Mining', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Mining'}}, {'uri': 'http://en.wikipedia.org/wiki/Tourism', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Tourism'}}, {'uri': 'http://en.wikipedia.org/wiki/Lava', 'type': 'org', 'score': 3, 'label': {'eng': 'Lava'}}, {'uri': 'http://en.wikipedia.org/wiki/Avalanche', 'type': 'org', 'score': 3, 'label': {'eng': 'Avalanche'}}, {'uri': 'http://en.wikipedia.org/wiki/Java', 'type': 'loc', 'score': 3, 'label': {'eng': 'Java'}, 'location': {'type': 'place', 'label': {'eng': 'Java'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Active_volcano', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Active volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_crater', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Volcanic crater'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcano', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Mountain', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Mountain'}}]",https://i.dailymail.co.uk/1s/2023/03/12/06/68599605-0-image-a-2_1678602664984.jpg,eng-8468195,-0.05098039215686279,416300760,1,dailymail.co.uk,news,Daily Mail Online,Volcanic ash Mount Merapi Indonesia Mining Tourism Lava Avalanche Java Active volcano Volcanic crater Volcano Mountain,United-Kingdom,UK,?,,Center-left,ChatGPT,C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,12,6,7,03-12
+3,7446716697,eng,False,2023-03-14,16:05:00,2023-03-14 16:05:00,2023-03-14T15:57:00Z,news,0.8313725590705872,https://www.travelandtourworld.com/news/article/tourism-halted-in-mt-merapi-indonesia-as-volcano-erupts-spewing-lava-hot-clouds/,"Tourism halted in Mt. Merapi, Indonesia as volcano erupts spewing lava, hot clouds - Travel And Tour World","Tourism and mining activities have been halted on Mount Merapi in Indonesia. Mount Merapi is the country's most active volcano which erupted Saturday with avalanches of blistering gas clouds and lava.
+
+Merapi, located on the heavily populated Indonesian island of Java, emitted clouds of hot ash and a combination of rock, lava, and gas that went up to 7 kilometres (4.3 miles) down its slopes. According to the National Disaster Management Agency's spokesperson, Abdul Muhari, a column of hot clouds soared 100 metres (yards) into the air.
+
+Merapi is the most active of Indonesia's more than 120 active volcanoes, and it has lately erupted with lava and gas clouds many times. Its most recent significant eruption killed 347 people and displaced 20,000 villages in 2010.
+
+During the day, the eruption obscured the sun and buried numerous settlements with falling ash. There have been no recorded casualties.
+
+According to Hanik Humaida, the head of Yogyakarta's Volcanology and Geological Hazard Mitigation Center, it was Merapi's largest lava flow since officials increased the alert level to the second-highest in November 2020.
+
+Residents on Merapi's slopes were instructed to keep 7 kilometres (4.3 miles) away from the crater's entrance and be wary of the dangers presented by lava, according to her.
+
+The peak lies around 30 kilometres (18 miles) from Yogyakarta, an old heartland of Javanese culture and the seat of royal dynasties dating back centuries. Within 10 kilometres (6 miles) of the volcano, around a quarter million people dwell.
+
+Indonesia, a 270-million-people island, is prone to earthquakes and volcanic activity due to its location along the Pacific Ocean's ""Ring of Fire,"" a horseshoe-shaped sequence of seismic fault lines.
+
+Mount Semeru, Java's tallest volcano, erupted in December 2021, killing 48 people and leaving 36 missing.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Mount_Merapi', 'type': 'loc', 'score': 5, 'label': {'eng': 'Mount Merapi'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Lava', 'type': 'org', 'score': 5, 'label': {'eng': 'Lava'}}, {'uri': 'http://en.wikipedia.org/wiki/Indonesia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Indonesia'}, 'location': {'type': 'country', 'label': {'eng': 'Indonesia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanic_ash', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Volcanic ash'}}, {'uri': 'http://en.wikipedia.org/wiki/Active_volcano', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Active volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Avalanche', 'type': 'org', 'score': 3, 'label': {'eng': 'Avalanche'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcanology', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Volcanology'}}, {'uri': 'http://en.wikipedia.org/wiki/Volcano', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Volcano'}}, {'uri': 'http://en.wikipedia.org/wiki/Java', 'type': 'loc', 'score': 2, 'label': {'eng': 'Java'}, 'location': {'type': 'place', 'label': {'eng': 'Java'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Yogyakarta', 'type': 'loc', 'score': 2, 'label': {'eng': 'Yogyakarta'}, 'location': {'type': 'place', 'label': {'eng': 'Yogyakarta'}, 'country': {'type': 'country', 'label': {'eng': 'Indonesia'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Javanese_culture', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Javanese culture'}}, {'uri': 'http://en.wikipedia.org/wiki/Semeru', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Semeru'}}, {'uri': 'http://en.wikipedia.org/wiki/Fault_(geology)', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Fault (geology)'}}, {'uri': 'http://en.wikipedia.org/wiki/Ring_of_Fire', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Ring of Fire'}}, {'uri': 'http://en.wikipedia.org/wiki/Earthquake', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Earthquake'}}, {'uri': 'http://en.wikipedia.org/wiki/Pacific_Ocean', 'type': 'loc', 'score': 1, 'label': {'eng': 'Pacific Ocean'}, 'location': None}]",https://www.travelandtourworld.com/wp-content/uploads/2023/03/Indonesia-as-volcano-erupts-1.jpg,eng-8468195,-0.04313725490196074,416505900,1,travelandtourworld.com,news,Travel And Tour World,Mount Merapi Lava Indonesia Volcanic ash Active volcano Avalanche Volcanology Volcano Java Yogyakarta Javanese culture Semeru Fault (geology) Ring of Fire Earthquake Pacific Ocean,United-Kingdom,UK,?,,unknown,?,C4,C2,Europe,EU,Christian,12,21,17,15,15,10,10,12,15,9,34,14,22,35,89,66,35,51,69,?,?,North Atlantic Treaty Organization (NATO),NATO,?,?,English-speaking,Eng,-1,,,0,False,2023,3,14,5,16,03-14

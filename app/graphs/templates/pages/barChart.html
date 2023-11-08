@@ -1,0 +1,123 @@
+<!-- Main content-->
+<div class="main-content">
+    <!-- Header-->
+    <div class="container-fluid bg-gradient-success">
+        <div class="row">
+            <h1 class="text-white">Quantitative Analysis</h1>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluid" id="dropdowns">
+        <div class="row">
+            <select id="eventSelection">
+                <option value="select" selected="selected">Select Event</option>
+                <option value="event1">Event1</option>
+                <option value="event2">Event2</option>
+            </select>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluid">
+        <div class="row" id="dropdown3" style="display:none;">
+            <select id="eventSelection2">
+                <option value="select" selected="selected">Select Barrier</option>
+                <option value="Linguistic">Linguistic</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Political">Political</option>
+                <option value="Geographical">Geographical</option>
+                <option value="Economic">Economic</option>
+            </select>
+            <script type="module">
+                import define from 'http://cleopatra.ijs.si/sensoranalysis/static/js/index2.js';
+                import {Runtime, Library, Inspector} from './static/js/runtime.js';
+
+                var imported = true;
+                $('select#eventSelection2').on('change', function () {
+                console.log("barrier is selected")
+                    var eventSelected = $("select#eventSelection option:selected").val();
+                    var barrierSelected = $("select#eventSelection3 option:selected").val();
+                    var event = "";
+
+                    if (barrierSelected == "select") {
+
+                    } else {
+                        if (eventSelected == "select") {
+                            event = 'http://cleopatra.ijs.si/sensoranalysis/static/100NewsArticles.csv'
+                        } else if (eventSelected == "event1") {
+                            event = 'http://cleopatra.ijs.si/sensoranalysis/static/100NewsArticles.csv'
+                        } else if (eventSelected == "event2") {
+                            event = 'http://cleopatra.ijs.si/sensoranalysis/static/1600NewsArticles.csv'
+                        }
+                    }
+                    var barrier = "";
+                    if (barrierSelected == "select") {
+                    } else {
+                        if (barrierSelected == "Linguistic") {
+                            barrier = 'language'
+                        } else if (barrierSelected == "Cultural") {
+                            barrier = 'culture'
+                        } else if (barrierSelected == "Political") {
+                            barrier = 'polalign'
+                        } else if (barrierSelected == "Geographical") {
+                            barrier = 'country'
+                        } else if (barrierSelected == "Economic") {
+                            barrier = 'economic'
+                        }
+                    }
+                    if (imported == true) {
+                        imported = false;
+                        const runtime = new Runtime();
+                        const el = document.getElementById("chart");
+                        //const main = runtime.module(define, name => {if (name == 'update') {});
+                        var allEle = Inspector.into(el)
+                        console.log(allEle.length)
+                        console.log(allEle.type)
+                        for (a in allEle) {
+                            console.log("here")
+                            console.log(a);
+                        }
+                        function renderNotebook(notebook, cellNames) {
+                            new Runtime().module(notebook, name => {
+                                console.log(name)
+                                if (cellNames.includes(name)) {
+                                    return new Inspector(document.querySelector(`#${name}`));
+                                }
+                            });
+                        }
+                        renderNotebook(define, ["viewofdate", "legend", "chart", "update"]);
+                        //const main = runtime.module(define, allEle);
+                    }
+                });
+            $('select#eventSelection').on('change', function () {
+                console.log("events  is selected")
+                var selected = $("select#eventSelection option:selected").val();
+                if (selected == "select") {
+                } else {
+                    document.getElementById("dropdown3").style.display = 'block';
+					document.getElementById("explanation").style.display = 'block';
+                }
+            });
+        </script>
+    </div>
+    </div>
+    <br><br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="viewofdate"></div>
+            <div id="legend"></div>
+            <div id="chart" style="width:100%;height:100%;margin-left:0;">
+                <div id="update"></div>
+            </div>
+        </div>
+    </div>
+	<br><br>
+	<div class="container-fluid">
+        <div  class='row' id='explanation'  style="display:none;margin-left:160px;">
+			<h3 style='clear:both' class="subhead"></h3>
+	  </div>
+    </div>
+	<br><br>
+</div>
+
+

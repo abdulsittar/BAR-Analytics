@@ -1,0 +1,6 @@
+,path,name,continent,country,culture,dateFrom,dateTo,economic,group,lang,polalign,source,url,Economic Blocs,Linguistic Blocs,Military/Defense Blocs,Political/Regional Blocs,Religions
+0,/Event,Event,,,,,,,0,,,,,,,,,
+1,/Event/7435396002,7435396002,North America,United-States,C4,2023-03-07T20:50:00,2023-03-07T20:50:00,C2,0,eng,unknown,adweek.com,unknown,North American Free Trade Agreement (NAFTA),English-speaking,North Atlantic Treaty Organization (NATO),?,Christian
+2,/Event/7435396002/7435409064,7435409064,North America,,,2023-03-07T20:50:00,2023-03-07T21:04:00,,7435396002,eng,,lostremote.com,,North American Free Trade Agreement (NAFTA),English-speaking,North Atlantic Treaty Organization (NATO),?,Christian
+3,/Event/7438796580,7438796580,Europe,United-Kingdom,C4,2023-03-09T17:27:00,2023-03-09T17:27:00,C2,0,eng,unknown,marketbusinessnews.com,unknown,?,English-speaking,North Atlantic Treaty Organization (NATO),?,Christian
+4,/Event/7438796580/7438993164,7438993164,Europe,United-Kingdom,C4,2023-03-09T17:27:00,2023-03-09T19:58:00,C2,7438796580,eng,unknown,marketbusinessnews.com,unknown,?,English-speaking,North Atlantic Treaty Organization (NATO),?,Christian
