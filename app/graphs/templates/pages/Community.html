@@ -1,0 +1,115 @@
+<!-- Main content -->
+<div class="main-content"  style="height:100%; width:100%;">
+    <div class="container-fluid bg-gradient-success">
+        <div class="row">
+            <h1 class="text-white">Hierarchical View</h1>
+        </div>
+    </div>
+    <br><br>
+	  <script src="http://cleopatra.ijs.si/sensoranalysis/static/assets/js/echarts.min.js"></script>
+      <script src="http://cleopatra.ijs.si/sensoranalysis/static/assets/js/jquery-3.2.1.min.js"></script>
+	
+        <script type="text/javascript">
+		$(document).ready(function(){
+		
+		$('select#barrierCom').on('change', function () {
+		var myChart = echarts.init(document.getElementById('main'));
+		myChart.showLoading();
+		
+        $.ajax({
+            url: "/sensoranalysis/generateCommunity",
+            type: "GET",
+            contentType: 'application/json;charset=UTF-8',
+            data: {
+                'barrier': document.getElementById('barrierCom').value
+            },
+            dataType: "json",
+            success: function (data) {
+				console.log(data)
+				
+				myChart.setOption(option = {
+					tooltip: {
+					trigger: 'item',
+					triggerOn: 'mousemove'
+					},
+			series: [
+				{
+				type: 'tree',
+				data: [data],
+				top: '18%',
+				bottom: '14%',
+				layout: 'radial',
+				symbol: 'emptyCircle',
+				symbolSize: 7,
+				initialTreeDepth: 3,
+				animationDurationUpdate: 750,
+				emphasis: {
+					focus: 'descendant'
+					}
+					}]});   
+				myChart.hideLoading();
+				}
+		});
+    });
+			
+		//$('select#event').on('change', function () {
+		//document.getElementById("explanation").style.display = 'block';
+		// var selected = $("select#event option:selected").val();
+		//$("#HCform_1").html('<button id="btn1" class="btn btn-sm bg-gradient-success  text-white">Hierarchical Clusters</button>')
+		});
+        </script>
+    <div class="container-fluid">
+       <!-- <script type="text/javascript">
+                $('select#event').on('change', function(){
+                    console.log("event  is selected")
+                var selected = $("select#event option:selected").val();
+                if(selected == "select") {} else { document.getElementById("dropdown2").style.display = 'block'; }});
+            </script>-->
+        <div class="row" id="dropdown2"">
+                <select id="barrierCom">
+                    <option value="select" selected="selected">Select Barrier</option>
+                                <option value="Linguistic">Linguistic</option>
+                                
+                                <option value="Political">Political</option>
+                                <option value="Geographical">Geographical</option>
+                                
+								<option value="Continent">Continent</option>
+								<option value="Religions">Religions</option>
+								<option value="economicblocs">Economic Blocs</option>
+								<option value="militarydefensebloc">Military/Defense Bloc</option>
+								<option value="politicalregionalbloc">Political/Regional Bloc</option>
+								<option value="linguisticbloc">Linguistic Bloc</option>
+								
+								<optgroup  label="Economic">
+								<option value="SafetyandSecurity">Safety and Security</option>
+								<option value="PersonalFreedom">Personal Freedom</option>
+								<option value="Governance">Governance</option>
+								<option value="SocialCapital">Social Capital</option>
+								<option value="InvestmentEnvironment">Investment Environment</option>
+								<option value="EnterpriseConditions">Enterprise Conditions</option>
+								<option value="MarketAccessandInfrastructure">Infrastructure and Market Access</option>
+								<option value="EconomicQuality">Economic Quality</option>
+								<option value="LivingConditions">Living Conditions</option>
+								<option value="Health">Health</option>
+								<option value="Education">Education</option>
+								<option value="NaturalEnvironment">Natural Environment</option>
+								</optgroup>
+								
+								<optgroup label="Cultural">
+								<option value="PowerDistance">Power Distance</option>
+								<option value="individualism">Individualism vs. collectivism</option>
+								<option value="unscertainty">Uncertainty avoidance</option>
+								<option value="masculinity">Masculinity vs. feminity</option>
+								<option value="longterm">Long-term orientation vs. short-term orientation</option>
+								<option value="indulgence">Indulgence vs. restraint</option>
+								</optgroup>
+                </select>
+						
+        </div>
+		<br>
+		<h4 style="color:Gray; margin-left:10px;">These barriers are calculated based on the location of the headquarter of the news publisher except for the linguistic barrier which is based on the language of the article.
+</h4>
+    </div>
+    <br>
+<div class="container-fluid" id="main" style="margin: auto;width:100vh; height:100vh;"></div>
+</div>

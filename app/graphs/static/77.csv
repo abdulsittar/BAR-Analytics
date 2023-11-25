@@ -1,0 +1,196 @@
+,uri,lang,isDuplicate,date,time,dateTime,dateTimePub,dataType,sim,url,title,body,authors,concepts,image,eventUri,sentiment,wgt,relevance,source.uri,source.dataType,source.title,all_concepts,con-name,country,lang-name,language,Political-Alignment,wiki-url,Cultural-Class,Economic-Class,Continent-name,Continent,Religions,2019Rank-From,SafetyandSecurity,PersonalFreedom,Governance,SocialCapital,InvestmentEnvironment,EnterpriseConditions,MarketAccessandInfrastructure,EconomicQuality,LivingConditions,Health,Education,NaturalEnvironment,PowerDistance,Individualism,Masculinity,UncertaintyAvoidance,LongTermOrientation,Indulgence,economicblocs-name,economicblocs,militarydefenseblocs-name,militarydefenseblocs,politicalregionalblocs-name,politicalregionalblocs,linguisticblocs-name,linguisticblocs,proScore,destination,parent,count,status,year,month,day,min,hour,MD
+67,715681240,eng,False,2017-08-26,11:00:00,2017-08-26 11:00:00,,news,0.5215686559677124,http://yalibnan.com/2017/08/23/global-reaction-to-trumps-speech-on-the-new-u-s-strategy-in-afghanistan/#comment-337460,Comment on Global reaction to Trump's speech on the new U.S. strategy in Afghanistan by Hannibal,"Global reaction to President Donald Trump's speech on the new U.S. strategy in Afghanistan:
+
+Afghanistan's chief executive is welcoming President Trump's strategy for Afghanistan, calling it a unique opportunity to fight terrorists in the region and insisting that it renews the U.S. commitment to Afghanistan and its people.
+
+Abdullah Abdullah, the country's second most powerful official behind the president, said during a news conference Tuesday that the U.S. strategy marks a unique opportunity to achieve peaceful objectives in the region.
+
+""The regional aspect of this strategy is very clear. It shows that the problem was very well identified,"" he said.
+
+Abdullah noted that the strategy seeks clear measures against safe havens for extremist fighters.
+
+He thanked President Trump for the strategy and said the Afghan National Unity government is committed to reforms, fighting corruption and strengthening its security forces.
+
+--
+
+China is defending its close ally Pakistan following comments by U.S. President Donald Trump that the country was not doing enough to shut down safe havens for terror groups operating out of its territory.
+
+Foreign ministry spokeswoman Hua Chunying on Tuesday said Pakistan lies on the front line of the anti-terrorism struggle and has made ""great sacrifices"" in battling insurgents who pose a threat to the region and the world.
+
+In his speech Monday, Trump said the U.S. ""can no longer be silent"" about terrorist safe havens in Pakistan and that the country gives sanctuary to ""agents of chaos, violence and terror.""
+
+China and Pakistan have close economic, political and security ties dating back decades, based partly on their shared distrust of India, with which both have disputed borders.
+
+--
+
+NATO's chief is welcoming Trump's new strategy on Afghanistan and says the U.S.-led military alliance remains committed to the conflict-torn country.
+
+NATO Secretary-General Jens Stoltenberg welcomed Trump's ""conditions-based approach,"" as the president moves to a troop presence based on needs rather than timelines.
+
+More than 12,000 troops from NATO and partner countries have been helping to ""train, advise and assist"" Afghan security forces since January 2015, after the alliance wound down combat operations there.
+
+While Washington is expected to seek more troops from its allies, Stoltenberg said that ""NATO allies and partners have already committed to increasing our presence in Afghanistan.""
+
+He said ""our aim remains to ensure that Afghanistan never again becomes a safe haven for terrorists who would attack our own countries.""
+
+--
+
+India has welcomed Trump's demand that Pakistan stop offering safe havens to terror groups operating out of its territory, a long-standing complaint that New Delhi has held against Islamabad.
+
+India's Ministry of External Affairs said in a statement that it welcomed Trump's ""determination to enhance efforts to overcome the challenges faced by Afghanistan and in confronting issues of safe havens and other forms of cross-border support enjoyed by terrorists.""
+
+Without naming rival Pakistan, the ministry said, ""India shares these concerns and objectives.""
+
+India, the largest regional provider of reconstruction aid to Afghanistan, totaling more than $2 billion, also reaffirmed its policy of extending assistance to the country.
+
+""We are committed to supporting the Government and the people of Afghanistan in their efforts to bring peace, security, stability and prosperity in their country,"" said the statement, issued hours after Trump's speech.
+
+--
+
+An Australian military analyst says Trump's speech set a ""fairly low bar"" in terms of success.
+
+Military strategist David Kilcullen told the Australian Broadcasting Corp. that Trump isn't seeking to promote democracy or counter corruption, but simply noted military outcomes he is trying to achieve. Kilcullen said: ""I think this is carefully shrouded in triumphalist rhetoric but it is actually quite a modest set of strategic goals.""
+
+Kilcullen said Trump's speech sounded as if it had been written by military officers working in the White House. Trump offered few specifics, such as whether more troops would be sent to Afghanistan. The president said the U.S. would shift away from a ""time-based"" approach, instead linking its assistance to results on the ground.
+
+Kilcullen said Trump's speech focused on fighting terrorism, rather than fighting an insurgency, and that will require more use of lethal force and a restrained approach to nation-building and economic development.
+
+--
+
+A Taliban spokesman dismissed Trump's remarks on Afghanistan.
+
+Spokesman Zabiullah Mujahid told The Associated Press, ""The whole speech was old."" He said the Taliban will come out with a more detailed response, but he is initially calling Trump's policy outline ""unclear.""
+
+Last week the Taliban issued a 1,600-word open letter to Trump warning against a troop surge, saying it would prolong what is already the United States' longest war. Trump steered clear of discussing troop numbers, but said U.S. forces are in Afghanistan to win.
+
+The Taliban have also said they aren't ready for any peace talks, at least not until the U.S. and NATO give a time frame for withdrawal - something Trump says isn't going to happen.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Abdullah_Abdullah', 'type': 'person', 'score': 5, 'label': {'eng': 'Abdullah Abdullah'}}, {'uri': 'http://en.wikipedia.org/wiki/Donald_Trump', 'type': 'person', 'score': 5, 'label': {'eng': 'Donald Trump'}}, {'uri': 'http://en.wikipedia.org/wiki/NATO', 'type': 'loc', 'score': 5, 'label': {'eng': 'NATO'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Terrorism', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Terrorism'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States', 'type': 'loc', 'score': 5, 'label': {'eng': 'United States'}, 'location': {'type': 'country', 'label': {'eng': 'United States'}}}, {'uri': 'http://en.wikipedia.org/wiki/Pakistan', 'type': 'loc', 'score': 5, 'label': {'eng': 'Pakistan'}, 'location': {'type': 'country', 'label': {'eng': 'Pakistan'}}}, {'uri': 'http://en.wikipedia.org/wiki/India', 'type': 'loc', 'score': 5, 'label': {'eng': 'India'}, 'location': {'type': 'country', 'label': {'eng': 'India'}}}, {'uri': 'http://en.wikipedia.org/wiki/Afghanistan', 'type': 'loc', 'score': 5, 'label': {'eng': 'Afghanistan'}, 'location': {'type': 'country', 'label': {'eng': 'Afghanistan'}}}, {'uri': 'http://en.wikipedia.org/wiki/China', 'type': 'loc', 'score': 4, 'label': {'eng': 'China'}, 'location': {'type': 'country', 'label': {'eng': 'China'}}}, {'uri': 'http://en.wikipedia.org/wiki/Military_alliance', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Military alliance'}}, {'uri': 'http://en.wikipedia.org/wiki/Afghan_National_Security_Forces', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Afghan National Security Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Pakistan)', 'type': 'org', 'score': 3, 'label': {'eng': 'Ministry of Foreign Affairs (Pakistan)'}}, {'uri': 'http://en.wikipedia.org/wiki/Jens_Stoltenberg', 'type': 'person', 'score': 3, 'label': {'eng': 'Jens Stoltenberg'}}, {'uri': 'http://en.wikipedia.org/wiki/Extremism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Extremism'}}, {'uri': 'http://en.wikipedia.org/wiki/Insurgency', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Insurgency'}}, {'uri': 'http://en.wikipedia.org/wiki/Counter-terrorism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Counter-terrorism'}}, {'uri': 'http://en.wikipedia.org/wiki/Political_corruption', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Political corruption'}}, {'uri': 'http://en.wikipedia.org/wiki/Secretary-General_of_the_United_Nations', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Secretary-General of the United Nations'}}, {'uri': 'http://en.wikipedia.org/wiki/ABC_News_(Australia)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'ABC News (Australia)'}}, {'uri': 'http://en.wikipedia.org/wiki/Kilcullen', 'type': 'loc', 'score': 2, 'label': {'eng': 'Kilcullen'}, 'location': {'type': 'place', 'label': {'eng': 'Kilcullen'}, 'country': {'type': 'country', 'label': {'eng': 'Ireland'}}}}, {'uri': 'http://en.wikipedia.org/wiki/David_Kilcullen', 'type': 'person', 'score': 2, 'label': {'eng': 'David Kilcullen'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_External_Affairs_(India)', 'type': 'org', 'score': 2, 'label': {'eng': 'Ministry of External Affairs (India)'}}, {'uri': 'http://en.wikipedia.org/wiki/Australian_Defence_Force', 'type': 'org', 'score': 2, 'label': {'eng': 'Australian Defence Force'}}, {'uri': 'http://en.wikipedia.org/wiki/Taliban', 'type': 'org', 'score': 2, 'label': {'eng': 'Taliban'}}, {'uri': 'http://en.wikipedia.org/wiki/Democracy', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Democracy'}}, {'uri': 'http://en.wikipedia.org/wiki/White_House', 'type': 'wiki', 'score': 2, 'label': {'eng': 'White House'}}, {'uri': 'http://en.wikipedia.org/wiki/Washington,_D.C.', 'type': 'loc', 'score': 2, 'label': {'eng': 'Washington, D.C.'}, 'location': {'type': 'place', 'label': {'eng': 'Washington, D.C.'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/New_Delhi', 'type': 'loc', 'score': 2, 'label': {'eng': 'New Delhi'}, 'location': {'type': 'place', 'label': {'eng': 'New Delhi'}, 'country': {'type': 'country', 'label': {'eng': 'India'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Islamabad', 'type': 'loc', 'score': 2, 'label': {'eng': 'Islamabad'}, 'location': {'type': 'place', 'label': {'eng': 'Islamabad'}, 'country': {'type': 'country', 'label': {'eng': 'Pakistan'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/Zabiullah_Mujahid', 'type': 'person', 'score': 1, 'label': {'eng': 'Zabiullah Mujahid'}}, {'uri': 'http://en.wikipedia.org/wiki/Nation-building', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Nation-building'}}, {'uri': 'http://en.wikipedia.org/wiki/Open_letter', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Open letter'}}, {'uri': 'http://en.wikipedia.org/wiki/Economic_development', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Economic development'}}]",,eng-3382459,0.223529411764706,241441200,1,yalibnan.com,news,Ya Libnan,"Abdullah Abdullah Donald Trump NATO Terrorism United States Pakistan India Afghanistan China Military alliance Afghan National Security Forces Ministry of Foreign Affairs (Pakistan) Jens Stoltenberg Extremism Insurgency Counter-terrorism Political corruption Secretary-General of the United Nations ABC News (Australia) Kilcullen David Kilcullen Ministry of External Affairs (India) Australian Defence Force Taliban Democracy White House Washington, D.C. New Delhi Islamabad Associated Press Zabiullah Mujahid Nation-building Open letter Economic development",Lebanon,LB,,,,,,,Asia,AS,Muslim,112.0,128.0,100.0,143.0,165.0,104.0,104.0,101.0,161.0,83.0,102.0,65.0,116.0,62.0,43.0,48.0,57.0,22.0,10.0,,,,,Arab League,AL,Arabic-speaking,Ara,-1,,,0,False,2017,8,26,0,11,2017-08-26
+56,715814592,eng,False,2017-08-26,18:09:00,2017-08-26 18:09:00,,news,0.5372549295425415,http://yalibnan.com/2017/08/23/global-reaction-to-trumps-speech-on-the-new-u-s-strategy-in-afghanistan/#comment-337469,Comment on Global reaction to Trump's speech on the new U.S. strategy in Afghanistan by Rudy1947,"Global reaction to President Donald Trump's speech on the new U.S. strategy in Afghanistan:
+
+Afghanistan's chief executive is welcoming President Trump's strategy for Afghanistan, calling it a unique opportunity to fight terrorists in the region and insisting that it renews the U.S. commitment to Afghanistan and its people.
+
+Abdullah Abdullah, the country's second most powerful official behind the president, said during a news conference Tuesday that the U.S. strategy marks a unique opportunity to achieve peaceful objectives in the region.
+
+""The regional aspect of this strategy is very clear. It shows that the problem was very well identified,"" he said.
+
+Abdullah noted that the strategy seeks clear measures against safe havens for extremist fighters.
+
+He thanked President Trump for the strategy and said the Afghan National Unity government is committed to reforms, fighting corruption and strengthening its security forces.
+
+--
+
+China is defending its close ally Pakistan following comments by U.S. President Donald Trump that the country was not doing enough to shut down safe havens for terror groups operating out of its territory.
+
+Foreign ministry spokeswoman Hua Chunying on Tuesday said Pakistan lies on the front line of the anti-terrorism struggle and has made ""great sacrifices"" in battling insurgents who pose a threat to the region and the world.
+
+In his speech Monday, Trump said the U.S. ""can no longer be silent"" about terrorist safe havens in Pakistan and that the country gives sanctuary to ""agents of chaos, violence and terror.""
+
+China and Pakistan have close economic, political and security ties dating back decades, based partly on their shared distrust of India, with which both have disputed borders.
+
+--
+
+NATO's chief is welcoming Trump's new strategy on Afghanistan and says the U.S.-led military alliance remains committed to the conflict-torn country.
+
+NATO Secretary-General Jens Stoltenberg welcomed Trump's ""conditions-based approach,"" as the president moves to a troop presence based on needs rather than timelines.
+
+More than 12,000 troops from NATO and partner countries have been helping to ""train, advise and assist"" Afghan security forces since January 2015, after the alliance wound down combat operations there.
+
+While Washington is expected to seek more troops from its allies, Stoltenberg said that ""NATO allies and partners have already committed to increasing our presence in Afghanistan.""
+
+He said ""our aim remains to ensure that Afghanistan never again becomes a safe haven for terrorists who would attack our own countries.""
+
+--
+
+India has welcomed Trump's demand that Pakistan stop offering safe havens to terror groups operating out of its territory, a long-standing complaint that New Delhi has held against Islamabad.
+
+India's Ministry of External Affairs said in a statement that it welcomed Trump's ""determination to enhance efforts to overcome the challenges faced by Afghanistan and in confronting issues of safe havens and other forms of cross-border support enjoyed by terrorists.""
+
+Without naming rival Pakistan, the ministry said, ""India shares these concerns and objectives.""
+
+India, the largest regional provider of reconstruction aid to Afghanistan, totaling more than $2 billion, also reaffirmed its policy of extending assistance to the country.
+
+""We are committed to supporting the Government and the people of Afghanistan in their efforts to bring peace, security, stability and prosperity in their country,"" said the statement, issued hours after Trump's speech.
+
+--
+
+An Australian military analyst says Trump's speech set a ""fairly low bar"" in terms of success.
+
+Military strategist David Kilcullen told the Australian Broadcasting Corp. that Trump isn't seeking to promote democracy or counter corruption, but simply noted military outcomes he is trying to achieve. Kilcullen said: ""I think this is carefully shrouded in triumphalist rhetoric but it is actually quite a modest set of strategic goals.""
+
+Kilcullen said Trump's speech sounded as if it had been written by military officers working in the White House. Trump offered few specifics, such as whether more troops would be sent to Afghanistan. The president said the U.S. would shift away from a ""time-based"" approach, instead linking its assistance to results on the ground.
+
+Kilcullen said Trump's speech focused on fighting terrorism, rather than fighting an insurgency, and that will require more use of lethal force and a restrained approach to nation-building and economic development.
+
+--
+
+A Taliban spokesman dismissed Trump's remarks on Afghanistan.
+
+Spokesman Zabiullah Mujahid told The Associated Press, ""The whole speech was old."" He said the Taliban will come out with a more detailed response, but he is initially calling Trump's policy outline ""unclear.""
+
+Last week the Taliban issued a 1,600-word open letter to Trump warning against a troop surge, saying it would prolong what is already the United States' longest war. Trump steered clear of discussing troop numbers, but said U.S. forces are in Afghanistan to win.
+
+The Taliban have also said they aren't ready for any peace talks, at least not until the U.S. and NATO give a time frame for withdrawal - something Trump says isn't going to happen.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Abdullah_Abdullah', 'type': 'person', 'score': 5, 'label': {'eng': 'Abdullah Abdullah'}}, {'uri': 'http://en.wikipedia.org/wiki/Donald_Trump', 'type': 'person', 'score': 5, 'label': {'eng': 'Donald Trump'}}, {'uri': 'http://en.wikipedia.org/wiki/NATO', 'type': 'loc', 'score': 5, 'label': {'eng': 'NATO'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Terrorism', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Terrorism'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States', 'type': 'loc', 'score': 5, 'label': {'eng': 'United States'}, 'location': {'type': 'country', 'label': {'eng': 'United States'}}}, {'uri': 'http://en.wikipedia.org/wiki/Pakistan', 'type': 'loc', 'score': 5, 'label': {'eng': 'Pakistan'}, 'location': {'type': 'country', 'label': {'eng': 'Pakistan'}}}, {'uri': 'http://en.wikipedia.org/wiki/India', 'type': 'loc', 'score': 5, 'label': {'eng': 'India'}, 'location': {'type': 'country', 'label': {'eng': 'India'}}}, {'uri': 'http://en.wikipedia.org/wiki/Afghanistan', 'type': 'loc', 'score': 5, 'label': {'eng': 'Afghanistan'}, 'location': {'type': 'country', 'label': {'eng': 'Afghanistan'}}}, {'uri': 'http://en.wikipedia.org/wiki/China', 'type': 'loc', 'score': 4, 'label': {'eng': 'China'}, 'location': {'type': 'country', 'label': {'eng': 'China'}}}, {'uri': 'http://en.wikipedia.org/wiki/Military_alliance', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Military alliance'}}, {'uri': 'http://en.wikipedia.org/wiki/Afghan_National_Security_Forces', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Afghan National Security Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Pakistan)', 'type': 'org', 'score': 3, 'label': {'eng': 'Ministry of Foreign Affairs (Pakistan)'}}, {'uri': 'http://en.wikipedia.org/wiki/Jens_Stoltenberg', 'type': 'person', 'score': 3, 'label': {'eng': 'Jens Stoltenberg'}}, {'uri': 'http://en.wikipedia.org/wiki/Extremism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Extremism'}}, {'uri': 'http://en.wikipedia.org/wiki/Insurgency', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Insurgency'}}, {'uri': 'http://en.wikipedia.org/wiki/Counter-terrorism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Counter-terrorism'}}, {'uri': 'http://en.wikipedia.org/wiki/Political_corruption', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Political corruption'}}, {'uri': 'http://en.wikipedia.org/wiki/Secretary-General_of_the_United_Nations', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Secretary-General of the United Nations'}}, {'uri': 'http://en.wikipedia.org/wiki/ABC_News_(Australia)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'ABC News (Australia)'}}, {'uri': 'http://en.wikipedia.org/wiki/Kilcullen', 'type': 'loc', 'score': 2, 'label': {'eng': 'Kilcullen'}, 'location': {'type': 'place', 'label': {'eng': 'Kilcullen'}, 'country': {'type': 'country', 'label': {'eng': 'Ireland'}}}}, {'uri': 'http://en.wikipedia.org/wiki/David_Kilcullen', 'type': 'person', 'score': 2, 'label': {'eng': 'David Kilcullen'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_External_Affairs_(India)', 'type': 'org', 'score': 2, 'label': {'eng': 'Ministry of External Affairs (India)'}}, {'uri': 'http://en.wikipedia.org/wiki/Australian_Defence_Force', 'type': 'org', 'score': 2, 'label': {'eng': 'Australian Defence Force'}}, {'uri': 'http://en.wikipedia.org/wiki/Taliban', 'type': 'org', 'score': 2, 'label': {'eng': 'Taliban'}}, {'uri': 'http://en.wikipedia.org/wiki/Democracy', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Democracy'}}, {'uri': 'http://en.wikipedia.org/wiki/White_House', 'type': 'wiki', 'score': 2, 'label': {'eng': 'White House'}}, {'uri': 'http://en.wikipedia.org/wiki/Washington,_D.C.', 'type': 'loc', 'score': 2, 'label': {'eng': 'Washington, D.C.'}, 'location': {'type': 'place', 'label': {'eng': 'Washington, D.C.'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/New_Delhi', 'type': 'loc', 'score': 2, 'label': {'eng': 'New Delhi'}, 'location': {'type': 'place', 'label': {'eng': 'New Delhi'}, 'country': {'type': 'country', 'label': {'eng': 'India'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Islamabad', 'type': 'loc', 'score': 2, 'label': {'eng': 'Islamabad'}, 'location': {'type': 'place', 'label': {'eng': 'Islamabad'}, 'country': {'type': 'country', 'label': {'eng': 'Pakistan'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/Zabiullah_Mujahid', 'type': 'person', 'score': 1, 'label': {'eng': 'Zabiullah Mujahid'}}, {'uri': 'http://en.wikipedia.org/wiki/Open_letter', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Open letter'}}, {'uri': 'http://en.wikipedia.org/wiki/Economic_development', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Economic development'}}]",,eng-3382459,0.223529411764706,241466940,1,yalibnan.com,news,Ya Libnan,"Abdullah Abdullah Donald Trump NATO Terrorism United States Pakistan India Afghanistan China Military alliance Afghan National Security Forces Ministry of Foreign Affairs (Pakistan) Jens Stoltenberg Extremism Insurgency Counter-terrorism Political corruption Secretary-General of the United Nations ABC News (Australia) Kilcullen David Kilcullen Ministry of External Affairs (India) Australian Defence Force Taliban Democracy White House Washington, D.C. New Delhi Islamabad Associated Press Zabiullah Mujahid Open letter Economic development",Lebanon,LB,,,,,,,Asia,AS,Muslim,112.0,128.0,100.0,143.0,165.0,104.0,104.0,101.0,161.0,83.0,102.0,65.0,116.0,62.0,43.0,48.0,57.0,22.0,10.0,,,,,Arab League,AL,Arabic-speaking,Ara,-1,,,0,False,2017,8,26,9,18,2017-08-26
+50,715898599,eng,False,2017-08-26,23:52:00,2017-08-26 23:52:00,,news,0.5490196347236633,http://yalibnan.com/2017/08/23/global-reaction-to-trumps-speech-on-the-new-u-s-strategy-in-afghanistan/#comment-337502,Comment on Global reaction to Trump's speech on the new U.S. strategy in Afghanistan by Omega,"Global reaction to President Donald Trump's speech on the new U.S. strategy in Afghanistan:
+
+Afghanistan's chief executive is welcoming President Trump's strategy for Afghanistan, calling it a unique opportunity to fight terrorists in the region and insisting that it renews the U.S. commitment to Afghanistan and its people.
+
+Abdullah Abdullah, the country's second most powerful official behind the president, said during a news conference Tuesday that the U.S. strategy marks a unique opportunity to achieve peaceful objectives in the region.
+
+""The regional aspect of this strategy is very clear. It shows that the problem was very well identified,"" he said.
+
+Abdullah noted that the strategy seeks clear measures against safe havens for extremist fighters.
+
+He thanked President Trump for the strategy and said the Afghan National Unity government is committed to reforms, fighting corruption and strengthening its security forces.
+
+--
+
+China is defending its close ally Pakistan following comments by U.S. President Donald Trump that the country was not doing enough to shut down safe havens for terror groups operating out of its territory.
+
+Foreign ministry spokeswoman Hua Chunying on Tuesday said Pakistan lies on the front line of the anti-terrorism struggle and has made ""great sacrifices"" in battling insurgents who pose a threat to the region and the world.
+
+In his speech Monday, Trump said the U.S. ""can no longer be silent"" about terrorist safe havens in Pakistan and that the country gives sanctuary to ""agents of chaos, violence and terror.""
+
+China and Pakistan have close economic, political and security ties dating back decades, based partly on their shared distrust of India, with which both have disputed borders.
+
+--
+
+NATO's chief is welcoming Trump's new strategy on Afghanistan and says the U.S.-led military alliance remains committed to the conflict-torn country.
+
+NATO Secretary-General Jens Stoltenberg welcomed Trump's ""conditions-based approach,"" as the president moves to a troop presence based on needs rather than timelines.
+
+More than 12,000 troops from NATO and partner countries have been helping to ""train, advise and assist"" Afghan security forces since January 2015, after the alliance wound down combat operations there.
+
+While Washington is expected to seek more troops from its allies, Stoltenberg said that ""NATO allies and partners have already committed to increasing our presence in Afghanistan.""
+
+He said ""our aim remains to ensure that Afghanistan never again becomes a safe haven for terrorists who would attack our own countries.""
+
+--
+
+India has welcomed Trump's demand that Pakistan stop offering safe havens to terror groups operating out of its territory, a long-standing complaint that New Delhi has held against Islamabad.
+
+India's Ministry of External Affairs said in a statement that it welcomed Trump's ""determination to enhance efforts to overcome the challenges faced by Afghanistan and in confronting issues of safe havens and other forms of cross-border support enjoyed by terrorists.""
+
+Without naming rival Pakistan, the ministry said, ""India shares these concerns and objectives.""
+
+India, the largest regional provider of reconstruction aid to Afghanistan, totaling more than $2 billion, also reaffirmed its policy of extending assistance to the country.
+
+""We are committed to supporting the Government and the people of Afghanistan in their efforts to bring peace, security, stability and prosperity in their country,"" said the statement, issued hours after Trump's speech.
+
+--
+
+An Australian military analyst says Trump's speech set a ""fairly low bar"" in terms of success.
+
+Military strategist David Kilcullen told the Australian Broadcasting Corp. that Trump isn't seeking to promote democracy or counter corruption, but simply noted military outcomes he is trying to achieve. Kilcullen said: ""I think this is carefully shrouded in triumphalist rhetoric but it is actually quite a modest set of strategic goals.""
+
+Kilcullen said Trump's speech sounded as if it had been written by military officers working in the White House. Trump offered few specifics, such as whether more troops would be sent to Afghanistan. The president said the U.S. would shift away from a ""time-based"" approach, instead linking its assistance to results on the ground.
+
+Kilcullen said Trump's speech focused on fighting terrorism, rather than fighting an insurgency, and that will require more use of lethal force and a restrained approach to nation-building and economic development.
+
+--
+
+A Taliban spokesman dismissed Trump's remarks on Afghanistan.
+
+Spokesman Zabiullah Mujahid told The Associated Press, ""The whole speech was old."" He said the Taliban will come out with a more detailed response, but he is initially calling Trump's policy outline ""unclear.""
+
+Last week the Taliban issued a 1,600-word open letter to Trump warning against a troop surge, saying it would prolong what is already the United States' longest war. Trump steered clear of discussing troop numbers, but said U.S. forces are in Afghanistan to win.
+
+The Taliban have also said they aren't ready for any peace talks, at least not until the U.S. and NATO give a time frame for withdrawal - something Trump says isn't going to happen.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Abdullah_Abdullah', 'type': 'person', 'score': 5, 'label': {'eng': 'Abdullah Abdullah'}}, {'uri': 'http://en.wikipedia.org/wiki/Donald_Trump', 'type': 'person', 'score': 5, 'label': {'eng': 'Donald Trump'}}, {'uri': 'http://en.wikipedia.org/wiki/NATO', 'type': 'loc', 'score': 5, 'label': {'eng': 'NATO'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Terrorism', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Terrorism'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States', 'type': 'loc', 'score': 5, 'label': {'eng': 'United States'}, 'location': {'type': 'country', 'label': {'eng': 'United States'}}}, {'uri': 'http://en.wikipedia.org/wiki/Pakistan', 'type': 'loc', 'score': 5, 'label': {'eng': 'Pakistan'}, 'location': {'type': 'country', 'label': {'eng': 'Pakistan'}}}, {'uri': 'http://en.wikipedia.org/wiki/India', 'type': 'loc', 'score': 5, 'label': {'eng': 'India'}, 'location': {'type': 'country', 'label': {'eng': 'India'}}}, {'uri': 'http://en.wikipedia.org/wiki/Afghanistan', 'type': 'loc', 'score': 5, 'label': {'eng': 'Afghanistan'}, 'location': {'type': 'country', 'label': {'eng': 'Afghanistan'}}}, {'uri': 'http://en.wikipedia.org/wiki/China', 'type': 'loc', 'score': 4, 'label': {'eng': 'China'}, 'location': {'type': 'country', 'label': {'eng': 'China'}}}, {'uri': 'http://en.wikipedia.org/wiki/Military_alliance', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Military alliance'}}, {'uri': 'http://en.wikipedia.org/wiki/Afghan_National_Security_Forces', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Afghan National Security Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Pakistan)', 'type': 'org', 'score': 3, 'label': {'eng': 'Ministry of Foreign Affairs (Pakistan)'}}, {'uri': 'http://en.wikipedia.org/wiki/Jens_Stoltenberg', 'type': 'person', 'score': 3, 'label': {'eng': 'Jens Stoltenberg'}}, {'uri': 'http://en.wikipedia.org/wiki/Extremism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Extremism'}}, {'uri': 'http://en.wikipedia.org/wiki/Insurgency', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Insurgency'}}, {'uri': 'http://en.wikipedia.org/wiki/Counter-terrorism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Counter-terrorism'}}, {'uri': 'http://en.wikipedia.org/wiki/Political_corruption', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Political corruption'}}, {'uri': 'http://en.wikipedia.org/wiki/Secretary-General_of_the_United_Nations', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Secretary-General of the United Nations'}}, {'uri': 'http://en.wikipedia.org/wiki/ABC_News_(Australia)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'ABC News (Australia)'}}, {'uri': 'http://en.wikipedia.org/wiki/Kilcullen', 'type': 'loc', 'score': 2, 'label': {'eng': 'Kilcullen'}, 'location': {'type': 'place', 'label': {'eng': 'Kilcullen'}, 'country': {'type': 'country', 'label': {'eng': 'Ireland'}}}}, {'uri': 'http://en.wikipedia.org/wiki/David_Kilcullen', 'type': 'person', 'score': 2, 'label': {'eng': 'David Kilcullen'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_External_Affairs_(India)', 'type': 'org', 'score': 2, 'label': {'eng': 'Ministry of External Affairs (India)'}}, {'uri': 'http://en.wikipedia.org/wiki/Australian_Defence_Force', 'type': 'org', 'score': 2, 'label': {'eng': 'Australian Defence Force'}}, {'uri': 'http://en.wikipedia.org/wiki/Taliban', 'type': 'org', 'score': 2, 'label': {'eng': 'Taliban'}}, {'uri': 'http://en.wikipedia.org/wiki/Democracy', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Democracy'}}, {'uri': 'http://en.wikipedia.org/wiki/White_House', 'type': 'wiki', 'score': 2, 'label': {'eng': 'White House'}}, {'uri': 'http://en.wikipedia.org/wiki/Washington,_D.C.', 'type': 'loc', 'score': 2, 'label': {'eng': 'Washington, D.C.'}, 'location': {'type': 'place', 'label': {'eng': 'Washington, D.C.'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/New_Delhi', 'type': 'loc', 'score': 2, 'label': {'eng': 'New Delhi'}, 'location': {'type': 'place', 'label': {'eng': 'New Delhi'}, 'country': {'type': 'country', 'label': {'eng': 'India'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Islamabad', 'type': 'loc', 'score': 2, 'label': {'eng': 'Islamabad'}, 'location': {'type': 'place', 'label': {'eng': 'Islamabad'}, 'country': {'type': 'country', 'label': {'eng': 'Pakistan'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/Zabiullah_Mujahid', 'type': 'person', 'score': 1, 'label': {'eng': 'Zabiullah Mujahid'}}, {'uri': 'http://en.wikipedia.org/wiki/Open_letter', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Open letter'}}, {'uri': 'http://en.wikipedia.org/wiki/Economic_development', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Economic development'}}]",,eng-3382459,0.223529411764706,241487520,1,yalibnan.com,news,Ya Libnan,"Abdullah Abdullah Donald Trump NATO Terrorism United States Pakistan India Afghanistan China Military alliance Afghan National Security Forces Ministry of Foreign Affairs (Pakistan) Jens Stoltenberg Extremism Insurgency Counter-terrorism Political corruption Secretary-General of the United Nations ABC News (Australia) Kilcullen David Kilcullen Ministry of External Affairs (India) Australian Defence Force Taliban Democracy White House Washington, D.C. New Delhi Islamabad Associated Press Zabiullah Mujahid Open letter Economic development",Lebanon,LB,,,,,,,Asia,AS,Muslim,112.0,128.0,100.0,143.0,165.0,104.0,104.0,101.0,161.0,83.0,102.0,65.0,116.0,62.0,43.0,48.0,57.0,22.0,10.0,,,,,Arab League,AL,Arabic-speaking,Ara,-1,,,0,False,2017,8,26,52,23,2017-08-26

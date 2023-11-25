@@ -1,0 +1,35 @@
+<!-- Main content -->
+  <div class="main-content">
+    <!-- Header -->
+          <div class="container-fluid bg-gradient-success">
+        <div class="row">
+            <h1 class="text-white">Bar Charts</h1>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--5">
+        <div class="visualization">
+         <div id="pieChart"></div>
+         <div id="barChart"></div>
+       </div>
+  </div>
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+        const pieChartDataUrl = "{{ url_for('graphs_blueprint.get_piechart_data') }}";
+        const barChartDataUrl = "{{ url_for('graphs_blueprint.get_barchart_data') }}";
+        const urls = [pieChartDataUrl, barChartDataUrl];
+
+Promise.all(urls.map(url => d3.json(url))).then(run);
+
+function run(dataset) {
+   d3PieChart(dataset[0], dataset[1]);
+   d3BarChart(dataset[1]);
+};
+    </script>
+    <script src="{{ url_for('static', filename='js/pieChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/barChart.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/updateBarChart.js') }}"></script>
+
+  </div>
+
+

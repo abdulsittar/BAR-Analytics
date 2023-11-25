@@ -1,0 +1,14 @@
+,path,name,country,culture,dateFrom,dateTo,economic,group,lang,polalign,source,url
+0,/Event,Event,,,,,,0,,,,
+1,/Event/370495108,370495108,,,2016-01-30T11:00:00,2016-01-30T11:00:00,,0,eng,,naplesherald.com,
+2,/Event/370495108/370314840,370314840,United-States,C4,2016-01-30T11:00:00,2016-01-30T17:18:00,C2,370495108,eng,unknown,pbs.org,unknown
+3,/Event/370495108/369817927,369817927,United-States,C4,2016-01-30T11:00:00,2016-01-30T17:47:00,C2,370495108,eng,unknown,abcnews.go.com,unknown
+4,/Event/370495108/369813750,369813750,,,2016-01-30T11:00:00,2016-01-30T19:39:00,,370495108,eng,,in.news.yahoo.com,
+5,/Event/370495108/369833818,369833818,United-States,C4,2016-01-30T11:00:00,2016-01-30T20:40:00,C2,370495108,eng,unknown,aikenstandard.com,unknown
+6,/Event/369936537,369936537,United-States,C4,2016-01-30T12:59:00,2016-01-30T12:59:00,C2,0,eng,unknown,edition.cnn.com,unknown
+7,/Event/369936537/369675636,369675636,United-States,C4,2016-01-30T12:59:00,2016-01-30T13:09:00,C2,369936537,eng,unknown,wdsu.com,unknown
+8,/Event/369936537/369670539,369670539,,,2016-01-30T12:59:00,2016-01-30T13:09:00,,369936537,eng,,kspr.com,
+9,/Event/369826817,369826817,United-States,C4,2016-01-30T20:17:00,2016-01-30T20:17:00,C2,0,eng,unknown,usatoday.com,unknown
+10,/Event/369826817/369830682,369830682,United-States,C4,2016-01-30T20:17:00,2016-01-30T20:28:00,C2,369826817,eng,unknown,usatoday.com,unknown
+11,/Event/370479342,370479342,United-States,C4,2016-02-01T02:34:00,2016-02-01T02:34:00,C2,0,eng,unknown,northjersey.com,unknown
+12,/Event/370479342/370883233,370883233,,,2016-02-01T02:34:00,2016-02-01T13:47:00,,370479342,eng,,nj.com,

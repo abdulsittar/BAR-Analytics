@@ -1,0 +1,7 @@
+,path,name,continent,country,culture,dateFrom,dateTo,economic,group,lang,polalign,source,url,EconomicQuality,Education,EnterpriseConditions,Governance,Health,Individualism,Indulgence,InvestmentEnvironment,LivingConditions,LongTermOrientation,MarketAccessandInfrastructure,Masculinity,NaturalEnvironment,PersonalFreedom,PowerDistance,SafetyandSecurity,SocialCapital,UncertaintyAvoidance,economicblocs,linguisticblocs,militarydefenseblocs,politicalregionalblocs,religions
+0,/Event,Event,,,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1,/Event/7730379840,7730379840,AS,IN,C18,2023-09-14T16:04:20,2023-09-14T16:04:20,C17,0,eng,fiscally-conservative-socially-liberal,livemint.com,https:en.wikipedia.orgwikiMint_(newspaper),89,106,39,54,112,48,26,70,125,51,84,56,161,112,77,138,124,40,?,?,?,?,Hindu
+2,/Event/7730379840/7730896873,7730896873,,,,2023-09-14T16:04:20,2023-09-14T16:29:53,,7730379840,eng,,theverge.com,,89,106,39,54,112,48,26,70,125,51,84,56,161,112,77,138,124,40,,,,,
+3,/Event/7730379840/7731089082,7731089082,EU,UK,C4,2023-09-14T16:04:20,2023-09-14T18:15:20,C2,7730379840,eng,Center-left,theguardian.com,ChatGPT,89,106,39,54,112,48,26,70,125,51,84,56,161,112,77,138,124,40,?,Eng,NATO,?,Christian
+4,/Event/7730379840/7731333120,7731333120,,,,2023-09-14T16:04:20,2023-09-14T21:10:16,,7730379840,eng,,gpb.org,,89,106,39,54,112,48,26,70,125,51,84,56,161,112,77,138,124,40,,,,,
+5,/Event/7730379840/7733286059,7733286059,,,,2023-09-14T16:04:20,2023-09-15T18:11:57,,7730379840,eng,,havanatimes.org,,89,106,39,54,112,48,26,70,125,51,84,56,161,112,77,138,124,40,,,,,

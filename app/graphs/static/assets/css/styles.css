@@ -1,0 +1,180 @@
+/* Reset default browser settings */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+.noUi-target {
+    padding: 0 50px;
+}
+.noUi-connects {
+    margin: 0 -50px;
+    width: calc(100% + 34px);
+}
+
+
+/* Set core body defaults */
+body {
+  position: fixed;
+  display: flex;
+  background: #fdfdfd;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+    color: black;
+}
+
+.tri-state-toggle {
+    background: rgba(165,170,174,0.25);
+    box-shadow: inset 0 2px 8px 0 rgba(165,170,174,0.25);
+    border-radius: 24px;
+    display: inline-block;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+  transition: all 500ms ease; 
+}
+
+.tri-state-toggle-button {
+    border-radius: 22px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    margin: 2px;
+    color: #727C8F;
+    cursor: pointer;
+  
+/*    -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition:    all 0.5s ease-in-out;
+  -ms-transition:     all 0.5s ease-in-out;
+  -o-transition:      all 0.5s ease-in-out; */
+  transition:         all 0.5s ease;
+}
+
+.tri-state-toggle-button.active {
+    background-image: linear-gradient(-180deg, #fff 0%, #FAFAFA 81%, #F2F2F2 100%);
+    border: 1px solid rgba(207,207,207,0.6);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    color: #6744B1;
+    font-weight: 500;
+  transition: all .5s ease-in;
+}
+
+.tri-state-toggle-button:focus {
+  outline: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.option_color {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.selLab{
+    padding-right: 15px;
+    color: black;
+}
+
+.about {
+    margin: 10% 2%;
+    width: 40%;
+    text-align: justify;
+
+}
+
+.tick text {
+    fill:black
+}
+
+.tick > text {
+  fill: black;
+}
+
+td{
+    color: black;
+    background-color: black;
+
+}
+
+
+h1 {
+    text-decoration: underline;
+    margin: 0.5em 0em;
+}
+
+p, h2, h6 {
+    margin: 0.7em 0em;
+}
+
+a {
+    color: black;
+}
+
+.visualization {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:60%;
+}
+
+#pieChart {
+    margin-top: 4em;
+    font-size: 12px;
+}
+
+#barChart {
+    font-size: 9px;
+    margin-top: 4em;
+}
+
+
+
+#pieChart .title, #barChart .title{
+    font-weight: bold;
+}
+
+.slice {
+    font-size: 8px;
+     font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#showcase {
+            margin: 0 20px;
+            text-align: center;
+        }
+        #range {
+            height: 300px;
+            margin: 0 auto 30px;
+        }
+        #value-span,
+        #value-input {
+            width: 50%;
+            float: left;
+            display: block;
+            text-align: center;
+            margin: 0;
+        }

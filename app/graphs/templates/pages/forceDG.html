@@ -1,0 +1,914 @@
+
+	<div class="main-content">
+	<div class="container-fluid bg-gradient-success">
+		<div class="row">
+			<h1 class="text-white">Information Propagation Network</h1>
+		</div>
+	</div>
+	<br>
+	<div class="container-fluid" id="eventContainer">
+		<div class="row">
+			<select id="eventSelection">
+				<option value="select" selected="selected">Select Event</option>
+			</select>
+			<div id="evetntRegistry" style="margin-left:50px;  display: inline-block;height:70px;width:600px;background-color:gray;float: left;">
+				<label id="phoneLabl" for="phone" style="color:black;padding-left:20px;float: left;">Enter keywords:</label>
+				<input id="phone" name="phone" placeholder="Ukraine war" style="float: left;padding-left:20px;"/>
+				<input type="Button" id="dwnButton" value="Download" style="float: left;padding-left:0px;"/>
+				<select id="customEventSelection">
+					<option value="select" selected="selected">Select Event</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<br>	
+	<div class="container-fluid" id="dynamicSelectCont" style="margin-left:20px;  display: inline-block;height:70px;float: left;">
+		<div class="row" id="animationContContainer" style="display:none;">
+			<div id="forslider" style="display: inline-block;float: left;">
+			<h4 class="text-black" style="margin-left:10px;">Animation Speed</h4>
+			<div style="margin-left:8;width:450px;" class="tri-state-toggle">
+				<button class="tri-state-toggle-button" id="toggle-button1">None</button>
+				<button style="margin-left:150px;" class="tri-state-toggle-button" id="toggle-button2">Slow</button>
+				<button style="margin-left:150px;" class="tri-state-toggle-button" id="toggle-button3">Fast</button>
+			</div>
+			</div>
+		</div>
+		<select id="barrierSelection" style="height:50px;margin-top:35px;">
+								<option value="select" selected="selected">Select Barrier</option>
+								<option value="Linguistic">Linguistic</option>
+								<option value="Political">Political</option>
+								<option value="Geographical">Geographical</option>
+								<option value="Continent">Continent</option>
+								<option value="Religions">Religions</option>
+								<option value="economicblocs">Economic Blocs</option>
+								<option value="militarydefensebloc">Military/Defense Bloc</option>
+								<option value="politicalregionalbloc">Political/Regional Bloc</option>
+								<option value="linguisticblocs">Linguistic Bloc</option>
+								<optgroup label="Economic">
+									<option value="SafetyandSecurity">Safety and Security</option>
+									<option value="PersonalFreedom">Personal Freedom</option>
+									<option value="Governance">Governance</option>
+									<option value="SocialCapital">Social Capital</option>
+									<option value="InvestmentEnvironment">Investment Environment</option>
+									<option value="EnterpriseConditions">Enterprise Conditions</option>
+									<option value="MarketAccessandInfrastructure">Infrastructure and Market Access</option>
+									<option value="EconomicQuality">Economic Quality</option>
+									<option value="LivingConditions">Living Conditions</option>
+									<option value="Health">Health</option>
+									<option value="Education">Education</option>
+									<option value="NaturalEnvironment">Natural Environment</option>
+								</optgroup>
+								<optgroup label="Cultural">
+									<option value="PowerDistance">Power Distance</option>
+									<option value="individualism">Individualism vs. collectivism</option>
+									<option value="unscertainty">Uncertainty avoidance</option>
+									<option value="masculinity">Masculinity vs. feminity</option>
+									<option value="longterm">Long-term orientation vs. short-term orientation</option>
+									<option value="indulgence">Indulgence vs. restraint</option>
+								</optgroup>
+							</select>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="anmiationStats" class="container-fluid"></div>
+
+	<script type="importmap">{"imports": {"three": "https://unpkg.com/three/build/three.module.js"}}</script>
+	<script type="module">
+								
+								
+								import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+								import {
+									CSS2DRenderer,
+									CSS2DObject
+								} from 'https://unpkg.com/three/examples/jsm/renderers/CSS2DRenderer.js';
+
+									var nodes = [], links = [];
+									var data = [];
+									var time_delay = 1
+									var delaySelected = 0
+									
+									$("#toggle-button1").addClass("active");
+									$(".tri-state-toggle-button").click(function(){
+										$(".tri-state-toggle-button").removeClass("active");
+										var id = $(this).attr('id');
+										$("#" + id).addClass("active");
+										if(id == "toggle-button1"){delaySelected = 0}
+										else if(id == "toggle-button2"){delaySelected = 2}
+										else if(id == "toggle-button3"){delaySelected = 1}
+									});
+									//console.log("barrier is selected")
+
+									function load_js() {
+										$("#anmiationStats").html(
+											'<h4 id="time_pub" style="horiz-align: middle;display:inline-block;">Publishing Time</h4>' +
+											'<h5 id="time_text" style="margin-left:50px;horiz-align: middle;display:inline-block;">00:00:00</h5>' +
+											'<h4 id="count" style="margin-left:80px;horiz-align: middle;display:inline-block;">Total articles</h4>' +
+											'<h5 id="count_text" style="margin-left:50px;horiz-align: middle;display:inline-block;">0</h5>' +
+											'<div id="graph" style="width:100%;height:100%;margin:0;">'
+										);
+									 
+										//console.log("barrier is selected")
+										
+										var selected = $("select#customEventSelection option:selected").val();
+										//console.log(selected)
+										eventSelected = ""
+										
+										if (selected == "select") {
+											var eventSelected = $("select#eventSelection option:selected").val();
+											
+										} else {
+											var eventSelected = $("select#customEventSelection option:selected").val();
+											
+										}
+										
+
+										var barrierSelected = $("select#barrierSelection option:selected").val();
+										var event = "";
+										var range = document.getElementById('slider');
+
+										//console.log("selected values")
+										//console.log(delaySelected)
+										//console.log(eventSelected)
+
+										if (barrierSelected == "select") {
+										
+										} else {
+											
+											//console.log("selected file")
+											event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +'.csv'
+											//console.log(event)
+										}
+
+									if (delaySelected == "0") {
+										time_delay = 0.1
+										
+									} else if (delaySelected == "1") {
+										time_delay = 1000
+										
+									} else if (delaySelected == "2") {
+										time_delay = 2000
+										
+									} else if (delaySelected == "3.00") {
+										time_delay = 3000
+										
+									} else if (delaySelected == "4.00") {
+										time_delay = 4000
+										
+									} else if (delaySelected == "5.00") {
+										time_delay = 5000
+										
+									}
+
+										var barrier = "";
+									if (barrierSelected == "select") {
+									} else {
+										if (barrierSelected == "Linguistic") {
+										barrier = 'lang_y'
+										let data = ["Each dot represents a news article.", 
+										"The color of each dot represents the publishing language of an article."
+										,"The news articles are connected based on Wikipedia-concepts based similarity."];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+
+									 } else if (barrierSelected == "SafetyandSecurity") {
+											barrier = 'SafetyandSecurity'
+									 
+									 } else if (barrierSelected == "PersonalFreedom") {
+											barrier = 'PersonalFreedom'
+									 
+									 } else if (barrierSelected == "Governance") {
+											barrier = 'Governance'
+									 
+									 } else if (barrierSelected == "SocialCapital") {
+											barrier = 'SocialCapital'
+									 
+									 } else if (barrierSelected == "InvestmentEnvironment") {
+											barrier = 'InvestmentEnvironment'
+									 
+									 } else if (barrierSelected == "EnterpriseConditions") {
+											barrier = 'EnterpriseConditions'
+									 
+									 } else if (barrierSelected == "MarketAccessandInfrastructure") {
+											barrier = 'MarketAccessandInfrastructure'
+									 
+									 } else if (barrierSelected == "EconomicQuality") {
+											barrier = 'EconomicQuality'
+									 
+									 } else if (barrierSelected == "LivingConditions") {
+											barrier = 'LivingConditions'
+									 
+									 } else if (barrierSelected == "Health") {
+											barrier = 'Health'
+									 
+									 } else if (barrierSelected == "Education") {
+											barrier = 'Education'
+									 
+									 } else if (barrierSelected == "NaturalEnvironment") {
+											barrier = 'NaturalEnvironment'
+									 
+									 } else if (barrierSelected == "PowerDistance") {
+											barrier = 'PowerDistance'
+									 
+									 } else if (barrierSelected == "individualism") {
+											barrier = 'Individualism'
+									 
+									 } else if (barrierSelected == "unscertainty") {
+											barrier = 'UncertaintyAvoidance'
+									 
+									 } else if (barrierSelected == "masculinity") {
+											barrier = 'Masculinity'
+									 
+									 } else if (barrierSelected == "longterm") {
+											barrier = 'LongTermOrientation'
+									 
+									 } else if (barrierSelected == "indulgence") {
+											barrier = 'Indulgence'
+
+									} else if (barrierSelected == "test") {
+										barrier = 'culture'
+										let data = ["Each dot represents a news article.", 
+													"The color of each dot represents the cultural class (C followed by number) of the location where a news article published. There are 20 classes of culture around the globe.",
+													,"The news articles are connected based on Wikipedia-concepts based similarity.",
+													"Here is the list of countries with their cultural classes.", 
+													"Class, Countries", 
+													"C1 - Japan",
+													"C2 - Slovakia",
+													"C3 - Jamaica",
+													"C4 - Australia,Canada, Ireland, New Zealand, South Africa, United Kingdom, United States",
+													"C5 - Austria, Czech Republic, Germany, Hungary, Italy, Luxembourg, Switzerland",
+													"C6 - Estonia, Latvia, Lithuania",
+													"C7 - ",
+													"C8 - Netherlands, Denmark, Finland, Iceland, Norway, Sweden",
+													"C9 - Israel, ",
+													"C10 - Angola, Cape Verde, Costa Rica, Ghana, Mozambique",
+													"C11 - ",
+													"C12 - Colombia, Mexico, Niger, Nigeria, Puerto Rico, Trinidad and Tobago, Venezuela",
+													"C13 - Bolivia, Chile, El Salvador, Paraguay, Peru, Portugal, Slovenia, Uruguay",
+													"C14 - Argentina, Belgium, Brazil, France, Georgia, Greece, Malta, Poland, Spain, Turkey",
+													"C15 - Albania, Iraq, Saudi Arabia, ",
+													"C16 - Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Bulgaria, Croatia, Kazakhstan, Korea, Moldova, Montenegro, Republic of Macedonia, Romania, Russia, Serbia, South Korea, Taiwan, Ukraine",
+													"C17 - Sri lanka",
+													"C18 - China, Hong Kong, India, Indonesia, Malaysia, Philippines, Singapore, Vietnam",
+													"C19 - Egypt, Guatemala, Kuwait, Panama, Qatar, Suriname, Tunisia, United Arab Emirates",
+													"C20 - Algeria, Bangladesh, Burkina Faso, Dominican Republic, Ecuador, Ethiopia, Honduras, Iran, Jordan, Kenya, Lebanon, Libya, Malawi, Morocco, Namibia, Nepal, Pakistan, Senegal, Sierra Leone, Syria, Tanzania, Thailand, Zambia"];
+
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+
+									} else if (barrierSelected == "Political") {
+										barrier = 'polalign'
+
+										let data = ["Each dot represents a news article."
+										, "The color of each dot represents the political alignment of its news publisher."
+										,"The news articles are connected based on Wikipedia-concepts based similarity."];
+
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+
+									} else if (barrierSelected == "Geographical") {
+										barrier = 'country'
+
+										let data = ["Each dot represents a news article."
+										,"The color of each dot represents the location where a news article is published."
+										,"The news articles are connected based on Wikipedia-concepts based similarity."];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+
+									} else if (barrierSelected == "test2") {
+										barrier = 'economic'
+
+										let data = ["Each dot represents a news article.", 
+										"The color of each dot represents the economic class (C followed by number) of the location where a news article published." ,
+										"The news articles are connected based on Wikipedia-concepts based similarity.",
+										"Here is the list of countries with their cultural classes.", 
+										"Class, Countries", 
+										"C1 - Japan",
+										"C2 - Slovakia",
+										"C3 - Jamaica",
+										"C4 - Australia,Canada, Ireland, New Zealand, South Africa, United Kingdom, United States",
+										"C5 - Austria, Czech Republic, Germany, Hungary, Italy, Luxembourg, Switzerland",
+										"C6 - Estonia, Latvia, Lithuania",
+										"C7 - ",
+										"C8 - Netherlands, Denmark, Finland, Iceland, Norway, Sweden",
+										"C9 - Israel, ",
+										"C10 - Angola, Cape Verde, Costa Rica, Ghana, Mozambique",
+										"C11 - ",
+										"C12 - Colombia, Mexico, Niger, Nigeria, Puerto Rico, Trinidad and Tobago, Venezuela",
+										"C13 - Bolivia, Chile, El Salvador, Paraguay, Peru, Portugal, Slovenia, Uruguay",
+										"C14 - Argentina, Belgium, Brazil, France, Georgia, Greece, Malta, Poland, Spain, Turkey",
+										"C15 - Albania, Iraq, Saudi Arabia, ",
+										"C16 - Armenia, Azerbaijan, Belarus, Bosnia and Herzegovina, Bulgaria, Croatia, Kazakhstan, Korea, Moldova, Montenegro, Republic of Macedonia, Romania, Russia, Serbia, South Korea, Taiwan, Ukraine",
+										"C17 - Sri lanka",
+										"C18 - China, Hong Kong, India, Indonesia, Malaysia, Philippines, Singapore, Vietnam",
+										"C19 - Egypt, Guatemala, Kuwait, Panama, Qatar, Suriname, Tunisia, United Arab Emirates",
+										"C20 - Algeria, Bangladesh, Burkina Faso, Dominican Republic, Ecuador, Ethiopia, Honduras, Iran, Jordan, Kenya, Lebanon, Libya, Malawi, Morocco, Namibia, Nepal, Pakistan, Senegal, Sierra Leone, Syria, Tanzania, Thailand, Zambia"];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+									}
+									else if (barrierSelected == "Continent") {
+										barrier = 'continent'
+
+										let data = ["Each dot represents a news article.", 
+													"The color of each dot represents different continents.", 
+													"The news articles are connected based on Wikipedia-concepts based similarity."];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+									}
+									else if (barrierSelected == "Religions") {
+										barrier = 'religions'
+
+										let data = ["Each dot represents a news article.",
+										"The color of each dot represents different religions.", 
+										"The news articles are connected based on Wikipedia-concepts based similarity."];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+									}
+									else if (barrierSelected == "economicblocs") {
+										barrier = 'economicblocs'
+
+										let data = ["Each dot represents a news article.",
+										"The color of each dot represents different economic-blocs.", 
+										"The news articles are connected based on Wikipedia-concepts based similarity."];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+									}
+									else if (barrierSelected == "militarydefensebloc") {
+										barrier = 'militarydefenseblocs'
+
+										let data = ["Each dot represents a news article."
+										,"The color of each dot represents different military/defense blocs.", 
+										"The news articles are connected based on Wikipedia-concepts based similarity."];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+									}
+									else if (barrierSelected == "Political/Regional Bloc") {
+										barrier = 'politicalregionalblocs'
+
+										let data = ["Each dot represents a news article.",
+										"The color of each dot represents different political/regional-blocs.", 
+										"The news articles are connected based on Wikipedia-concepts based similarity."];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => {
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+									}
+									else if (barrierSelected == "linguisticblocs") 
+									{
+										barrier = 'linguisticblocs'
+
+										let data = ["Each dot represents a news article.",
+										"The color of each dot represents different linguistic-blocs.", 
+										"The news articles are connected based on Wikipedia-concepts based similarity."];
+										let list = document.getElementById("myList");
+										list.innerHTML = "";
+										data.forEach((item) => 
+										{
+										let li = document.createElement("li");
+										li.innerText = item;
+										list.appendChild(li);
+									});
+									}
+										document.getElementById("time_text").innerHTML = "00:00:00";
+										document.getElementById("count_text").innerHTML = "0";
+										const NODE_REL_SIZE = 0;
+										const elem = document.getElementById("graph");
+										const distance = 2800;
+										let angle = 100;
+										Graph = new ForceGraph3D()(elem)   //{extraRenderers: [new CSS2DRenderer()]})(elem)
+										.width(elem.offsetWidth)
+										.height(elem.offsetHeight)
+										.dagMode('td')
+										.dagLevelDistance(50)
+										.backgroundColor('#101020')
+										//.linkColor(() => 'rgba(255,255,255,1.0)')
+										//.nodeAutoColorBy('group')
+										.nodeRelSize(NODE_REL_SIZE)
+										.nodeId('path')
+										.nodeVal('size')
+										.zoomToFit(500,500,node => false)
+										//.style("font-size", 12)
+										.nodeLabel('country')
+										.nodeAutoColorBy(barrier)
+										.nodeOpacity(1.0)
+										.d3VelocityDecay(0.5)
+										.onNodeClick(node => {
+										const distance = 50;
+										const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
+										const newPos = node.x || node.y || node.z
+										? {x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio}
+										: {x: 0, y: 0, z: distance}; // special case if node is in (0,0,0)
+
+										Graph.cameraPosition(
+											newPos, // new position
+											node, // lookAt ({ x, y, z })
+											3000  // ms transition duration
+											);
+									})
+										.nodeThreeObjectExtend(true)
+										.nodeThreeObject(node => {
+									var sprite;
+									if (barrierSelected == "Linguistic") {
+										sprite = new SpriteText(node.lang_y);
+										
+									} else if (barrierSelected == "Cultural") {
+										sprite = new SpriteText(node.culture);
+										
+									} else if (barrierSelected == "Political") {
+										sprite = new SpriteText(node.polalign);
+										
+									} else if (barrierSelected == "Geographical") {
+										sprite = new SpriteText(node.country);
+										
+									} else if (barrierSelected == "Economic") {
+										sprite = new SpriteText(node.economic);
+										
+									} else if (barrierSelected == "Continent") {
+										sprite = new SpriteText(node.continent);
+										
+									} else if (barrierSelected == "Religions") {
+										sprite = new SpriteText(node.religions);
+										
+									} else if (barrierSelected == "economicblocs") {
+										sprite = new SpriteText(node.economicblocs);
+										
+									} else if (barrierSelected == "militarydefensebloc") {
+										sprite = new SpriteText(node.militarydefenseblocs);
+										
+									} else if (barrierSelected == "politicalregionalbloc") {
+										sprite = new SpriteText(node.politicalregionalblocs);
+										
+									} else if (barrierSelected == "linguisticblocs") {
+										sprite = new SpriteText(node.linguisticblocs);
+										
+									} else if (barrierSelected == "SafetyandSecurity") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "PersonalFreedom") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "Governance") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "SocialCapital") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "InvestmentEnvironment") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "EnterpriseConditions") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "MarketAccessandInfrastructure") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "EconomicQuality") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "LivingConditions") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "Health") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "Education") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "NaturalEnvironment") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "PowerDistance") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "individualism") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "unscertainty") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "masculinity") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "longterm") {
+											sprite = new SpriteText(node.country);
+									 
+									 } else if (barrierSelected == "indulgence") {
+											sprite = new SpriteText(node.country);
+									}
+										sprite.material.depthWrite = false;
+										sprite.color = 'lightsteelblue';
+										sprite.textHeight = 12;
+										return sprite;
+									})
+										.onNodeDragEnd(node => {
+										node.fx = node.x;
+										node.fy = node.y;
+										node.fz = node.z;
+									});
+										Graph.d3Force('charge').strength(-25);
+													
+										var data = [];
+										d3.csv(event, function(d) {
+											return {size: d.size, path: d.path, dateFrom: d.dateFrom, group: d.group, 
+											country: (d.country.trim() == "")? "?": d.country, 
+											culture: (d.culture.trim() == "")? "?": d.culture, 
+											economic: (d.economic.trim() == "")? "?": d.economic,
+											lang_y: (d.lang.trim() == "")? "?": d.lang,
+											source: (d.source.trim() == "")? "?": d.source,
+											dateTo: d.dateTo, 
+											url: d.url, 
+											polalign: (d.polalign.trim() == "")? "?": d.polalign,
+											continent: (d.continent.trim() == "")? "?": d.continent,
+											religions: (d.religions.trim() == "")? "?": d.religions,
+											economicblocs: (d.economicblocs.trim() == "")? "?": d.economicblocs,
+											militarydefenseblocs: (d.militarydefenseblocs.trim() == "")? "?": d.militarydefenseblocs,
+											politicalregionalblocs: (d.politicalregionalblocs.trim() == "")? "?": d.politicalregionalblocs,
+											linguisticblocs: (d.linguisticblocs.trim() == "")? "?": d.linguisticblocs, 
+											SafetyandSecurity: (d.SafetyandSecurity.trim() == "")? "?": d.SafetyandSecurity,
+											PersonalFreedom: (d.PersonalFreedom.trim() == "")? "?": d.PersonalFreedom,
+											Governance: (d.Governance.trim() == "")? "?": d.Governance,
+											SocialCapital: (d.SocialCapital.trim() == "")? "?": d.SocialCapital,
+											InvestmentEnvironment: (d.InvestmentEnvironment.trim() == "")? "?": d.InvestmentEnvironment,
+											EnterpriseConditions: (d.EnterpriseConditions.trim() == "")? "?": d.EnterpriseConditions,
+											MarketAccessandInfrastructure: (d.MarketAccessandInfrastructure.trim() == "")? "?": d.MarketAccessandInfrastructure,
+											EconomicQuality: (d.EconomicQuality.trim() == "")? "?": d.EconomicQuality,
+											LivingConditions: (d.LivingConditions.trim() == "")? "?": d.LivingConditions,
+											Health: (d.Health.trim() == "")? "?": d.Health,
+											Education: (d.Education.trim() == "")? "?": d.Education,
+											NaturalEnvironment: (d.NaturalEnvironment.trim() == "")? "?": d.NaturalEnvironment, 
+											PowerDistance : (d.PowerDistance.trim() == "")? "?": d.PowerDistance, 
+											Individualism: (d.Individualism.trim() == "")? "?": d.Individualism, 
+											Masculinity: (d.Masculinity.trim() == "")? "?": d.Masculinity, 
+											UncertaintyAvoidance: (d.UncertaintyAvoidance.trim() == "")? "?": d.UncertaintyAvoidance,
+											LongTermOrientation: (d.LongTermOrientation.trim() == "")? "?": d.LongTermOrientation,
+											Indulgence: (d.Indulgence.trim() == "")? "?": d.Indulgence
+										}	
+									}).then(function(d){
+										//console.log("data is here")
+										data.push(d);
+										//console.log(d.lang)
+										let i = 0;
+										d.forEach((obj, index) => {
+										
+										let timer = setTimeout(() => {
+
+										if (d.length-1 == index) {;
+											}
+										const levels = obj.path.split('/'), level = levels.length - 1,
+										module = level > 0 ? levels[1] : null, leaf = levels.pop(),
+										parent = levels.join('/');
+										const node = obj
+										nodes.push(node);
+										if (parent) {
+										if (links.length == 0) {
+												
+										}
+										document.getElementById("time_text").innerHTML = "Date: "+node.dateTo.replace("T", " Time: ");;
+										document.getElementById("count_text").innerHTML = index;
+
+										links.push({source: parent, target: obj.path, targetNode: node});
+										Graph.graphData({
+										nodes: [...nodes, {parent}],
+										links: [...links, {source: parent, target: obj.path, targetNode: node}]
+										});
+									
+										i = i + 1
+										
+										}}, index * time_delay);
+										
+										var dropdown = document.getElementById("barrierSelection");
+										dropdown.addEventListener("change", function() {
+											clearInterval(timer);
+										});
+
+									});
+									
+									
+									});
+									Graph.cameraPosition({ z: 300 });
+									
+									}
+									}
+									
+									$('select#barrierSelection').on('change', function () {
+										//console.log("value of active")
+										
+
+										var selected = $("select#customEventSelection option:selected").val();
+										//console.log(selected)
+										eventSelected = ""
+										if (selected == "select") {
+											var eventSelected = $("select#eventSelection option:selected").val();
+										} else {
+											var eventSelected = $("select#customEventSelection option:selected").val();
+										}
+										
+										$.ajax({
+												url: '/sensoranalysis/selected_event_and_barrier',
+												type: 'GET',
+												contentType: 'application/json;charset=UTF-8',
+												data: {
+													'selected_event': eventSelected,
+													'selBarrier': document.getElementById('barrierSelection').value
+												},
+												dataType: "json",
+												success: function (data) {
+													
+													
+										}});
+													
+										document.getElementById("explanation").style.display = 'block';
+										nodes = [];
+										links = [];
+										Graph = null;
+										data = [];
+										load_js()
+									});
+								</script>
+	<script type="text/javascript">
+										$(document).ready(function(){
+										
+										$.ajax({
+												url: '/sensoranalysis/getDownloadedEvents',
+												type: 'GET',
+												contentType: 'application/json;charset=UTF-8',
+												data: {},
+												dataType: "json",
+												success: function (data) {
+												let eventSelection = document.getElementById("eventSelection")
+												count = 0
+												var optgroup;
+												isAdded = false
+												var addedEvents = []
+												for (const [key, value] of Object.entries(data)){
+													label = ""
+													//console.log(key)
+													if(key == 'eng-8467663' || key == 'eng-8468195' || key == 'eng-8468865' || key == 'eng-8471915' || key ==
+	'eng-8472550' || key == 'eng-8473149'){
+														if(isAdded == false){
+															isAdded = true
+															label = "Natural Disasters"
+															//console.log("here")
+															//console.log(label)
+															optgroup = document.createElement("optgroup");
+															optgroup.setAttribute("label", label);
+															addedEvents.push(key);
+														}
+														optgroup.appendChild(new Option(value, key));
+														}
+												}
+												eventSelection.appendChild(optgroup);
+												isAdded = false
+												for (const [key, value] of Object.entries(data)){
+													label = ""
+													if(key == 'eng-8469535' || key == 'eng-8470156' || key == 'eng-8470041'){
+														if(isAdded == false){
+															isAdded = true
+															label = "Sports"
+															//console.log(label)
+															optgroup = document.createElement("optgroup");
+															optgroup.setAttribute("label", label);
+															addedEvents.push(key);
+													}
+													optgroup.appendChild(new Option(value, key));
+												}}
+												eventSelection.appendChild(optgroup);
+												isAdded = false
+												for (const [key, value] of Object.entries(data)){
+													label = ""
+													if(key == 'eng-8452523' || key == 'eng-8471343'){
+														if(isAdded == false){
+															isAdded = true
+															label = "Climate Change"
+															//console.log(label)
+															optgroup = document.createElement("optgroup");
+															optgroup.setAttribute("label", label);
+															addedEvents.push(key);
+														}
+													optgroup.appendChild(new Option(value, key));	
+												}}
+												eventSelection.appendChild(optgroup);
+												isAdded = false
+												for (const [key, value] of Object.entries(data)){
+													label = ""
+													if(key == 'eng-8451923' || key == 'eng-8452217'){
+														if(isAdded == false){
+															isAdded = true
+															label = "Politics"
+															//console.log(label)
+															optgroup = document.createElement("optgroup");
+															optgroup.setAttribute("label", label);
+															addedEvents.push(key);
+														}
+														optgroup.appendChild(new Option(value, key));
+													}
+												}
+												eventSelection.appendChild(optgroup);
+												isAdded = false
+												for (const [key, value] of Object.entries(data)){
+													label = ""
+													if(key == 'eng-8454149' || key == 'eng-8452485' || key == 'eng-8455972' || key == 'eng-8468237'){
+														if(isAdded == false){
+															isAdded = true
+															label = "Products/Technology"
+															//console.log(label)
+															optgroup = document.createElement("optgroup");
+															optgroup.setAttribute("label", label);
+															addedEvents.push(key);
+														}
+														optgroup.appendChild(new Option(value, key));
+													}
+												}
+												eventSelection.appendChild(optgroup);
+												isAdded = false
+												for (const [key, value] of Object.entries(data)){
+													label = ""
+													if(key == 'rus-1420574' || key == 'rus-1417054' || key == 'eng-8456354' || key == 'eng-8454935' || key ==
+	'eng-8470679'){
+														if(isAdded == false){
+															isAdded = true
+															label = "War"
+															//console.log(label)
+															optgroup = document.createElement("optgroup");
+															optgroup.setAttribute("label", label);
+															addedEvents.push(key);
+														}
+													optgroup.appendChild(new Option(value, key));
+													}
+												}
+												for (const [key, value] of Object.entries(data)){
+													if(key == ''){
+														label = "Innovations/Autos"
+															//console.log(label)
+															var optgroup;
+															optgroup.setAttribute("label", label);
+															optgroup.appendChild(new Option(value, key));
+															addedEvents.push(key);
+														}
+												}
+												count = count + 1
+												
+											for (const [key, value] of Object.entries(data)){
+													if (addedEvents.includes(key)){
+													
+													} else {
+														label = "Event Registry"
+															//console.log(label)
+															var optgroup;
+															optgroup.setAttribute("label", label);
+															optgroup.appendChild(new Option(value, key));
+															addedEvents.push(key);
+													}
+												}	
+												}
+										});	
+									});
+						</script>
+	<br>
+	<div class="container-fluid">
+		<div class='row' id='explanation' style="display:none;margin-left:10px;">
+			<ul id="myList" style="color:black;"/>
+		</div>
+	</div>
+	<script type="text/javascript">
+					let active = false
+					
+					var Graph = null;
+									
+					$('select#eventSelection').on('change', function () {
+
+						Graph = new ForceGraph3D()
+						
+						$("#anmiationStats").innerHTML = '';
+						
+						const myNode = document.getElementById("anmiationStats");
+						while (myNode.lastElementChild) {
+							myNode.removeChild(myNode.lastElementChild);
+						}
+						document.getElementById("barrierSelection").disabled = false;
+						document.getElementById("barrierSelection").enabled = true;
+						
+						var selected = $("select#eventSelection option:selected").val();
+						if (selected == "select") {
+						
+						document.getElementById("animationContContainer").style.display = 'block';
+					} else {
+						document.getElementById("animationContContainer").style.display = 'block';
+						document.getElementById("meta").style.display = 'block';
+						let toggle = document.querySelector('.toggle')
+						let text = document.querySelector('.text')
+					}	
+					});
+					
+					$('select#eventSelection3').on('change', function () {
+						//console.log("event  is selected")
+						var selected = $("select#eventSelection3 option:selected").val();
+						if (selected == "select") {
+					} else {
+						document.getElementById("animationContContainer").style.display = 'block';
+						document.getElementById("meta").style.display = 'block';
+										nodes = [];
+										links = [];
+										Graph = null;
+										data = [];
+										load_js()
+					}
+					});
+					
+					$('select#customEventSelection').on('change', function () {
+						//console.log("event  is selected")
+						Graph = new ForceGraph3D()
+						Graph.graphData({ nodes: [], links: []});
+						var selected = $("select#customEventSelection option:selected").val();
+						//console.log(selected)
+						
+						if (selected == "select") {
+						
+						} else {
+					
+						topbar.show()
+						$.ajax({
+							url: '/sensoranalysis/downloadArticles',
+							type: 'GET',
+							contentType: 'application/json;charset=UTF-8',
+							data: {
+								'selected_event': selected
+							},
+							dataType: "json",
+							success: function (data) {
+							//console.log(data)
+								//console.log("file downloaded complete")
+								showAlert("Analytical files have been downloaded!");
+								topbar.hide()
+							}
+						});					
+					}
+					});
+					function showAlert(msg) {
+						alert (msg);
+					}
+					
+					$(document).ready(function(){
+					
+					});
+					
+					</script><br><br>
+	<div class="container-fluid">
+		<div class="row">
+			<h4 id="meta" style="color:gray;margin-left:20px;display:none;">These barriers are calculated based on the location of the headquarter of the news publisher except for the linguistic barrier which is based on the language of the article.</h4>
+			<br>
+		</div>
+	</div>
+	<br>
+	</div>
+
+

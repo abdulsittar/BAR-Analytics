@@ -1,0 +1,124 @@
+<!-- Main content -->
+<div class="main-content" style="height:100%; width:100%;">
+    <div class="container-fluid bg-gradient-success">
+        <div class="row">
+            <h1 class="text-white">Network View</h1>
+        </div>
+    </div>
+    <br><br>
+	  <script src="http://cleopatra.ijs.si/sensoranalysis/static/assets/js/echarts.min.js"></script>
+      <script src="http://cleopatra.ijs.si/sensoranalysis/static/assets/js/jquery-3.2.1.min.js"></script>
+	
+        <script type="text/javascript">
+		$(document).ready(function(){
+		$('select#barrierRadial').on('change', function () {
+		var myChart = echarts.init(document.getElementById('main'));
+		myChart.showLoading();
+		
+        $.ajax({
+            url: "/sensoranalysis/generateRadialTree",
+            type: "GET",
+            contentType: 'application/json;charset=UTF-8',
+            data: {
+                'barrier': document.getElementById('barrierRadial').value
+            },
+            dataType: "json",
+            success: function (d) {
+				console.log(d)
+				
+				option = {
+				legend: {
+				data: d.categories
+				},
+				series: [
+					{
+				type: 'graph',
+				layout: 'force',
+				animation: false,
+				label: {
+					position: 'right',
+					formatter: '{b}'
+				},
+				draggable: true,
+				data: d.nodes.map(function (node, idx) {
+				node.id = idx;
+				return node;
+					}),
+				categories: d.categories,
+				force: {
+				edgeLength: 20,
+				repulsion: 20,
+				gravity: 0.2
+			},
+				edges: d.links}
+				]
+				};
+			myChart.setOption(option);
+			myChart.hideLoading();
+		}
+		});
+		if (option && typeof option === 'object') {
+			myChart.setOption(option);
+		}
+
+window.addEventListener('resize', myChart.resize);
+		
+		
+		});
+		});
+        </script>
+    <div class="container-fluid">
+       <!-- <script type="text/javascript">
+                $('select#event').on('change', function(){
+                    console.log("event  is selected")
+                var selected = $("select#event option:selected").val();
+                if(selected == "select") {} else { document.getElementById("dropdown2").style.display = 'block'; }});
+            </script>-->
+        <div class="row" id="dropdown2"">
+                <select id="barrierRadial">
+                    <option value="select" selected="selected">Select Barrier</option>
+                                <option value="Linguistic">Linguistic</option>
+                                
+                                <option value="Political">Political</option>
+                                <option value="Geographical">Geographical</option>
+                                
+								<option value="Continent">Continent</option>
+								<option value="Religions">Religions</option>
+								<option value="economicblocs">Economic Blocs</option>
+								<option value="militarydefensebloc">Military/Defense Bloc</option>
+								<option value="politicalregionalbloc">Political/Regional Bloc</option>
+								<option value="linguisticbloc">Linguistic Bloc</option>
+								
+								<optgroup  label="Economic">
+								<option value="SafetyandSecurity">Safety and Security</option>
+								<option value="PersonalFreedom">Personal Freedom</option>
+								<option value="Governance">Governance</option>
+								<option value="SocialCapital">Social Capital</option>
+								<option value="InvestmentEnvironment">Investment Environment</option>
+								<option value="EnterpriseConditions">Enterprise Conditions</option>
+								<option value="MarketAccessandInfrastructure">Infrastructure and Market Access</option>
+								<option value="EconomicQuality">Economic Quality</option>
+								<option value="LivingConditions">Living Conditions</option>
+								<option value="Health">Health</option>
+								<option value="Education">Education</option>
+								<option value="NaturalEnvironment">Natural Environment</option>
+								</optgroup>
+								
+								<optgroup label="Cultural">
+								<option value="PowerDistance">Power Distance</option>
+								<option value="individualism">Individualism vs. collectivism</option>
+								<option value="unscertainty">Uncertainty avoidance</option>
+								<option value="masculinity">Masculinity vs. feminity</option>
+								<option value="longterm">Long-term orientation vs. short-term orientation</option>
+								<option value="indulgence">Indulgence vs. restraint</option>
+								</optgroup>
+                </select>
+						
+        </div>
+		<br>
+		<h4 style="color:Gray; margin-left:10px;">These barriers are calculated based on the location of the headquarter of the news publisher except for the linguistic barrier which is based on the language of the article.
+</h4>
+    </div>
+    <br>
+<div class="container-fluid" id="main" style="margin: auto; width:100vh; height:100vh;"></div>
+</div>

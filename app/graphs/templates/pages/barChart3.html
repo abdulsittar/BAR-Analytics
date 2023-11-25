@@ -1,0 +1,344 @@
+<!-- Main content -->
+  <div class="main-content">
+      <style>
+
+          body {
+  font-family: Roboto, sans-serif;
+  color: #333;
+}
+
+a {
+  color: #777;
+}
+
+#chart-wrapper {
+  height: 600px;
+}
+
+#header {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Aleo, serif;
+}
+
+#year-slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#year-slider-wrapper label {
+  font-size: 24px;
+  padding: 0 10px;
+}
+
+#footer {
+  margin: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #aaa;
+}
+
+/* http://danielstern.ca/range.css/#/ */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 7.25px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5.5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: rgba(220, 220, 220, 0.78);
+  border-radius: 3.9px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 3.6px #000031, 0px 0px 0px #00004b;
+  border: 0px solid #b4b4b4;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: #c8c8c8;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.25px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(223, 223, 223, 0.78);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5.5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: rgba(220, 220, 220, 0.78);
+  border-radius: 3.9px;
+  border: 0px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 3.6px #000031, 0px 0px 0px #00004b;
+  border: 0px solid #b4b4b4;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: #c8c8c8;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5.5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(217, 217, 217, 0.78);
+  border: 0px solid #010101;
+  border-radius: 7.8px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(220, 220, 220, 0.78);
+  border: 0px solid #010101;
+  border-radius: 7.8px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 3.6px #000031, 0px 0px 0px #00004b;
+  border: 0px solid #b4b4b4;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: #c8c8c8;
+  cursor: pointer;
+  height: 5.5px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(220, 220, 220, 0.78);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(223, 223, 223, 0.78);
+}
+
+      </style>
+
+
+
+    <!-- Header -->
+          <div class="container-fluid bg-gradient-success">
+        <div class="row">
+            <h1 class="text-white">Bar Charts</h1>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--5">
+        <div id="header">
+      <h1>Health and Income of Nations</h1>
+    </div>
+
+    <div id="chart-wrapper">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div id="year-slider-wrapper">
+      <label>1800</label>
+      <input id="year-slider" type="range" min="1800" max="2018" style="width: 800px;" value="1800" />
+      <label>2018</label>
+    </div>
+
+    <div id="footer">
+      <p>A <a href="https://www.chartjs.org/">Chart.js</a> reproduction of Gapminder's <a href="https://www.gapminder.org/tools/">interactive</a> comparing life expectancy and GDP. Built by <a href="https://createwithdata.com">Peter Cook</a>.</p>
+    </div>
+
+  </div>
+
+
+<script src="path/to/chartjs/dist/chart.umd.js"></script>
+ <script type="module">
+     import Chart from 'chart.js/auto';
+     let countries, myChart;
+     const ctx = document.getElementById("myChart").getContext('2d');
+     var rScale = d3.scaleSqrt().domain([0, 5e8]);
+    var incomeFormat = d3.format(',');
+    var regionColor = {
+	americas: 'rgb(127, 235, 0)',
+	europe: 'rgb(255, 231, 0)',
+	africa: 'rgb(0, 213, 233)',
+	asia: 'rgb(255, 88, 114)'
+};
+Chart.defaults.global.defaultFontFamily = "'Open Sans', sans-serif";
+Chart.defaults.global.defaultFontColor = '#333';
+Chart.defaults.global.animation.duration = 0;
+var startYear = 1800, endYear = 2018, chosenYear = 1800;
+var yearLabelPlugin = {
+	beforeDraw() {
+		if(!myChart) return;
+		myChart.ctx.save();
+		var geom = myChart.chartArea;
+		var w = geom.right - geom.left;
+		var h = geom.bottom - geom.top;
+		var fontSize = Math.min(w * 0.4, 400);
+		// Draw background year label
+		myChart.ctx.textAlign = 'center';
+		myChart.ctx.textBaseline = 'middle';
+		myChart.ctx.fillStyle= '#eee';
+		myChart.ctx.font = fontSize + 'px Aleo';
+		myChart.ctx.fillText(chosenYear, geom.left + 0.5 * w, geom.top + 0.5 * h);
+		myChart.ctx.restore();
+	}
+}
+
+function initChart() {
+	myChart = new Chart(ctx, {
+	  type: 'bubble',
+	  options: {
+      maintainAspectRatio: false,
+			legend: {
+				display: false,
+			},
+	    scales: {
+	      yAxes: [{
+					ticks: {
+						min: 10,
+						max: 90
+					},
+					scaleLabel: {
+						display: true,
+						labelString: 'Life expectancy (yrs)',
+						fontSize: 16,
+						lineHeight: 2
+					}
+	      }],
+	      xAxes: [{
+					type: 'logarithmic',
+					ticks: {
+						min: 300,
+						max: 2e5,
+						callback: function(value) {
+							var ticks = [300, 500, 1000, 5000, 10000, 50000, 100000, 200000];
+							return ticks.indexOf(value) === -1 ? '' : incomeFormat(value);
+						}
+					},
+					scaleLabel: {
+						display: true,
+						labelString: 'GDP/capita, PPP$ inflation-adjusted',
+						fontSize: 16,
+						lineHeight: 2
+					}
+	      }]
+	    },
+			tooltips: {
+				xPadding: 10,
+				yPadding: 10,
+				titleFontSize: 20,
+				titleMarginBottom: 10,
+				bodyFontSize: 14,
+				callbacks: {
+					title: function(tooltipItem, data) {
+						var d = data.datasets[tooltipItem[0].datasetIndex];
+						return d.label;
+					},
+					label: function(tooltipItem, data) {
+						return 'GDP/capita $' + incomeFormat(tooltipItem.xLabel) + ' Life expectancy: ' + tooltipItem.yLabel.toFixed(1) + 'yrs';
+					}
+				}
+			}
+	  },
+    plugins: [yearLabelPlugin]
+	});
+}
+
+function getDataset() {
+	var i = chosenYear - startYear;
+
+	// Get the data for chosenYear
+	var data = countries.map(function(d) {
+		return {
+			country: d.country,
+			region: d.region,
+			gdp: +d.gdp[i],
+			exp: +d.lifeExpectancy[i],
+			pop: +d.population[i],
+		};
+	});
+
+	// Filter out nations w/out data
+	data = data.filter(function(d) {return d.gdp && d.exp && d.pop;});
+
+	// Sort by population size so that small circles are in front
+	data = _.sortBy(data, function(d) {return -d.pop;});
+
+	// Get data array (in structure required by Chart.js)
+	var points = data.map(function(d) {
+		return {
+			x: d.gdp,
+			y: d.exp,
+			r: rScale(d.pop)
+		};
+	});
+
+	// Get color array
+	var colors = data.map(function(d) {return regionColor[d.region];});
+
+	// Get label array
+	var labels = data.map(function(d) {return d.label;});
+
+	// Create dataset
+	var dataset = {
+		data: points,
+		backgroundColor: colors,
+		borderColor: '#777',
+		myLabels: labels
+	};
+
+	return dataset;
+}
+
+function update() {
+	if(!countries) return;
+
+	var rMax = (myChart.chartArea.bottom - myChart.chartArea.top) / 20;
+	rScale.range([0, rMax]);
+
+	myChart.data = {
+    datasets: [getDataset()]
+  };
+	myChart.update();
+}
+
+d3.json('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2814973/gapminder.json')
+  .then(function(json) {
+	countries = json;
+
+	initChart();
+	update();
+});
+
+document.getElementById('year-slider').addEventListener('input', function(e) {
+	chosenYear = e.target.value;
+	update();
+});
+
+// Call update on resize to ensure rScale is up to date
+window.addEventListener('resize', update);
+
+// Call update when fonts have loaded
+WebFont.load({
+  google: {
+    families: ['Open Sans', 'Aleo']
+  },
+	active: update
+});
+</script>
+
+  </div>
+
+
+
