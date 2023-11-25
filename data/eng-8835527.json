@@ -1,0 +1,1365 @@
+{
+    "eng-8835527": {
+        "articles": {
+            "results": [
+                {
+                    "uri": "7680459910",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-08-16",
+                    "time": "16:05:09",
+                    "dateTime": "2023-08-16T16:05:09Z",
+                    "dateTimePub": "2023-08-16T15:59:06Z",
+                    "dataType": "news",
+                    "sim": 0.6509804129600525,
+                    "url": "https://ca.sports.yahoo.com/news/bermuda-profile-155906971.html",
+                    "title": "Bermuda profile",
+                    "body": "Bermuda, a densely-populated British overseas territory in the western Atlantic Ocean, has one of the world's most prosperous economies, largely because of its offshore finance industry.\n\nBeaches, golf courses, colonial buildings and the subtropical climate makes the territory an attractive tourist destination.\n\nThe 16th Century Spanish explorer, Juan de Bermudez, is believed to have discovered the archipelago of seven main islands and more than 170 islets. England took control of Bermuda in the late 17th Century and slaves, mostly brought from Africa, came to outnumber the colonists. Today, three-fifths of the population are of African descent with the remainder of mostly-European extraction.\n\nThe 1968 constitution guaranteed internal self-government but tension in the 1970s saw the assassination of the colony's governor and rioting. British troops went in to restore order. Recent polls show a large majority opposed to independence.\n\nBermuda featured in the 2017 leak dubbed the Paradise Papers, which reveal the financial dealings of politicians, celebrities, corporate giants and business leaders.\n\nHead of state: King Charles III, represented by a governor\n\nPremier: David Burt\n\nDavid Burt became Bermuda's youngest premier when his Progressive Labour Party (PLP) won the July 2017 general election. The PLP took 24 out of the 26 seats in the House of Assembly.\n\nThe territory is believed to have one of the oldest parliaments in the world; a representative assembly was established in 1620.\n\nBlack Bermudians, primarily descended from African slaves, make up around 50% of the population, while White Bermudians, primarily of British, Irish and Portuguese descent, account for 30%.\n\nThe islands' broadcasting scene is dominated by two commercial players, the Bermuda Broadcasting Company and VSB.\n\n1609 - First English settlers accidentally arrive after being diverted by a storm from reaching Jamestown in Virginia.\n\n1612 - The Virginia Company begins to settle the archipelago, officially named Virgineola. New London (renamed St George's Town) is the colony's first capital and is the oldest continually inhabited English town in the New World.\n\n1615 - The colony, renamed the Somers Isles, is passed on to the Somers Isles Company.\n\n17th Century - African and American Indian slaves are brought to the islands in the early 1600s and soon outnumber white settlers.\n\n1684 - The Somers Isles Company is dissolved and Bermuda becomes a crown colony.\n\n1811 - After US independence, Bermuda becomes strategically important for the UK, and work begins on the Royal Naval Dockyard, which becomes Britain's base for securing western Atlantic trade.\n\n1861-65 - Bermuda is used by Confederate blockade runners during the US Civil War.\n\n1920-33 - Bermuda is a centre for alcohol smuggling into the US during Prohibition in the US\n\n1930 - The protectionist US Smoot-Hawley Tariff Act leads to the decline of Bermuda's once-thriving agricultural export trade to America and encourages the development of tourism.\n\n1968 - New constitution introduced.\n\n1973 - Amid political tensions and calls for independence - and six months after the killing of Bermuda Police commissioner George Duckett - governor Sir Richard Sharples and his aide are shot dead by assassins linked to a small militant Bermudian Black Power group.\n\n1977 - Three days of rioting follow the execution of Sharples' murderer and his co-accused. A state of emergency is declared and British troops are flown in to restore order.\n\n1995 - Independence referendum: pro-independence Progressive Labour Party (PLP) encourages voters to boycott poll. Majority votes against independence.\n\n2003 - Hurricane Fabian, worst storm in 50 years, sweeps across Bermuda with winds of up to 125mph.\n\n2009 - Bermuda added to OECD's \"white list\" of countries complying with internationally agreed tax standards, after signing information exchange agreements with several countries.\n\n2012 - One Bermuda Alliance (OBA) wins general election, ending PLP's three straight terms in office.\n\n2017 - David Burt becomes Bermuda's youngest premier when the PLP wins the July general election.\n\n2018 - Bermuda becomes the first country to repeal same-sex marriage, just a year after campaigners win a case in the Bermuda Supreme Court for marriage equality for LGBTQ+ people , community, taking away the rights of gay couples to marry and given them instead the option of civil partnerships.",
+                    "source": {
+                        "uri": "ca.sports.yahoo.com",
+                        "dataType": "news",
+                        "title": "Yahoo Sports"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda",
+                            "type": "loc",
+                            "score": 5,
+                            "label": {
+                                "eng": "Bermuda"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Bermuda"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Progressive_Labour_Party_(Bermuda)",
+                            "type": "org",
+                            "score": 4,
+                            "label": {
+                                "eng": "Progressive Labour Party (Bermuda)"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/David_Burt",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "David Burt"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Archipelago",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Archipelago"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Atlantic_Ocean",
+                            "type": "loc",
+                            "score": 4,
+                            "label": {
+                                "eng": "Atlantic Ocean"
+                            },
+                            "location": null
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Governor",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Governor"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Slavery",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Slavery"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/United_Kingdom",
+                            "type": "loc",
+                            "score": 4,
+                            "label": {
+                                "eng": "United Kingdom"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "United Kingdom"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Paradise_Papers",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Paradise Papers"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Offshore_financial_centre",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Offshore financial centre"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/British_Overseas_Territories",
+                            "type": "loc",
+                            "score": 3,
+                            "label": {
+                                "eng": "British Overseas Territories"
+                            },
+                            "location": null
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Self-governance",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Self-governance"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Assassination",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Assassination"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Black_people",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Black people"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Spanish_language",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Spanish language"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Riot",
+                            "type": "org",
+                            "score": 3,
+                            "label": {
+                                "eng": "Riot"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Golf",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Golf"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Independence",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Independence"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/English_language",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "English language"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Africa",
+                            "type": "loc",
+                            "score": 3,
+                            "label": {
+                                "eng": "Africa"
+                            },
+                            "location": null
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Constitution",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Constitution"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/England",
+                            "type": "loc",
+                            "score": 3,
+                            "label": {
+                                "eng": "England"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "England"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United Kingdom"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Somers_Isles_Company",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Somers Isles Company"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda_Broadcasting",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "Bermuda Broadcasting"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Black_Bermudians",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Black Bermudians"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Virginia_Company",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Virginia Company"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/House_of_Assembly_of_Bermuda",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "House of Assembly of Bermuda"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/2017_United_Kingdom_general_election",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "2017 United Kingdom general election"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Atlantic_slave_trade",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Atlantic slave trade"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Crown_colony",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Crown colony"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Charles_III_of_Spain",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Charles III of Spain"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Virginia",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Virginia"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Virginia"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/New_London,_Connecticut",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "New London, Connecticut"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "New London, Connecticut"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Jamestown,_Virginia",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Jamestown, Virginia"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Jamestown, Virginia"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/George_Town,_Cayman_Islands",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "George Town, Cayman Islands"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "George Town, Cayman Islands"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "Cayman Islands"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Portugal",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Portugal"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Portugal"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Ireland",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Ireland"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Ireland"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/One_Bermuda_Alliance",
+                            "type": "org",
+                            "score": 1,
+                            "label": {
+                                "eng": "One Bermuda Alliance"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Confederate_States_of_America",
+                            "type": "loc",
+                            "score": 1,
+                            "label": {
+                                "eng": "Confederate States of America"
+                            },
+                            "location": null
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Supreme_Court_of_the_United_States",
+                            "type": "loc",
+                            "score": 1,
+                            "label": {
+                                "eng": "Supreme Court of the United States"
+                            },
+                            "location": null
+                        }
+                    ],
+                    "image": "https://media.zenfs.com/en/bbc_us_articles_995/aa7f4eeb040431e284b7bc9957a1c82d",
+                    "eventUri": "eng-8835527",
+                    "sentiment": 0.1607843137254903,
+                    "wgt": 429897909,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7677955484",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-08-14",
+                    "time": "19:12:36",
+                    "dateTime": "2023-08-14T19:12:36Z",
+                    "dateTimePub": "2023-08-14T19:06:00Z",
+                    "dataType": "news",
+                    "sim": 0.9058823585510254,
+                    "url": "https://www.crypto-reporter.com/newsfeed/bdas-fifth-annual-bermuda-tech-summit-to-be-held-october-8-10-49521/",
+                    "title": "BDA's Fifth Annual Bermuda Tech Summit To Be Held October 8-10",
+                    "body": "HAMILTON, Bermuda--(BUSINESS WIRE)--The fifth annual Bermuda Tech Summit, presented by the Bermuda Business Development Agency (BDA), will be held from October 8-10, with the theme 'Building a Foundation for the Future'.\n\nDavid Hart, BDA CEO, said, \"We invite you to join us for three days of thought leadership, industry presentations and networking with oceanside views at the iconic Hamilton Princess & Beach Club. Due in no small part to the regulatory certainty that Bermuda provides, we continue to attract some of the world's most notable tech companies to our shores, increasing direct investment and creating exciting new career paths for Bermudians. Organising the Bermuda Tech Summit aligns with the 'Business Attraction and Investment Promotion' priority from Bermuda Economic Development Strategy and has a direct connection to the Climate Risk Finance, Blue Economy, FinTech and Insurtech initiatives.\"\n\nConfirmed speakers include: George Alayon, Deputy Director, Supervision (Insurance), Bermuda Monetary Authority (BMA); Martin Carrica, Founder, Nalu; Cha'Von Clarke-Joell, Assistant Privacy Commissioner, Office of the Privacy Commissioner of Bermuda; Karamoko Dickens, Founder, Conci Bermuda; Eric Donkoh, Head of Data Science and Artificial Intelligence (BMA); Troy Dort, Director, IT Advisory, KPMG; Moad Fahmi, Senior Advisor, Supervision (FinTech), BMA; Robert M. Franklin III, Venture Partner, Masters Fund; Stuart Lacey, independent director, BDA; Paul McLeod, CEO, Bespoke Analytics; Nick Muller, CEO, TriFi Bermuda; Eugene Phillips, CEO, CCS Bermuda; Sandra Ro, CEO, Global Blockchain Business Council; Stan Stalnaker, Founding Director and Chief Strategy Officer, Hub Culture; Zac Townsend, Co-Founder, Meanwhile; and Darren Wolfberg, Co-Founder, Blockchain Triangle.\n\nThis year's agenda aims to raise awareness of Bermuda's digital asset framework, showcase the ongoing work to establish blue and green investment facilities, and raise awareness of Bermuda's innovation sandbox and option to beta test cleantech solutions and initiatives in support of the Ministry of Economy and Labour's 2023-2027 Economic Development Strategy. Panels will include: 'The Transformative Power of Artificial Intelligence,' 'FinTech's New Wave (Buy, Build or Modernise),' 'Bermuda's Journey to Becoming Climate Tech Central' and 'Insuring Continuity - Safeguarding the Future of Digital Assets'. Additional topics will include climate tech, data privacy, carbon credit trading platforms, and pioneering digital assets. Click here to see an agenda and full event description on the BDA website.\n\nPotential delegates are encouraged to take advantage of early bird registration prices for one more week until August 21, 2023. Delegates travelling from overseas are strongly encouraged to book their hotel rooms with our special rates through to September 8. From September 9, hotel room rates will increase significantly, or may be completely sold out, due to limited availability.\n\nThe Bermuda Tech Summit, presented by the BDA is the signature event of the annual 'Bermuda Tech Week' being held from October 7-13 - stay tuned for more information about Bermuda Tech Week events in coming weeks.\n\nCONNECTING BUSINESS\n\nThe BDA encourages direct investment and helps companies start up, re-locate, or expand their operations in our premier jurisdiction. An independent, public-private partnership, we connect you to industry professionals, regulatory officials, and key contacts in the Bermuda government to assist domicile decisions.",
+                    "source": {
+                        "uri": "crypto-reporter.com",
+                        "dataType": "news",
+                        "title": "Crypto Reporter"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Chief_executive_officer",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Chief executive officer"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda",
+                            "type": "loc",
+                            "score": 5,
+                            "label": {
+                                "eng": "Bermuda"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Bermuda"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Fintech",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Fintech"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/British_Medical_Association",
+                            "type": "org",
+                            "score": 4,
+                            "label": {
+                                "eng": "British Medical Association"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Summit_County,_Ohio",
+                            "type": "loc",
+                            "score": 4,
+                            "label": {
+                                "eng": "Summit County, Ohio"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Summit County, Ohio"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hamilton_Princess_&_Beach_Club",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Hamilton Princess & Beach Club"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Blockchain",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Blockchain"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/K\u00f6ppen_climate_classification",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "K\u00f6ppen climate classification"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Artificial_intelligence",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Artificial intelligence"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hamilton,_Bermuda",
+                            "type": "loc",
+                            "score": 3,
+                            "label": {
+                                "eng": "Hamilton, Bermuda"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Hamilton, Bermuda"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "Bermuda"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda_Monetary_Authority",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Bermuda Monetary Authority"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Research_Triangle",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Research Triangle"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/KPMG",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "KPMG"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Data_science",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Data science"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Carbon_capture_and_storage",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Carbon capture and storage"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Charles_Dickens",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Charles Dickens"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Information_technology",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Information technology"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Independent_politician",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "Independent politician"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Insurance",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Insurance"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Eugene,_Oregon",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Eugene, Oregon"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Eugene, Oregon"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Troy,_New_York",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Troy, New York"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Troy, New York"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Franklin,_Tennessee",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Franklin, Tennessee"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Franklin, Tennessee"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Clean_technology",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Clean technology"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Domicile_(law)",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Domicile (law)"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Public\u2013private_partnership",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Public\u2013private partnership"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Asset",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Asset"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Information_privacy",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Information privacy"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Carbon",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Carbon"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Jurisdiction",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Jurisdiction"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Labour_Party_(UK)",
+                            "type": "org",
+                            "score": 1,
+                            "label": {
+                                "eng": "Labour Party (UK)"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hotel",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Hotel"
+                            }
+                        }
+                    ],
+                    "image": "https://mms.businesswire.com/media/20230814975769/en/1866353/21/BDA_Logo_RGB.jpg",
+                    "eventUri": "eng-8835527",
+                    "sentiment": 0.388235294117647,
+                    "wgt": 429736356,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7677902033",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-08-14",
+                    "time": "18:12:54",
+                    "dateTime": "2023-08-14T18:12:54Z",
+                    "dateTimePub": "2023-08-14T18:05:10Z",
+                    "dataType": "news",
+                    "sim": 0.8823529481887817,
+                    "url": "https://bernews.com/2023/08/fifth-bda-tech-summit-to-be-held-in-october/",
+                    "title": "BDA Tech Summit To Be Held In October - Bernews",
+                    "body": "The fifth annual Bermuda Tech Summit, presented by the Bermuda Business Development Agency [BDA], will be held from October 8-10, with the theme 'Building a Foundation for the Future'.\n\nDavid Hart, BDA CEO, said, \"We invite you to join us for three days of thought leadership, industry presentations and networking with oceanside views at the iconic Hamilton Princess & Beach Club. Due in no small part to the regulatory certainty that Bermuda provides, we continue to attract some of the world's most notable tech companies to our shores, increasing direct investment and creating exciting new career paths for Bermudians. Organising the Bermuda Tech Summit aligns with the 'Business Attraction and Investment Promotion' priority from Bermuda Economic Development Strategy and has a direct connection to the Climate Risk Finance, Blue Economy, FinTech and Insurtech initatives.\"\n\nThe spokesperson said, \"Confirmed speakers include: George Alayon, Deputy Director, Supervision [Insurance], Bermuda Monetary Authority [BMA]; Martin Carrica, Founder, Nalu; Cha'Von Clarke-Joell, Assistant Privacy Commissioner, Office of the Privacy Commissioner of Bermuda; Karamoko Dickens, Founder, Conci Bermuda; Eric Donkoh, Head of Data Science and Artificial Intelligence [BMA]; Troy Dort, Director, IT Advisory, KPMG; Moad Fahmi, Senior Advisor, Supervision [FinTech], BMA; Robert M. Franklin III, Venture Partner, Masters Fund; Stuart Lacey, independent director, BDA, Paul McLeod, CEO, Bespoke Analytics; Nick Muller, CEO, TriFi Bermuda; Eugene Phillips, CEO, CCS Bermuda; Sandra Ro, CEO, Global Blockchain Business Council; Stan Stalnaker, Founding Director and Chief Strategy Officer, Hub Culture; Zac Townsend, Co-Founder, Meanwhile; and Darren Wolfberg, Co-Founder, Blockchain Triangle.\"\n\n\"This year's agenda aims to raise awareness of Bermuda's digital asset framework, showcase the ongoing work to establish blue and green investment facilities, and raise awareness of Bermuda's innovation sandbox and option to beta test cleantech solutions and initiatives in support of the Ministry of Economy and Labour's 2023-2027 Economic Development Strategy. Panels will include: 'The Transformative Power of Artificial Intelligence,' 'FinTech's New Wave [Buy, Build or Modernise],' 'Bermuda's Journey to Becoming Climate Tech Central' and 'Insuring Continuity - Safeguarding the Future of Digital Assets'. Additional topics will include climate tech, data privacy, carbon credit trading platforms, and pioneering digital assets. Click here to see an agenda and full event description on the BDA website.\"\n\nMr. Hart, continued, \"Without the generous support of our sponsors, we could not put on this in-person event, and we are so pleased to announce that our first sponsors have also come on board: RELM is diamond sponsor and will sponsor another legendary closing party; Appleby, Carey Olsen, CCS Group Limited and XBTO are platinum sponsors; Hub Culture, KPMG, and One Communications are gold level sponsors; and Chainproof is a silver sponsor.\"\n\nThe spokesperson said, \"If you are interested in sponsoring the Bermuda Tech Summit, click here or email bermudatech@bda.bm.\n\n\"Potential delegates are encouraged to take advantage of early bird registration prices for one more week until August 21, 2023. Delegates travelling from overseas are strongly encouraged to book their hotel rooms with our special rates through to September 8. From September 9, hotel room rates will increase significantly, or may be completely sold out, due to limited availability.\n\n\"The Bermuda Tech Summit, presented by the BDA is the signature event of the annual 'Bermuda Tech Week' being held from October 7-13 - stay tuned for more information about Bermuda Tech Week events in coming weeks.\"",
+                    "source": {
+                        "uri": "bernews.com",
+                        "dataType": "news",
+                        "title": "Bernews"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/British_Medical_Association",
+                            "type": "org",
+                            "score": 5,
+                            "label": {
+                                "eng": "British Medical Association"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Chief_executive_officer",
+                            "type": "wiki",
+                            "score": 5,
+                            "label": {
+                                "eng": "Chief executive officer"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda",
+                            "type": "loc",
+                            "score": 5,
+                            "label": {
+                                "eng": "Bermuda"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Bermuda"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Fintech",
+                            "type": "wiki",
+                            "score": 4,
+                            "label": {
+                                "eng": "Fintech"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hamilton_Princess_&_Beach_Club",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Hamilton Princess & Beach Club"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Blockchain",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Blockchain"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/K\u00f6ppen_climate_classification",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "K\u00f6ppen climate classification"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Artificial_intelligence",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Artificial intelligence"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hub_Culture",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "Hub Culture"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda_Monetary_Authority",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Bermuda Monetary Authority"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Clean_technology",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Clean technology"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Research_Triangle",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Research Triangle"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/KPMG",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "KPMG"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Data_science",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Data science"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Software_release_life_cycle",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Software release life cycle"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Carbon_capture_and_storage",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Carbon capture and storage"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Charles_Dickens",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Charles Dickens"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Information_technology",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Information technology"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Independent_politician",
+                            "type": "org",
+                            "score": 2,
+                            "label": {
+                                "eng": "Independent politician"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Insurance",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Insurance"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Eugene,_Oregon",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Eugene, Oregon"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Eugene, Oregon"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Troy,_New_York",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Troy, New York"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Troy, New York"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Franklin,_Tennessee",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Franklin, Tennessee"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Franklin, Tennessee"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "United States"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Appleby_(law_firm)",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Appleby (law firm)"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Platinum",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Platinum"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Asset",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Asset"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Information_privacy",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Information privacy"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Silver",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Silver"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Carbon",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Carbon"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Labour_Party_(UK)",
+                            "type": "org",
+                            "score": 1,
+                            "label": {
+                                "eng": "Labour Party (UK)"
+                            }
+                        }
+                    ],
+                    "image": "https://cloudfront.bernews.com/wp-content/uploads/2021/06/Business-Development-Agency-Bermuda-generic-bda.jpg",
+                    "eventUri": "eng-8835527",
+                    "sentiment": 0.388235294117647,
+                    "wgt": 429732774,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7677795443",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-08-14",
+                    "time": "16:23:07",
+                    "dateTime": "2023-08-14T16:23:07Z",
+                    "dateTimePub": "2023-08-14T16:22:19Z",
+                    "dataType": "news",
+                    "sim": 0.7803921699523926,
+                    "url": "https://www.nampa.org/index.php?model=categories&function=display&id=22259161",
+                    "title": "North-America-Europe-Bermuda-Caribbean-Canada",
+                    "body": "Press Release from Business Wire: Bermuda Business Development Agency\n\nHAMILTON, Aug 14, 2023 (BSW) - The fifth annual Bermuda Tech Summit, presented by the Bermuda Business Development Agency (BDA), will be held from October 8-10, with the theme 'Building a Foundation for the Future'.\n\nDavid Hart, BDA CEO, said, \"We invite you to join us for three days of thought leadership, industry presentations and networking with oceanside views at the iconic Hamilton Princess & Beach Club. Due in no smal ...",
+                    "source": {
+                        "uri": "nampa.org",
+                        "dataType": "news",
+                        "title": "nampa.org"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda",
+                            "type": "loc",
+                            "score": 5,
+                            "label": {
+                                "eng": "Bermuda"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Bermuda"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Business_Wire",
+                            "type": "org",
+                            "score": 3,
+                            "label": {
+                                "eng": "Business Wire"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Social_work",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Social work"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hamilton_Princess_&_Beach_Club",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Hamilton Princess & Beach Club"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Chief_executive_officer",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Chief executive officer"
+                            }
+                        }
+                    ],
+                    "image": null,
+                    "eventUri": "eng-8835527",
+                    "sentiment": 0.04313725490196085,
+                    "wgt": 429726187,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7677778975",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-08-14",
+                    "time": "16:07:41",
+                    "dateTime": "2023-08-14T16:07:41Z",
+                    "dateTimePub": "2023-08-14T16:06:06Z",
+                    "dataType": "news",
+                    "sim": 0.8901960849761963,
+                    "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/bdas-fifth-annual-bermuda-tech-summit-to-be-held-october-8-10",
+                    "title": "BDA's Fifth Annual Bermuda Tech Summit To Be Held October 8-10",
+                    "body": "HAMILTON, Bermuda -- The fifth annual Bermuda Tech Summit, presented by the Bermuda Business Development Agency (BDA), will be held from October 8-10, with the theme 'Building a Foundation for the Future'.\n\nDavid Hart, BDA CEO, said, \"We invite you to join us for three days of thought leadership, industry presentations and networking with oceanside views at the iconic Hamilton Princess & Beach Club. Due in no small part to the regulatory certainty that Bermuda provides, we continue to attract some of the world's most notable tech companies to our shores, increasing direct investment and creating exciting new career paths for Bermudians. Organising the Bermuda Tech Summit aligns with the 'Business Attraction and Investment Promotion' priority from Bermuda Economic Development Strategy and has a direct connection to the Climate Risk Finance, Blue Economy, FinTech and Insurtech initiatives.\"",
+                    "source": {
+                        "uri": "financialpost.com",
+                        "dataType": "news",
+                        "title": "Financial Post"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda",
+                            "type": "loc",
+                            "score": 5,
+                            "label": {
+                                "eng": "Bermuda"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Bermuda"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Chief_executive_officer",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Chief executive officer"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hamilton,_Bermuda",
+                            "type": "loc",
+                            "score": 3,
+                            "label": {
+                                "eng": "Hamilton, Bermuda"
+                            },
+                            "location": {
+                                "type": "place",
+                                "label": {
+                                    "eng": "Hamilton, Bermuda"
+                                },
+                                "country": {
+                                    "type": "country",
+                                    "label": {
+                                        "eng": "Bermuda"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Hamilton_Princess_&_Beach_Club",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "Hamilton Princess & Beach Club"
+                            }
+                        }
+                    ],
+                    "image": null,
+                    "eventUri": "eng-8835527",
+                    "sentiment": 0.3568627450980393,
+                    "wgt": 429725261,
+                    "relevance": 1
+                },
+                {
+                    "uri": "7675460790",
+                    "lang": "eng",
+                    "isDuplicate": false,
+                    "date": "2023-08-12",
+                    "time": "16:37:12",
+                    "dateTime": "2023-08-12T16:37:12Z",
+                    "dateTimePub": "2023-08-12T16:34:13Z",
+                    "dataType": "news",
+                    "sim": 0.6196078658103943,
+                    "url": "https://bernews.com/2023/08/bermuda-under-15-show-sportsmanship/",
+                    "title": "Bermuda U15 Team Show Great Sportsmanship - Bernews",
+                    "body": "The Bermuda Under-15 team showed great sportsmanship during their recent match against Belize Under-15.\n\nSeveral Bermuda players comforted a Belize player after he missed the decisive spot kick during a penalty shootout in the Concacaf Under-15 Boys' Championship League B quarter-finals in Cura\u00e7ao on Thursday [August 10].\n\nBermuda won the shootout 4-3 after the game finished goalless. Dakayo Leverock, Na'im Zuill, Kennahz Fray, and Logan Jimenez converted from the spot for Bermuda.\n\nBermuda lost their semi-final match against St Lucia 2-0 yesterday. They face Martinique in the third-place game tomorrow.",
+                    "source": {
+                        "uri": "bernews.com",
+                        "dataType": "news",
+                        "title": "Bernews"
+                    },
+                    "authors": [],
+                    "concepts": [
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Bermuda",
+                            "type": "loc",
+                            "score": 5,
+                            "label": {
+                                "eng": "Bermuda"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Bermuda"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Belize",
+                            "type": "loc",
+                            "score": 4,
+                            "label": {
+                                "eng": "Belize"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Belize"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Penalty_shoot-out_(association_football)",
+                            "type": "wiki",
+                            "score": 3,
+                            "label": {
+                                "eng": "Penalty shoot-out (association football)"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/2019\u201320_CONCACAF_Nations_League_B",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "2019\u201320 CONCACAF Nations League B"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/EFL_Championship",
+                            "type": "wiki",
+                            "score": 2,
+                            "label": {
+                                "eng": "EFL Championship"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Cura\u00e7ao",
+                            "type": "loc",
+                            "score": 2,
+                            "label": {
+                                "eng": "Cura\u00e7ao"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Cura\u00e7ao"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Martinique",
+                            "type": "loc",
+                            "score": 1,
+                            "label": {
+                                "eng": "Martinique"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Martinique"
+                                }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Saint_Lucia",
+                            "type": "loc",
+                            "score": 1,
+                            "label": {
+                                "eng": "Saint Lucia"
+                            },
+                            "location": {
+                                "type": "country",
+                                "label": {
+                                    "eng": "Saint Lucia"
+                                }
+                            }
+                        }
+                    ],
+                    "image": "https://cloudfront.bernews.com/wp-content/uploads/2023/08/Bermuda-Under-15-Football-August-2023-TWFB.jpg",
+                    "eventUri": "eng-8835527",
+                    "sentiment": 0.2,
+                    "wgt": 429554232,
+                    "relevance": 1
+                }
+            ]
+        }
+    }
+}
