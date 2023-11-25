@@ -1,291 +1,190 @@
 <!-- Main content -->
 <div class="main-content">
-    <div class="container-fluid bg-gradient-success">
-        <div class="row">
-            <h1 class="text-white">Hierarchical Clustering</h1>
-        </div>
-    </div>
-    <br><br>
-    <div class="container-fluid">
-        <div id="HCform_1">
-			<button id="btn1" class="btn btn-sm bg-gradient-success  text-white">Hierarchical Clusters</button>
-        </div>
-    </div>
-    <br><br>
-    <div class="container-fluid">
-        <div id="HCclustering" class='row'>
-            <div style="height:50%;width:80%;margin-right:auto;margin-left:auto;color:black;display:inline-block;" >
-                <div style="height:50%;width:80%;margin-right:auto;margin-left:auto;'fontSize':20;background:#fdfdfd;float:left;" class="chart" id="hclinegraph"></div>
-                <div style="margin-left:20px;display:flex;flex-direction:column;align-items:center;">
-					<h4 class="text-black" id="label" style="display:none;">Branches</h4>
-					<div style="height:250px;margin-top:100px;display:block;color:black;" id="slider"></div>
-				</div>
-            </div>
-        </div>
-    </div>
-    <br><br>
-	<br><br>
-    <div class="container-fluid">
-		<script src="http://cleopatra.ijs.si/sensoranalysis/static/assets/js/nouislider/nouislider.js"></script>
-        <script type="module">
-		//import noUiSlider from "https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/noUiSlider.min.js";
-		//import noUiSlider from 'http://cleopatra.ijs.si/sensoranalysis/static/assets/js/nouislider.js';
-		import noUiSlider from './static/assets/nouislider/dist/nouislider.mjs';
-		
-		
-		function getHeirarchies(val) {
-			topbar.show()
-						$.ajax({
-                            url: '/sensoranalysis/hchierarchical_clustering',
-                            type: 'GET',
-                            contentType: 'application/json;charset=UTF-8',
-							data: {
-                                'x': val,
-								'width':document.getElementById('hclinegraph').offsetWidth
-                                //'selected_event': document.getElementById('event').value
-                            },
-                            dataType: "json",
-							success: function (data) {
-							//if(data == "0"){
-							//	document.getElementById("label").style.display = 'none';
-							//	document.getElementById("slider").style.display = 'none';
-							//	alert("Please select an event!")
-							//	return
-							//}
-							//else{
-							document.getElementById("label").style.display = 'block';
-							document.getElementById("slider").style.display = 'block';
-							//var layout = {
-							//'xaxis.range': [2010, 2015]
-							//}
-							//Plotly.newPlot('hclinegraph', data, layout);
-							$('#hclinegraph').empty();
-							//document.getElementById("label").style.display = 'none';
-							Plotly.newPlot('hclinegraph', data)
-							topbar.hide()
-							}//}
-							});
-							
-						//console.log(values)
-						//console.log("funct1")
-						topbar.show()
-                        $.ajax({
-                            url: '/sensoranalysis/hcThemeRiver',
-                            type: 'GET',
-                            contentType: 'application/json;charset=UTF-8',
-                            data: {
-                                'x': val,
-                                //'selected_event': document.getElementById('event').value
-                            },
-                            dataType: "json",
-                            success: function (data) {
-								
-                                $('#hcsg').empty();
-								//Plotly.deleteTraces('hcsg', 0);
-								//document.getElementById("label").style.display = 'none';
-                                Plotly.newPlot('hcsg', data)
-								
-								topbar.show()
-								$.ajax({
-					url: '/sensoranalysis/discussion_word_clouds2',
+<div class="container-fluid bg-gradient-success">
+<div class="row">
+	<h1 class="text-white">Hierarchical Clustering</h1>
+</div>
+</div>
+<br><br>
+<div class="container-fluid">
+<div id="HCform_1">
+	<button id="btn1" class="btn btn-sm bg-gradient-success  text-white">Hierarchical Clusters</button>
+</div>
+</div>
+<br><br>
+<div class="container-fluid">
+<div id="ThemeRiverHC" class='row'>
+	<div style="height:50%;width:80%;margin-right:auto;margin-left:auto;color:black;display:inline-block;" >
+		<div style="height:50%;width:80%;margin-right:auto;margin-left:auto;'fontSize':20;background:#fdfdfd;float:left;" class="chart" id="hclinegraph"></div>
+		<div style="margin-left:20px;display:flex;flex-direction:column;align-items:center;">
+			<h4 class="text-black" id="label" style="display:none;">Branches</h4>
+			<div style="height:250px;margin-top:100px;display:block;color:black;" id="slider"></div>
+		</div>
+	</div>
+</div>
+</div>
+<br><br>
+<br><br>
+<div class="container-fluid">
+<script src="http://cleopatra.ijs.si/sensoranalysis/static/assets/js/nouislider/nouislider.js"></script>
+<script type="module">
+import noUiSlider from './static/assets/nouislider/dist/nouislider.mjs';
+function getHeirarchies(val) {
+	topbar.show()
+				$.ajax({
+					url: '/sensoranalysis/hchierarchical_clustering',
 					type: 'GET',
 					contentType: 'application/json;charset=UTF-8',
 					data: {
-						//'selected_event': document.getElementById('event').value,
 						'x': val,
-						//'commaValues': getSelectValues(document.getElementById('commaValues')),
-						//'selBarrier': document.getElementById('barrier').value
+						'width':document.getElementById('hclinegraph').offsetWidth
 					},
 					dataType: "json",
 					success: function (data) {
-						console.log("console prints")
-						console.log(data)
-						try{
-							console.log(data['data'].length)
-						}
-						catch(e)
-						{
-							console.log("failed")
-						}
-						//console.log(data['data']['x']);
-						//console.log(typeof(data['data']['x']));
-						//console.log(data[0]);
-						//console.log(JSON.stringify(data, null, 4));
-						//console.log(data['data'].length)
-						//var tot = data['data'].length
-						//console.log(data['data'].length)
-						//if(data == ""){
-						//	document.getElementById("qawordcloud").innerHTML = "";
-						//	//$('#qawordcloud').empty();
-							//Plotly.deleteTraces('qawordcloud', 0);
-						//	topbar.hide()
-						//}else{
-						var tot = data.length;
-						document.getElementById("hcwordcloud").innerHTML = "";
-						
-						var totalhighet = 0;
-						for(x=0; x<tot;x++) {
-							var elements = data[x]['data']
-							var calh  = (Math.ceil(elements.length/4))*300 + 'px';
-							totalhighet = totalhighet + calh;
-						}
-						document.getElementById('hcwordcloud').style.height = totalhighet + 'px';
-						document.getElementById('hcwordcloud').setAttribute('justify-content', 'center');
-						document.getElementById('hcwordcloud').setAttribute('align-items', 'center');
-						console.log("total discusions word clouds")
-						console.log(tot)
-						
-						var x = 0;
-						var totalhighet = 0;
-						for(x=0; x<tot;x++) {
-							var elements = data[x]['data']
-							var board = document.createElement('div');
-							var idstr = "div_"+x.toString();
-							board.id = idstr;
-							var calh  = (Math.ceil(elements.length/4))*300 + 'px';
-							console.log("total topics in a discussion")
-							console.log(Math.ceil(elements.length/4))
-							console.log(calh)
-							board.style.height = calh
-							totalhighet = totalhighet + board.style.height;
-							board.style.width = document.getElementById('hcwordcloud').style.width;
-							document.getElementById('hcwordcloud').appendChild(board);
-							Plotly.newPlot(idstr, data[x])
-							document.getElementById(idstr).setAttribute('align', 'center');
-						}
-						$("#hcwordcloud").children().each(function () {
-							$(this).css('text-align','center');
-							$(this).css('justify-content','center');
-						})
-								
-						//document.getElementById('hcwordcloud').style.height = totalhighet + 'px';
-						
-						//						
-					    //document.getElementById('hcwordcloud').style.height = tot*500 + 'px';
-						//Plotly.newPlot('hcwordcloud', data)
-						topbar.hide()
-					}//}
-				});
-                   topbar.hide()}
-                        });
-						
-                    
-			}
-		
-		//$( document ).ready(function() {
-            $('div#HCform_1').on('click', 'button', function () {
-				console.log("clicked button HC")
-				document.getElementById("label").style.display = 'block';
-			    //document.getElementById("slider").style.display = 'none';
-                //$('select#HCclustering').on('change', function () {
-                //myPlot.on('plotly_click', function (data) {
-                //$(document).ready(function () {
-                    var slider = document.getElementById("slider");
-				
-                    noUiSlider.create(slider, {
-                        start: [2],
-                        step: 1,
-						//height: '250px',
-						//direction: 'rtl',
-						orientation: 'vertical',
-						behaviour: 'drag',
-						connect: true,
-                        tooltips: [true],
-                        range: {
-                            'min': [2],
-                            'max': [20]
-                        }
-                    });	
-					
-					getHeirarchies(2);
-					
-                    slider.noUiSlider.on("change", function (values, handle, unencoded) {
-                        
-						console.log(values)
-						getHeirarchies(values[0])
-						
-					
-					/*$.ajax({
-                            url: '/sensoranalysis/hchierarchical_clustering',
-                            type: 'GET',
-                            contentType: 'application/json;charset=UTF-8',
-							data: {
-                                'x': values[0],
-								'width':document.getElementById('hclinegraph').offsetWidth
-                                //'selected_event': document.getElementById('event').value
-                            },
-                            dataType: "json",
-							success: function (data) {
-							//if(data == "0"){
-							//	document.getElementById("label").style.display = 'none';
-							//	document.getElementById("slider").style.display = 'none';
-							//	alert("Please select an event!")
-							//	return
-							//}
-							//else{
-							document.getElementById("label").style.display = 'block';
-							document.getElementById("slider").style.display = 'block';
-							//var layout = {
-							//'xaxis.range': [2010, 2015]
-							//}
-							//Plotly.newPlot('hclinegraph', data, layout);
-							$('#hclinegraph').empty();
-							//document.getElementById("label").style.display = 'none';
-							Plotly.newPlot('hclinegraph', data)
-							}//}
-							});
-							
-						//console.log(values)
-						//console.log("funct1")
-                        $.ajax({
-                            url: '/sensoranalysis/hcThemeRiver',
-                            type: 'GET',
-                            contentType: 'application/json;charset=UTF-8',
-                            data: {
-                                'x': values[0],
-                                //'selected_event': document.getElementById('event').value
-                            },
-                            dataType: "json",
-                            success: function (data) {
-								
-                                $('#hcsg').empty();
-								//Plotly.deleteTraces('hcsg', 0);
-								//document.getElementById("label").style.display = 'none';
-                                Plotly.newPlot('hcsg', data)
-                            }
-                        });*/
-					
-					//document.getElementById("label").style.display = 'block';
-                    console.log("barrier is selected")
+					document.getElementById("label").style.display = 'block';
+					document.getElementById("slider").style.display = 'block';
+					$('#hclinegraph').empty();
+					Plotly.newPlot('hclinegraph', data)
+					topbar.hide()
+					}
 					});
-                });
-				//});
-        </script>
-        <div id="HCstreamGraph">
-            <div style="color:black;" class='row'>
-                <div style="height:50%;width:80%;color:black;background:#fdfdfd;'fontSize':20;margin-right:auto;margin-left:auto;" id="hcsg"></div>
-            </div>
-        </div>
-    </div>
-    <br><br>
-       <div class="container-fluid">
-        <div  class='row'>
-            <div style="height:50%;width:80%;color:black;background:#fdfdfd;'fontSize':20;margin-right:auto;margin-left:auto;" id="trendtable">
-            </div>
-        </div>
-    </div>
-    <br><br>
-	    <div class="container-fluid">
-        <div style="color:black;" class='row' >
-            <div  style="color:black;'fontSize': 20;height:50%;overflow: hidden;width:80%;margin-right:auto;margin-left:auto;background:#fdfdfd;" class="chart" id="hcwordcloud">
-            </div>  
-        </div>
-    </div>
-    <br><br>
-	<div class="container-fluid">
-        <div  class='row' id='explanation'  style="margin-left:160px;">
-		<h3 style='clear:both' class="subhead"></h3>
-	  </div>
-    </div>
-	<br><br>
+					
+				topbar.show()
+				$.ajax({
+					url: '/sensoranalysis/hcThemeRiver',
+					type: 'GET',
+					contentType: 'application/json;charset=UTF-8',
+					data: {
+						'x': val,
+					},
+					dataType: "json",
+					success: function (data) {
+						
+						$('#hcsg').empty();
+						Plotly.newPlot('hcsg', data)
+						
+						topbar.show()
+						$.ajax({
+			url: '/sensoranalysis/BertTopicsHC',
+			type: 'GET',
+			contentType: 'application/json;charset=UTF-8',
+			data: {
+				'x': val,
+				'width' : document.getElementById('hcsg').getBoundingClientRect().width,
+				'height' : document.getElementById('hcsg').getBoundingClientRect().height
+			},
+			dataType: "json",
+			success: function (data) {
+				//console.log("console prints")
+				//console.log(data)
+				try{
+					//console.log(data['data'].length)
+				}
+				catch(e)
+				{
+					//console.log("failed")
+				}
+				var tot = data.length;
+				document.getElementById("hcwordcloud").innerHTML = "";
+				
+				var totalhighet = 0;
+				for(x=0; x<tot;x++) {
+					var elements = data[x]['data']
+					var calh  = (Math.ceil(elements.length/4))*document.getElementById('hcsg').getBoundingClientRect().height  + 'px';
+					totalhighet = totalhighet + calh;
+				}
+				document.getElementById('hcwordcloud').style.height = totalhighet + 'px';
+				document.getElementById('hcwordcloud').style.width = document.getElementById('hcsg').getBoundingClientRect().width + 'px';
+				//document.getElementById('hcwordcloud').setAttribute('justify-content', 'center');
+				//document.getElementById('hcwordcloud').setAttribute('align-items', 'center');
+				//console.log("total discusions word clouds")
+				//console.log(tot)
+				
+				var x = 0;
+				var totalhighet = 0;
+				for(x=0; x<tot;x++) {
+					var elements = data[x]['data']
+					var board = document.createElement('div');
+					var idstr = "div_"+x.toString();
+					board.id = idstr;
+					var calh  = (Math.ceil(elements.length/4))*document.getElementById('hcsg').getBoundingClientRect().height  + 'px';
+					//console.log("total topics in a discussion")
+					//console.log(Math.ceil(elements.length/4))
+					//console.log(calh)
+					board.style.height = calh
+					totalhighet = totalhighet + board.style.height;
+					board.style.width = document.getElementById('hcwordcloud').style.width;
+					document.getElementById('hcwordcloud').appendChild(board);
+					Plotly.newPlot(idstr, data[x])
+					document.getElementById(idstr).setAttribute('align', 'center');
+				}
+				$("#hcwordcloud").children().each(function () {
+					$(this).css('text-align','center');
+					$(this).css('justify-content','center');
+				})
+				topbar.hide()
+			}
+		});
+		   topbar.hide()}
+				});
+				
+			
+	}
+
+	$('div#HCform_1').on('click', 'button', function () {
+		//console.log("clicked button HC")
+		document.getElementById("label").style.display = 'block';
+			var slider = document.getElementById("slider");
+		
+			noUiSlider.create(slider, {
+				start: [2],
+				step: 1,
+				orientation: 'vertical',
+				behaviour: 'drag',
+				connect: true,
+				tooltips: [true],
+				range: {
+					'min': [2],
+					'max': [20]
+				}
+			});	
+			
+			getHeirarchies(2);
+			
+			slider.noUiSlider.on("change", function (values, handle, unencoded) {
+				
+				//console.log(values)
+				getHeirarchies(values[0])
+
+			//console.log("barrier is selected")
+			});
+		});
+</script>
+<div id="HCstreamGraph">
+	<div style="color:black;" class='row'>
+		<div style="height:50%;width:80%;color:black;background:#fdfdfd;'fontSize':20;margin-right:auto;margin-left:auto;" id="hcsg"></div>
+	</div>
+</div>
+</div>
+<br><br>
+<div class="container-fluid">
+<div  class='row'>
+	<div style="height:50%;width:80%;color:black;background:#fdfdfd;'fontSize':20;margin-right:auto;margin-left:auto;" id="trendtable">
+	</div>
+</div>
+</div>
+<br><br>
+<div class="container-fluid">
+<div style="color:black;" class='row' >
+	<div  style="color:black;'fontSize': 20;height:60%;overflow: hidden;width:55%;margin-right:auto;margin-left:auto;background:#fdfdfd;" class="chart" id="hcwordcloud">
+	</div>  
+</div>
+</div>
+<br><br>
+<div class="container-fluid">
+<div  class='row' id='explanation'  style="margin-left:160px;">
+<h3 style='clear:both' class="subhead"></h3>
+</div>
+</div>
+<br><br>
 </div>

@@ -21,7 +21,6 @@ import random
 from wordcloud import WordCloud, STOPWORDS
 from pytimeparse.timeparse import timeparse
 import matplotlib.pyplot as plt
-import time
 import pyLDAvis.gensim
 import nltk
 from nltk.corpus import stopwords
@@ -66,17 +65,14 @@ from scipy.cluster import hierarchy
 from scipy.cluster.hierarchy import dendrogram, linkage, cut_tree
 from collections import namedtuple
 from json import JSONEncoder
-
 from bigtree import Node, print_tree, dataframe_to_tree, tree_to_dataframe
 from datetime import datetime
 from datetime import timezone
 import datetime
 import networkx as nx
 from scipy.spatial.distance import jaccard, squareform
-
 from bertopic import BERTopic
 from plotly.graph_objs import *
-
 global threshold
 global glo_dataframes
 from eventregistry import *
@@ -84,7 +80,6 @@ from eventregistry import *
 threshold = 0.2
 dendro_clusters = 0
 color_ran = []
-
 selected_event = ""
 selected_barrier = ""
 dbfileName = 'data/ForPropagationNetworkNew2.csv'
@@ -108,12 +103,10 @@ colors = ["blue",  "black",  "brown", "gray", "green", "orange", "purple", "red"
                 "salmon", "sandybrown", "seagreen", "seashell", "sienna", "silver", "skyblue", "slateblue", "slategray",
                 "slategrey", "snow", "springgreen", "steelblue", "tan", "teal", "thistle", "violet"] 
 
-
-
 # KEY = "b198299a-bb74-4eab-8d59-9dc1fc3679c2",
 #KEY = "0ec67093-425f-4d84-b9e9-41bba6de6c71"
-#KEY = "041e85db-cf3a-481c-8559-45f4b45ee47a",
-KEY = "07a9d524-0986-4aaf-a597-8ec41e86864a"
+KEY = "041e85db-cf3a-481c-8559-45f4b45ee47a"
+#KEY = "07a9d524-0986-4aaf-a597-8ec41e86864a"
 #KEY = "f3d1fe1a-addb-48f9-a8bc-29daa318df33",
 # KEY = "c6022edb-151a-429b-9d23-32f34b4a39ab",
 # KEY = "0ec67093-425f-4d84-b9e9-41bba6de6c71",
@@ -147,187 +140,81 @@ all_events = {
         "eng-8454935":"Israeli forces kill six Palestinians in latest raid on Jenin", 
         "eng-8470679":"Report: Ukraine world's 3rd biggest arms importer in 2022"}
 
-
 contractions = { 
-"ain't": "am not",
-"aren't": "are not",
-"can't": "cannot",
-"can't've": "cannot have",
-"'cause": "because",
-"could've": "could have",
-"couldn't": "could not",
-"couldn't've": "could not have",
-"didn't": "did not",
-"doesn't": "does not",
-"don't": "do not",
-"hadn't": "had not",
-"hadn't've": "had not have",
-"hasn't": "has not",
-"haven't": "have not",
-"he'd": "he would",
-"he'd've": "he would have",
-"he'll": "he will",
-"he's": "he is",
-"how'd": "how did",
-"how'll": "how will",
-"how's": "how is",
-"i'd": "i would",
-"i'll": "i will",
-"i'm": "i am",
-"i've": "i have",
-"isn't": "is not",
-"it'd": "it would",
-"it'll": "it will",
-"it's": "it is",
-"let's": "let us",
-"ma'am": "madam",
-"mayn't": "may not",
-"might've": "might have",
-"mightn't": "might not",
-"must've": "must have",
-"mustn't": "must not",
-"needn't": "need not",
-"oughtn't": "ought not",
-"shan't": "shall not",
-"sha'n't": "shall not",
-"she'd": "she would",
-"she'll": "she will",
-"she's": "she is",
-"should've": "should have",
-"shouldn't": "should not",
-"that'd": "that would",
-"that's": "that is",
-"there'd": "there had",
-"there's": "there is",
-"they'd": "they would",
-"they'll": "they will",
-"they're": "they are",
-"they've": "they have",
-"wasn't": "was not",
-"we'd": "we would",
-"we'll": "we will",
-"we're": "we are",
-"we've": "we have",
-"weren't": "were not",
-"what'll": "what will",
-"what're": "what are",
-"what's": "what is",
-"what've": "what have",
-"where'd": "where did",
-"where's": "where is",
-"who'll": "who will",
-"who's": "who is",
-"won't": "will not",
-"wouldn't": "would not",
-"you'd": "you would",
-"you'll": "you will",
-"you're": "you are"
+    "ain't": "am not",
+    "aren't": "are not",
+    "can't": "cannot",
+    "can't've": "cannot have",
+    "'cause": "because",
+    "could've": "could have",
+    "couldn't": "could not",
+    "couldn't've": "could not have",
+    "didn't": "did not",
+    "doesn't": "does not",
+    "don't": "do not",
+    "hadn't": "had not",
+    "hadn't've": "had not have",
+    "hasn't": "has not",
+    "haven't": "have not",
+    "he'd": "he would",
+    "he'd've": "he would have",
+    "he'll": "he will",
+    "he's": "he is",
+    "how'd": "how did",
+    "how'll": "how will",
+    "how's": "how is",
+    "i'd": "i would",
+    "i'll": "i will",
+    "i'm": "i am",
+    "i've": "i have",
+    "isn't": "is not",
+    "it'd": "it would",
+    "it'll": "it will",
+    "it's": "it is",
+    "let's": "let us",
+    "ma'am": "madam",
+    "mayn't": "may not",
+    "might've": "might have",
+    "mightn't": "might not",
+    "must've": "must have",
+    "mustn't": "must not",
+    "needn't": "need not",
+    "oughtn't": "ought not",
+    "shan't": "shall not",
+    "sha'n't": "shall not",
+    "she'd": "she would",
+    "she'll": "she will",
+    "she's": "she is",
+    "should've": "should have",
+    "shouldn't": "should not",
+    "that'd": "that would",
+    "that's": "that is",
+    "there'd": "there had",
+    "there's": "there is",
+    "they'd": "they would",
+    "they'll": "they will",
+    "they're": "they are",
+    "they've": "they have",
+    "wasn't": "was not",
+    "we'd": "we would",
+    "we'll": "we will",
+    "we're": "we are",
+    "we've": "we have",
+    "weren't": "were not",
+    "what'll": "what will",
+    "what're": "what are",
+    "what's": "what is",
+    "what've": "what have",
+    "where'd": "where did",
+    "where's": "where is",
+    "who'll": "who will",
+    "who's": "who is",
+    "won't": "will not",
+    "wouldn't": "would not",
+    "you'd": "you would",
+    "you'll": "you will",
+    "you're": "you are"
 }
-
-
-@blueprint.route('/get_piechart_datafdg')
-def get_piechart_datafdg():
-    return "data/10NewsArticles.csv"
-    contract_labels = ['Month-to-month', 'One year', 'Two year']
-    _ = churn_df.groupby('Contract').size().values
-    class_percent = calculate_percentage(_, np.sum(_))  # Getting the value counts and total
-
-    piechart_data = []
-    data_creation(piechart_data, class_percent, contract_labels)
-    return jsonify(piechart_data)
-
-
-def calculate_percentage(val, total):
-    """Calculates the percentage of a value over a total"""
-    percent = np.round((np.divide(val, total) * 100), 2)
-    return percent
-
-
-def data_creation(data, percent, class_labels, group=None):
-    for index, item in enumerate(percent):
-        data_instance = {}
-        data_instance['category'] = class_labels[index]
-        data_instance['value'] = item
-        data_instance['group'] = group
-        data.append(data_instance)
-
-
-def jaccard_dissimilarity(feature_list1, feature_list2, filler_val): #binary
-    all_features = set([i for i in feature_list1 if i != filler_val])#filler val can be used to even up ragged lists and ignore certain dtypes ie prots not in a module
-    all_features.update(set([i for i in feature_list2 if i != filler_val]))#works for both numpy arrays and lists
-    counts_1 = [1 if feature in feature_list1 else 0 for feature in all_features]
-    counts_2 = [1 if feature in feature_list2 else 0 for feature in all_features]
-    return jaccard(counts_1, counts_2)
-
-def data_to_dist_matrix(mn_data, filler_val = 0):
-    distance_matrix = np.array([[jaccard_dissimilarity(a,b, filler_val) for b in mn_data] for a in mn_data])
-    return squareform(distance_matrix)
-
-
-@blueprint.route('/get_piechart_data')
-def get_piechart_data():
-    contract_labels = ['Month-to-month', 'One year', 'Two year']
-    _ = churn_df.groupby('Contract').size().values
-    class_percent = calculate_percentage(_, np.sum(_)) 
-
-    piechart_data = []
-    data_creation(piechart_data, class_percent, contract_labels)
-    return jsonify(piechart_data)
-
-
-@blueprint.route('/get_barchart_data')
-def get_barchart_data():
-    tenure_labels = ['0-9', '10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79']
-    churn_df['tenure_group'] = pd.cut(churn_df.tenure, range(0, 81, 10), labels=tenure_labels)
-    select_df = churn_df[['tenure_group', 'Contract']]
-    contract_month = select_df[select_df['Contract'] == 'Month-to-month']
-    contract_one = select_df[select_df['Contract'] == 'One year']
-    contract_two = select_df[select_df['Contract'] == 'Two year']
-    _ = contract_month.groupby('tenure_group').size().values
-    mon_percent = calculate_percentage(_, np.sum(_))
-    _ = contract_one.groupby('tenure_group').size().values
-    one_percent = calculate_percentage(_, np.sum(_))
-    _ = contract_two.groupby('tenure_group').size().values
-    two_percent = calculate_percentage(_, np.sum(_))
-    _ = select_df.groupby('tenure_group').size().values
-    all_percent = calculate_percentage(_, np.sum(_))
-
-    barchart_data = []
-    data_creation(barchart_data, all_percent, tenure_labels, "All")
-    data_creation(barchart_data, mon_percent, tenure_labels, "Month-to-month")
-    data_creation(barchart_data, one_percent, tenure_labels, "One year")
-    data_creation(barchart_data, two_percent, tenure_labels, "Two year")
-    return jsonify(barchart_data)
-
-
-@blueprint.route('/')
-def dashboard():
-    print("ad dashboard")
-    return render_template('layouts/default.html', content=render_template('pages/index.html'))
-
-
-@blueprint.route('/bar_chart')
-def bar_chart():
-    return render_template('layouts/default.html',
-                           content=render_template('pages/barChart.html'))
-
-
-@blueprint.route('/force_directed_graph')
-def force_directed_graph():
-    print("force_directed_graph")
-    return render_template('layouts/default.html', content=render_template('pages/forceDG.html'))
-
-
-@blueprint.route('/Community')
-def Community():
-    return render_template('layouts/default.html',
-                           content=render_template('pages/Community.html'))
-
-
-@blueprint.route('/Radial')
-def Radial():
-    return render_template('layouts/default.html',
-                           content=render_template('pages/Radial.html'))
 
 @blueprint.route('/index.html')
 @blueprint.route('/<path>')
@@ -346,34 +233,379 @@ def index(path):
 def sitemap():
     return send_from_directory(os.path.join(app.root_path, '../static'), 'sitemap.xml')
 
-@blueprint.route('/aboutus', methods=['GET', 'POST'])
-def aboutus():
-    return render_template('layouts/default.html',
-                           content=render_template("pages/aboutus.html"))
+@blueprint.route('/')
+def dashboard():
+    print("ad dashboard")
+    return render_template('layouts/default.html', content=render_template('pages/index.html'))
+
+########################### FORCE DIRECTED GRAPH ##################################
+
+@blueprint.route('/force_directed_graph')
+def force_directed_graph():
+    print("force_directed_graph")
+    return render_template('layouts/default.html', content=render_template('pages/forceDG.html'))
+
+@blueprint.route('/getDownloadedEvents', methods=['GET', 'POST'])
+def getDownloadedEvents():
+    return all_events
+
+@blueprint.route('/selected_event_and_barrier', methods=['GET', 'POST'])
+def selected_event_and_barrier():
+    global selected_event
+    selected_event = request.args['selected_event']
+    
+    global selected_barrier
+    selected_barrier = request.args['selBarrier']
+    
+    print("selected events")
+    print(selected_event)
+    print("selected barrier")
+    print("hre am i")
+    print(selected_barrier)
+    return "0"
+
+########################### TRENDS ANALYSIS ##################################
 
 @blueprint.route('/QA', methods=['GET', 'POST'])
 def QA():
     return render_template('layouts/default.html',
                            content=render_template("pages/QA.html"))
 
+@blueprint.route('/qaline', methods=['GET', 'POST'])
+def qaline():
+    print(request.args)
+    sel_event = selected_event
+    city_news = request.args['commaValues']
+    print(city_news)
+    sel_barrier = request.args["selBarrier"]
+    print(sel_barrier)
+    graphJSON = qacreate_bar_plot(city_news, sel_event, sel_barrier)
+    return graphJSON
+    return 0
+
+def qacreate_bar_plot(city_news, sel_event, sel_barrier):
+    languages2 = city_news.split(',')
+    print("here are the languages")
+    print(languages2)
+    plot_data = []
+    df = getDataFile(sel_event)
+    #for col in df.columns:
+    #    print(col)
+    df['year']  = pd.DatetimeIndex(df['dateTime']).year
+    df['month'] = pd.DatetimeIndex(df['dateTime']).month
+    df['day']   = pd.DatetimeIndex(df['dateTime']).day
+    df['date']  = pd.DatetimeIndex(df['dateTime']).date
+    df['min']   = pd.DatetimeIndex(df['dateTime']).minute
+    df['dateTime'] = df['dateTime'].astype('datetime64[ns]')
+    df['hour']  = pd.DatetimeIndex(df['dateTime']).hour
+    df['MD'] = df['dateTime'].dt.strftime('%Y-%m-%d')
+
+    #bnb = df.groupby(["lang", "day"]).count().reset_index()
+    barrier = ""
+    barrier = getBarrierString(sel_barrier)
+            
+    print(barrier)
+    nc2 = pd.DataFrame()
+    nc3 = pd.DataFrame()
+    
+    languages = []
+    for ind in range(len(languages2)):
+        df3 = df[df[barrier] == languages2[ind]]
+        if len(df3) > 0:
+            df3.to_csv('/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/'+str(ind)+'.csv')
+            languages.append(languages2[ind])
+    
+    print(df['dateTime'].min())
+    print(df['dateTime'].max())
+    
+    print(df['dateTime'].max() - df['dateTime'].min())
+    tim = df['dateTime'].max() - df['dateTime'].min()
+    print(tim.days)
+    
+    nc2 = pd.DataFrame()
+    x_label = ""
+    if(tim.days > 1):
+        for ind in range(len(languages)):
+            if ind > -1:
+                nc1 = pd.DataFrame()
+                ndf = df.groupby('MD')['MD'].count()
+                ndf = ndf.reset_index(name='counts')
+                clus1 = df[df[barrier] == languages[ind]]
+                nc1 = clus1.groupby('MD')['MD'].count()
+                nc1 = nc1.reset_index(name='counts')
+                nc1[barrier] = languages[ind]
+                nc1 = pd.concat([nc1, ndf], ignore_index=True)
+                nc1 = nc1.drop_duplicates(subset=['MD'], keep='first')
+                inde = [index for index, row in nc1.iterrows() if row.isnull().any()]
+                nc1.loc[inde, barrier] = languages[ind]
+                nc1.loc[inde, "counts"] = 0
+                nc2 = pd.concat([nc2, nc1])
+        x_label = "time"
+        nc2.rename(columns = {'counts':'Accumulative_count_1', 'MD': x_label}, inplace = True)
+        nc3[['Accumulative_count_1', x_label, barrier]] = nc2[['Accumulative_count_1', x_label, barrier]]   #.to_numpy()
+    else:
+        for ind in range(len(languages)):
+            if ind > -1:
+                nc1 = pd.DataFrame()
+                ndf = df.groupby('hour')['hour'].count()
+                ndf = ndf.reset_index(name='counts')
+                clus1 = df[df[barrier] == languages[ind]]
+                nc1 = clus1.groupby('hour')['hour'].count()
+                nc1 = nc1.reset_index(name='counts')
+                nc1[barrier] = languages[ind]
+                nc1 = pd.concat([nc1, ndf], ignore_index=True)
+                nc1 = nc1.drop_duplicates(subset=['hour'], keep='first')
+                inde = [index for index, row in nc1.iterrows() if row.isnull().any()]
+                nc1.loc[inde, barrier] = languages[ind]
+                nc1.loc[inde, "counts"] = 0
+                nc2 = nc2.append(nc1)
+        x_label = "time (hours)"
+        nc2.rename(columns = {'counts':'Accumulative_count_1', 'hour':x_label}, inplace = True) 
+        nc3[['Accumulative_count_1', x_label, barrier]] = nc2[['Accumulative_count_1', x_label, barrier]]   #.to_numpy()
+    
+    color_list = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lime', 'maroon', 'crimson', 
+    'azure', 'gray', 'white', 'navy', 'mustard', 'brown', 'magenta', 'teal', 'silver']
+    colors = ["blue", "azure", "bisque", "black",
+                "brown", "burlywood", "chartreuse", "chocolate", "coral", "cornsilk", "crimson", "darkblue", "darkcyan", "darkgoldenrod", "darkgray", "darkgreen",
+                "darkkhaki", "darkmagenta", "darkolivegreen", "darkorange", "darkorchid", "darkred", "darksalmon", "darkseagreen",
+                "darkslateblue", "darkslategray", "darkslategrey", "darkturquoise", "darkviolet", "deeppink", "deepskyblue",
+                "dimgray", "dodgerblue", "firebrick", "floralwhite", "forestgreen", "fuchsia", "gainsboro",
+                "ghostwhite", "gold", "goldenrod", "gray", "green", "greenyellow", "honeydew", "hotpink", "indianred",
+                "indigo", "ivory", "khaki", "lavender", "lavenderblush", "lawngreen", "lemonchiffon", "lightblue", "lightcoral", 
+                "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightpink", "lightsalmon", 
+                "lightseagreen", "lightskyblue", "lightslategray", "lightsteelblue", "lightyellow", "lime",
+                "limegreen", "linen", "magenta", "maroon", "mediumaquamarine", "mediumblue", "mediumorchid", "mediumpurple",
+                "mediumseagreen", "mediumslateblue", "mediumspringgreen", "mediumturquoise", "mediumvioletred", "midnightblue",
+                "mintcream", "mistyrose", "moccasin", "navajowhite", "navy", "oldlace", "olive", "olivedrab", "orange", 
+                "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise", "palevioletred", "papayawhip", "peachpuff",
+                "peru", "pink", "plum", "powderblue", "purple", "red", "rosybrown", "royalblue", "rebeccapurple", "saddlebrown",
+                "salmon", "sandybrown", "seagreen", "seashell", "sienna", "silver", "skyblue", "slateblue", "slategray",
+                "slategrey", "snow", "springgreen", "steelblue", "tan", "teal", "thistle", "tomato", "turquoise", "violet",
+                "wheat", "white", "yellow"]
+                       
+                
+    figure = px.area(nc3, x=x_label, y="Accumulative_count_1", color = barrier, line_group = barrier, line_shape='spline', color_discrete_sequence=colors)
+    
+    figure.update_layout(xaxis=dict(showgrid=False), yaxis=dict(showgrid=False))
+       
+    
+    figure.update_layout(
+        title="", yaxis_title="Accumulative_count_1", xaxis_title="time",
+             autosize=True)
+    
+    print(df['dateTime'][0])
+    graphJSON = json.dumps(figure, cls=plotly.utils.PlotlyJSONEncoder)
+    return graphJSON
+
+@blueprint.route('/BertTopicQA', methods=['GET', 'POST'])
+def BertTopicQA():
+    sel_event = selected_event
+    city_news = request.args['commaValues']
+    sel_barrier = request.args["selBarrier"]
+    wid = int(float(request.args['width']))
+    hei = int(float(request.args['height']))
+    print("width and height is ")
+    print(wid)
+    print(hei)
+    
+    languages2 = city_news.split(',')
+    
+    plot_data = []
+    #print(sel_barrier)
+    df = getDataFile(sel_event)
+    df['year'] = pd.DatetimeIndex(df['dateTime']).year
+    df['month'] = pd.DatetimeIndex(df['dateTime']).month
+    df['day'] = pd.DatetimeIndex(df['dateTime']).day
+    df['date'] = pd.DatetimeIndex(df['dateTime']).date
+    df['MD'] = df['dateTime'].dt.strftime('%Y-%m-%d')
+
+    #bnb = df.groupby(["lang", "day"]).count().reset_index()
+    
+
+    barrier = ""
+    barrier = getBarrierString(sel_barrier)
+    print(barrier)
+    
+    languages = []
+    for ind in range(len(languages2)):
+        df3 = df[df[barrier] == languages2[ind]]
+        if len(df3) > 0:
+            languages.append(languages2[ind])
+    
+    nc2 = pd.DataFrame()
+    rows = len(languages)#int(len(languages)/2)
+    cols = 1#2
+    subplot_titles = [l[0] for l in languages]
+    
+    tot_rows = 0
+    for ind in range(len(languages)):
+        if ind > -1:
+            nc1 = pd.DataFrame()
+            print(ind)
+            print(barrier)
+            ndf = df.groupby('dateTime')['dateTime'].count()
+            #ndf = df.groupby('MD')['MD'].count()
+            ndf = ndf.reset_index(name='counts')
+            clus1 = df[df[barrier] == languages[ind]]
+            if len(clus1)>0:
+                row = ind+1 #math.floor(ind/2)+1
+                col = 1 #(ind%2)+1
+            #print(lst)
+                d = clus1[['dateTime', 'body', barrier]]
+                d['index_col'] = d.index
+                d['body_Clean_List'] = list(map(text_preprocessing, d.body))
+
+            # Return to string with to_string function
+                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
+                stopwords_list = stopwords.words('english')
+                stopwords_list.extend(['park', 'disney', 'disneyland'])
+                d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
+                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
+                keep_dfcon = [d[d['body_Clean']==i.lower()] for i in d[0:-1]]
+                num_w = len(keep_dfcon)
+                if num_w  > 0:
+                    tot_rows = tot_rows + 1
+    row = 0                
+    if tot_rows > 0:
+        specsa = [[{'type':'xy'}] * cols] * tot_rows
+        fig_Array = []#sp.make_subplots(rows=tot_rows, cols=cols, specs = specsa, print_grid=True, subplot_titles=languages)
+        count = 0
+        for ind in range(len(languages)):
+            print("Barrier is " + languages[ind])
+            
+            if ind > -1:
+                nc1 = pd.DataFrame()
+                ndf = df.groupby('dateTime')['dateTime'].count()
+                #ndf = df.groupby('MD')['MD'].count()
+                ndf = ndf.reset_index(name='counts')
+                clus1 = df[df[barrier] == languages[ind]]
+                model = BERTopic()
+                if len(clus1) > 0:
+                    col = 1
+                    d = clus1[['dateTime', 'body', barrier]]
+                    d['index_col'] = d.index
+                    d['body_Clean_List'] = list(map(text_preprocessing, d.body))
+                    stopwords_list = stopwords.words('english')
+                    stopwords_list.extend(['park', 'disney', 'disneyland'])
+                    d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
+                    d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
+                    if len(d['body_Clean']) > 10:
+                        docs = d.body_Clean.to_list()
+                        print("len of dataframes " + str(len(docs)))
+                        topics, probs = model.fit_transform(docs)
+                        top_n_topics = 4
+                        if len(d['body_Clean']) < 4:
+                            top_n_topics = len(d['body_Clean'])
+                        else:
+                            top_n_topics = 4
+                        freq_df = model.get_topic_freq()
+                        freq_df = freq_df.loc[freq_df.Topic != -1, :]
+                        topi = []
+                        topi = list(topics)
+                        if topi is not None:
+                            topi = list(topics)
+                        elif top_n_topics is not None:
+                            topi = sorted(freq_df.Topic.to_list()[:top_n_topics])
+                        else:
+                            topi = sorted(freq_df.Topic.to_list()[0:6])
+                        indexes = set(topi)  
+                        
+                        tmpDict = {}
+                        toc = topi.count(-1)
+                        topic_labels = model.generate_topic_labels(nr_words=2, separator=", ")
+                        customLable = []
+                        for v in range(len(topic_labels)):
+                            stri = topic_labels[v].split(',')
+                            fst = stri[1]+"_"+stri[2]
+                            print(fst)
+                            customLable.append(fst.capitalize())
+                            
+                        model.set_topic_labels(customLable)
+                        if  toc >= 1:
+                            row = row+1
+                            count = count + 1
+                            tit = "<b>" + languages[ind].capitalize() + "</b>"
+                            figure1 = model.visualize_barchart(top_n_topics = len(indexes), n_words = 5, topics = indexes, custom_labels= True, title=tit, width= wid/4, height= hei)
+                            fig_Array.append(figure1)
+        graphJSON = json.dumps(fig_Array, cls=plotly.utils.PlotlyJSONEncoder)
+        with open("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/wordclouds/sample.json", "w") as outfile:
+             outfile.write(graphJSON)
+        return graphJSON
+    else:
+        return json.dumps("")
+
+########################### HIRARCHICAL CLUSTERING ##################################
 @blueprint.route('/HC', methods=['GET', 'POST'])
 def HC():
     return render_template('layouts/default.html',
                            content=render_template("pages/HC.html"))
-
-@blueprint.route('/word_trends', methods=['GET', 'POST'])
-def word_trends():
-    return render_template('layouts/default.html',
-                           content=render_template("pages/word_trends.html"))
-
-@blueprint.route('/topic_mod', methods=['GET', 'POST'])
-def topic_mod():
-    return render_template('layouts/default.html',
-                           content=render_template("pages/topic_mod.html"))
-
-@blueprint.route('/sent_anly', methods=['GET', 'POST'])
-def sent_anly():
-    return render_template("/pages/sent_anly.html")
+                           
+@blueprint.route('/hchierarchical_clustering', methods=['GET', 'POST'])
+def hchierarchical_clustering():
+    df = getDataFile(selected_event)        
+    vectorizer = TfidfVectorizer()
+    tfidf = vectorizer.fit_transform(df['source.title'].values.astype('U'))
+    similarity_matrix = cosine_similarity(tfidf, tfidf)
+    a = np.array(similarity_matrix)
+    print(a.min())
+    print(a.max())
+    y_labels = ['Article_' + str(i) for i in range(len(df))]
+    import plotly.figure_factory._dendrogram as original_dendrogram
+    original_dendrogram._Dendrogram.get_dendrogram_traces = modified_dendrogram_traces
+    total_clusters = 1
+    try:
+        total_clusters = int(float(request.args['x']))
+        total_clusters = total_clusters - 1
+    except:
+        total_clusters = 1
+    if total_clusters < 1:
+        total_clusters = 1
+        
+    print("number of clusters = " + str(total_clusters))
+    fig = create_dendrogram2(similarity_matrix, labels=y_labels, linkagefun=lambda x: sch.linkage(x, 'complete'), distfun = partial(pdist, metric='jaccard'),
+    truncate_mode="level", p=total_clusters)
+    fig.update_layout(width=int(request.args['width']))
+    
+    fig_json = fig.to_json()
+    y = json.loads(fig_json)
+    print(y)
+    data_json = y["data"]
+    print("Dictionary")
+    print(len(data_json))
+    
+    total_c = len(data_json)
+    print(data_json)
+    print(total_c)
+    
+    global color_ran
+    color_ran  = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lime', 'maroon', 'crimson', 
+    'azure', 'gray', 'white', 'navy', 'mustard', 'brown', 'magenta', 'teal', 'silver']
+    
+    used_clrs = []
+    for i in range(len(data_json)):
+        print(i)
+        print(data_json[i])
+        used_clrs.append(data_json[i]['marker']['color'])
+        print(data_json[i]['marker']['color'])
+        
+    global dendro_clusters
+    dendro_clusters = len(set(used_clrs))
+    unique_list = list(set(used_clrs))
+    
+    clusters_colors = []
+    
+    for i in range(len(data_json)):
+        selc_color = color_ran[unique_list.index(data_json[i]['marker']['color'])]
+        data_json[i]['marker']['color'] = selc_color
+        print(data_json[i])
+        clusters_colors.append(selc_color)
+    
+    clusters_colors = sorted(clusters_colors,key=clusters_colors.count,reverse=True)
+    clusters_colors = list(set(clusters_colors))
+    color_ran = clusters_colors[::-1]
+    
+    y["data"] = data_json
+    return y
 
 def modified_dendrogram_traces(self, X, colorscale, distfun, linkagefun, hovertext, color_threshold):
     """
@@ -458,42 +690,15 @@ def modified_dendrogram_traces(self, X, colorscale, distfun, linkagefun, hoverte
 
     return trace_list, icoord, dcoord, ordered_labels, P["leaves"]
 
-def create_dendrogram2(
-    X,
-    orientation="bottom",
-    labels=None,
-    colorscale=None,
-    distfun=None,
-    linkagefun=lambda x: sch.linkage(x, "complete"),
-    hovertext=None,
-    color_threshold=None,
-    **kwargs
-):
+def create_dendrogram2( X, orientation="bottom", labels=None, colorscale=None, distfun=None, linkagefun=lambda x: sch.linkage(x, "complete"), hovertext=None, color_threshold=None, **kwargs):
     if not scp or not scs or not sch:
-        raise ImportError(
-            "FigureFactory.create_dendrogram requires scipy, \
-                            scipy.spatial and scipy.hierarchy"
-        )
-
+        raise ImportError("FigureFactory.create_dendrogram requires scipy, \scipy.spatial and scipy.hierarchy")
     s = X.shape
     if len(s) != 2:
         exceptions.PlotlyError("X should be 2-dimensional array.")
-
     if distfun is None:
         distfun = scs.distance.pdist
-
-    dendrogram = _Dendrogram(
-        X,
-        orientation,
-        labels,
-        colorscale,
-        distfun=distfun,
-        linkagefun=linkagefun,
-        hovertext=hovertext,
-        color_threshold=color_threshold,
-        kwargs=kwargs
-    )
-
+    dendrogram = _Dendrogram(X, orientation, labels, colorscale, distfun=distfun, linkagefun=linkagefun, hovertext=hovertext, color_threshold=color_threshold, kwargs=kwargs)
     return graph_objs.Figure(data=dendrogram.data, layout=dendrogram.layout)
 
 class _Dendrogram(object):
@@ -744,28 +949,6 @@ class _Dendrogram(object):
 
         return trace_list, icoord, dcoord, ordered_labels, P["leaves"]
 
-@blueprint.route('/selected_event_and_barrier', methods=['GET', 'POST'])
-def selected_event_and_barrier():
-    global selected_event
-    selected_event = request.args['selected_event']
-    
-    global selected_barrier
-    selected_barrier = request.args['selBarrier']
-    
-    print("selected events")
-    print(selected_event)
-    print("selected barrier")
-    print("hre am i")
-    print(selected_barrier)
-    return "0"
-
-@blueprint.route('/hc_selectedEvent', methods=['GET', 'POST'])
-def hc_selectedEvent():
-    selected = request.args['selected_event']
-    if selected == "select":
-        print("no selection")
-    selected_event = selected_event.split(".csv")[0] + ".json"
-
 def getDataFile(seleEvent):
     selected = seleEvent
     if selected == "select":
@@ -800,73 +983,6 @@ def getDataFile(seleEvent):
     df = df.sort_values(by='dateTime', ascending=True)
     return df
 
-@blueprint.route('/hchierarchical_clustering', methods=['GET', 'POST'])
-def hchierarchical_clustering():
-    df = getDataFile(selected_event)        
-    vectorizer = TfidfVectorizer()
-    tfidf = vectorizer.fit_transform(df['source.title'].values.astype('U'))
-    similarity_matrix = cosine_similarity(tfidf, tfidf)
-    a = np.array(similarity_matrix)
-    print(a.min())
-    print(a.max())
-    y_labels = ['Article_' + str(i) for i in range(len(df))]
-    import plotly.figure_factory._dendrogram as original_dendrogram
-    original_dendrogram._Dendrogram.get_dendrogram_traces = modified_dendrogram_traces
-    total_clusters = 1
-    try:
-        total_clusters = int(float(request.args['x']))
-        total_clusters = total_clusters - 1
-    except:
-        total_clusters = 1
-    if total_clusters < 1:
-        total_clusters = 1
-        
-    print("number of clusters = " + str(total_clusters))
-    fig = create_dendrogram2(similarity_matrix, labels=y_labels, linkagefun=lambda x: sch.linkage(x, 'complete'), distfun = partial(pdist, metric='jaccard'),
-    truncate_mode="level", p=total_clusters)
-    fig.update_layout(width=int(request.args['width']))
-    
-    fig_json = fig.to_json()
-    y = json.loads(fig_json)
-    print(y)
-    data_json = y["data"]
-    print("Dictionary")
-    print(len(data_json))
-    
-    total_c = len(data_json)
-    print(data_json)
-    print(total_c)
-    
-    global color_ran
-    color_ran  = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lime', 'maroon', 'crimson', 
-    'azure', 'gray', 'white', 'navy', 'mustard', 'brown', 'magenta', 'teal', 'silver']
-    
-    used_clrs = []
-    for i in range(len(data_json)):
-        print(i)
-        print(data_json[i])
-        used_clrs.append(data_json[i]['marker']['color'])
-        print(data_json[i]['marker']['color'])
-        
-    global dendro_clusters
-    dendro_clusters = len(set(used_clrs))
-    unique_list = list(set(used_clrs))
-    
-    clusters_colors = []
-    
-    for i in range(len(data_json)):
-        selc_color = color_ran[unique_list.index(data_json[i]['marker']['color'])]
-        data_json[i]['marker']['color'] = selc_color
-        print(data_json[i])
-        clusters_colors.append(selc_color)
-    
-    clusters_colors = sorted(clusters_colors,key=clusters_colors.count,reverse=True)
-    clusters_colors = list(set(clusters_colors))
-    color_ran = clusters_colors[::-1]
-    
-    y["data"] = data_json
-    return y
-
 @blueprint.route('/hcThemeRiver', methods=['GET', 'POST'])
 def hcThemeRiver():
     print("hc theme river")
@@ -897,8 +1013,8 @@ def hcThemeRiver():
     colors_list  = {}
     colors_list2 = {}
     for ind in range(total_clusters):
-        colors_list["Discussion " + str(ind)]  = 0
-        colors_list2["Discussion " + str(ind)] = 0
+        colors_list["Discussion " + str(ind+1)]  = 0
+        colors_list2["Discussion " + str(ind+1)] = 0
     
     
     for ind in range(total_clusters):
@@ -908,15 +1024,15 @@ def hcThemeRiver():
             ndf = ndf.reset_index(name='counts')
             clus1 = df[df["cluster"] == ind]
             
-            colors_list["Discussion " + str(ind)] = len(clus1)
+            colors_list["Discussion " + str(ind+1)] = len(clus1)
             
             nc1 = clus1.groupby('dateTime')['dateTime'].count()
             nc1 = nc1.reset_index(name='counts')
-            nc1["cluster"] = "Discussion " + str(ind)
+            nc1["cluster"] = "Discussion " + str(ind+1)
             nc1 = pd.concat([nc1, ndf], ignore_index=True)
             nc1 = nc1.drop_duplicates(subset=['dateTime'], keep='first')
             inde = [index for index, row in nc1.iterrows() if row.isnull().any()]
-            nc1.loc[inde, "cluster"] = "Discussion " + str(ind)
+            nc1.loc[inde, "cluster"] = "Discussion " + str(ind+1)
             nc1.loc[inde, "counts"] = 0
             #nc2 = nc2.append(nc1, ignore_index=True)
             nc2 = pd.concat([nc2, nc1])
@@ -949,67 +1065,113 @@ def hcThemeRiver():
     graphJSON = json.dumps(figure, cls=plotly.utils.PlotlyJSONEncoder)
     return graphJSON
 
-@blueprint.route('/hc_word_clouds', methods=['GET', 'POST'])
-def hc_word_clouds():
-    print(request.args)
-    check = request.args['count']
-    date = request.args['date']
-    cluster_no = request.args['legendgroup']
-    selected = selected_event
-
-    if selected == "select":
-        print("no selection")
-        return
-    selected_event = selected.split(".csv")[0] + ".json"
-    event_name = selected_event.split(".json")[0]
-    print(selected_event)
-    print(event_name)
-    filename = os.path.join("data", selected_event)
-    print(filename)
-
-    with open(filename) as blog_file:
-        print(filename)
-        res = json.load(blog_file)
-        results = res[event_name]["articles"]["results"]
-        print(len(results))
-        df = pd.json_normalize(results)
-        print(len(df))
-
-    database = pd.read_csv(dbfileName, encoding='latin1')
-    df = df.merge(database, on='source.uri', how='left')
-    df['index_col'] = df.index
-    df['body_Clean_List'] = list(map(text_preprocessing, df.body))
-
-
-    df['body_Clean'] = list(map(to_string, df['body_Clean_List']))
-    stopwords_list = stopwords.words('english')
-    stopwords_list.extend(['park', 'disney', 'disneyland'])
-    df['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in df['body_Clean_List']]
-    df['body_Clean'] = list(map(to_string, df['body_Clean_List']))
+@blueprint.route('/BertTopicsHC', methods=['GET', 'POST'])
+def BertTopicsHC():    
+    plot_data = []
+    wid = int(float(request.args['width']))
+    hei = int(float(request.args['height']))
     
-    id2word = gensim.corpora.Dictionary(df['body_Clean_List'])
-    corpus = [id2word.doc2bow(text) for text in df['body_Clean_List']]
+    global total_clusters
+    total_clusters = dendro_clusters
     
-    n_topics = 4
-
-
-    lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=id2word, num_topics=n_topics, random_state=100,
-                                           update_every=1, chunksize=10, passes=10, alpha='symmetric', iterations=100, per_word_topics=True)
+    languages = []
+    for ind in range(total_clusters):
+        languages.append("Discussion "+str(ind+1))
+        
+    nc2 = pd.DataFrame()
+    rows = len(languages)#int(len(languages)/2)
+    cols = 1#2
+    subplot_titles = [l[0] for l in languages]
     
-    for idx, topic in lda_model.print_topics(-1):
-        print("Topic: {} Word: {}".format(idx, topic))
+    tot_rows = 0
+    for ind in range(len(languages)):
+        if ind > -1:
+            clus1 = clustered_dataframes[clustered_dataframes["cluster"] == ind]
+            if len(clus1)> 0:
+                row = ind+1
+                print(ind)
+                col = 1 
+                d = clus1[['dateTime', 'body']]
+                d['index_col'] = d.index
+                d['body_Clean_List'] = list(map(text_preprocessing, d.body))
+                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
+                stopwords_list = stopwords.words('english')
+                stopwords_list.extend(['park', 'disney', 'disneyland'])
+                d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
+                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
+                keep_dfcon = [d[d['body_Clean']==i.lower()] for i in d[0:-1]]
+                num_w = len(keep_dfcon)
+                if num_w  > 0:
+                    tot_rows = tot_rows + 1
+    row = 0                
+    if tot_rows > 0:
+        specsa = [[{'type':'xy'}] * cols] * tot_rows
+        fig_Array = []#sp.make_subplots(rows=tot_rows, cols=cols, specs = specsa, print_grid=True, subplot_titles=languages)
+        print("making figures")
+        count = 0
+        for ind in range(len(languages)):
+            if ind > -1:
+                nc1 = pd.DataFrame()
+                clus1 = clustered_dataframes[clustered_dataframes["cluster"] == ind]
+                #ndf = ndf.reset_index(name='counts')
+                #clus1 = df[df[barrier] == languages[ind]]
+                
+                model = BERTopic()
+                
+                if len(clus1) > 0:
+                    col = 1
+                    d = clus1[['dateTime', 'body']]
+                    d['index_col'] = d.index
+                    d['body_Clean_List'] = list(map(text_preprocessing, d.body))
+                    stopwords_list = stopwords.words('english')
+                    stopwords_list.extend(['park', 'disney', 'disneyland'])
+                    d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
+                    d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
+                    if len(d['body_Clean']) > 10:
+                        docs = d.body_Clean.to_list()
+                        topics, probs = model.fit_transform(docs)
+                        top_n_topics = 4
+                        if len(d['body_Clean']) < 4:
+                            top_n_topics = len(d['body_Clean'])
+                        else:
+                            top_n_topics = 4
+                        freq_df = model.get_topic_freq()
+                        freq_df = freq_df.loc[freq_df.Topic != -1, :]
+                        topi = []
+                        if topi is not None:
+                            topi = list(topics)
+                        elif top_n_topics is not None:
+                            topi = sorted(freq_df.Topic.to_list()[:top_n_topics])
+                        else:
+                            topi = sorted(freq_df.Topic.to_list()[0:6])
+                        indexes = set(topi)
+                        #time.sleep(5)
+                        
+                        tmpDict = {}
+                        toc = topi.count(-1)
+                        topic_labels = model.generate_topic_labels(nr_words=2, separator=", ")
+                        customLable = []
+                        for v in range(len(topic_labels)):
+                            stri = topic_labels[v].split(',')
+                            fst = stri[1]+"_"+stri[2]
+                            print(fst)
+                            customLable.append(fst.capitalize())
+                        model.set_topic_labels(customLable)
 
-@blueprint.route('/qaline', methods=['GET', 'POST'])
-def qaline():
-    print(request.args)
-    sel_event = selected_event
-    city_news = request.args['commaValues']
-    print(city_news)
-    sel_barrier = request.args["selBarrier"]
-    print(sel_barrier)
-    graphJSON = qacreate_bar_plot(city_news, sel_event, sel_barrier)
-    return graphJSON
-    return 0
+                        if  toc >= 1:
+                            row = row+1
+                            count = count + 1
+                            tit = "<b>" + languages[ind].capitalize() + "</b>"
+                            figure1 = model.visualize_barchart(top_n_topics = len(indexes), n_words = 5, topics = indexes, custom_labels= True, title=tit, width= wid/4, height= hei)
+                            fig_Array.append(figure1)
+        graphJSON = json.dumps(fig_Array, cls=plotly.utils.PlotlyJSONEncoder)
+        with open("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/wordclouds/sample.json", "w") as outfile:
+             outfile.write(graphJSON)
+        return graphJSON
+    else:
+        return json.dumps("")        
+
+########################### COMMON FUNCTIONS ##################################
 
 def getBarrierString(sel_barrier):
     barrier = ""
@@ -1028,6 +1190,8 @@ def getBarrierString(sel_barrier):
     elif sel_barrier == "Religions":
         barrier = "Religions"
     elif sel_barrier == "economicbloc":
+        barrier = "economicblocs"
+    elif sel_barrier == "economicblocs":
         barrier = "economicblocs"
     elif sel_barrier == "militarydefensebloc":
         barrier = "militarydefenseblocs"  
@@ -1073,804 +1237,7 @@ def getBarrierString(sel_barrier):
     elif sel_barrier == "indulgence":
         barrier = "Indulgence"
     return barrier
-
-def qacreate_bar_plot(city_news, sel_event, sel_barrier):
-    languages2 = city_news.split(',')
-    plot_data = []
-    df = getDataFile(sel_event)
-    for col in df.columns:
-        print(col)
-    df['year']  = pd.DatetimeIndex(df['dateTime']).year
-    df['month'] = pd.DatetimeIndex(df['dateTime']).month
-    df['day']   = pd.DatetimeIndex(df['dateTime']).day
-    df['date']  = pd.DatetimeIndex(df['dateTime']).date
-    df['min']   = pd.DatetimeIndex(df['dateTime']).minute
-    df['dateTime'] = df['dateTime'].astype('datetime64[ns]')
-    df['hour']  = pd.DatetimeIndex(df['dateTime']).hour
-    df['MD'] = df['dateTime'].dt.strftime('%Y-%m-%d')
-
-    #bnb = df.groupby(["lang", "day"]).count().reset_index()
-    barrier = ""
-    barrier = getBarrierString(sel_barrier)
-            
-    print(barrier)
-    nc2 = pd.DataFrame()
-    nc3 = pd.DataFrame()
-    
-    languages = []
-    for ind in range(len(languages2)):
-        df3 = df[df[barrier] == languages2[ind]]
-        if len(df3) > 0:
-            df3.to_csv('/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/'+str(ind)+'.csv')
-            languages.append(languages2[ind])
-    
-    print(df['dateTime'].min())
-    print(df['dateTime'].max())
-    
-    print(df['dateTime'].max() - df['dateTime'].min())
-    tim = df['dateTime'].max() - df['dateTime'].min()
-    print(tim.days)
-    
-    nc2 = pd.DataFrame()
-    x_label = ""
-    if(tim.days > 1):
-        for ind in range(len(languages)):
-            if ind > -1:
-                nc1 = pd.DataFrame()
-                ndf = df.groupby('MD')['MD'].count()
-                ndf = ndf.reset_index(name='counts')
-                clus1 = df[df[barrier] == languages[ind]]
-                nc1 = clus1.groupby('MD')['MD'].count()
-                nc1 = nc1.reset_index(name='counts')
-                nc1[barrier] = languages[ind]
-                nc1 = pd.concat([nc1, ndf], ignore_index=True)
-                nc1 = nc1.drop_duplicates(subset=['MD'], keep='first')
-                inde = [index for index, row in nc1.iterrows() if row.isnull().any()]
-                nc1.loc[inde, barrier] = languages[ind]
-                nc1.loc[inde, "counts"] = 0
-                nc2 = pd.concat([nc2, nc1])
-        x_label = "time"
-        nc2.rename(columns = {'counts':'Accumulative_count_1', 'MD': x_label}, inplace = True)
-        nc3[['Accumulative_count_1', x_label, barrier]] = nc2[['Accumulative_count_1', x_label, barrier]]   #.to_numpy()
-    else:
-        for ind in range(len(languages)):
-            if ind > -1:
-                nc1 = pd.DataFrame()
-                ndf = df.groupby('hour')['hour'].count()
-                ndf = ndf.reset_index(name='counts')
-                clus1 = df[df[barrier] == languages[ind]]
-                nc1 = clus1.groupby('hour')['hour'].count()
-                nc1 = nc1.reset_index(name='counts')
-                nc1[barrier] = languages[ind]
-                nc1 = pd.concat([nc1, ndf], ignore_index=True)
-                nc1 = nc1.drop_duplicates(subset=['hour'], keep='first')
-                inde = [index for index, row in nc1.iterrows() if row.isnull().any()]
-                nc1.loc[inde, barrier] = languages[ind]
-                nc1.loc[inde, "counts"] = 0
-                nc2 = nc2.append(nc1)
-        x_label = "time (hours)"
-        nc2.rename(columns = {'counts':'Accumulative_count_1', 'hour':x_label}, inplace = True) 
-        nc3[['Accumulative_count_1', x_label, barrier]] = nc2[['Accumulative_count_1', x_label, barrier]]   #.to_numpy()
-    
-    color_list = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lime', 'maroon', 'crimson', 
-    'azure', 'gray', 'white', 'navy', 'mustard', 'brown', 'magenta', 'teal', 'silver']
-    colors = ["blue", "azure", "bisque", "black",
-                "brown", "burlywood", "chartreuse", "chocolate", "coral", "cornsilk", "crimson", "darkblue", "darkcyan", "darkgoldenrod", "darkgray", "darkgreen",
-                "darkkhaki", "darkmagenta", "darkolivegreen", "darkorange", "darkorchid", "darkred", "darksalmon", "darkseagreen",
-                "darkslateblue", "darkslategray", "darkslategrey", "darkturquoise", "darkviolet", "deeppink", "deepskyblue",
-                "dimgray", "dodgerblue", "firebrick", "floralwhite", "forestgreen", "fuchsia", "gainsboro",
-                "ghostwhite", "gold", "goldenrod", "gray", "green", "greenyellow", "honeydew", "hotpink", "indianred",
-                "indigo", "ivory", "khaki", "lavender", "lavenderblush", "lawngreen", "lemonchiffon", "lightblue", "lightcoral", 
-                "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightpink", "lightsalmon", 
-                "lightseagreen", "lightskyblue", "lightslategray", "lightsteelblue", "lightyellow", "lime",
-                "limegreen", "linen", "magenta", "maroon", "mediumaquamarine", "mediumblue", "mediumorchid", "mediumpurple",
-                "mediumseagreen", "mediumslateblue", "mediumspringgreen", "mediumturquoise", "mediumvioletred", "midnightblue",
-                "mintcream", "mistyrose", "moccasin", "navajowhite", "navy", "oldlace", "olive", "olivedrab", "orange", 
-                "orangered", "orchid", "palegoldenrod", "palegreen", "paleturquoise", "palevioletred", "papayawhip", "peachpuff",
-                "peru", "pink", "plum", "powderblue", "purple", "red", "rosybrown", "royalblue", "rebeccapurple", "saddlebrown",
-                "salmon", "sandybrown", "seagreen", "seashell", "sienna", "silver", "skyblue", "slateblue", "slategray",
-                "slategrey", "snow", "springgreen", "steelblue", "tan", "teal", "thistle", "tomato", "turquoise", "violet",
-                "wheat", "white", "yellow"]
-                       
-                
-    figure = px.area(nc3, x=x_label, y="Accumulative_count_1", color = barrier, line_group = barrier, line_shape='spline', color_discrete_sequence=colors)
-    
-    figure.update_layout(xaxis=dict(showgrid=False), yaxis=dict(showgrid=False))
-       
-    
-    figure.update_layout(
-        title="", yaxis_title="Accumulative_count_1", xaxis_title="time",
-             autosize=True)
-    
-    print(df['dateTime'][0])
-    graphJSON = json.dumps(figure, cls=plotly.utils.PlotlyJSONEncoder)
-    return graphJSON
-
-@blueprint.route('/discussion_word_clouds3', methods=['GET', 'POST'])
-def discussion_word_clouds3():    
-    plot_data = []
-    global total_clusters
-    total_clusters = dendro_clusters
-    
-    languages = []
-    for ind in range(total_clusters):
-        languages.append("Discussion_"+str(ind))
-    
-    rows = len(languages)
-    cols = 1
-    subplot_titles = [l[0] for l in languages]
-    
-    print(clustered_dataframes)
-    tot_rows = 0
-    for ind in range(len(languages)):
-        if ind > -1:
-            clus1 = clustered_dataframes[clustered_dataframes["cluster"] == ind]
-            if len(clus1)>0:
-                row = ind+1 
-                print(ind)
-                col = 1 
-                d = clus1[['dateTime', 'body']]
-                d['index_col'] = d.index
-                d['body_Clean_List'] = list(map(text_preprocessing, d.body))
-
-
-                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-                stopwords_list = stopwords.words('english')
-                stopwords_list.extend(['park', 'disney', 'disneyland'])
-                d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
-                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-    
-                df_words = get_df(' '.join(d['body_Clean']))
-                df_words.head(10)
-                df_cn_words = [list(get_df(i)['words'][0:10]) for i in d['body_Clean']]
-                df_cn_count = [list(get_df(i)['count'][0:10]) for i in d['body_Clean']]
-                df_cn_content = [[i.lower()] * len(j) for i,j in zip(d['body_Clean'], df_cn_words)]
-
-                df_cont = pd.DataFrame(zip(sum(df_cn_content,[]), sum(df_cn_words,[]),sum(df_cn_count,[])),columns = ['contents','words','count'])
-    
-                n = df_cont['count'].max()
-
-                keep_dfcon = [df_cont[df_cont['contents']==i.lower()] for i in d[0:-1]]
-                num_w = len(keep_dfcon)
-                if num_w  > 0:
-                    tot_rows = tot_rows + 1
-                    
-    if tot_rows > 0:
-        specs = [[{'type':'xy'}] * cols] * tot_rows
-        fig = sp.make_subplots(rows=tot_rows, cols=cols, specs=specs, print_grid=True, subplot_titles=languages)
-        print("making figures")
-        count = 0
-
-        
-        for ind in range(len(languages)):
-            if ind > -1:
-                nc1 = pd.DataFrame()
-                row = ind+1
-                print(ind)
-                clus1 = clustered_dataframes[clustered_dataframes["cluster"] == ind]
-                if len(clus1)>0:
-                    print(ind)
-                    col = 1
-                    d = clus1[['dateTime', 'body']]
-                    d['index_col'] = d.index
-                    d['body_Clean_List'] = list(map(text_preprocessing, d.body))
-
-                    # Return to string with to_string function
-                    d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-                    stopwords_list = stopwords.words('english')
-                    stopwords_list.extend(['park', 'disney', 'disneyland'])
-                    d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
-                    d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-    
-                    df_words = get_df(' '.join(d['body_Clean']))
-                    df_words.head(10)
-                    df_cn_words = [list(get_df(i)['words'][0:10]) for i in d['body_Clean']]
-                    
-                    
-                    df_cn_count = [list(get_df(i)['count'][0:10]) for i in d['body_Clean']]
-                    df_cn_content = [[i.lower()] * len(j) for i,j in zip(d['body_Clean'], df_cn_words)]
-            
-                    df_cont = pd.DataFrame(zip(sum(df_cn_content,[]), sum(df_cn_words,[]),sum(df_cn_count,[])),columns = ['contents','words','count'])
-             
-                    n = df_cont['count'].max()
-                    df_cont.head(10)
-                    
-                    keep_dfcon = [df_cont[df_cont['contents']==i.lower()] for i in d[0:-1]]
-                    num_w = len(keep_dfcon)
-                    
-                    if num_w > 1:
-                        row = ind+1
-                        count = count + 1
-                        n = 10
-                        wordCloudStr = ' '.join(d['body_Clean'])
-                        
-
-                        figure1 = plotly_wordcloud(wordCloudStr, languages[ind])
-                        
-                        for trace in range(len(figure1["data"])):
-                            fig.append_trace(figure1["data"][trace], row = row, col= 1)
-                            fig.update_layout(xaxis=dict(showgrid=False), yaxis=dict(showgrid=False))
-                            fig.update_yaxes(visible=False)
-                            fig.update_xaxes(visible=False)
-                            fig.update_yaxes(showticklabels=False)
-                            fig.update_yaxes(visible=False, showticklabels=False)
-                            fig.update_layout(yaxis={'visible': False, 'showticklabels': False})
-                            fig.update_layout(yaxis_visible=False, yaxis_showticklabels=False)
-                            
-    
-        graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-        with open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/wordclouds/sample.json", "w") as outfile:
-             outfile.write(graphJSON)
-        print(graphJSON)
-        return graphJSON
-    else:
-        return json.dumps("")
-
-@blueprint.route('/discussion_word_clouds2', methods=['GET', 'POST'])
-def discussion_word_clouds2():    
-    plot_data = []
-    
-    global total_clusters
-    total_clusters = dendro_clusters
-    
-    languages = []
-    for ind in range(total_clusters):
-        languages.append("Discussion_"+str(ind))
-        
-    nc2 = pd.DataFrame()
-    rows = len(languages)#int(len(languages)/2)
-    cols = 1#2
-    subplot_titles = [l[0] for l in languages]
-    
-    tot_rows = 0
-    for ind in range(len(languages)):
-        if ind > -1:
-            clus1 = clustered_dataframes[clustered_dataframes["cluster"] == ind]
-            if len(clus1)>0:
-                row = ind+1
-                print(ind)
-                col = 1 
-                d = clus1[['dateTime', 'body']]
-                d['index_col'] = d.index
-                d['body_Clean_List'] = list(map(text_preprocessing, d.body))
-
-
-                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-                stopwords_list = stopwords.words('english')
-                stopwords_list.extend(['park', 'disney', 'disneyland'])
-                d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
-                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-    
-                df_words = get_df(' '.join(d['body_Clean']))
-                df_words.head(10)
-                df_cn_words = [list(get_df(i)['words'][0:10]) for i in d['body_Clean']]
-                df_cn_count = [list(get_df(i)['count'][0:10]) for i in d['body_Clean']]
-                df_cn_content = [[i.lower()] * len(j) for i,j in zip(d['body_Clean'], df_cn_words)]
-
-                df_cont = pd.DataFrame(zip(sum(df_cn_content,[]), sum(df_cn_words,[]),sum(df_cn_count,[])),columns = ['contents','words','count'])
-    
-                n = df_cont['count'].max()
-                
-                keep_dfcon = [df_cont[df_cont['contents']==i.lower()] for i in d[0:-1]]
-                num_w = len(keep_dfcon)
-                if num_w  > 0:
-                    tot_rows = tot_rows + 1
-    row = 0                
-    if tot_rows > 0:
-        specsa = [[{'type':'xy'}] * cols] * tot_rows
-        fig_Array = []#sp.make_subplots(rows=tot_rows, cols=cols, specs = specsa, print_grid=True, subplot_titles=languages)
-        print("making figures")
-        count = 0
-        for ind in range(len(languages)):
-            if ind > -1:
-                nc1 = pd.DataFrame()
-                clus1 = clustered_dataframes[clustered_dataframes["cluster"] == ind]
-                #ndf = ndf.reset_index(name='counts')
-                #clus1 = df[df[barrier] == languages[ind]]
-                
-                model = BERTopic()
-                
-                if len(clus1)>0:
-                    col = 1
-                    d = clus1[['dateTime', 'body']]
-                    d['index_col'] = d.index
-                    d['body_Clean_List'] = list(map(text_preprocessing, d.body))
-                    stopwords_list = stopwords.words('english')
-                    stopwords_list.extend(['park', 'disney', 'disneyland'])
-                    d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
-                    d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-                    if len(d['body_Clean']) > 10:
-                        docs = d.body_Clean.to_list()
-                        topics, probs = model.fit_transform(docs)
-                        print("print probabilities")
-                        print(probs)
-                        
-                        top_n_topics = 4
-                        freq_df = model.get_topic_freq()
-                        freq_df = freq_df.loc[freq_df.Topic != -1, :]
-                        topi = []
-                        if topi is not None:
-                            topi = list(topics)
-                        elif top_n_topics is not None:
-                            topi = sorted(freq_df.Topic.to_list()[:top_n_topics])
-                        else:
-                            topi = sorted(freq_df.Topic.to_list()[0:6])
-                        print("number of bert topics")
-                        print(len(topi))
-                        print(topi)
-                        indexes = set(topi)
-                        print(indexes)
-                        #time.sleep(5)            
-                        tmpDict = {}
-                        toc = topi.count(-1)
-                        print(toc)
-                        if  toc>=4:
-                            row = row+1
-                            count = count + 1
-                            tit = "<b>Scores of topic words " + languages[ind] + "</b>"
-                            
-                            figure1 = model.visualize_barchart(top_n_topics = len(indexes), n_words = 7, topics = indexes, title= tit)
-                            #visualize_term_rank()
-                            #visualize_barchart(topics=topics, top_n_topics=4, n_words=5)
-                            figure1.write_html("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/abc.html")
-                            
-                            #print(figure1)
-                            #print(type(figure1))
-                            #print("the now number is")
-                            #print(row)
-                            #for trace in range(len(figure1["data"])):
-                            #    fig_Array.add_trace(figure1["data"][trace], row = row, col= 1)
-                            fig_Array.append(figure1)
-        graphJSON = json.dumps(fig_Array, cls=plotly.utils.PlotlyJSONEncoder)
-        with open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/wordclouds/sample.json", "w") as outfile:
-             outfile.write(graphJSON)
-        #print(graphJSON)
-    #sleep(2)
-        return graphJSON
-    else:
-        return json.dumps("")        
-
-@blueprint.route('/qa_word_clouds2', methods=['GET', 'POST'])
-def qa_word_clouds2():
-    sel_event = selected_event
-    city_news = request.args['commaValues']
-    sel_barrier = request.args["selBarrier"]
-    languages2 = city_news.split(',')
-    
-    plot_data = []
-    #print(sel_barrier)
-    df = getDataFile(sel_event)
-    df['year'] = pd.DatetimeIndex(df['dateTime']).year
-    df['month'] = pd.DatetimeIndex(df['dateTime']).month
-    df['day'] = pd.DatetimeIndex(df['dateTime']).day
-    df['date'] = pd.DatetimeIndex(df['dateTime']).date
-
-    bnb = df.groupby(["lang", "day"]).count().reset_index()
-
-    barrier = ""
-    barrier = getBarrierString(sel_barrier)
-    print(barrier)
-    
-    languages = []
-    for ind in range(len(languages2)):
-        df3 = df[df[barrier] == languages2[ind]]
-        if len(df3) > 0:
-            languages.append(languages2[ind])
-    
-    nc2 = pd.DataFrame()
-    rows = len(languages)#int(len(languages)/2)
-    cols = 1#2
-    subplot_titles = [l[0] for l in languages]
-    
-    tot_rows = 0
-    for ind in range(len(languages)):
-        if ind > -1:
-            nc1 = pd.DataFrame()
-            print(ind)
-            print(barrier)
-            ndf = df.groupby('dateTime')['dateTime'].count()
-            ndf = ndf.reset_index(name='counts')
-            print(ind)
-            print(barrier)
-            clus1 = df[df[barrier] == languages[ind]]
-            if len(clus1)>0:
-                row = ind+1 #math.floor(ind/2)+1
-                print(ind)
-                col = 1 #(ind%2)+1
-            #print(lst)
-                d = clus1[['dateTime', 'body', barrier]]
-                d['index_col'] = d.index
-                d['body_Clean_List'] = list(map(text_preprocessing, d.body))
-
-            # Return to string with to_string function
-                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-                stopwords_list = stopwords.words('english')
-                stopwords_list.extend(['park', 'disney', 'disneyland'])
-                d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
-                d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-    
-                df_words = get_df(' '.join(d['body_Clean']))
-                df_words.head(10)
-                df_cn_words = [list(get_df(i)['words'][0:10]) for i in d['body_Clean']]
-                df_cn_count = [list(get_df(i)['count'][0:10]) for i in d['body_Clean']]
-                df_cn_content = [[i.lower()] * len(j) for i,j in zip(d['body_Clean'], df_cn_words)]
-
-                df_cont = pd.DataFrame(zip(sum(df_cn_content,[]), sum(df_cn_words,[]),sum(df_cn_count,[])),columns = ['contents','words','count'])
-    
-                n = df_cont['count'].max()
-                
-            #color_dict = get_colordict('viridis',n , 1)
-
-            #create a list contains DataFrame of each content
-                keep_dfcon = [df_cont[df_cont['contents']==i.lower()] for i in d[0:-1]]
-                num_w = len(keep_dfcon)
-                if num_w  > 0:
-                    tot_rows = tot_rows + 1
-    row = 0                
-    if tot_rows > 0:
-        specsa = [[{'type':'xy'}] * cols] * tot_rows
-        fig_Array = []#sp.make_subplots(rows=tot_rows, cols=cols, specs = specsa, print_grid=True, subplot_titles=languages)
-        print("making figures")
-        count = 0
-        for ind in range(len(languages)):
-            if ind > -1:
-                nc1 = pd.DataFrame()
-                ndf = df.groupby('dateTime')['dateTime'].count()
-                ndf = ndf.reset_index(name='counts')
-                clus1 = df[df[barrier] == languages[ind]]
-                
-                model = BERTopic()
-                
-                if len(clus1)>0:
-                    col = 1
-                    d = clus1[['dateTime', 'body', barrier]]
-                    d['index_col'] = d.index
-                    d['body_Clean_List'] = list(map(text_preprocessing, d.body))
-                    stopwords_list = stopwords.words('english')
-                    stopwords_list.extend(['park', 'disney', 'disneyland'])
-                    d['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in d['body_Clean_List']]
-                    d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
-                    if len(d['body_Clean']) > 10:
-                        docs = d.body_Clean.to_list()
-                        topics, probs = model.fit_transform(docs)
-                        print("print probabilities")
-                        print(probs)
-                        
-                        top_n_topics = 4
-                        freq_df = model.get_topic_freq()
-                        freq_df = freq_df.loc[freq_df.Topic != -1, :]
-                        topi = []
-                        if topi is not None:
-                            topi = list(topics)
-                        elif top_n_topics is not None:
-                            topi = sorted(freq_df.Topic.to_list()[:top_n_topics])
-                        else:
-                            topi = sorted(freq_df.Topic.to_list()[0:6])
-                        print("number of bert topics")
-                        print(len(topi))
-                        print(topi)
-                        indexes = set(topi)
-                        print(indexes)
-                        #time.sleep(5)            
-                        tmpDict = {}
-                        toc = topi.count(-1)
-                        print(toc)
-                        if  toc>=4:
-                            row = row+1
-                            count = count + 1
-                            tit = "<b>Topic Word Scores " + languages[ind] + "</b>"
-                            
-                            figure1 = model.visualize_barchart(top_n_topics = len(indexes), n_words = 10, topics = indexes, title= tit)
-                            #visualize_term_rank()
-                            #visualize_barchart(topics=topics, top_n_topics=4, n_words=5)
-                            figure1.write_html("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/abc.html")
-                            
-                            #print(figure1)
-                            #print(type(figure1))
-                            #print("the now number is")
-                            #print(row)
-                            #for trace in range(len(figure1["data"])):
-                            #    fig_Array.add_trace(figure1["data"][trace], row = row, col= 1)
-                            fig_Array.append(figure1)
-        graphJSON = json.dumps(fig_Array, cls=plotly.utils.PlotlyJSONEncoder)
-        with open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/wordclouds/sample.json", "w") as outfile:
-             outfile.write(graphJSON)
-        #print(graphJSON)
-    #sleep(2)
-        return graphJSON
-    else:
-        return json.dumps("")
-    
-    
-@blueprint.route('/qa_word_clouds5', methods=['GET', 'POST'])
-def qa_word_clouds5():
-    print(request.args)
-    check = request.args['count']
-    dateTime = request.args['date']
-    cluster_no = request.args['legendgroup']
-    selected = selected_event
-
-    df = getDataFile(selected_event)
-    vectorizer = TfidfVectorizer()
-    tfidf = vectorizer.fit_transform(df['source.title'].values.astype('U'))
-    similarity_matrix = cosine_similarity(tfidf, tfidf)
-    Z = linkage(similarity_matrix, 'ward')
-
-    clusters = cut_tree(Z, n_clusters=dendro_clusters)
-    values = []
-    for i in range(len(df)):
-        values.append("Discussion " + str(clusters[i][0]))
-    df['cluster'] = values
-
-    nc1 = pd.DataFrame()
-    traces = []
-    color_list = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lightcoral', 'darkorange']
-
-    print(check)
-    print(dateTime)
-    print(cluster_no)
-    print(df.columns)
-    print(len(df))
-
-    df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S')
-    df = df.sort_values(by='dateTime', ascending=True)
-    df['year'] = pd.DatetimeIndex(df['dateTime']).year
-    df['month'] = pd.DatetimeIndex(df['dateTime']).month
-    df['day'] = pd.DatetimeIndex(df['dateTime']).day
-    df['date'] = pd.DatetimeIndex(df['dateTime']).date
-    
-    #df = df[['dateTime', 'title', 'cluster']]
-    df = df[df["cluster"] == cluster_no]
-    selected_cluster = df[df["dateTime"] == dateTime]
-    selected_cluster = selected_cluster[['dateTime', 'body', 'cluster']]
-    
-    selected_cluster['index_col'] = selected_cluster.index
-    selected_cluster['body_Clean_List'] = list(map(text_preprocessing, selected_cluster.body))
-
-    # Return to string with to_string function
-    selected_cluster['body_Clean'] = list(map(to_string, selected_cluster['body_Clean_List']))
-    stopwords_list = stopwords.words('english')
-    stopwords_list.extend(['park', 'disney', 'disneyland'])
-    selected_cluster['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in selected_cluster['body_Clean_List']]
-    selected_cluster['body_Clean'] = list(map(to_string, selected_cluster['body_Clean_List']))
-    
-    
-    df_words = get_df(' '.join(selected_cluster['body_Clean']))
-    df_words.head(10)
-    df_cn_words = [list(get_df(i)['words'][0:10]) for i in selected_cluster['body_Clean']]
-    df_cn_count = [list(get_df(i)['count'][0:10]) for i in selected_cluster['body_Clean']]
-    df_cn_content = [[i.lower()] * len(j) for i,j in zip(selected_cluster['body_Clean'], df_cn_words)]
-
-    df_cont = pd.DataFrame(zip(sum(df_cn_content,[]), sum(df_cn_words,[]),sum(df_cn_count,[])), columns = ['contents','words','count'])
-    
-    print(df_cont)
-    n = df_cont['count'].max()
-    keep_dfcon = [df_cont[df_cont['contents']==i.lower()] for i in selected_cluster[0:-1]]
-    num_w = len(keep_dfcon)
-    count = 0
-    if num_w  > 1:
-        specs = [[{'type':'xy'}] * 1] * 1
-        fig = sp.make_subplots(rows=1, cols=1, specs=specs, print_grid=True, subplot_titles=[dateTime])
-        count = count + 1
-        n = 10
-        wordCloudStr = ' '.join(selected_cluster['body_Clean'])
-        figure1 = plotly_wordcloud(wordCloudStr, cluster_no)
-        for trace in range(len(figure1["data"])):
-            fig.append_trace(figure1["data"][trace], row = 1, col= 1)
-            fig.update_layout(xaxis=dict(showgrid=False), yaxis=dict(showgrid=False))
-            fig.update_yaxes(visible=False)
-            fig.update_xaxes(visible=False)
-            fig.update_yaxes(showticklabels=False)
-            fig.update_yaxes(visible=False, showticklabels=False)
-            fig.update_layout(yaxis={'visible': False, 'showticklabels': False})
-            fig.update_layout(yaxis_visible=False, yaxis_showticklabels=False)
-                            
-        graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-        with open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/wordclouds/sample.json", "w") as outfile:
-             outfile.write(graphJSON)
-        print(graphJSON)
-    #sleep(2)
-        return graphJSON
-    else:
-        return json.dumps("")
-
-@blueprint.route('/qa_analysis_table', methods=['GET', 'POST'])
-def qa_analysis_table():
-    print(request.args)
-    check = request.args['count']
-    dateTime = request.args['date']
-    cluster_no = request.args['legendgroup']
-    selected = selected_event
-    sel_barrier = request.args['selBarrier']
-    df = getDataFile(sel_event)
-    df['year'] = pd.DatetimeIndex(df['dateTime']).year
-    df['month'] = pd.DatetimeIndex(df['dateTime']).month
-    df['day'] = pd.DatetimeIndex(df['dateTime']).day
-    df['date'] = pd.DatetimeIndex(df['dateTime']).date
-
-    bnb = df.groupby(["lang", "day"]).count().reset_index()
-
-    barrier = ""
-    barrier = getBarrierString(sel_barrier)
-    color_list = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lightcoral', 'darkorange']
-    
-    
-    df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%dT%H:%M:%SZ')
-    df = df[df[barrier] == cluster_no]
-    selected_cluster = df[df["dateTime"] == dateTime]
-    selected_cluster = selected_cluster[['dateTime', 'title', barrier]]
-    
-    print("length is")
-    print(len(selected_cluster))
-    print(selected_cluster)
-    print(len(selected_cluster))
-    
-    class ItemTable(Table):
-        date = Col('date')
-        time = Col('time')
-        title = LinkCol('Title', 'graphs_blueprint.get_doc_display', url_kwargs=dict(news_site='news_site', rank='rank'), attr='title')
-        cluster = Col('cluster')
-        country = Col('country')
-
-    class Item(object):
-        def __init__(self, date, time, title, cluster, country):
-            self.date = date
-            self.time = time
-            self.title = title
-            self.cluster = cluster
-            self.country = country
-
-    print(dict(values=list(selected_cluster.columns)))
-
-    data = [go.Table(
-        header=dict(values=list(selected_cluster.columns), font={"size": 20}),
-        cells=dict(values=[ selected_cluster['dateTime'], selected_cluster['title'], selected_cluster[barrier]],
-                   font={"size": 18})
-    )]
-    print(data)
-    graphJSON = json.dumps(data, cls=plotly.utils.PlotlyJSONEncoder)
-    return graphJSON
-
-
-@blueprint.route('/qa_word_clouds3', methods=['GET', 'POST'])
-def qa_word_clouds3():
-    print(request.args)
-    check = request.args['count']
-    dateTime = request.args['date']
-    cluster_no = request.args['legendgroup']
-    selected = selected_event
-    df = getDataFile(selected)
-    vectorizer = TfidfVectorizer()
-    tfidf = vectorizer.fit_transform(df['source.title'].values.astype('U'))
-    similarity_matrix = cosine_similarity(tfidf, tfidf)
-    Z = linkage(similarity_matrix, 'ward')
-
-    print("number of clusters" + str(total_clusters))
-    clusters = cut_tree(Z, n_clusters=dendro_clusters)
-    values = []
-    for i in range(len(df)):
-        values.append("Cluster_" + str(clusters[i][0]))
-    df['cluster'] = values
-
-    nc1 = pd.DataFrame()
-    traces = []
-    color_list = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lightcoral', 'darkorange']
-
-    print(check)
-    print(dateTime)
-    print(cluster_no)
-    print(df.columns)
-    print(len(df))
-
-
-    df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S')
-    df = df.sort_values(by='dateTime', ascending=True)
-    df['year'] = pd.DatetimeIndex(df['dateTime']).year
-    df['month'] = pd.DatetimeIndex(df['dateTime']).month
-    df['day'] = pd.DatetimeIndex(df['dateTime']).day
-    df['date'] = pd.DatetimeIndex(df['dateTime']).date
-    
-    df = df[df["cluster"] == cluster_no]
-    selected_cluster = df[df["dateTime"] == dateTime]
-    selected_cluster = selected_cluster[['dateTime', 'body', 'cluster']]
-    
-    selected_cluster['index_col'] = selected_cluster.index
-    selected_cluster['body_Clean_List'] = list(map(text_preprocessing, selected_cluster.body))
-
-    selected_cluster['body_Clean'] = list(map(to_string, selected_cluster['body_Clean_List']))
-    stopwords_list = stopwords.words('english')
-    stopwords_list.extend(['park', 'disney', 'disneyland'])
-    selected_cluster['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in selected_cluster['body_Clean_List']]
-    selected_cluster['body_Clean'] = list(map(to_string, selected_cluster['body_Clean_List']))
-    
-    
-    df_words = get_df(' '.join(selected_cluster['body_Clean']))
-    df_words.head(10)
-    df_cn_words = [list(get_df(i)['words'][0:10]) for i in selected_cluster['body_Clean']]
-    df_cn_count = [list(get_df(i)['count'][0:10]) for i in selected_cluster['body_Clean']]
-    df_cn_content = [[i.lower()] * len(j) for i,j in zip(selected_cluster['body_Clean'], df_cn_words)]
-
-    df_cont = pd.DataFrame(zip(sum(df_cn_content,[]), sum(df_cn_words,[]),sum(df_cn_count,[])),
-                       columns = ['contents','words','count'])
-    
-    print(df_cont)
-    n = df_cont['count'].max()
-    keep_dfcon = [df_cont[df_cont['contents']==i.lower()] for i in selected_cluster[0:-1]]
-    num_w = len(keep_dfcon)
-    n = 10
-    pal = list(sns.color_palette(palette='Reds_r', n_colors=n).as_hex())
-
-    fig = px.pie(df_words[0:10], values='count', names='words',color_discrete_sequence=pal)
-    fig.update_traces(textposition='outside', textinfo='percent+label', hole=.6, hoverinfo="label+percent+name")
-    fig.update_traces(title = cluster_no,title_font = dict(size=25,family='Verdana',color='darkred'),hoverinfo='label+percent',textinfo='percent', textfont_size=20)
-                    
-    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-    return graphJSON
-
-
-@blueprint.route('/qa_word_clouds', methods=['GET', 'POST'])
-def qa_word_clouds():
-    print(request.args)
-    check = request.args['count']
-    dateTime = request.args['date']
-    cluster_no = request.args['legendgroup']
-    selected = selected_event
-    sel_barrier = request.args['selBarrier']
-    df = getDataFile(selected)
-    df['year'] = pd.DatetimeIndex(df['dateTime']).year
-    df['month'] = pd.DatetimeIndex(df['dateTime']).month
-    df['day'] = pd.DatetimeIndex(df['dateTime']).day
-    df['date'] = pd.DatetimeIndex(df['dateTime']).date
-
-    bnb = df.groupby(["lang", "day"]).count().reset_index()
-
-    barrier = ""
-    barrier = getBarrierString(sel_barrier)
-    color_list = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lightcoral', 'darkorange']
-   
-    df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%dT%H:%M:%SZ')
-    df = df[df[barrier] == cluster_no]
-    selected_cluster = df[df["dateTime"] == dateTime]
-    selected_cluster = selected_cluster[['dateTime', 'body', barrier]]
-    
-    selected_cluster['index_col'] = selected_cluster.index
-    selected_cluster['body_Clean_List'] = list(map(text_preprocessing, selected_cluster.body))
-
-    # Return to string with to_string function
-    selected_cluster['body_Clean'] = list(map(to_string, selected_cluster['body_Clean_List']))
-    stopwords_list = stopwords.words('english')
-    stopwords_list.extend(['park', 'disney', 'disneyland'])
-    selected_cluster['body_Clean_List'] = [[word for word in line if word not in stopwords_list] for line in selected_cluster['body_Clean_List']]
-    selected_cluster['body_Clean'] = list(map(to_string, selected_cluster['body_Clean_List']))
-    
-    
-    df_words = get_df(' '.join(selected_cluster['body_Clean']))
-    df_words.head(10)
-    df_cn_words = [list(get_df(i)['words'][0:10]) for i in selected_cluster['body_Clean']]
-    df_cn_count = [list(get_df(i)['count'][0:10]) for i in selected_cluster['body_Clean']]
-    df_cn_content = [[i.lower()] * len(j) for i,j in zip(selected_cluster['body_Clean'], df_cn_words)]
-
-    df_cont = pd.DataFrame(zip(sum(df_cn_content,[]), sum(df_cn_words,[]),sum(df_cn_count,[])), columns = ['contents','words','count'])
-    
-    print(df_cont)
-    n = df_cont['count'].max()
-    #color_dict = get_colordict('viridis',n , 1)
-
-    #create a list contains DataFrame of each content
-    keep_dfcon = [df_cont[df_cont['contents']==i.lower()] for i in selected_cluster[0:-1]]
-    num_w = len(keep_dfcon)
-    n = 10
-    pal = list(sns.color_palette(palette='Reds_r', n_colors=n).as_hex())
-
-    fig = px.pie(df_words[0:10], values='count', names='words',color_discrete_sequence=pal)
-
-    fig.update_traces(textposition='outside', textinfo='percent+label', hole=.6, hoverinfo="label+percent+name")
-
-    #fig.update_layout(width = 800, height = 600,
-     #             margin = dict(t=0, l=0, r=0, b=0))
-    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
-    return graphJSON       
- 
+     
 def get_df(input_text):
     list_words = input_text.split(' ')
     set_words_full = list(set(list_words))
@@ -1887,23 +1254,19 @@ def get_df(input_text):
     df.reset_index(drop=True, inplace=True)
     return df 
         
- 
-def get_colordict(palette,number,start):
-    pal = list(sns.color_palette(palette=palette, n_colors=number).as_hex())
-    color_d = dict(enumerate(pal, start=start))
-    return color_d
+########################### DOWNLOAD EVENTS AND MAKE NETWORKS ##################################        
 
-@blueprint.route('/getKeywords', methods=['GET', 'POST'])
-def getKeywords():
+@blueprint.route('/downloadArticles', methods=['GET', 'POST'])
+def downloadArticles():
     print("getEvents")
     selected = request.args['selected_event']
     return getForPropagationNetworkNew2Tree(selected)
     
-@blueprint.route('/getKeywords2', methods=['GET', 'POST'])
-def getKeywords2():
-    print("getKeywords")
+@blueprint.route('/downloadEvents', methods=['GET', 'POST'])
+def downloadEvents():
+    print("downloadEvents")
     selected = request.args['selected_event']
-    cons = "_".join(selected.split() )
+    cons = selected#"_".join(selected.split() )
     PARAMS = {"action": "getEvents",
               "eventsPage": 1,
               "conceptUri": cons,
@@ -1914,7 +1277,7 @@ def getKeywords2():
               "resultType": "events",
               "apiKey": KEY}
               
-    conceptUri = "http://en.wikipedia.org/wiki/"+cons   
+    conceptUri = cons#"http://en.wikipedia.org/wiki/"+cons   
     print(conceptUri)
     q = QueryEventsIter(conceptUri)
     res = []
@@ -1933,10 +1296,10 @@ def getKeywords2():
     #b = {selected:{"events":{"results":res}}}
     
     #json_object = json.dumps(res, indent=4)
-    #with open(os.path.join("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/data", selected+".json"), "w") as outfile:
+    #with open(os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/data", selected+".json"), "w") as outfile:
     #     outfile.write(json_object)
     
-    #res = open(os.path.join("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/data","Pakistan.json"), "r")
+    #res = open(os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/data","Pakistan.json"), "r")
     #df1 = pd.json_normalize(res, max_level=1)
     #print(list(df.columns))
     return resDic    
@@ -1958,7 +1321,8 @@ def getForPropagationNetworkNew2Tree(name, url="http://eventregistry.org/api/v1/
     r = requests.get(url=url, params=PARAMS)
     res = r.json()  
     #if r.status_code == 200:
-    if page <= int(res[str(name)]["articles"]["pages"]):
+    if page <= int(res[str(name)]["articles"]["pages"]) and page < 300:
+
         results = res[str(name)]["articles"]["results"]
         #print(results)
         articles = articles + results
@@ -1972,7 +1336,7 @@ def getForPropagationNetworkNew2Tree(name, url="http://eventregistry.org/api/v1/
         b = {name:{"articles":{"results":articles}}}
 
         json_object = json.dumps(b, indent=4)
-        with open(os.path.join("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/data", name+".json"), "w") as outfile:
+        with open(os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/data", name+".json"), "w") as outfile:
             outfile.write(json_object)
 
         df1 = pd.json_normalize(articles, max_level=1)
@@ -2018,10 +1382,16 @@ def getForPropagationNetworkNew2Tree(name, url="http://eventregistry.org/api/v1/
         glo_dataframes = df
         print("the final dataframes have been created")
         print(os.getcwd())
-        df.to_csv(os.path.join("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/", name+".csv"))
+        df.to_csv(os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/", name+".csv"))
     #df.to_csv("http://cleopatra.ijs.si/sensoranalysis/static/"+)
         return "1"
 
+def getSimilarityTree(df):
+    print("getSimilarityTree")
+    vectorizer = TfidfVectorizer()
+    tfidf = vectorizer.fit_transform(df['all_concepts'].values.astype('U'))
+    similarity_matrix = cosine_similarity(tfidf, tfidf)
+    return getForPropagationNetworkNew2TreeOnlyOne(similarity_matrix, df)
     
     
 def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
@@ -2116,44 +1486,6 @@ def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
     # print(len(path_data))
     path_data = path_data.drop_duplicates(subset=["Path"], keep='first')
     return path_data, False, False
-    
-
-def getSimilarityTree(df):
-    print("getSimilarityTree")
-    vectorizer = TfidfVectorizer()
-    tfidf = vectorizer.fit_transform(df['all_concepts'].values.astype('U'))
-    #tfidf = vectorizer.fit_transform(df['body'].values.astype('U'))
-    similarity_matrix = cosine_similarity(tfidf, tfidf)
-    # print(type(similarity_matrix))
-    return getForPropagationNetworkNew2TreeOnlyOne(similarity_matrix, df)
-    # return getForPropagationNetworkNew23(similarity_matrix, df)
-    # keys = df['uri'].tolist()
-    # print(keys)
-    # return similarity_matrix
-    # return getForPropagationNetworkNew23OnlyOne(similarity_matrix, df)
-
-@blueprint.route('/getDownloadedEvents', methods=['GET', 'POST'])
-def getDownloadedEvents():
-    return all_events
-
-@blueprint.route('/getDownloadedEventsCustom', methods=['GET', 'POST'])
-def getDownloadedEventsCustom():
-    selected = request.args['selected_event']
-    return all_events
-
-def getWordClouds(txt):
-    wordcloud2 = WordCloud().generate(txt)
-
-def get_files(target):
-    for file in os.listdir(target):
-        path = os.path.join(target, file)
-        if os.path.isfile(path):
-            yield (
-                file,
-                datetime.utcfromtimestamp(os.path.getmtime(path)),
-                os.path.getsize(path)
-            )
-
 
 def text_preprocessing(text):
     
@@ -2187,226 +1519,11 @@ def text_preprocessing(text):
     
     return text
 
-
 def to_string(text):
     # Convert list to string
     text = ' '.join(map(str, text))
 
     return text
     
-    
-# Define a function to plot word cloud
-def plot_cloud(wordcloud):
-    # Set figure size
-    plt.figure(figsize=(40, 30))
-    # Display image
-    plt.imshow(wordcloud) 
-    # No axis details
-    plt.axis("off");
-    
 
-def create_wordcloud(topic_model, topic):
-    text = {word: value for word, value in topic_model.get_topic(topic)}
-    wc = WordCloud(background_color="white", max_words=1000)
-    wc.generate_from_frequencies(text)
-    plt.imshow(wc, interpolation="bilinear")
-    plt.axis("off")
-    plt.show()
-
-
-def plotly_wordcloud(text, tit):
-    wc = WordCloud(stopwords = set(STOPWORDS), max_words = 200, max_font_size = 100)
-    wc.generate_from_frequencies(text)
-    
-    word_list=[]
-    freq_list=[]
-    fontsize_list=[]
-    position_list=[]
-    orientation_list=[]
-    color_list=[]
-
-    for (word, freq), fontsize, position, orientation, color in wc.layout_:
-        word_list.append(word)
-        freq_list.append(freq)
-        fontsize_list.append(fontsize)
-        position_list.append(position)
-        orientation_list.append(orientation)
-        color_list.append(color)
-        
-    # get the positions
-    x=[]
-    y=[]
-    for i in position_list:
-        x.append(i[0])
-        y.append(i[1])
-            
-    # get the relative occurence frequencies
-    new_freq_list = []
-    for i in freq_list:
-        new_freq_list.append(i*100)
-    new_freq_list
-    
-    trace = go.Scatter(x=x, 
-                       y=y, 
-                       name= tit,
-                       textfont = dict(size=new_freq_list, color=color_list),
-                       hoverinfo='text',
-                       hovertext=['{0}{1}'.format(w, f) for w, f in zip(word_list, freq_list)],
-                       mode='text',  
-                       text=word_list
-                      )
-    
-    layout = go.Layout({'xaxis': {'showgrid': False, 'showticklabels': False, 'zeroline': False, 'visible': True},
-                        'yaxis': {'showgrid': False, 'showticklabels': False, 'zeroline': False, 'visible': False},
-                        })
-    
-    fig = go.Figure(data=[trace], layout=layout)
-    #fig.update_layout(legend_title=dict(text='Country', font=dict(family="sans-serif", size = 18, color='blue')))
-    fig.update_layout(xaxis=dict(showgrid=False), yaxis=dict(showgrid=False))
-    fig.update_yaxes(visible=False)
-    fig.update_xaxes(visible=True)
-    
-    fig.update_yaxes(showticklabels=False)
-    fig.update_yaxes(visible=False, showticklabels=False)
-
-    fig.update_layout(yaxis={'visible': False, 'showticklabels': False})
-    fig.update_layout(yaxis_visible=False, yaxis_showticklabels=False)
-    
-
-    return fig
-
-def ctree():
-    """ One of the python gems. Making possible to have dynamic tree structure.
-
-    """
-    return defaultdict(ctree)
-
-
-def build_leaf(name, leaf):
-    """ Recursive function to build desired custom tree structure
-
-    """
-    res = {"name": name, "value": 123}
-
-    # add children node if the leaf actually has any children
-    if len(leaf.keys()) > 0:
-        res["children"] = [build_leaf(k, v) for k, v in leaf.items()]
-
-    return res
-
-
-@blueprint.route('/generateCommunity', methods=['GET', 'POST'])
-def generateCommunity():
-    df = getDataFile(selected_event)
-    sel_barrier = request.args['barrier']
-    print(sel_barrier)
-    barrier = ""
-    barrier = getBarrierString(sel_barrier)
-    df2 = df[['eventUri','country',barrier]]
-    df2.to_csv(os.path.join("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static", "Radial.csv"),index=False)
-    
-    tree = ctree()
-    # NOTE: you need to have test.csv file as neighbor to this file
-    with open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/Radial.csv") as csvfile:
-        reader = csv.reader(csvfile)
-        for rid, row in enumerate(reader):
-        
-            # skipping first header row. remove this logic if your csv is
-            # headerless
-            if rid == 0:
-                continue
-            print(row)
-            print(rid)
-            # usage of python magic to construct dynamic tree structure and
-            # basically grouping csv values under their parents
-            leaf = tree[row[0]]
-            for cid in range(1, len(row)):
-                leaf = leaf[row[cid]]
-
-    # building a custom tree structure
-    res = []
-    for name, leaf in tree.items():
-        res.append(build_leaf(name, leaf))
-
-
-    
-    # printing results into the terminal
-    treeValues = json.dumps(res)
-    print(treeValues)
-    jsonFilew = open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/Radial.json", "w")
-    jsonFilew.write(treeValues)
-    jsonFilew.close()
-    with open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/Radial.json") as jsonFile:
-        data = json.load(jsonFile)
-        data2 = data[0];
-        print(data2)
-    return data2
-    print(treeValues[0])
-    return treeValues
-    
-
-def getNetworkForRadialTree(matrix, df):
-    print("type of matrix")
-    rows, cols = np.where((matrix >= 0.9))
-    edges = zip(rows.tolist(), cols.tolist())
-    gr = nx.Graph()
-    gr.add_edges_from(edges)
-    gr.remove_edges_from(nx.selfloop_edges(gr))
-
-    values = df['uri'].tolist()
-    values = list(map(int, values))
-    keys   = [*range(0, len(values), 1)]
-    
-    mapping = dict(zip(keys, values))
-    print(mapping)
-    H = nx.relabel_nodes(gr, mapping)
-    print(H)
-    data1 = nx.node_link_data(H,  {"id": "name"})
-    
-    return data1 
-
-@blueprint.route('/generateRadialTree', methods=['GET', 'POST'])
-def generateRadialTree():
-    df = getDataFile(selected_event)
-    sel_barrier = request.args['barrier']
-    print(sel_barrier)
-    barrier = ""
-    barrier = getBarrierString(sel_barrier)
-    df = df[df[barrier].notna()]
-    print("getSimilarityTree")
-    vectorizer = TfidfVectorizer()
-    tfidf = vectorizer.fit_transform(df['all_concepts'].values.astype('U'))
-    similarity_matrix = cosine_similarity(tfidf, tfidf)
-    jsnNW = getNetworkForRadialTree(similarity_matrix, df)
-    cats = df[barrier].unique()
-    uni_nodes = df[['uri',barrier]]
-    
-    json_cats = [{"name": t} for t in cats]
-    json_nods = [{"category": t, "name": s, "value": 1} for t,s in zip(uni_nodes[barrier], uni_nodes.uri)]
-    
-    jsnNW["categories"] = json_cats
-    jsnNW["nodes"] = json_nods
-    
-    del jsnNW["directed"]
-    del jsnNW["multigraph"]
-    del jsnNW["graph"]
-    
-    jsnNW["type"] = "force"
-    
-    s1 = json.dumps(jsnNW)
-    
-    jsonFilew = open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/jsnw.json", "w")
-    jsonFilew.write(s1)
-    jsonFilew.close()
-    
-    with open("/home/adbuls/visualisation/PropagationNetwork/flaskProject2/app/graphs/static/jsnw.json") as jsonFile:
-        data = json.load(jsonFile)
-        data2 = data;
-        print(data2)
-    return data2
-    
-    
-    
-    
-    
     
