@@ -171,12 +171,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -288,6 +288,14 @@
                             }
                         },
                         {
+                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelenskyy",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Volodymyr Zelenskyy"
+                            }
+                        },
+                        {
                             "uri": "http://en.wikipedia.org/wiki/Mariusz_B\u0142aszczak",
                             "type": "wiki",
                             "score": 2,
@@ -309,14 +317,6 @@
                             "score": 2,
                             "label": {
                                 "eng": "United States Secretary of Defense"
-                            }
-                        },
-                        {
-                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelensky",
-                            "type": "wiki",
-                            "score": 2,
-                            "label": {
-                                "eng": "Volodymyr Zelensky"
                             }
                         },
                         {
@@ -489,12 +489,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -648,12 +648,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -971,12 +971,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -1374,12 +1374,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -1404,6 +1404,14 @@
                             }
                         },
                         {
+                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelenskyy",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Volodymyr Zelenskyy"
+                            }
+                        },
+                        {
                             "uri": "http://en.wikipedia.org/wiki/Russian_military_intervention_in_the_Syrian_Civil_War",
                             "type": "wiki",
                             "score": 2,
@@ -1425,14 +1433,6 @@
                             "score": 2,
                             "label": {
                                 "eng": "Vladimir Putin"
-                            }
-                        },
-                        {
-                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelensky",
-                            "type": "wiki",
-                            "score": 2,
-                            "label": {
-                                "eng": "Volodymyr Zelensky"
                             }
                         },
                         {
@@ -1712,12 +1712,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -2044,12 +2044,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -2173,12 +2173,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -2388,12 +2388,12 @@
                             "type": "loc",
                             "score": 5,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -2507,12 +2507,12 @@
                             "type": "loc",
                             "score": 4,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -2945,12 +2945,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -3188,12 +3188,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -3323,12 +3323,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -3611,12 +3611,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -3855,12 +3855,12 @@
                             "type": "loc",
                             "score": 4,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -4021,12 +4021,12 @@
                             "type": "loc",
                             "score": 5,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -4336,12 +4336,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -4715,12 +4715,12 @@
                             "type": "loc",
                             "score": 4,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -5272,12 +5272,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -5569,12 +5569,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -5676,12 +5676,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -5871,12 +5871,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -6072,6 +6072,14 @@
                             }
                         },
                         {
+                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelenskyy",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Volodymyr Zelenskyy"
+                            }
+                        },
+                        {
                             "uri": "http://en.wikipedia.org/wiki/Donetsk_People's_Republic",
                             "type": "wiki",
                             "score": 2,
@@ -6101,14 +6109,6 @@
                             "score": 2,
                             "label": {
                                 "eng": "Vladimir Putin"
-                            }
-                        },
-                        {
-                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelensky",
-                            "type": "wiki",
-                            "score": 2,
-                            "label": {
-                                "eng": "Volodymyr Zelensky"
                             }
                         },
                         {
@@ -6279,12 +6279,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -6619,12 +6619,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -6804,12 +6804,12 @@
                             "type": "loc",
                             "score": 4,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -7282,12 +7282,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -7929,12 +7929,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -8110,12 +8110,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -8325,12 +8325,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -8666,12 +8666,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -8895,12 +8895,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -9002,12 +9002,12 @@
                             "type": "loc",
                             "score": 4,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -9204,12 +9204,12 @@
                             "type": "loc",
                             "score": 4,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -9379,12 +9379,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -9392,6 +9392,14 @@
                                         "eng": "Ukraine"
                                     }
                                 }
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelenskyy",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Volodymyr Zelenskyy"
                             }
                         },
                         {
@@ -9432,14 +9440,6 @@
                             "score": 2,
                             "label": {
                                 "eng": "Euro"
-                            }
-                        },
-                        {
-                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelensky",
-                            "type": "wiki",
-                            "score": 2,
-                            "label": {
-                                "eng": "Volodymyr Zelensky"
                             }
                         },
                         {
@@ -9519,12 +9519,12 @@
                             "type": "loc",
                             "score": 5,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -9927,12 +9927,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -10096,12 +10096,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -10668,12 +10668,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -10945,12 +10945,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -11191,12 +11191,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -11424,12 +11424,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -11729,12 +11729,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -11916,12 +11916,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -12232,12 +12232,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -12396,12 +12396,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -12590,12 +12590,12 @@
                             "type": "loc",
                             "score": 4,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -12865,12 +12865,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -13143,12 +13143,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -13270,12 +13270,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -13387,6 +13387,14 @@
                             }
                         },
                         {
+                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelenskyy",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Volodymyr Zelenskyy"
+                            }
+                        },
+                        {
                             "uri": "http://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon",
                             "type": "wiki",
                             "score": 2,
@@ -13427,14 +13435,6 @@
                             }
                         },
                         {
-                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelensky",
-                            "type": "wiki",
-                            "score": 2,
-                            "label": {
-                                "eng": "Volodymyr Zelensky"
-                            }
-                        },
-                        {
                             "uri": "http://en.wikipedia.org/wiki/President_of_Ukraine",
                             "type": "wiki",
                             "score": 2,
@@ -13467,12 +13467,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -13764,12 +13764,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -13939,12 +13939,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -14572,12 +14572,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -15062,12 +15062,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -15223,12 +15223,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -15651,12 +15651,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -15881,12 +15881,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -16003,12 +16003,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -17386,6 +17386,14 @@
                             }
                         },
                         {
+                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelenskyy",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Volodymyr Zelenskyy"
+                            }
+                        },
+                        {
                             "uri": "http://en.wikipedia.org/wiki/Officer_cadet",
                             "type": "wiki",
                             "score": 2,
@@ -17431,14 +17439,6 @@
                             "score": 2,
                             "label": {
                                 "eng": "Military personnel"
-                            }
-                        },
-                        {
-                            "uri": "http://en.wikipedia.org/wiki/Volodymyr_Zelensky",
-                            "type": "wiki",
-                            "score": 2,
-                            "label": {
-                                "eng": "Volodymyr Zelensky"
                             }
                         },
                         {
@@ -18099,12 +18099,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -18515,12 +18515,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -18634,12 +18634,12 @@
                             "type": "loc",
                             "score": 4,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -18961,12 +18961,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",
@@ -19127,12 +19127,12 @@
                             "type": "loc",
                             "score": 2,
                             "label": {
-                                "eng": "Kiev"
+                                "eng": "Kyiv"
                             },
                             "location": {
                                 "type": "place",
                                 "label": {
-                                    "eng": "Kiev"
+                                    "eng": "Kyiv"
                                 },
                                 "country": {
                                     "type": "country",

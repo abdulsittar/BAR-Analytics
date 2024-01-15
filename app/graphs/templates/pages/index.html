@@ -61,6 +61,28 @@
 
                      <!--}
                      <!--});-->
+					 
+					 $("#btnLbl").unbind().click(function() {
+						
+						topbar.show()
+						$.ajax({
+							url: '/sensoranalysis/downloadArticles',
+							type: 'GET',
+							contentType: 'application/json;charset=UTF-8',
+							data: {
+								'selected_event': document.getElementById('phone').value
+							},
+							dataType: "json",
+							success: function (data) {
+							//console.log(data)
+								//console.log("file downloaded complete")
+								showAlert("Analytical files have been downloaded!");
+								topbar.hide()
+							}
+						});
+						
+					 
+					 });
 					
 					 function showAlert() {
 						alert ("Event downloaded");

@@ -9127,7 +9127,7 @@
                     "source": {
                         "uri": "ca.sports.yahoo.com",
                         "dataType": "news",
-                        "title": "Yahoo Sports"
+                        "title": "Yahoo Sports Canada"
                     },
                     "authors": [],
                     "concepts": [
@@ -16398,12 +16398,12 @@
                             "type": "loc",
                             "score": 3,
                             "label": {
-                                "eng": "Taiwan"
+                                "eng": "Republic of China (Taiwan)"
                             },
                             "location": {
                                 "type": "country",
                                 "label": {
-                                    "eng": "Taiwan"
+                                    "eng": "Republic of China (Taiwan)"
                                 }
                             }
                         },
@@ -36599,7 +36599,7 @@
                     "source": {
                         "uri": "ca.sports.yahoo.com",
                         "dataType": "news",
-                        "title": "Yahoo Sports"
+                        "title": "Yahoo Sports Canada"
                     },
                     "authors": [],
                     "concepts": [

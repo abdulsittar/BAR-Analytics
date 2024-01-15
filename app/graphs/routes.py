@@ -103,10 +103,10 @@ colors = ["blue",  "black",  "brown", "gray", "green", "orange", "purple", "red"
                 "salmon", "sandybrown", "seagreen", "seashell", "sienna", "silver", "skyblue", "slateblue", "slategray",
                 "slategrey", "snow", "springgreen", "steelblue", "tan", "teal", "thistle", "violet"] 
 
-# KEY = "b198299a-bb74-4eab-8d59-9dc1fc3679c2",
-#KEY = "0ec67093-425f-4d84-b9e9-41bba6de6c71"
-KEY = "041e85db-cf3a-481c-8559-45f4b45ee47a"
-#KEY = "07a9d524-0986-4aaf-a597-8ec41e86864a"
+###KEY = "b198299a-bb74-4eab-8d59-9dc1fc3679c2"
+###KEY = "0ec67093-425f-4d84-b9e9-41bba6de6c71"
+#KEY = "041e85db-cf3a-481c-8559-45f4b45ee47a"
+KEY = "07a9d524-0986-4aaf-a597-8ec41e86864a"
 #KEY = "f3d1fe1a-addb-48f9-a8bc-29daa318df33",
 # KEY = "c6022edb-151a-429b-9d23-32f34b4a39ab",
 # KEY = "0ec67093-425f-4d84-b9e9-41bba6de6c71",
@@ -516,7 +516,7 @@ def BertTopicQA():
                         customLable = []
                         for v in range(len(topic_labels)):
                             stri = topic_labels[v].split(',')
-                            fst = stri[1]+"_"+stri[2]
+                            fst = stri[1]+" "+stri[2]
                             print(fst)
                             customLable.append(fst.capitalize())
                             
@@ -525,7 +525,7 @@ def BertTopicQA():
                             row = row+1
                             count = count + 1
                             tit = "<b>" + languages[ind].capitalize() + "</b>"
-                            figure1 = model.visualize_barchart(top_n_topics = len(indexes), n_words = 5, topics = indexes, custom_labels= True, title=tit, width= wid/4, height= hei)
+                            figure1 = model.visualize_barchart(top_n_topics = len(indexes), n_words = 10, topics = indexes, custom_labels= True, title=tit, width= wid/4, height= hei)
                             fig_Array.append(figure1)
         graphJSON = json.dumps(fig_Array, cls=plotly.utils.PlotlyJSONEncoder)
         with open("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/wordclouds/sample.json", "w") as outfile:
@@ -562,7 +562,7 @@ def hchierarchical_clustering():
         total_clusters = 1
         
     print("number of clusters = " + str(total_clusters))
-    fig = create_dendrogram2(similarity_matrix, labels=y_labels, linkagefun=lambda x: sch.linkage(x, 'complete'), distfun = partial(pdist, metric='jaccard'),
+    fig = create_dendrogram2(similarity_matrix, labels=y_labels, linkagefun=lambda x: sch.linkage(x, 'ward'), distfun = partial(pdist, metric='jaccard'),
     truncate_mode="level", p=total_clusters)
     fig.update_layout(width=int(request.args['width']))
     
@@ -1153,7 +1153,7 @@ def BertTopicsHC():
                         customLable = []
                         for v in range(len(topic_labels)):
                             stri = topic_labels[v].split(',')
-                            fst = stri[1]+"_"+stri[2]
+                            fst = stri[1]+" "+stri[2]
                             print(fst)
                             customLable.append(fst.capitalize())
                         model.set_topic_labels(customLable)
@@ -1162,7 +1162,7 @@ def BertTopicsHC():
                             row = row+1
                             count = count + 1
                             tit = "<b>" + languages[ind].capitalize() + "</b>"
-                            figure1 = model.visualize_barchart(top_n_topics = len(indexes), n_words = 5, topics = indexes, custom_labels= True, title=tit, width= wid/4, height= hei)
+                            figure1 = model.visualize_barchart(top_n_topics = len(indexes), n_words = 10, topics = indexes, custom_labels= True, title=tit, width= wid/4, height= hei)
                             fig_Array.append(figure1)
         graphJSON = json.dumps(fig_Array, cls=plotly.utils.PlotlyJSONEncoder)
         with open("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/wordclouds/sample.json", "w") as outfile:
@@ -1172,7 +1172,6 @@ def BertTopicsHC():
         return json.dumps("")        
 
 ########################### COMMON FUNCTIONS ##################################
-
 def getBarrierString(sel_barrier):
     barrier = ""
     if sel_barrier == "Linguistic":
@@ -1268,13 +1267,16 @@ def downloadEvents():
     selected = request.args['selected_event']
     cons = selected#"_".join(selected.split() )
     PARAMS = {"action": "getEvents",
+              "resultType": "events",
               "eventsPage": 1,
               "conceptUri": cons,
               "includeArticleConcepts": True,
               "eventsCount": 10,
               'eventsSortBy': "date",
-              'eventsSortByAsc': False,
-              "resultType": "events",
+              'eventsSortByAsc': True,
+              'dateStart':   "2023-01-01",
+              'dateEnd' : "2023-12-01",  
+              
               "apiKey": KEY}
               
     conceptUri = cons#"http://en.wikipedia.org/wiki/"+cons   
@@ -1282,7 +1284,7 @@ def downloadEvents():
     q = QueryEventsIter(conceptUri)
     res = []
     resDic = {}
-    for event in q.execQuery(er, sortBy = "rel", maxItems = 10):
+    for event in q.execQuery(er, sortBy = "date", maxItems = 10):
         print(event)
         res.append(event)
         k  = event["uri"]
@@ -1313,7 +1315,8 @@ def getForPropagationNetworkNew2Tree(name, url="http://eventregistry.org/api/v1/
               "includeArticleConcepts": True,
               "articlesCount": per_page,
               'articlesSortBy': "date",
-              'articlesSortByAsc': False,
+              #'articlesSortByAsc': True,
+              #"reportingDateStart": "2022-01-01",
               "resultType": "articles",
               "apiKey": KEY}
     print(url)
@@ -1321,7 +1324,9 @@ def getForPropagationNetworkNew2Tree(name, url="http://eventregistry.org/api/v1/
     r = requests.get(url=url, params=PARAMS)
     res = r.json()  
     #if r.status_code == 200:
-    if page <= int(res[str(name)]["articles"]["pages"]) and page < 300:
+    print(name)
+    print(res)
+    if page <= int(res[str(name)]["articles"]["pages"]) and len(articles) < 300:
 
         results = res[str(name)]["articles"]["results"]
         #print(results)
@@ -1444,7 +1449,7 @@ def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
                 df.at[idx1, 'parent'] = "Event/" + str(uri1)
 
                 nodesTree.append(["Event/" + str(uri1),
-                                  str(d1).replace(" ", "T"), str(d1).replace(" ", "T"), "0", df.at[idx1, 'source.uri'], df.at[idx1, 'country'], df.at[idx1, 'lang'], df.at[idx1, 'Political-Alignment'], 
+                                  str(d1).replace(" ", "T"), str(d1).replace(" ", "T"), "0", df.at[idx1, 'source.uri'], df.at[idx1, 'con_name'], df.at[idx1, 'country'], df.at[idx1, 'lang'], df.at[idx1, 'Political-Alignment'], 
                                   df.at[idx1, 'wiki-url'], df.at[idx1, 'Cultural-Class'], df.at[idx1, 'Economic-Class'], df.at[idx1, 'Continent'], df.at[idx1, 'Religions'],df.at[idx1, 'economicblocs'], df.at[idx1, 'militarydefenseblocs'],
                                   df.at[idx1, 'politicalregionalblocs'], df.at[idx1, 'linguisticblocs'],
                                   df.at[idx1, 'SafetyandSecurity'], df.at[idx1, 'PersonalFreedom'], df.at[idx1, 'Governance'], df.at[idx1, 'SocialCapital'],
@@ -1462,7 +1467,7 @@ def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
                 color = df.at[idx1, 'parent'].split('/')
 
                 nodesTree.append([df.at[idx1, 'parent'] + "/" + str(uri2),
-                              str(d1).replace(" ", "T"), str(d2).replace(" ", "T"), color[1], df.at[idx2, 'source.uri'],
+                              str(d1).replace(" ", "T"), str(d2).replace(" ", "T"), color[1], df.at[idx2, 'source.uri'],df.at[idx1, 'con_name'], 
                               df.at[idx2, 'country'], df.at[idx2, 'lang'], df.at[idx2, 'Political-Alignment'],
                               df.at[idx2, 'wiki-url'], df.at[idx2, 'Cultural-Class'], 
                               df.at[idx2, 'Economic-Class'], df.at[idx2, 'Continent'], df.at[idx2, 'Religions']
@@ -1478,7 +1483,7 @@ def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
                 df.at[idx2, 'status'] = True
 
 
-    path_data = pd.DataFrame(nodesTree, columns=['Path', 'dateFrom', 'dateTo', 'group', 'source', 'country', 'lang',
+    path_data = pd.DataFrame(nodesTree, columns=['Path', 'dateFrom', 'dateTo', 'group', 'source', 'con_name', 'country', 'lang',
                                                  'polalign', 'url', 'culture', 'economic', 'continent', 'religions',
                                                  'economicblocs', 'militarydefenseblocs','politicalregionalblocs',
                                                  'linguisticblocs', 'SafetyandSecurity', 'PersonalFreedom', 'Governance','SocialCapital','InvestmentEnvironment','EnterpriseConditions','MarketAccessandInfrastructure','EconomicQuality',

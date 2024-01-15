@@ -4280,7 +4280,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 2,
                             "label": {
                                 "eng": "Elon Musk"
@@ -4467,7 +4467,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 2,
                             "label": {
                                 "eng": "Elon Musk"
@@ -5553,7 +5553,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 1,
                             "label": {
                                 "eng": "Elon Musk"
@@ -5565,6 +5565,14 @@
                             "score": 1,
                             "label": {
                                 "eng": "TikTok"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Social_network",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Social network"
                             }
                         },
                         {
@@ -7673,7 +7681,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 1,
                             "label": {
                                 "eng": "Elon Musk"
@@ -7855,7 +7863,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 2,
                             "label": {
                                 "eng": "Elon Musk"
@@ -8650,7 +8658,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 1,
                             "label": {
                                 "eng": "Elon Musk"
@@ -9440,7 +9448,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 1,
                             "label": {
                                 "eng": "Elon Musk"
@@ -10349,7 +10357,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 2,
                             "label": {
                                 "eng": "Elon Musk"
@@ -12390,7 +12398,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 1,
                             "label": {
                                 "eng": "Elon Musk"
@@ -13752,7 +13760,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 1,
                             "label": {
                                 "eng": "Elon Musk"
@@ -14437,7 +14445,7 @@
                     "source": {
                         "uri": "ca.sports.yahoo.com",
                         "dataType": "news",
-                        "title": "Yahoo Sports"
+                        "title": "Yahoo Sports Canada"
                     },
                     "authors": [],
                     "concepts": [
@@ -14871,7 +14879,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 3,
                             "label": {
                                 "eng": "Elon Musk"
@@ -15214,7 +15222,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 1,
                             "label": {
                                 "eng": "Elon Musk"
@@ -17353,7 +17361,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 1,
                             "label": {
                                 "eng": "Elon Musk"

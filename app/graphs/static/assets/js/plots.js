@@ -42,6 +42,10 @@ $("#dwnButton").unbind().click(function() {
 							}
 							//$('#hcsg').empty();
 							//Plotly.newPlot('hcsg', data)
+						},
+						error: function (err) {
+							topbar.hide()
+							showAlert("Unfortunately, there is no event available for the keywords!");
 						}
 					});
 		});
@@ -151,9 +155,17 @@ function GetTrendsQA(button){
 					$(this).css('justify-content','center');
 				})
 				topbar.hide()
+				},
+				error: function (err) {
+					topbar.hide()
+					showAlert("Unfortunately, failed to create word couds!");
 				}
 			});
-		}
+		},
+				error: function (err) {
+					topbar.hide()
+					showAlert("Unfortunately, failed to create line graph!");
+				}
 	});
 };
 
@@ -225,9 +237,17 @@ $('#trendsQA').on('click', 'button', function () {
 					$(this).css('justify-content','center');
 				})
 				topbar.hide()
+				},
+				error: function (err) {
+					topbar.hide()
+					showAlert("Unfortunately, failed to create word couds!");
 				}
 			});
-		}
+		},
+				error: function (err) {
+					topbar.hide()
+					showAlert("Unfortunately, failed to create line graph!");
+				}
 	});
 });
 
@@ -245,6 +265,10 @@ $('div#ThemeRiverHC').on('plotly_click', function (_, data) {
 			document.getElementById("label").style.display = 'none';
 			Plotly.newPlot('hcsg', data)
 			topbar.hide()
-		}
+		},
+				error: function (err) {
+					topbar.hide()
+					showAlert("Unfortunately, failed to create hierarchical clustering!");
+				}
 	});
 });

@@ -2082,7 +2082,7 @@
                     "source": {
                         "uri": "ca.sports.yahoo.com",
                         "dataType": "news",
-                        "title": "Yahoo Sports"
+                        "title": "Yahoo Sports Canada"
                     },
                     "authors": [],
                     "concepts": [
@@ -4656,6 +4656,14 @@
                             "location": null
                         },
                         {
+                            "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
+                            "type": "person",
+                            "score": 3,
+                            "label": {
+                                "eng": "Elon Musk"
+                            }
+                        },
+                        {
                             "uri": "http://en.wikipedia.org/wiki/Hawthorne,_California",
                             "type": "loc",
                             "score": 3,
@@ -5970,7 +5978,7 @@
                     "source": {
                         "uri": "ca.sports.yahoo.com",
                         "dataType": "news",
-                        "title": "Yahoo Sports"
+                        "title": "Yahoo Sports Canada"
                     },
                     "authors": [],
                     "concepts": [
@@ -22275,6 +22283,14 @@
                             "score": 2,
                             "label": {
                                 "eng": "Roscosmos"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
+                            "type": "person",
+                            "score": 2,
+                            "label": {
+                                "eng": "Elon Musk"
                             }
                         },
                         {
@@ -46029,7 +46045,7 @@
                     "source": {
                         "uri": "ca.sports.yahoo.com",
                         "dataType": "news",
-                        "title": "Yahoo Sports"
+                        "title": "Yahoo Sports Canada"
                     },
                     "authors": [],
                     "concepts": [
@@ -48338,7 +48354,7 @@
                     "source": {
                         "uri": "ca.sports.yahoo.com",
                         "dataType": "news",
-                        "title": "Yahoo Sports"
+                        "title": "Yahoo Sports Canada"
                     },
                     "authors": [],
                     "concepts": [
@@ -48983,7 +48999,7 @@
                     "source": {
                         "uri": "ca.sports.yahoo.com",
                         "dataType": "news",
-                        "title": "Yahoo Sports"
+                        "title": "Yahoo Sports Canada"
                     },
                     "authors": [],
                     "concepts": [
@@ -51137,7 +51153,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 3,
                             "label": {
                                 "eng": "Elon Musk"
@@ -51288,6 +51304,14 @@
                             "score": 1,
                             "label": {
                                 "eng": "Northrop Grumman"
+                            }
+                        },
+                        {
+                            "uri": "http://en.wikipedia.org/wiki/Atmosphere_of_Earth",
+                            "type": "wiki",
+                            "score": 1,
+                            "label": {
+                                "eng": "Atmosphere of Earth"
                             }
                         }
                     ],
@@ -51656,7 +51680,7 @@
                         },
                         {
                             "uri": "http://en.wikipedia.org/wiki/Elon_Musk",
-                            "type": "wiki",
+                            "type": "person",
                             "score": 3,
                             "label": {
                                 "eng": "Elon Musk"

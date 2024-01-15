@@ -1,0 +1,32 @@
+,uri,lang,isDuplicate,date,time,dateTime,dateTimePub,dataType,sim,url,title,body,authors,concepts,image,eventUri,sentiment,wgt,relevance,source.uri,source.dataType,source.title,all_concepts,con_name,country,lang-name,language,Political-Alignment,wiki-url,Cultural-Class,Economic-Class,Continent-name,Continent,Religions,2019Rank-From,SafetyandSecurity,PersonalFreedom,Governance,SocialCapital,InvestmentEnvironment,EnterpriseConditions,MarketAccessandInfrastructure,EconomicQuality,LivingConditions,Health,Education,NaturalEnvironment,PowerDistance,Individualism,Masculinity,UncertaintyAvoidance,LongTermOrientation,Indulgence,economicblocs-name,economicblocs,militarydefenseblocs-name,militarydefenseblocs,politicalregionalblocs-name,politicalregionalblocs,linguisticblocs-name,linguisticblocs,proScore,destination,parent,count,status,year,month,day,min,hour,MD
+20,7838973059,eng,False,2023-11-16,17:15:35,2023-11-16 17:15:35,2023-11-16T17:07:25Z,news,0.5529412031173706,https://www.khmertimeskh.com/501393532/bangladesh-to-hold-12th-national-elections-on-january-7/,Bangladesh to hold 12th national elections on January 7 - Khmer Times,"DHAKA - Bangladesh's Election Commission announced Wednesday that parliamentary polls will be held on January 7 next year, with no interim setup in sight.
+
+Chief Election Commissioner Habibul Awal announced the election schedule after an address to the nation, with election campaigning to commence on December. 18 and continue until January 5.
+
+Security forces beefed up their presence around the commission building in the capital Dhaka after the announcement, as some opposition political parties, including the main opposition Bangladesh Nationalist Party (BNP), protested the announcement and demanded a neutral administration set the date.
+
+Awal said they would hold the election in line with the country's Constitution.
+
+Over 110.96 million voters are registered to cast their ballot to elect a total of 300 parliamentary members in the upcoming election.
+
+Eminent constitutional expert Shahdeen Malik said that the government is not legally required to hand over power to an interim setup following the 15th amendment to the country's Constitution.
+
+""There is no possibility of changing the scenario in the next two months,"" he added.
+
+BNP has been on the streets demanding the upcoming election to be held under a non-partisan caretaker government.
+
+On Wednesday, BNP started a fresh 48-hour nationwide blockade for the fifth time after October 28.
+
+At least 13 opposition men, including a journalist and a policeman, were killed. Over 13,300 BNP supporters, and leaders, have been arrested since October 28.
+
+The country's apex court declared the caretaker system illegal in 2011 and subsequently the Awami League government amended the Constitution removing the system which was introduced in 1996.
+
+The political rivalry between the ruling and the opposition parties intensified after the opposition demanded restoration of the system.
+
+BNP Vice Chairman Zainul Abedin said the abolishment of the caretaker government from the Constitution was done in an ""improper manner.""
+
+""Caretaker government is a very logical instrument to ensure an equal field for all political parties to join a fair election,"" he claimed.
+
+Giving an opposite view to the BNP's claim, the joint secretary of the ruling Awami League Bahauddin Nasim said that the opposition demands are ""unconstitutional.""
+
+""We are determined to hold the upcoming election under this political government in line with the Constitution,"" he stressed.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Bangladesh_Nationalist_Party', 'type': 'org', 'score': 5, 'label': {'eng': 'Bangladesh Nationalist Party'}}, {'uri': 'http://en.wikipedia.org/wiki/Dhaka', 'type': 'loc', 'score': 5, 'label': {'eng': 'Dhaka'}, 'location': {'type': 'place', 'label': {'eng': 'Dhaka'}, 'country': {'type': 'country', 'label': {'eng': 'Bangladesh'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Constitution', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Constitution'}}, {'uri': 'http://en.wikipedia.org/wiki/Bangladesh_Election_Commission', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Bangladesh Election Commission'}}, {'uri': 'http://en.wikipedia.org/wiki/Caretaker_government', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Caretaker government'}}, {'uri': 'http://en.wikipedia.org/wiki/Shahdeen_Malik', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Shahdeen Malik'}}, {'uri': 'http://en.wikipedia.org/wiki/Fifteenth_Amendment_to_the_United_States_Constitution', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Fifteenth Amendment to the United States Constitution'}}, {'uri': 'http://en.wikipedia.org/wiki/Nonpartisanism', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Nonpartisanism'}}, {'uri': 'http://en.wikipedia.org/wiki/Political_party', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Political party'}}, {'uri': 'http://en.wikipedia.org/wiki/Zainul_Abedin', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Zainul Abedin'}}, {'uri': 'http://en.wikipedia.org/wiki/Constitutionality', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Constitutionality'}}, {'uri': 'http://en.wikipedia.org/wiki/Awami_League', 'type': 'org', 'score': 1, 'label': {'eng': 'Awami League'}}, {'uri': 'http://en.wikipedia.org/wiki/Chairperson', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Chairperson'}}, {'uri': 'http://en.wikipedia.org/wiki/Journalist', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Journalist'}}, {'uri': 'http://en.wikipedia.org/wiki/Supreme_court', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Supreme court'}}]",https://www.khmertimeskh.com/wp-content/uploads/2023/11/71014.jpg,eng-9064114,0.05882352941176472,437850935,1,khmertimeskh.com,news,Khmer Times,Bangladesh Nationalist Party Dhaka Constitution Bangladesh Election Commission Caretaker government Shahdeen Malik Fifteenth Amendment to the United States Constitution Nonpartisanism Political party Zainul Abedin Constitutionality Awami League Chairperson Journalist Supreme court,Cambodia,KH,English,eng,,,,C11,Asia,AS,Buddhist,118.0,100.0,137.0,157.0,140.0,126.0,133.0,96.0,68.0,127.0,92.0,127.0,78.0,,,,,,,Association of Southeast Asian Nations (ASEAN) ,ASEAN,,,,,,,-1,,,0,False,2023,11,16,15,17,2023-11-16

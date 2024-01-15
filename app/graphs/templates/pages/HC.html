@@ -75,6 +75,7 @@ function getHeirarchies(val) {
 			},
 			dataType: "json",
 			success: function (data) {
+				
 				//console.log("console prints")
 				//console.log(data)
 				try{
@@ -118,6 +119,7 @@ function getHeirarchies(val) {
 					Plotly.newPlot(idstr, data[x])
 					document.getElementById(idstr).setAttribute('align', 'center');
 				}
+				document.getElementById("txtID").style.display = 'block';
 				$("#hcwordcloud").children().each(function () {
 					$(this).css('text-align','center');
 					$(this).css('justify-content','center');
@@ -145,7 +147,7 @@ function getHeirarchies(val) {
 				tooltips: [true],
 				range: {
 					'min': [2],
-					'max': [20]
+					'max': [100]
 				}
 			});	
 			
@@ -173,9 +175,12 @@ function getHeirarchies(val) {
 	</div>
 </div>
 </div>
-<br><br>
+
 <div class="container-fluid">
 <div style="color:black;" class='row' >
+	<br>
+<h4 id="txtID" style="color:Gray; margin-left:auto;margin-right:auto;display:none;"">We consider a minimum of ten news articles as the foundational data for training BERTopic, while establishing the minimum topic size at 10.</h4>
+<br>
 	<div  style="color:black;'fontSize': 20;height:60%;overflow: hidden;width:55%;margin-right:auto;margin-left:auto;background:#fdfdfd;" class="chart" id="hcwordcloud">
 	</div>  
 </div>

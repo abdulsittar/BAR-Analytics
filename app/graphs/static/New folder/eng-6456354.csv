@@ -1,0 +1,6 @@
+,path,name,continent,country,culture,dateFrom,dateTo,economic,group,lang,polalign,source,url,economicblocs,linguisticblocs,militarydefenseblocs,politicalregionalblocs,religions
+0,/Event,Event,,,,,,,0,,,,,,,,,
+1,/Event/6378262127,6378262127,AU,AU,C4,2021-01-07T22:17:00,2021-01-07T22:17:00,C2,0,eng,?,theconversation.com,?,?,Eng,?,PIF,Christian
+2,/Event/6378262127/6378277518,6378277518,,,,2021-01-07T22:17:00,2021-01-07T22:34:00,,6378262127,eng,,foreignaffairs.co.nz,,,,,,
+3,/Event/6378263855,6378263855,,,,2021-01-07T22:18:00,2021-01-07T22:18:00,,0,eng,,wboc.com,,,,,,
+4,/Event/6378263855/6378887011,6378887011,,USA,C4,2021-01-07T22:18:00,2021-01-08T09:12:00,C2,6378263855,eng,?,orlandosentinel.com,?,NAFTA,Eng,NATO,?,Christian
