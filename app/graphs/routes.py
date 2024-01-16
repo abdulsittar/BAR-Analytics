@@ -235,14 +235,14 @@ def sitemap():
 
 @blueprint.route('/')
 def dashboard():
-    print("ad dashboard")
+    #print("ad dashboard")
     return render_template('layouts/default.html', content=render_template('pages/index.html'))
 
 ########################### FORCE DIRECTED GRAPH ##################################
 
 @blueprint.route('/force_directed_graph')
 def force_directed_graph():
-    print("force_directed_graph")
+    #print("force_directed_graph")
     return render_template('layouts/default.html', content=render_template('pages/forceDG.html'))
 
 @blueprint.route('/getDownloadedEvents', methods=['GET', 'POST'])
@@ -257,10 +257,10 @@ def selected_event_and_barrier():
     global selected_barrier
     selected_barrier = request.args['selBarrier']
     
-    print("selected events")
+    #print("selected events")
     print(selected_event)
-    print("selected barrier")
-    print("hre am i")
+    #print("selected barrier")
+    #print("hre am i")
     print(selected_barrier)
     return "0"
 
@@ -285,7 +285,7 @@ def qaline():
 
 def qacreate_bar_plot(city_news, sel_event, sel_barrier):
     languages2 = city_news.split(',')
-    print("here are the languages")
+    #print("here are the languages")
     print(languages2)
     plot_data = []
     df = getDataFile(sel_event)
@@ -404,7 +404,7 @@ def BertTopicQA():
     sel_barrier = request.args["selBarrier"]
     wid = int(float(request.args['width']))
     hei = int(float(request.args['height']))
-    print("width and height is ")
+    #print("width and height is ")
     print(wid)
     print(hei)
     
@@ -471,7 +471,7 @@ def BertTopicQA():
         fig_Array = []#sp.make_subplots(rows=tot_rows, cols=cols, specs = specsa, print_grid=True, subplot_titles=languages)
         count = 0
         for ind in range(len(languages)):
-            print("Barrier is " + languages[ind])
+            #print("Barrier is " + languages[ind])
             
             if ind > -1:
                 nc1 = pd.DataFrame()
@@ -491,7 +491,7 @@ def BertTopicQA():
                     d['body_Clean'] = list(map(to_string, d['body_Clean_List']))
                     if len(d['body_Clean']) > 10:
                         docs = d.body_Clean.to_list()
-                        print("len of dataframes " + str(len(docs)))
+                        #print("len of dataframes " + str(len(docs)))
                         topics, probs = model.fit_transform(docs)
                         top_n_topics = 4
                         if len(d['body_Clean']) < 4:
@@ -562,7 +562,7 @@ def hchierarchical_clustering():
         total_clusters = 1
         
     print("number of clusters = " + str(total_clusters))
-    fig = create_dendrogram2(similarity_matrix, labels=y_labels, linkagefun=lambda x: sch.linkage(x, 'ward'), distfun = partial(pdist, metric='jaccard'),
+    fig = create_dendrogram2(similarity_matrix, labels=y_labels, linkagefun=lambda x: sch.linkage(x, 'ward'), distfun = partial(pdist, metric='euclidean'),
     truncate_mode="level", p=total_clusters)
     fig.update_layout(width=int(request.args['width']))
     
@@ -578,34 +578,53 @@ def hchierarchical_clustering():
     print(total_c)
     
     global color_ran
-    color_ran  = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lime', 'maroon', 'crimson', 
-    'azure', 'gray', 'white', 'navy', 'mustard', 'brown', 'magenta', 'teal', 'silver']
+    color_ran  = ['blue', 'brown',  'crimson', 'gold',  'gray', 'green', 'lime', 'magenta','maroon','mustard','navy','orange', 'pink', 'purple', 'red', 'silver''teal', 'white','yellow']
     
     used_clrs = []
     for i in range(len(data_json)):
         print(i)
         print(data_json[i])
-        used_clrs.append(data_json[i]['marker']['color'])
+        if data_json[i]['marker']['color'] not in used_clrs:
+            used_clrs.append(data_json[i]['marker']['color'])
         print(data_json[i]['marker']['color'])
         
     global dendro_clusters
-    dendro_clusters = len(set(used_clrs))
-    unique_list = list(set(used_clrs))
+    dendro_clusters = len(used_clrs)#len(set(used_clrs))
+    #unique_list = list(set(used_clrs))
+    #print(used_clrs)
+    #print(unique_list)
+    #unique_list = [i[::-1] for i in unique_list]
+    #print(unique_list)
     
     clusters_colors = []
+    clusters_colors2 = []
     
     for i in range(len(data_json)):
-        selc_color = color_ran[unique_list.index(data_json[i]['marker']['color'])]
+        #selc_color = color_ran[used_clrs.index(data_json[i]['marker']['color'])]
+        selc_color = color_ran[used_clrs.index(data_json[i]['marker']['color'])]
         data_json[i]['marker']['color'] = selc_color
-        print(data_json[i])
+        #print(data_json[i])
         clusters_colors.append(selc_color)
     
-    clusters_colors = sorted(clusters_colors,key=clusters_colors.count,reverse=True)
-    clusters_colors = list(set(clusters_colors))
-    color_ran = clusters_colors[::-1]
+    print(clusters_colors)
+    #clusters_colors = sorted(clusters_colors,key=clusters_colors.count,reverse=True)
+    #clusters_colors = [i[::-1] for i in clusters_colors]
+    
+    #clusters_colors = list(set(clusters_colors))
+    [clusters_colors2.append(item) for item in clusters_colors if item not in clusters_colors2]
+
+
+    print(clusters_colors2)
+    #color_ran = clusters_colors[::-1]
+    color_ran = Reverse(clusters_colors2)
+    print(color_ran)
     
     y["data"] = data_json
     return y
+
+def Reverse(lst):
+   new_lst = lst[::-1]
+   return new_lst
 
 def modified_dendrogram_traces(self, X, colorscale, distfun, linkagefun, hovertext, color_threshold):
     """
@@ -690,7 +709,7 @@ def modified_dendrogram_traces(self, X, colorscale, distfun, linkagefun, hoverte
 
     return trace_list, icoord, dcoord, ordered_labels, P["leaves"]
 
-def create_dendrogram2( X, orientation="bottom", labels=None, colorscale=None, distfun=None, linkagefun=lambda x: sch.linkage(x, "complete"), hovertext=None, color_threshold=None, **kwargs):
+def create_dendrogram2( X, orientation="bottom", labels=None, colorscale=None, distfun=None, linkagefun=lambda x: sch.linkage(x, "single"), hovertext=None, color_threshold=None, **kwargs):
     if not scp or not scs or not sch:
         raise ImportError("FigureFactory.create_dendrogram requires scipy, \scipy.spatial and scipy.hierarchy")
     s = X.shape
@@ -704,7 +723,7 @@ def create_dendrogram2( X, orientation="bottom", labels=None, colorscale=None, d
 class _Dendrogram(object):
     """Refer to FigureFactory.create_dendrogram() for docstring."""
 
-    def __init__(self,X,orientation="bottom",labels=None,colorscale=None,width=np.inf,height=np.inf,xaxis="xaxis",yaxis="yaxis",distfun=None,linkagefun=lambda x: sch.linkage(x, "complete"),hovertext=None,color_threshold=None,kwargs=None):
+    def __init__(self,X,orientation="bottom",labels=None,colorscale=None,width=np.inf,height=np.inf,xaxis="xaxis",yaxis="yaxis",distfun=None,linkagefun=lambda x: sch.linkage(x, "single"),hovertext=None,color_threshold=None,kwargs=None):
         self.orientation = orientation
         self.labels = labels
         self.xaxis = xaxis
@@ -985,7 +1004,7 @@ def getDataFile(seleEvent):
 
 @blueprint.route('/hcThemeRiver', methods=['GET', 'POST'])
 def hcThemeRiver():
-    print("hc theme river")
+    #print("hc theme river")
     global total_clusters
     df = getDataFile(selected_event)
     vectorizer = TfidfVectorizer()
@@ -1037,8 +1056,11 @@ def hcThemeRiver():
             #nc2 = nc2.append(nc1, ignore_index=True)
             nc2 = pd.concat([nc2, nc1])
 
-    print(df['dateTime'][0])
-    colors_list = sorted(colors_list, key=colors_list.get, reverse=True)
+    print(colors_list)
+    #print(df['dateTime'][0])
+    colors_list = list(colors_list.keys()) #sorted(colors_list, key=colors_list.get, reverse=True)
+    
+    print(colors_list)
     colorCount = 0
     nc2["ran_col"] = "red"
     for name in colors_list:
@@ -1107,7 +1129,7 @@ def BertTopicsHC():
     if tot_rows > 0:
         specsa = [[{'type':'xy'}] * cols] * tot_rows
         fig_Array = []#sp.make_subplots(rows=tot_rows, cols=cols, specs = specsa, print_grid=True, subplot_titles=languages)
-        print("making figures")
+        #print("making figures")
         count = 0
         for ind in range(len(languages)):
             if ind > -1:
@@ -1257,13 +1279,13 @@ def get_df(input_text):
 
 @blueprint.route('/downloadArticles', methods=['GET', 'POST'])
 def downloadArticles():
-    print("getEvents")
+    #print("getEvents")
     selected = request.args['selected_event']
     return getForPropagationNetworkNew2Tree(selected)
     
 @blueprint.route('/downloadEvents', methods=['GET', 'POST'])
 def downloadEvents():
-    print("downloadEvents")
+    #print("downloadEvents")
     selected = request.args['selected_event']
     cons = selected#"_".join(selected.split() )
     PARAMS = {"action": "getEvents",
@@ -1385,14 +1407,14 @@ def getForPropagationNetworkNew2Tree(name, url="http://eventregistry.org/api/v1/
         df = tree_to_dataframe(root, all_attrs=True)
         print(len(df))
         glo_dataframes = df
-        print("the final dataframes have been created")
+        #print("the final dataframes have been created")
         print(os.getcwd())
         df.to_csv(os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/", name+".csv"))
     #df.to_csv("http://cleopatra.ijs.si/sensoranalysis/static/"+)
         return "1"
 
 def getSimilarityTree(df):
-    print("getSimilarityTree")
+    #print("getSimilarityTree")
     vectorizer = TfidfVectorizer()
     tfidf = vectorizer.fit_transform(df['all_concepts'].values.astype('U'))
     similarity_matrix = cosine_similarity(tfidf, tfidf)
@@ -1400,7 +1422,7 @@ def getSimilarityTree(df):
     
     
 def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
-    print("type of matrix")
+    #print("type of matrix")
     # print(type(matrix))
     # print(len(matrix))
     #columns = []
@@ -1418,9 +1440,9 @@ def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
     gr = nx.Graph()
     gr.add_edges_from(edges)
 
-    print("here is graph")
+    #print("here is graph")
     # print(gr.edges())
-    print("len of edges")
+    #print("len of edges")
     print(len(gr.edges()))
     #gr.remove_edges_from(nx.selfloop_edges(gr))
     print(len(gr.edges()))

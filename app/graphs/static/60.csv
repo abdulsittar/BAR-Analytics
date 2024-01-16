@@ -1,122 +1,22 @@
 ,uri,lang,isDuplicate,date,time,dateTime,dateTimePub,dataType,sim,url,title,body,authors,concepts,image,eventUri,sentiment,wgt,relevance,source.uri,source.dataType,source.title,all_concepts,con_name,country,lang-name,language,Political-Alignment,wiki-url,Cultural-Class,Economic-Class,Continent-name,Continent,Religions,2019Rank-From,SafetyandSecurity,PersonalFreedom,Governance,SocialCapital,InvestmentEnvironment,EnterpriseConditions,MarketAccessandInfrastructure,EconomicQuality,LivingConditions,Health,Education,NaturalEnvironment,PowerDistance,Individualism,Masculinity,UncertaintyAvoidance,LongTermOrientation,Indulgence,economicblocs-name,economicblocs,militarydefenseblocs-name,militarydefenseblocs,politicalregionalblocs-name,politicalregionalblocs,linguisticblocs-name,linguisticblocs,proScore,destination,parent,count,status,year,month,day,min,hour,MD
-220,7432821780,eng,False,2023-03-06,09:28:00,2023-03-06 09:28:00,2023-03-06T09:27:00Z,news,0.4588235318660736,https://www.belfasttelegraph.co.uk/news/northern-ireland/ni-weather-warning-snow-and-ice-forecast-by-met-office/956312938.html,NI weather warning: Snow and ice forecast by Met Office,"The Met Office has issued a yellow weather warning for snow and ice affecting all six counties in Northern Ireland.
+175,7432396056,eng,False,2023-03-06,02:43:00,2023-03-06 02:43:00,2023-03-06T02:43:00Z,news,0.5568627715110779,https://www.independent.ie/world-news/north-america/criminal-charges-would-be-bad-for-america-but-would-make-me-more-popular-donald-trump-tells-supporters-42371037.html,"Criminal charges would be bad for America but would make me more popular, Donald Trump tells supporters","The former president is facing a series of investigations over his attempt to overturn the 2020 election and his handling of classified information.
 
-It will come into force at 9pm on Monday until 10am on Tuesday.
+""I won't even think about leaving,"" Mr Trump said ahead of his speech at the Conservative Political Action Conference (CPAC) in Maryland. ""Probably it'll enhance my numbers, but it's a very bad thing for America. It's very bad for the country.""
 
-""Snow and hail showers will affect parts of Northern Ireland late Monday onwards into Tuesday,"" the weather alert states.
+In a marathon speech lasting one hour and 45 minutes, Mr Trump avoided repeating his previous claims that the 2020 election was ""stolen"".
 
-""Many areas will see little or no accumulations of snow, but 1 to 2cm could settle in some spots, most likely over higher ground and over northern parts of Northern Ireland.
+He notably did not attack, or even name, rivals for the Republican nomination in 2024, including Ron DeSantis, the Florida governor. Instead, he laid out what he would do if elected.
 
-""Additionally, icy stretches are expected on untreated surfaces.""
+Mr Trump said: ""We're going to have World War Three if something doesn't happen fast. I am the only candidate who can make this promise - I will prevent World War Three.""
 
-Travel disruption is expected as a result of snow showers and icy patches which will likely affect some roads and railways meaning journeys could take longer than usual.
+The former president said America should stop spending billions of dollars on defending Ukraine, that he would end the war in ""one day"" if elected, and demanded that Nato allies pay more towards the cost of the conflict.
 
-Injuries from slips and falls on icy surfaces are also likely with untreated roads, pavements and cycle paths posing a particular risk.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Northern_Ireland', 'type': 'loc', 'score': 5, 'label': {'eng': 'Northern Ireland'}, 'location': {'type': 'place', 'label': {'eng': 'Northern Ireland'}, 'country': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Snow', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Snow'}}, {'uri': 'http://en.wikipedia.org/wiki/Met_Office', 'type': 'org', 'score': 3, 'label': {'eng': 'Met Office'}}, {'uri': 'http://en.wikipedia.org/wiki/County', 'type': 'wiki', 'score': 3, 'label': {'eng': 'County'}}]",https://www.belfasttelegraph.co.uk/extra/assets/img/dummy-social.gif,eng-8452523,-0.1058823529411764,415790880,1,belfasttelegraph.co.uk,news,Belfast Telegraph,Northern Ireland Snow Met Office County,Ireland,IE,,,,,C4,C2,Europe,EU,Christian,11.0,11.0,8.0,13.0,16.0,14.0,16.0,24.0,4.0,19.0,23.0,12.0,17.0,28.0,70.0,68.0,35.0,24.0,65.0,European Union (EU),EU,,,,,English-speaking,Eng,-1,,,0,False,2023,3,6,28,9,2023-03-06
-110,7433345527,eng,False,2023-03-06,15:13:00,2023-03-06 15:13:00,2023-03-06T15:13:00Z,news,0.6627451181411743,https://www.belfasttelegraph.co.uk/news/northern-ireland/second-ni-weather-warning-issued-for-snow-and-ice-with-potential-for-significant-snowfall-later-in-week/956312938.html,Second NI weather warning issued for snow and ice with potential for significant snowfall later in week ,"The Met Office has issued a second yellow weather warning for snow and ice affecting all six counties in Northern Ireland.
+He received a rapturous reception, punctuated with chants of ""Four more years"" by supporters at a packed auditorium in National Harbor, just outside Washington DC.
 
-The first will come into force at 9pm on Monday until 10am on Tuesday.
+Mr Trump rounded on the Republican Party establishment.
 
-""Snow and hail showers will affect parts of Northern Ireland late Monday onwards into Tuesday,"" the weather alert states.
+""We had a Republican Party that was ruled by freaks, neo-cons, globalists, open-borders zealots and fools. But we are never going back to the party of Paul Ryan, Karl Rove and Jeb Bush.""
 
-""Many areas will see little or no accumulations of snow, but 1 to 2cm could settle in some spots, most likely over higher ground and over northern parts of Northern Ireland.
+Mr Trump told the crowd: ""We are going to finish what we started. We're going to complete the mission. We're going to see this battle through to ultimate victory. [2024] is the final battle. I know it, you know it, they know it, everybody knows it. This is it. And if they win, we don't have a country.""
 
-""Additionally, icy stretches are expected on untreated surfaces.""
-
-Travel disruption is expected as a result of snow showers and icy patches which will likely affect some roads and railways meaning journeys could take longer than usual.
-
-Injuries from slips and falls on icy surfaces are also likely with untreated roads, pavements and cycle paths posing a particular risk.
-
-However, a second warning will come into force at 3pm on Thursday until 6pm on Friday when up to 10cm of snow could fall on lower ground.
-
-Hilly areas could see as much as 20cm fall.
-
-Met Office forecaster Dan Stroud a cold front sinking south across the UK will see temperatures drop dramatically this week.
-
-""That t cold air will meet a weather front on Thursday evening turning rain to sleet and snow,"" he explained.
-
-""But skies will clear overnight with temperatures falling below zero resulting in widespread frost so there is a real risk of very icy stretches on Tuesday morning.
-
-""Most places will see temperatures of minus two or three but rural areas could get even lower.""
-
-The meteorologist said Tuesday should be a bright and crisp day for most, however a number of rain showers are likely to turn to snow in the cold air.
-
-""Inland areas are most likely to see sleet and snow,"" Mr Stroud added.
-
-Daytime temperatures will struggle to climb above 4C with cold conditions expected to last throughout the week.
-
-""It will become increasingly unsettled as the week goes on with potential for significant snowfall across Northern Ireland on Thursday into Friday,"" Mr Stroud added.
-
-""There is a lot of uncertainty at this point though, but 5-10cm is possible on lower ground with 15-20cm on higher ground.""",[],"[{'uri': 'http://en.wikipedia.org/wiki/Snow', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Snow'}}, {'uri': 'http://en.wikipedia.org/wiki/Northern_Ireland', 'type': 'loc', 'score': 5, 'label': {'eng': 'Northern Ireland'}, 'location': {'type': 'place', 'label': {'eng': 'Northern Ireland'}, 'country': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Met_Office', 'type': 'org', 'score': 4, 'label': {'eng': 'Met Office'}}, {'uri': 'http://en.wikipedia.org/wiki/Hail', 'type': 'org', 'score': 3, 'label': {'eng': 'Hail'}}, {'uri': 'http://en.wikipedia.org/wiki/County', 'type': 'wiki', 'score': 3, 'label': {'eng': 'County'}}, {'uri': 'http://en.wikipedia.org/wiki/Ice_pellets', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Ice pellets'}}, {'uri': 'http://en.wikipedia.org/wiki/Shower_(precipitation)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Shower (precipitation)'}}, {'uri': 'http://en.wikipedia.org/wiki/Cold_front', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Cold front'}}, {'uri': 'http://en.wikipedia.org/wiki/Weather_front', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Weather front'}}, {'uri': 'http://en.wikipedia.org/wiki/United_Kingdom', 'type': 'loc', 'score': 2, 'label': {'eng': 'United Kingdom'}, 'location': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}, {'uri': 'http://en.wikipedia.org/wiki/Meteorologist', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Meteorologist'}}, {'uri': 'http://en.wikipedia.org/wiki/Frost', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Frost'}}]",https://www.belfasttelegraph.co.uk/extra/assets/img/dummy-social.gif,eng-8452523,-0.1529411764705882,415811580,1,belfasttelegraph.co.uk,news,Belfast Telegraph,Snow Northern Ireland Met Office Hail County Ice pellets Shower (precipitation) Cold front Weather front United Kingdom Meteorologist Frost,Ireland,IE,,,,,C4,C2,Europe,EU,Christian,11.0,11.0,8.0,13.0,16.0,14.0,16.0,24.0,4.0,19.0,23.0,12.0,17.0,28.0,70.0,68.0,35.0,24.0,65.0,European Union (EU),EU,,,,,English-speaking,Eng,-1,,,0,False,2023,3,6,13,15,2023-03-06
-87,7433768685,eng,False,2023-03-06,21:08:00,2023-03-06 21:08:00,2023-03-06T21:07:00Z,news,0.7098039388656616,https://www.irishnews.com/news/northernirelandnews/2023/03/06/news/travel_disruption_likely_as_snow_and_ice_take_hold_across_the_north-3111260/,Travel disruption likely as snow and ice take hold across the north,"HEAVY snow and ice this week could cause travel chaos in parts of the north, the Met Office has warned as temperatures plummet.
-
-A yellow weather warning for cold conditions was in place on Monday evening, with snowfall expected in some parts - with higher ground most likely affected - and icy stretches on untreated surfaces.
-
-The warning will remain in place for most of the week, with Tuesday also expected to bring hail amid snow showers in the north. Wednesday will see temperatures ease during the day, with no warning in place for Northern Ireland, but the cold will return overnight.
-
-For Thursday and Friday, the yellow warning is for snow, with the Met Office suggesting parts of Northern Ireland, along with northern England and north Wales, are ""expected to see the worst of the conditions on Thursday"".
-
-Affected locations could see snow of up to 20cm in the worst hit areas, meteorologists have said, while further warnings are ""very likely"" in the days ahead.
-
-The yellow warning means that on Thursday, ""there is a slight chance that roads may become blocked by deep snow, with many stranded vehicles and passengers"".
-
-It has also been suggested that the cold weather could lead to travel delays and cancellations, while in the worst-hit areas there is a risk of interruptions to services including power supplies.
-
-Meanwhile, the icy weather is occurring as ongoing industrial action by Department for Infrastructure roads service staff continues.
-
-The department said strikes over pay by union members could see the gritting of roads disrupted.
-
-The Met Office has said the spring cold snap was the result of an ""Arctic maritime airmass"" passing over the UK and Ireland that could see temperatures in NI drop to as low as -6 degrees.
-
-Its deputy chief meteorologist Steven Keates said: ""Through Thursday and Friday the snow risk spreads to central and northern areas of the UK, though it's not possible to pick out precise locations regarding who will see the heaviest snowfall. With a developing situation, it's important to stay up to date with the latest forecast and further warnings are very likely.""
-
-Meanwhile, Met Éireann has issued a yellow warning for the whole of Ireland for Tuesday, after the cold snap began on Monday evening.
-
-It has warned that ""snow showers and icy patches are likely to cause some travel disruption"".","[{'uri': 'paul_ainsworth@irishnews.com', 'name': 'Paul Ainsworth', 'type': 'author', 'isAgency': False}]","[{'uri': 'http://en.wikipedia.org/wiki/Met_Office', 'type': 'org', 'score': 5, 'label': {'eng': 'Met Office'}}, {'uri': 'http://en.wikipedia.org/wiki/Snow', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Snow'}}, {'uri': 'http://en.wikipedia.org/wiki/Northern_Ireland', 'type': 'loc', 'score': 4, 'label': {'eng': 'Northern Ireland'}, 'location': {'type': 'place', 'label': {'eng': 'Northern Ireland'}, 'country': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Hail', 'type': 'org', 'score': 3, 'label': {'eng': 'Hail'}}, {'uri': 'http://en.wikipedia.org/wiki/North_Wales', 'type': 'loc', 'score': 2, 'label': {'eng': 'North Wales'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Northern_England', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Northern England'}}, {'uri': 'http://en.wikipedia.org/wiki/Meteorologist', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Meteorologist'}}, {'uri': 'http://en.wikipedia.org/wiki/Met_Éireann', 'type': 'org', 'score': 1, 'label': {'eng': 'Met Éireann'}}, {'uri': 'http://en.wikipedia.org/wiki/Arctic', 'type': 'loc', 'score': 1, 'label': {'eng': 'Arctic'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Ireland', 'type': 'loc', 'score': 1, 'label': {'eng': 'Ireland'}, 'location': {'type': 'country', 'label': {'eng': 'Ireland'}}}, {'uri': 'http://en.wikipedia.org/wiki/United_Kingdom', 'type': 'loc', 'score': 1, 'label': {'eng': 'United Kingdom'}, 'location': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}]",https://binaries.irishnews.com/2023/03/06/182906520-caa4a92c-a8c6-47ca-b88e-47f9f64b6978.jpg,eng-8452523,-0.4588235294117647,415832880,1,irishnews.com,news,The Irish News,Met Office Snow Northern Ireland Hail North Wales Northern England Meteorologist Met Éireann Arctic Ireland United Kingdom,Ireland,IE,English-Irish,eng-gle,Center-left,https:en.wikipedia.orgwikiThe_Irish_News,C4,C2,Europe,EU,Christian,11.0,11.0,8.0,13.0,16.0,14.0,16.0,24.0,4.0,19.0,23.0,12.0,17.0,28.0,70.0,68.0,35.0,24.0,65.0,European Union (EU),EU,,,,,English-speaking,Eng,-1,,,0,False,2023,3,6,8,21,2023-03-06
-44,7434407355,eng,False,2023-03-07,08:46:00,2023-03-07 08:46:00,2023-03-07T08:46:00Z,news,0.5333333611488342,https://www.belfasttelegraph.co.uk/news/northern-ireland/snow-arrives-in-northern-ireland-with-cold-snap-set-to-continue/958579854.html,Snow arrives in Northern Ireland with cold snap set to continue,"A weather warning for snow and ice remains in place across Northern Ireland.
-
-Temperatures plummeted overnight as cold northerly air continued to sink south over the UK resulting in a flurry of snow showers.
-
-Clear spells overnight also resulted in widespread frost with daytime temperatures expected to remain low for the rest of the week.
-
-Residents across NI have been sharing images on social media.
-
-A yellow weather warning expires at 10am on Tuesday.
-
-However a second warning has been issued and will come into force at 3pm on Thursday until 6pm on Friday when up to 10cm of snow could fall on lower ground.
-
-Hilly areas could see as much as 20cm fall.
-
-Met Office forecaster Dan Stroud said the mercury will struggle to climb above 4C during the day with cold conditions expected to last throughout the week.
-
-""It will become increasingly unsettled as the week goes on with potential for significant snowfall across Northern Ireland on Thursday into Friday,"" he added.
-
-""There is a lot of uncertainty at this point though, but 5-10cm is possible on lower ground with 15-20cm on higher ground.""",[],"[{'uri': 'http://en.wikipedia.org/wiki/Snow', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Snow'}}, {'uri': 'http://en.wikipedia.org/wiki/Northern_Ireland', 'type': 'loc', 'score': 4, 'label': {'eng': 'Northern Ireland'}, 'location': {'type': 'place', 'label': {'eng': 'Northern Ireland'}, 'country': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Frost', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Frost'}}, {'uri': 'http://en.wikipedia.org/wiki/United_Kingdom', 'type': 'loc', 'score': 3, 'label': {'eng': 'United Kingdom'}, 'location': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}, {'uri': 'http://en.wikipedia.org/wiki/Met_Office', 'type': 'org', 'score': 1, 'label': {'eng': 'Met Office'}}, {'uri': 'http://en.wikipedia.org/wiki/Mercury_(element)', 'type': 'person', 'score': 1, 'label': {'eng': 'Mercury (element)'}}, {'uri': 'http://en.wikipedia.org/wiki/Stroud', 'type': 'loc', 'score': 1, 'label': {'eng': 'Stroud'}, 'location': {'type': 'place', 'label': {'eng': 'Stroud'}, 'country': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}}]",https://www.belfasttelegraph.co.uk/extra/assets/img/dummy-social.gif,eng-8452523,-0.1686274509803921,415874760,1,belfasttelegraph.co.uk,news,Belfast Telegraph,Snow Northern Ireland Frost United Kingdom Met Office Mercury (element) Stroud,Ireland,IE,,,,,C4,C2,Europe,EU,Christian,11.0,11.0,8.0,13.0,16.0,14.0,16.0,24.0,4.0,19.0,23.0,12.0,17.0,28.0,70.0,68.0,35.0,24.0,65.0,European Union (EU),EU,,,,,English-speaking,Eng,-1,,,0,False,2023,3,7,46,8,2023-03-07
-38,7434458256,eng,False,2023-03-07,09:22:00,2023-03-07 09:22:00,2023-03-07T09:22:00Z,news,0.4941176474094391,https://www.belfasttelegraph.co.uk/news/northern-ireland/snow-arrives-in-northern-ireland-with-more-expected-as-road-warning-issued/958579854.html,Snow arrives in Northern Ireland with cold snap set to continue,"A weather warning for snow and ice remains in place across Northern Ireland.
-
-Temperatures plummeted overnight as cold northerly air continued to sink south over the UK resulting in a flurry of snow showers.
-
-Clear spells overnight also resulted in widespread frost with daytime temperatures expected to remain low for the rest of the week.
-
-Residents across NI have been sharing images on social media.
-
-A yellow weather warning expires at 10am on Tuesday.
-
-However a second warning has been issued and will come into force at 3pm on Thursday until 6pm on Friday when up to 10cm of snow could fall on lower ground.
-
-Hilly areas could see as much as 20cm fall.
-
-Met Office forecaster Dan Stroud said the mercury will struggle to climb above 4C during the day with cold conditions expected to last throughout the week.
-
-""It will become increasingly unsettled as the week goes on with potential for significant snowfall across Northern Ireland on Thursday into Friday,"" he added.
-
-""There is a lot of uncertainty at this point though, but 5-10cm is possible on lower ground with 15-20cm on higher ground.""
-
-The director of engineering at the Department for Infrastructure has warned that it does not have the capacity to carry out adequate gritting services on Thursday and Friday.
-
-David Porter blamed the lack of resources on ongoing strike action.
-
-""So far it's been as expected, but we are very concerned by what is being forecast later this week,"" he told BBC Radio Ulster.
-
-""Disruptive snow and continuous snow will give us very significant issues because of the reduced capacity in our gritting service, winter fleet, because of the ongoing industrial action by some of the industrial unions.""
-
-Mr Parker confirmed the normal procedure of ""constant gritting"" during heavy snowfall will not be possible as he urged members of the public to carefully consider travel plans and take extra care on the roads.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Snow', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Snow'}}, {'uri': 'http://en.wikipedia.org/wiki/Northern_Ireland', 'type': 'loc', 'score': 5, 'label': {'eng': 'Northern Ireland'}, 'location': {'type': 'place', 'label': {'eng': 'Northern Ireland'}, 'country': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Frost', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Frost'}}, {'uri': 'http://en.wikipedia.org/wiki/Social_media', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Social media'}}, {'uri': 'http://en.wikipedia.org/wiki/United_Kingdom', 'type': 'loc', 'score': 3, 'label': {'eng': 'United Kingdom'}, 'location': {'type': 'country', 'label': {'eng': 'United Kingdom'}}}, {'uri': 'http://en.wikipedia.org/wiki/Met_Office', 'type': 'org', 'score': 2, 'label': {'eng': 'Met Office'}}, {'uri': 'http://en.wikipedia.org/wiki/Mercury_(element)', 'type': 'person', 'score': 2, 'label': {'eng': 'Mercury (element)'}}, {'uri': 'http://en.wikipedia.org/wiki/David_Porter_(naval_officer)', 'type': 'person', 'score': 1, 'label': {'eng': 'David Porter (naval officer)'}}, {'uri': 'http://en.wikipedia.org/wiki/BBC_Radio_Ulster', 'type': 'org', 'score': 1, 'label': {'eng': 'BBC Radio Ulster'}}, {'uri': 'http://en.wikipedia.org/wiki/Industrial_action', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Industrial action'}}, {'uri': 'http://en.wikipedia.org/wiki/Strike_action', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Strike action'}}]",https://www.belfasttelegraph.co.uk/extra/assets/img/dummy-social.gif,eng-8452523,-0.1686274509803921,415876920,1,belfasttelegraph.co.uk,news,Belfast Telegraph,Snow Northern Ireland Frost Social media United Kingdom Met Office Mercury (element) David Porter (naval officer) BBC Radio Ulster Industrial action Strike action,Ireland,IE,,,,,C4,C2,Europe,EU,Christian,11.0,11.0,8.0,13.0,16.0,14.0,16.0,24.0,4.0,19.0,23.0,12.0,17.0,28.0,70.0,68.0,35.0,24.0,65.0,European Union (EU),EU,,,,,English-speaking,Eng,-1,,,0,False,2023,3,7,22,9,2023-03-07
+CPAC has traditionally been an event where all senior Republican figures, including potential presidential nominees, would speak. However, it has become dominated by Mr Trump and his supporters, even being nicknamed ""TPAC"".",[],"[{'uri': 'http://en.wikipedia.org/wiki/Donald_Trump', 'type': 'person', 'score': 5, 'label': {'eng': 'Donald Trump'}}, {'uri': 'http://en.wikipedia.org/wiki/Conservative_Political_Action_Conference', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Conservative Political Action Conference'}}, {'uri': 'http://en.wikipedia.org/wiki/2020_United_States_presidential_election', 'type': 'wiki', 'score': 4, 'label': {'eng': '2020 United States presidential election'}}, {'uri': 'http://en.wikipedia.org/wiki/World_War_III', 'type': 'wiki', 'score': 3, 'label': {'eng': 'World War III'}}, {'uri': 'http://en.wikipedia.org/wiki/Republican_Party_(United_States)', 'type': 'org', 'score': 3, 'label': {'eng': 'Republican Party (United States)'}}, {'uri': 'http://en.wikipedia.org/wiki/Maryland', 'type': 'loc', 'score': 3, 'label': {'eng': 'Maryland'}, 'location': {'type': 'place', 'label': {'eng': 'Maryland'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Governor_(United_States)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Governor (United States)'}}, {'uri': 'http://en.wikipedia.org/wiki/Ron_DeSantis', 'type': 'person', 'score': 2, 'label': {'eng': 'Ron DeSantis'}}, {'uri': 'http://en.wikipedia.org/wiki/NATO', 'type': 'loc', 'score': 2, 'label': {'eng': 'NATO'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Florida', 'type': 'loc', 'score': 2, 'label': {'eng': 'Florida'}, 'location': {'type': 'place', 'label': {'eng': 'Florida'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Ukraine', 'type': 'loc', 'score': 2, 'label': {'eng': 'Ukraine'}, 'location': {'type': 'country', 'label': {'eng': 'Ukraine'}}}, {'uri': 'http://en.wikipedia.org/wiki/Karl_Rove', 'type': 'person', 'score': 1, 'label': {'eng': 'Karl Rove'}}, {'uri': 'http://en.wikipedia.org/wiki/Jeb_Bush', 'type': 'person', 'score': 1, 'label': {'eng': 'Jeb Bush'}}, {'uri': 'http://en.wikipedia.org/wiki/Globalism', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Globalism'}}, {'uri': 'http://en.wikipedia.org/wiki/Paul_Ryan', 'type': 'person', 'score': 1, 'label': {'eng': 'Paul Ryan'}}, {'uri': 'http://en.wikipedia.org/wiki/Washington,_D.C.', 'type': 'loc', 'score': 1, 'label': {'eng': 'Washington, D.C.'}, 'location': {'type': 'place', 'label': {'eng': 'Washington, D.C.'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}]",https://www.independent.ie/world-news/north-america/f825b/42371036.ece/AUTOCROP/w1240h700/-GEORGIA-JUDGE%20INT_ED1_S01,eng-8452217,-0.3019607843137255,415766580,1,independent.ie,news,Irish Independent,"Donald Trump Conservative Political Action Conference 2020 United States presidential election World War III Republican Party (United States) Maryland Governor (United States) Ron DeSantis NATO Florida Ukraine Karl Rove Jeb Bush Globalism Paul Ryan Washington, D.C.",Ireland,IE,,,,,C4,C2,Europe,EU,Christian,11.0,best,best,best,best,best,best,best,best,best,best,best,best,low,high,high,low,low,high,European Union (EU),EU,,,,,English-speaking,Eng,-1,,,0,False,2023,3,6,43,2,2023-03-06
