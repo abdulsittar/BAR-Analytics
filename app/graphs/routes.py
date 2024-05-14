@@ -106,9 +106,10 @@ colors = ["blue",  "black",  "brown", "gray", "green", "orange", "purple", "red"
 ###KEY = "b198299a-bb74-4eab-8d59-9dc1fc3679c2"
 ###KEY = "0ec67093-425f-4d84-b9e9-41bba6de6c71"
 #KEY = "041e85db-cf3a-481c-8559-45f4b45ee47a"
-KEY = "07a9d524-0986-4aaf-a597-8ec41e86864a"
-#KEY = "f3d1fe1a-addb-48f9-a8bc-29daa318df33",
-# KEY = "c6022edb-151a-429b-9d23-32f34b4a39ab",
+
+#KEY = "07a9d524-0986-4aaf-a597-8ec41e86864a"
+#KEY = "f3d1fe1a-addb-48f9-a8bc-29daa318df33"
+KEY = "c6022edb-151a-429b-9d23-32f34b4a39ab",
 # KEY = "0ec67093-425f-4d84-b9e9-41bba6de6c71",
 er = EventRegistry(apiKey=KEY)
 
@@ -1298,7 +1299,7 @@ def downloadEvents():
               'eventsSortByAsc': True,
               'dateStart':   "2023-01-01",
               'dateEnd' : "2023-12-01",  
-              
+              'lang':"eng",
               "apiKey": KEY}
               
     conceptUri = cons#"http://en.wikipedia.org/wiki/"+cons   
@@ -1310,7 +1311,15 @@ def downloadEvents():
         print(event)
         res.append(event)
         k  = event["uri"]
-        va = event["title"]["eng"]
+        print(event["title"])
+        va = ""
+        if "eng" in event["title"].keys():
+            va = event["title"]["eng"]
+        elif "spa" in event["title"].keys():
+            va = event["title"]["spa"]
+        elif "fra" in event["title"].keys():
+            va = event["title"]["fra"]
+        
         print(k)
         print(va)
         resDic[k] = va
@@ -1407,7 +1416,7 @@ def getForPropagationNetworkNew2Tree(name, url="http://eventregistry.org/api/v1/
         df = tree_to_dataframe(root, all_attrs=True)
         print(len(df))
         glo_dataframes = df
-        #print("the final dataframes have been created")
+        print("the final dataframes have been created")
         print(os.getcwd())
         df.to_csv(os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/", name+".csv"))
     #df.to_csv("http://cleopatra.ijs.si/sensoranalysis/static/"+)
@@ -1450,7 +1459,22 @@ def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
     keys = df['uri'].tolist()
     nodesTree = [["Event", "", "", "0", "", "", "", "", "", "", "", ""]]
     count = 0
-
+    #print(keys);
+    #for val in keys:
+     #   print(val);
+      #  if "-" in val:
+       #     arr = val.split("-")
+        #    print("here is the value");
+        #    print(arr);
+        #    print(len(arr));
+        #    rv = arr[len(arr)-1]
+        #    print("here is the value");
+        #    print(rv);
+        #    keys[count] = rv
+        #count = count + 1
+            
+    count = 0
+    print(keys);
     for u, v in gr.edges:
         print(count)
         count += 1
@@ -1461,14 +1485,18 @@ def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
         idx1 = df.index[df["uri"] == uri1].values[0]
         idx2 = df.index[df["uri"] == uri2].values[0]
         d1s = art1["dateTime"].tolist()
-        print(d1s)
+        #print(d1s)
         d1 = datetime.datetime.strptime(str(d1s[0]), '%Y-%m-%d %H:%M:%S')
         d2s = art2["dateTime"].tolist()
         d2 = datetime.datetime.strptime(str(d2s[0]), '%Y-%m-%d %H:%M:%S')
 
         if d2 > d1:
             if df.at[idx1, 'parent'] == "":
+                if "-" in uri1:
+                    arr = uri1.split("-")
+                    uri1 = arr[len(arr)-1]
                 df.at[idx1, 'parent'] = "Event/" + str(uri1)
+                print(str(uri1))
 
                 nodesTree.append(["Event/" + str(uri1),
                                   str(d1).replace(" ", "T"), str(d1).replace(" ", "T"), "0", df.at[idx1, 'source.uri'], df.at[idx1, 'con_name'], df.at[idx1, 'country'], df.at[idx1, 'lang'], df.at[idx1, 'Political-Alignment'], 
@@ -1484,7 +1512,11 @@ def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
                 df.at[idx1, 'status'] = True
 
             if not df.at[idx2, 'status']:
+                if "-" in uri2:
+                    arr = uri2.split("-")
+                    uri2 = arr[len(arr)-1]
                 df.at[idx2, 'parent'] = df.at[idx1, 'parent'] + "/" + str(uri2)
+                print(str(uri2))
 
                 color = df.at[idx1, 'parent'].split('/')
 

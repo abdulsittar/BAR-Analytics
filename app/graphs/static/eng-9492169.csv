@@ -1,0 +1,10 @@
+,path,name,con_name,country,culture,dateFrom,dateTo,economic,group,lang,polalign,source,url,economicblocs,linguisticblocs,militarydefenseblocs,religions,EconomicQuality,Education,EnterpriseConditions,Governance,Health,Individualism,Indulgence,InvestmentEnvironment,LivingConditions,LongTermOrientation,MarketAccessandInfrastructure,Masculinity,NaturalEnvironment,PersonalFreedom,PowerDistance,SafetyandSecurity,SocialCapital,UncertaintyAvoidance
+0,/Event,Event,,,,,,,0,,,,,,,,,,,,,,,,,,,,,,,,,,
+1,/Event/8085922028,8085922028,,,,2024-04-18T13:32:53,2024-04-18T13:32:53,,0,eng,,pitchfork.com,,,,,,,,,,,,,,,,,,,,,,,
+2,/Event/8085922028/327425734,327425734,,CA,C4,2024-04-18T13:32:53,2024-04-18T15:25:26,C2,8085922028,eng,,exclaim.ca,,NAFTA,Eng,NATO,Christian,,,,,,,,,,,,,,,,,,
+3,/Event/8085922028/327425734/327639647,327639647,Canada,,,2024-04-18T15:25:26,2024-04-18T19:05:09,,8085922028,eng,,jambase.com,,,,,,best,best,best,best,best,high,high,best,best,low,best,high,best,best,low,best,best,low
+4,/Event/8085922028/327425734/8087298234,8087298234,Canada,,,2024-04-18T15:25:26,2024-04-19T09:17:21,,8085922028,eng,,uncut.co.uk,,,,,,best,best,best,best,best,high,high,best,best,low,best,high,best,best,low,best,best,low
+5,/Event/8085922028/8086118846,8086118846,,,,2024-04-18T13:32:53,2024-04-18T15:37:33,,8085922028,eng,,consequence.net,,,,,,,,,,,,,,,,,,,,,,,
+6,/Event/8085922028/327511348,327511348,,,,2024-04-18T13:32:53,2024-04-18T16:41:47,,8085922028,eng,,yahoo.com,,,,,,,,,,,,,,,,,,,,,,,
+7,/Event/8085944234,8085944234,,,,2024-04-18T13:46:38,2024-04-18T13:46:38,,0,eng,,stereogum.com,,,,,,,,,,,,,,,,,,,,,,,
+8,/Event/8085944234/8087953992,8087953992,,,,2024-04-18T13:46:38,2024-04-19T16:27:27,,8085944234,eng,,vogue.in,,,,,,,,,,,,,,,,,,,,,,,

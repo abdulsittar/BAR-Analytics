@@ -1,0 +1,7 @@
+,path,name,con_name,country,culture,dateFrom,dateTo,economic,group,lang,polalign,source,url,continent,religions
+0,/Event,Event,,,,,,,0,,,,,,
+1,/Event/8113868431,8113868431,,,,2024-05-06T13:25:22,2024-05-06T13:25:22,,0,eng,,english.news.cn,,,
+2,/Event/8113868431/8114046408,8114046408,,,,2024-05-06T13:25:22,2024-05-06T15:27:37,,8113868431,eng,,urdupoint.com,,,
+3,/Event/8113868431/8114147147,8114147147,,LK,C17,2024-05-06T13:25:22,2024-05-06T16:37:41,C18,8113868431,eng,,news.lk,,AS,Buddhist
+4,/Event/8113868431/8114820119,8114820119,,LK,C17,2024-05-06T13:25:22,2024-05-07T04:23:11,C18,8113868431,eng,Center,adaderana.lk,ChatGPT,AS,Buddhist
+5,/Event/8113868431/8114820520,8114820520,,,,2024-05-06T13:25:22,2024-05-07T04:23:20,,8113868431,eng,,bizenglish.adaderana.lk,,,

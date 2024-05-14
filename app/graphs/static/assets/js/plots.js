@@ -15,6 +15,9 @@ $("#dwnButton").unbind().click(function() {
 							console.log(data);
 							console.log(data.length)
 							var x= document.getElementById('customEventSelection');
+							var selectStyle = window.getComputedStyle(x);
+						    var selectWidth = selectStyle.getPropertyValue("width");
+
 							let keys = Object.keys(data);
 							let vals = Object.values(data);
 							
@@ -25,19 +28,21 @@ $("#dwnButton").unbind().click(function() {
 								var opt = document.createElement('option');
 								opt.value = keys[i];
 								opt.innerHTML = vals[i];
+								opt.style.width = "500px";
+
 								
 								x.add(opt);
 							}
 							topbar.hide()
 							if(keys.length > 1){
-								showAlert(keys.length + " Events related to the keywords have been downloaded!");
+								alert(keys.length + " Events related to the keywords have been downloaded!");
 								
 							}
 							else if(keys.length == 1){
-								showAlert(keys.length + " Event related to the keywords have been downloaded!");
+								alert(keys.length + " Event related to the keywords have been downloaded!");
 								
 							} else {
-								showAlert("Unfortunately, there is no event available for the keywords!");
+								alert("Unfortunately, there is no event available for the keywords!");
 								
 							}
 							//$('#hcsg').empty();
@@ -45,7 +50,7 @@ $("#dwnButton").unbind().click(function() {
 						},
 						error: function (err) {
 							topbar.hide()
-							showAlert("Unfortunately, there is no event available for the keywords!");
+							alert("Unfortunately, there is no event available for the keywords!");
 						}
 					});
 		});
@@ -158,13 +163,13 @@ function GetTrendsQA(button){
 				},
 				error: function (err) {
 					topbar.hide()
-					showAlert("Unfortunately, failed to create word couds!");
+					alert("Unfortunately, failed to create word couds!");
 				}
 			});
 		},
 				error: function (err) {
 					topbar.hide()
-					showAlert("Unfortunately, failed to create line graph!");
+					alert("Unfortunately, failed to create line graph!");
 				}
 	});
 };
@@ -240,13 +245,13 @@ $('#trendsQA').on('click', 'button', function () {
 				},
 				error: function (err) {
 					topbar.hide()
-					showAlert("Unfortunately, failed to create word couds!");
+					alert("Unfortunately, failed to create word couds!");
 				}
 			});
 		},
 				error: function (err) {
 					topbar.hide()
-					showAlert("Unfortunately, failed to create line graph!");
+					alert("Unfortunately, failed to create line graph!");
 				}
 	});
 });
@@ -268,7 +273,7 @@ $('div#ThemeRiverHC').on('plotly_click', function (_, data) {
 		},
 				error: function (err) {
 					topbar.hide()
-					showAlert("Unfortunately, failed to create hierarchical clustering!");
+					alert("Unfortunately, failed to create hierarchical clustering!");
 				}
 	});
 });

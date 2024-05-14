@@ -15,7 +15,7 @@
 				<label id="phoneLabl" for="phone" style="color:black;padding-left:20px;float: left;">Enter keywords:</label>
 				<input id="phone" name="phone" placeholder="Ukraine war" style="float: left;padding-left:20px;"/>
 				<input type="Button" id="dwnButton" value="Download" style="float: left;padding-left:0px;"/>
-				<select id="customEventSelection" style="background-color:gray;width">
+				<select id="customEventSelection" style="background-color:gray;width:500px">
 					<option value="select" selected="selected">Select Event</option>
 				</select>
 			</div>
@@ -87,11 +87,14 @@
 	<br>
 	<div id="anmiationStats" class="container-fluid"></div>
 
-	<script type="importmap">{"imports": {"three": "https://unpkg.com/three/build/three.module.js"}}</script>
-	<script type="module">
+	
+	<script type="importmap">{ "imports": { "three": "//unpkg.com/three/build/three.module.js" }}</script>
+    <script type="module">
+    import SpriteText from "//unpkg.com/three-spritetext/dist/three-spritetext.mjs";
 								
 								
 								import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+								import * as THREE from 'three';
 								import {
 									CSS2DRenderer,
 									CSS2DObject
@@ -130,14 +133,16 @@
 										//console.log(selected)
 										eventSelected = ""
 										
-										if (selected == "select") {
+										if (selectedBar == "first") {
 											var eventSelected = $("select#eventSelection option:selected").val();
 											
-										} else {
+										} else if (selectedBar == "second") {
 											var eventSelected = $("select#customEventSelection option:selected").val();
 											
 										}
-										
+										console.log("the selected event is")
+										console.log(selectedBar)
+										console.log(eventSelected)
 
 										var barrierSelected = $("select#barrierSelection option:selected").val();
 										var event = "";
@@ -822,9 +827,9 @@
 										var selected = $("select#customEventSelection option:selected").val();
 										//console.log(selected)
 										eventSelected = ""
-										if (selected == "select") {
+										if (selectedBar == "first") {
 											var eventSelected = $("select#eventSelection option:selected").val();
-										} else {
+										} else if (selectedBar == "second"){
 											var eventSelected = $("select#customEventSelection option:selected").val();
 										}
 										
@@ -999,6 +1004,7 @@
 					let active = false
 					
 					var Graph = null;
+					var selectedBar = "no"
 									
 					$('select#eventSelection').on('change', function () {
 
@@ -1018,6 +1024,7 @@
 						
 						document.getElementById("animationContContainer").style.display = 'block';
 					} else {
+						selectedBar="first"
 						document.getElementById("animationContContainer").style.display = 'block';
 						document.getElementById("meta").style.display = 'block';
 						let toggle = document.querySelector('.toggle')
@@ -1050,8 +1057,16 @@
 						if (selected == "select") {
 						
 						} else {
-					
-						topbar.show()
+							selectedBar="second"
+							
+						
+
+						var event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ selected +'.csv'
+
+						d3.csv(event, function(d) {	
+
+							if(d.length == 0){
+							topbar.show()
 						$.ajax({
 							url: '/sensoranalysis/downloadArticles',
 							type: 'GET',
@@ -1066,7 +1081,15 @@
 								showAlert("Analytical files have been downloaded!");
 								topbar.hide()
 							}
-						});					
+						});	}
+
+						},function(error, rows){
+                			// CSV file does not exist or error loading
+                			console.error("Error loading CSV file:", error);
+							console.error("Error loading CSV file:", rows);
+							
+						
+					});
 					}
 					});
 					function showAlert(msg) {
