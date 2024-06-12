@@ -2,7 +2,7 @@
 
 Website : [http://cleopatra.ijs.si/sensoranalysis/](http://cleopatra.ijs.si/sensoranalysis/)
 
-# TWON Social Application
+# Flask-Based Web Application: News Barrier Analyzer
 A MERN stack based social media application (MongoDB Express React Redux NodeJs).
 
 # Featurs included in this project:
