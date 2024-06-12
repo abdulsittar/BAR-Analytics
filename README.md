@@ -7,28 +7,26 @@ The News Barrier Analyzer is a Flask-based web application designed to help user
 
 # Key Features:
 
-**Admin features:**
+**Propagation analysis:**
  - admin panel shows total number of post ,users, and comments.
  - admin can create, edit, and delete posts, users, and comments. 
  - admin can like, dislike comments, and posts. 
 
-**user features:**
+**Trends analysis:**
  - register and login users. 
  - pagination on every pages.
  - light and dark mode.
  - admin panel is included.
  - explore page to view other posts by random users.
  - profile page.
- - edit profile page user data.
- - password is stored in database in encrypted format with salt.
- - create posts.
- - like, dislike, and comment on posts.
- - like, and dislike a comment.
- - followings.
- - followers.
- - recording viewed posts by users.
- - recording read posts by users.
- - profile page shows user details and posts with following and followers menu.
+
+**Discussions analysis:**
+ - register and login users. 
+ - pagination on every pages.
+ - light and dark mode.
+ - admin panel is included.
+ - explore page to view other posts by random users.
+ - profile page.
 
 
 **How to run this application**
