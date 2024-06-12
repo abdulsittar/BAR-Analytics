@@ -5,7 +5,7 @@ Website : [http://cleopatra.ijs.si/sensoranalysis/](http://cleopatra.ijs.si/sens
 # Flask-Based Web Application: News Barrier Analyzer
 The News Barrier Analyzer is a Flask-based web application designed to help users analyze and understand various barriers—linguistic, political, geographical, continental, religious, economic, and cultural—that influence news events. This application provides insights into how these barriers affect the dissemination, perception, and interpretation of news across different regions and demographics.
 
-# Featurs included in this project:
+# Key Features:
 
 **Admin features:**
  - admin panel shows total number of post ,users, and comments.
