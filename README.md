@@ -31,8 +31,8 @@ The News Barrier Analyzer is a Flask-based web application designed to help user
 
 **How to run this application**
 1. Clone this repository
-2. git clone https://github.com/yourusername/news-barrier-analyzer.git
-3. cd news-barrier-analyzer
+2. git clone [(https://github.com/abdulsittar/BAR-Analytics.git)](https://github.com/abdulsittar/BAR-Analytics.git)
+3. cd BAR-Analytics
 4. pip install -r requirements.txt
 5. NEWS_API_KEY=your_news_api_key
 7. Open  [localhost:3000](http://localhost:3000/)  in the browser.
