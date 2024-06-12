@@ -3,7 +3,7 @@
 Website : [http://cleopatra.ijs.si/sensoranalysis/](http://cleopatra.ijs.si/sensoranalysis/)
 
 # Flask-Based Web Application: News Barrier Analyzer
-A MERN stack based social media application (MongoDB Express React Redux NodeJs).
+The News Barrier Analyzer is a Flask-based web application designed to help users analyze and understand various barriers—linguistic, political, geographical, continental, religious, economic, and cultural—that influence news events. This application provides insights into how these barriers affect the dissemination, perception, and interpretation of news across different regions and demographics.
 
 # Featurs included in this project:
 
