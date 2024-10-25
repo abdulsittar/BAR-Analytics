@@ -7,11 +7,13 @@ Copyright (c) 2019 - present AppSeed.us
 # Python modules
 import math
 from . import blueprint
+import gc
 # Flask modules
 import plotly.subplots as sp
 from flask import render_template, request, url_for, redirect, send_from_directory, jsonify, make_response
 from flask_table import Table, Col, LinkCol
 from functools import partial
+import multiprocessing as mp
 import json
 import time
 from scipy.spatial.distance import pdist
@@ -116,6 +118,7 @@ er = EventRegistry(apiKey=KEY)
 all_events = {
         "eng-8467663":"One dead as Cyclone Freddy lashes Mozambique for second time",
         "eng-8468195":"Indonesia's Merapi volcano erupts, blankets villages in ash",
+        
         "eng-8468865":"Flooding inundates Central California communities, blocking routes out",
         "eng-8471915":"UN implicated in Syria aid failures after earthquake -commission", 
         "eng-8472550":"UN urges world to contribute 'as generously as possible' to appeal for quake-hit Türkiye",
@@ -139,7 +142,9 @@ all_events = {
         "rus-1417054":"Первые ЗРК Patriot прибыли на Украину",
         "eng-8456354":"Austin makes unannounced visit to Baghdad before 20th anniversary of invasion of Iraq",
         "eng-8454935":"Israeli forces kill six Palestinians in latest raid on Jenin", 
-        "eng-8470679":"Report: Ukraine world's 3rd biggest arms importer in 2022"}
+        "eng-8470679":"Report: Ukraine world's 3rd biggest arms importer in 2022",
+        }
+
 
 contractions = { 
     "ain't": "am not",
@@ -217,17 +222,56 @@ contractions = {
     "you're": "you are"
 }
 
-@blueprint.route('/index.html')
+t = {
+        "Israel_War_2023-10":"Israel_War_2023-10",
+        "Israel_War_2023-11":"Israel_War_2023-11",
+        "Israel_War_2023-12":"Israel_War_2023-12",
+        "Israel_War_2024-01":"Israel_War_2024-01",
+        "Israel_War_2024-02":"Israel_War_2024-02",
+        "Israel_War_2024-03":"Israel_War_2024-03",
+        "Israel_War_2024-04":"Israel_War_2024-04",
+        "Israel_War_2024-05":"Israel_War_2024-05",
+        
+        "Russian_war_2022-02":"Russian_war_2022-02",
+        "Russian_war_2022-03":"Russian_war_2022-03",
+        "Russian_war_2022-04":"Russian_war_2022-04",
+        "Russian_war_2022-05":"Russian_war_2022-05",
+        "Russian_war_2022-06":"Russian_war_2022-06",
+        "Russian_war_2022-07":"Russian_war_2022-07",
+        "Russian_war_2022-08":"Russian_war_2022-08",
+        "Russian_war_2022-09":"Russian_war_2022-09",
+        "Russian_war_2022-10":"Russian_war_2022-10",
+        "Russian_war_2022-11":"Russian_war_2022-11",
+        "Russian_war_2022-12":"Russian_war_2022-12",
+        "Russian_war_2023-01":"Russian_war_2023-01",
+        "Russian_war_2023-02":"Russian_war_2023-02",
+        "Russian_war_2023-03":"Russian_war_2023-03",
+        "Russian_war_2023-04":"Russian_war_2023-04",
+        "Russian_war_2023-05":"Russian_war_2023-05",
+        "Russian_war_2023-06":"Russian_war_2023-06",
+        "Russian_war_2023-07":"Russian_war_2023-07",
+        "Russian_war_2023-08":"Russian_war_2023-08",
+        "Russian_war_2023-09":"Russian_war_2023-09",
+        "Russian_war_2023-10":"Russian_war_2023-10",
+        "Russian_war_2023-11":"Russian_war_2023-11",
+        "Russian_war_2023-12":"Russian_war_2023-12",
+        "Russian_war_2024-01":"Russian_war_2024-01",
+        "Russian_war_2024-02":"Russian_war_2024-02",
+        "Russian_war_2024-03":"Russian_war_2024-03",
+        "Russian_war_2024-04":"Russian_war_2024-04",
+        "Russian_war_2024-05":"Russian_war_2024-05",
+    }
+
+
+@blueprint.route('/forceDG.html')
 @blueprint.route('/<path>')
 def index(path):
     content = None
     try:
-        return render_template('layouts/default.html',
-                               content=render_template('pages/' + path))
+        return render_template('layouts/default.html', content=render_template('pages/' + path))
 
     except:
-        return render_template('layouts/auth-default.html',
-                               content=render_template('pages/404.html'))
+        return render_template('layouts/auth-default.html', content=render_template('pages/404.html'))
 
 # Return sitemap
 @blueprint.route('/sitemap.xml')
@@ -237,9 +281,105 @@ def sitemap():
 @blueprint.route('/')
 def dashboard():
     #print("ad dashboard")
-    return render_template('layouts/default.html', content=render_template('pages/index.html'))
+    return render_template('layouts/default.html', content=render_template('pages/forceDG.html'))
 
 ########################### FORCE DIRECTED GRAPH ##################################
+
+
+@blueprint.route('/sentiments')
+def sentiments():
+    #print("force_directed_graph")
+    return render_template('layouts/default.html', content=render_template('pages/sentiments.html'))
+
+@blueprint.route('/get_line_pub_sentiment2', methods=['GET', 'POST'])
+def get_line_pub_sentiment2():
+    plot_data = []
+    sel_barrier = request.args["selBarrier"]
+    df = getDataFile(selected_event, sel_barrier) 
+    barrier = ""
+    barrier = sel_barrier #getBarrierString(sel_barrier)
+    #df = df3[df3[barrier] == barrier]
+    
+    #df = pd.read_csv("/home/adbuls/visualisation/PropagationNetwork/PublicOpinion/app/graphs/static/historical_overview.csv")   #df = pd.read_csv("/home/adbuls/visualisation/PropagationNetwork/PublicOpinion/app/graphs/static/eng-all3.csv") 
+    plot_data = []
+    #df = pd.read_csv("/home/adbuls/visualisation/PropagationNetwork/PublicOpinion/app/graphs/static/eng-all3.csv")
+    for col in df.columns:
+        print(col)
+    #df['dateTimePub'] = pd.to_datetime(df['dateTimePub'], errors='coerce').dt.tz_localize(None)
+    #df['dateTimePub'] = pd.to_datetime(df['dateTimePub'])
+    #df['dateTimePub'] = pd.to_datetime(df['dateTimePub'], format='%Y-%m-%dT%H:%M:%SZ')
+    #df['dateTimePub'] = df['dateTimePub'].astype('datetime64[ns]')
+    df['year']  = pd.DatetimeIndex(df['dateTime']).year
+    df['month'] = pd.DatetimeIndex(df['dateTime']).month
+    df['day']   = pd.DatetimeIndex(df['dateTime']).day
+    df['date']  = pd.DatetimeIndex(df['dateTime']).date
+    df['min']   = pd.DatetimeIndex(df['dateTime']).minute
+
+    df['hour']  = pd.DatetimeIndex(df['dateTime']).hour
+    df['MD'] = df['dateTime'].dt.strftime('%Y-%m-%d')
+    result = df.rename(columns={"MD": "Days", "Barrier": barrier})
+    result = result.dropna(subset=['sentiment'])
+    
+    try:
+        pivot_table = result.pivot_table(values='sentiment', index='Days', columns=barrier)#, aggfunc='max')
+        pivot_table = pivot_table.fillna(0)
+        #pivot_table = pd.DataFrame(result['sentiment'], index=result['Days'], columns=result['News publishers'])
+        # Create a heatmap
+        heatmap = go.Heatmap(
+        z=pivot_table.values,
+        y=pivot_table.index,
+        x=pivot_table.columns,
+        zmin=-1,
+        zmax=1,
+        colorscale=[[0.0, 'red'], [0.5, 'gray'], [1.0, 'blue']],   # Diverging color scale from red to white to blue
+        colorbar=dict(title='Sentiment', tickvals=np.linspace(-1, 1, 5))
+        )
+    # Create the layout
+        heatmap.update(
+        hoverongaps=False,  # To ensure borders are properly rendered
+        zsmooth='best',     # To ensure smoother transitions, optional
+        xgap=2,             # Horizontal gap between cells
+        ygap=2,             # Vertical gap between cells
+        )
+
+    # Create the layout
+        layout = go.Layout(
+        title='Heatmap with sentiment values across political barrier',
+        annotations=[
+        dict(
+            showarrow=False,
+            text='',
+            x=row,
+            y=col,
+            xref='x',
+            yref='y',
+            xshift=0,
+            yshift=0,
+            font=dict(size=12),
+            bordercolor='black',  # Color of the border
+            borderwidth=2,        # Thickness of the border
+        )
+        for row in pivot_table.index for col in pivot_table.columns
+    ],
+        xaxis=dict(title='Countries'),
+        yaxis=dict(title='Days', side='left'),  # Days on the left side
+        yaxis2=dict(title='Sentiment', overlaying='y', side='right')  # Sentiment on the right side
+        )
+
+    # Create the figure
+        fig = go.Figure(data=[heatmap], layout=layout)
+        fig.update_layout(
+    xaxis=dict(
+        tickangle=-45  # Rotate x-axis text to -45 degrees
+    )
+)
+        graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+        if len(result) < 10:
+            return json.dumps("") 
+        return graphJSON
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
 
 @blueprint.route('/force_directed_graph')
 def force_directed_graph():
@@ -253,7 +393,7 @@ def getDownloadedEvents():
 @blueprint.route('/selected_event_and_barrier', methods=['GET', 'POST'])
 def selected_event_and_barrier():
     global selected_event
-    selected_event = request.args['selected_event']
+    selected_event = request.args['selected_event']#"Israel_War_2023-07"#
     
     global selected_barrier
     selected_barrier = request.args['selBarrier']
@@ -269,8 +409,7 @@ def selected_event_and_barrier():
 
 @blueprint.route('/QA', methods=['GET', 'POST'])
 def QA():
-    return render_template('layouts/default.html',
-                           content=render_template("pages/QA.html"))
+    return render_template('layouts/default.html', content=render_template("pages/QA.html"))
 
 @blueprint.route('/qaline', methods=['GET', 'POST'])
 def qaline():
@@ -280,30 +419,30 @@ def qaline():
     print(city_news)
     sel_barrier = request.args["selBarrier"]
     print(sel_barrier)
-    graphJSON = qacreate_bar_plot(city_news, sel_event, sel_barrier)
+    graphJSON = qacreate_bar_plot(city_news, selected_event, sel_barrier)
     return graphJSON
     return 0
 
 def qacreate_bar_plot(city_news, sel_event, sel_barrier):
     languages2 = city_news.split(',')
-    #print("here are the languages")
+    print("here are the languages")
     print(languages2)
     plot_data = []
-    df = getDataFile(sel_event)
-    #for col in df.columns:
-    #    print(col)
+    df = getDataFile(sel_event, sel_barrier)
+    for col in df.columns:
+        print(col)
     df['year']  = pd.DatetimeIndex(df['dateTime']).year
     df['month'] = pd.DatetimeIndex(df['dateTime']).month
     df['day']   = pd.DatetimeIndex(df['dateTime']).day
     df['date']  = pd.DatetimeIndex(df['dateTime']).date
     df['min']   = pd.DatetimeIndex(df['dateTime']).minute
-    df['dateTime'] = df['dateTime'].astype('datetime64[ns]')
+    #df['dateTime'] = df['dateTime'].astype('datetime64[ns]')
     df['hour']  = pd.DatetimeIndex(df['dateTime']).hour
     df['MD'] = df['dateTime'].dt.strftime('%Y-%m-%d')
 
     #bnb = df.groupby(["lang", "day"]).count().reset_index()
     barrier = ""
-    barrier = getBarrierString(sel_barrier)
+    barrier = sel_barrier#getBarrierString(sel_barrier)
             
     print(barrier)
     nc2 = pd.DataFrame()
@@ -342,8 +481,8 @@ def qacreate_bar_plot(city_news, sel_event, sel_barrier):
                 nc1.loc[inde, "counts"] = 0
                 nc2 = pd.concat([nc2, nc1])
         x_label = "time"
-        nc2.rename(columns = {'counts':'Accumulative_count_1', 'MD': x_label}, inplace = True)
-        nc3[['Accumulative_count_1', x_label, barrier]] = nc2[['Accumulative_count_1', x_label, barrier]]   #.to_numpy()
+        nc2.rename(columns = {'counts':'Accumulative_count', 'MD': x_label}, inplace = True)
+        nc3[['Accumulative_count', x_label, barrier]] = nc2[['Accumulative_count', x_label, barrier]]   #.to_numpy()
     else:
         for ind in range(len(languages)):
             if ind > -1:
@@ -359,10 +498,10 @@ def qacreate_bar_plot(city_news, sel_event, sel_barrier):
                 inde = [index for index, row in nc1.iterrows() if row.isnull().any()]
                 nc1.loc[inde, barrier] = languages[ind]
                 nc1.loc[inde, "counts"] = 0
-                nc2 = nc2.append(nc1)
+                nc2 = pd.concat([nc2, nc1], ignore_index=True)
         x_label = "time (hours)"
-        nc2.rename(columns = {'counts':'Accumulative_count_1', 'hour':x_label}, inplace = True) 
-        nc3[['Accumulative_count_1', x_label, barrier]] = nc2[['Accumulative_count_1', x_label, barrier]]   #.to_numpy()
+        nc2.rename(columns = {'counts':'Accumulative_count', 'hour':x_label}, inplace = True) 
+        nc3[['Accumulative_count', x_label, barrier]] = nc2[['Accumulative_count', x_label, barrier]]   #.to_numpy()
     
     color_list = ['red', 'blue', 'green', 'pink', 'orange', 'purple', 'yellow', 'gold', 'lime', 'maroon', 'crimson', 
     'azure', 'gray', 'white', 'navy', 'mustard', 'brown', 'magenta', 'teal', 'silver']
@@ -385,13 +524,18 @@ def qacreate_bar_plot(city_news, sel_event, sel_barrier):
                 "wheat", "white", "yellow"]
                        
                 
-    figure = px.area(nc3, x=x_label, y="Accumulative_count_1", color = barrier, line_group = barrier, line_shape='spline', color_discrete_sequence=colors)
+    figure = px.area(nc3, x=x_label, y="Accumulative_count", color = barrier, line_group = barrier, line_shape='spline', color_discrete_sequence=colors)
     
     figure.update_layout(xaxis=dict(showgrid=False), yaxis=dict(showgrid=False))
+    figure.update_layout(
+    xaxis=dict(
+        tickangle=-45  # Rotate x-axis text to -45 degrees
+    )
+)
        
     
     figure.update_layout(
-        title="", yaxis_title="Accumulative_count_1", xaxis_title="time",
+        title="", yaxis_title="Accumulative_count", xaxis_title="time",
              autosize=True)
     
     print(df['dateTime'][0])
@@ -400,6 +544,13 @@ def qacreate_bar_plot(city_news, sel_event, sel_barrier):
 
 @blueprint.route('/BertTopicQA', methods=['GET', 'POST'])
 def BertTopicQA():
+    file_path = "/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/wordclouds/sample.json"
+ 
+    #with open(file_path, 'r') as file:
+    #    data = json.load(file)
+
+    #return data
+
     sel_event = selected_event
     city_news = request.args['commaValues']
     sel_barrier = request.args["selBarrier"]
@@ -413,7 +564,7 @@ def BertTopicQA():
     
     plot_data = []
     #print(sel_barrier)
-    df = getDataFile(sel_event)
+    df = getDataFile(sel_event, sel_barrier)
     df['year'] = pd.DatetimeIndex(df['dateTime']).year
     df['month'] = pd.DatetimeIndex(df['dateTime']).month
     df['day'] = pd.DatetimeIndex(df['dateTime']).day
@@ -424,7 +575,7 @@ def BertTopicQA():
     
 
     barrier = ""
-    barrier = getBarrierString(sel_barrier)
+    barrier = sel_barrier #getBarrierString(sel_barrier)
     print(barrier)
     
     languages = []
@@ -543,9 +694,11 @@ def HC():
                            
 @blueprint.route('/hchierarchical_clustering', methods=['GET', 'POST'])
 def hchierarchical_clustering():
-    df = getDataFile(selected_event)        
+    df = getDataFile(selected_event, selected_barrier)     
+    for col in df.columns:
+        print(col)
     vectorizer = TfidfVectorizer()
-    tfidf = vectorizer.fit_transform(df['source.title'].values.astype('U'))
+    tfidf = vectorizer.fit_transform(df['title'].values.astype('U'))
     similarity_matrix = cosine_similarity(tfidf, tfidf)
     a = np.array(similarity_matrix)
     print(a.min())
@@ -969,10 +1122,24 @@ class _Dendrogram(object):
 
         return trace_list, icoord, dcoord, ordered_labels, P["leaves"]
 
-def getDataFile(seleEvent):
+def getDataFile(seleEvent, barrierSelected):
     selected = seleEvent
     if selected == "select":
         return
+            
+    selected_event = selected+'.csv'
+    print(selected_event)
+    df = pd.read_csv(os.path.join("/home/shared/", selected_event))
+    database = pd.read_csv(dbfileName, encoding='latin1')
+    df = df.merge(database, on="source.uri", how='left')
+    df['concepts_str'] = df['concepts'].apply(lambda x: str(x))
+    df['all_concepts'] = df['concepts_str'].apply(parse_and_merge_labels)
+    df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S%z', errors='coerce')
+    #df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%dT%H:%M:%S%z')
+    df = df.sort_values(by='dateTime', ascending=True)
+    return df
+        
+        
     selected_event = selected.split(".csv")[0] + ".json"
 
     event_name = selected_event.split(".json")[0]
@@ -1007,7 +1174,7 @@ def getDataFile(seleEvent):
 def hcThemeRiver():
     #print("hc theme river")
     global total_clusters
-    df = getDataFile(selected_event)
+    df = getDataFile(selected_event, selected_barrier)
     vectorizer = TfidfVectorizer()
     tfidf = vectorizer.fit_transform(df['body'].values.astype('U'))
     similarity_matrix = cosine_similarity(tfidf, tfidf)
@@ -1089,7 +1256,14 @@ def hcThemeRiver():
     return graphJSON
 
 @blueprint.route('/BertTopicsHC', methods=['GET', 'POST'])
-def BertTopicsHC():    
+def BertTopicsHC():  
+    file_path = "/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/wordclouds/sample.json"
+    
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    return data
+
     plot_data = []
     wid = int(float(request.args['width']))
     hei = int(float(request.args['height']))
@@ -1200,13 +1374,13 @@ def getBarrierString(sel_barrier):
     if sel_barrier == "Linguistic":
         barrier = "lang"
     elif sel_barrier == "Cultural":
-        barrier = "Cultural-Class"
+        barrier = "Cultural_Class"
     elif sel_barrier == "Political":
-        barrier = "Political-Alignment"
+        barrier = "Political_Alignment"
     elif sel_barrier == "Geographical":
         barrier = "country"
     elif sel_barrier == "Economic":
-        barrier = "Economic-Class"
+        barrier = "Economic_Class"
     elif sel_barrier == "Continent":
         barrier = "Continent"
     elif sel_barrier == "Religions":
@@ -1280,15 +1454,104 @@ def get_df(input_text):
 
 @blueprint.route('/downloadArticles', methods=['GET', 'POST'])
 def downloadArticles():
-    #print("getEvents")
+    print("getEvents")
     selected = request.args['selected_event']
-    return getForPropagationNetworkNew2Tree(selected)
+    print(selected)
     
+    for filename in os.listdir("/home/shared/"):
+        if selected in filename and filename.endswith('.csv'):
+            return "1"
+    
+    
+    #return getForPropagationNetworkNew2Tree_Static("Israel_War_2023-07.csv")
+    return getForPropagationNetworkNew2Tree_Static2(selected)
+    #return funDownload2()
+    #return getForPropagationNetworkNew2Tree(selected)
+    
+def funDownload2():
+    json_file_path = '/home/shared/eng-8470679.json'  # Replace with your JSON file path
+    with open(json_file_path, 'r') as f:
+        data = json.load(f)
+
+    # Extract articles from the JSON data
+    articles = data["eng-8470679"]["articles"]["results"]
+
+    # Flatten the main part of the articles data (max_level=1)
+    df1 = pd.json_normalize(articles, max_level=1)
+
+    # Flatten the 'concepts' part of the data, and include other relevant fields using the 'meta' feature
+    df2 = pd.json_normalize(articles, "concepts", ["uri", "lang", "isDuplicate", "date", "time", "dateTime", "dateTimePub", "dataType", "sim", "url", "title", "body"], record_prefix='_', max_level=1)
+
+    # Group by 'uri' and aggregate '_label.eng' to join all concept labels as a single string
+    df_new = df2.groupby(['uri'], as_index=False).agg({'_label.eng': ' '.join})
+
+    # Merge the two DataFrames on the 'uri' field
+    df = df1.merge(df_new, on='uri', how='left')
+
+    # Rename the column '_label.eng' to 'all_concepts'
+    df.rename(columns={"_label.eng": "all_concepts"}, inplace=True)
+
+    # Print details (optional)
+    print(len(df1))
+    print(len(df2))
+    print(len(df_new))
+    print(len(df))
+    print(df.columns)
+    print(df_new.columns)
+
+    # Save the resulting DataFrame to a CSV file
+    output_csv_file = '/home/shared/eng-8470679.csv'  # Replace with the path where you want to save the CSV
+    df.to_csv(output_csv_file, index=False)
+
+    print(f"Data has been saved to {output_csv_file}")
+    return 1
+
+    
+def funDownload():
+    json_file_path = '/home/adbuls/visualisation/PropagationNetwork/Network/data/eng-8470679.json'  # Replace with your JSON file path
+    with open(json_file_path, 'r') as f:
+        data = json.load(f)
+
+    # Extract articles from the JSON data
+    articles = data["eng-8470679"]["articles"]["results"]
+
+    # Flatten the main part of the articles data (max_level=1)
+    df1 = pd.json_normalize(articles, max_level=1)
+
+    # Flatten the 'concepts' part of the data, and include other relevant fields using the 'meta' feature
+    df2 = pd.json_normalize(articles, "concepts", ["uri", "lang", "isDuplicate", "date", "time", "dateTime", "dateTimePub", "dataType", "sim", "url", "title", "body"], record_prefix='_', max_level=1)
+
+    # Group by 'uri' and aggregate '_label.eng' to join all concept labels as a single string
+    df_new = df2.groupby(['uri'], as_index=False).agg({'_label.eng': ' '.join})
+
+    # Merge the two DataFrames on the 'uri' field
+    df = df1.merge(df_new, on='uri', how='left')
+
+    # Rename the column '_label.eng' to 'all_concepts'
+    df.rename(columns={"_label.eng": "all_concepts"}, inplace=True)
+
+    # Print details (optional)
+    print(len(df1))
+    print(len(df2))
+    print(len(df_new))
+    print(len(df))
+    print(df.columns)
+    print(df_new.columns)
+
+    # Save the resulting DataFrame to a CSV file
+    output_csv_file = '/home/shared/eng-8470679.csv'  # Replace with the path where you want to save the CSV
+    df.to_csv(output_csv_file, index=False)
+
+    print(f"Data has been saved to {output_csv_file}")
+    return 1
+
+
 @blueprint.route('/downloadEvents', methods=['GET', 'POST'])
 def downloadEvents():
     #print("downloadEvents")
     selected = request.args['selected_event']
     cons = selected#"_".join(selected.split() )
+    print(cons)
     PARAMS = {"action": "getEvents",
               "resultType": "events",
               "eventsPage": 1,
@@ -1422,129 +1685,425 @@ def getForPropagationNetworkNew2Tree(name, url="http://eventregistry.org/api/v1/
     #df.to_csv("http://cleopatra.ijs.si/sensoranalysis/static/"+)
         return "1"
 
+
+def parse_and_merge_labels(concepts_str):
+    # Regular expression pattern to extract labels
+    pattern = r"'label': \{'eng': '([^']+)'\}"
+    
+    # Find all matches in the string
+    matches = re.findall(pattern, concepts_str)
+    
+    # Replace spaces with underscores in each label and merge them
+    modified_labels = [label.replace(' ', '_') for label in matches]
+    merged_labels = ' '.join(modified_labels)
+    #print(merged_labels)
+    return merged_labels
+
+@blueprint.route('/getForPropagationNetworkNew2Tree_Static/<string:name>', methods=['GET'])
+def getForPropagationNetworkNew2Tree_Static(name):
+    #columns_to_filter = ['country', 'lang-name', 'language', 'Political_Alignment', 'wiki-url', 'Cultural_Class',
+    #                 'Economic_Class', 'Continent-name', 'Continent', 'Religions', 'SafetyandSecurity', 
+    #                 'PersonalFreedom', 'Governance', 'SocialCapital', 'InvestmentEnvironment', 
+    #                 'EnterpriseConditions', 'MarketAccessandInfrastructure', 'EconomicQuality', 'LivingConditions', 
+    #                 'Health', 'Education', 'NaturalEnvironment', 'PowerDistance', 'Individualism', 'Masculinity', 
+    #                 'UncertaintyAvoidance', 'LongTermOrientation', 'Indulgence', 'economicblocs-name', 'economicblocs', 
+    #                 'militarydefenseblocs-name', 'militarydefenseblocs', 'politicalregionalblocs-name', 
+    #                 'politicalregionalblocs', 'linguisticblocs-name', 'linguisticblocs']
+    print(name)
+    df = pd.read_csv(os.path.join("/home/shared/", name))
+    print(df.columns)
+        
+
+    database = pd.read_csv(dbfileName, encoding='latin1')
+    print(database.columns)
+    df = df.merge(database, on="source.uri", how='left')
+    print(len(df))
+    df = df.dropna(subset=['country'])
+        #['country', 'lang-name', 'language', 'Political_Alignment', 'wiki-url', 'Cultural_Class', 'Economic_Class', 'Continent-name', 'Continent', 'Religions', 'SafetyandSecurity', 'PersonalFreedom',
+        #                      'Governance','SocialCapital','InvestmentEnvironment', 'EnterpriseConditions', 'MarketAccessandInfrastructure', 'EconomicQuality', 'LivingConditions', 'Health', 
+        #                      'Education','NaturalEnvironment','PowerDistance','Individualism','Masculinity','UncertaintyAvoidance', 'LongTermOrientation','Indulgence','economicblocs-name','economicblocs'
+        #                      ,'militarydefenseblocs-name','militarydefenseblocs','politicalregionalblocs-name','politicalregionalblocs', 'linguisticblocs-name','linguisticblocs'])
+    print(len(df))
+        #df.rename(columns={'dateTimePub': 'dateTime'}, inplace=True)
+        #df_new = df.groupby(['uri'], as_index = False).agg({'_label.eng': ' '.join})
+        #df = df1.merge(df_new, on='uri', how='left')
+        #df = df[df['concepts'].notna() & df['concepts'].str.strip().astype(bool)]
+    df['concepts_str'] = df['concepts'].apply(lambda x: str(x))
+    df['all_concepts'] = df['concepts_str'].apply(parse_and_merge_labels)
+    df['proScore'] = -1
+    df['destination'] = ""
+    df['parent'] = ""
+    df['count'] = 0
+    df['status'] = False
+        #df['dateTime'] = df['dateTime'].fillna('')
+        #df = df[df['dateTime'].str.match(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\+\d{4}')]
+        #try:
+        #    df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S%z')
+        #except ValueError as e:
+        #    print(f"Error encountered: {e}")
+
+        # Handling invalid data (removing or fixing)
+    df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S%z', errors='coerce')
+
+        #df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S%z')
+    df = df.sort_values(by='dateTime', ascending=True)
+
+    #  getForPropagationNetworkNew2Tree
+    df, dateFrom, dateTo = getSimilarityTree(df)
+    df.head(10)
+    root = dataframe_to_tree(df, path_col="Path", attribute_cols=["dateFrom", "dateTo", "group"], )
+    df = tree_to_dataframe(root, all_attrs=True)
+    print(len(df))
+    glo_dataframes = df
+    print("the final dataframes have been created222")
+    print(os.getcwd())
+    df.to_csv(os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/", name))
+    #df.#to_csv("http://cleopatra.ijs.si/sensoranalysis/static/"+)
+    return "1"
+    
+
 def getSimilarityTree(df):
     #print("getSimilarityTree")
     vectorizer = TfidfVectorizer()
+    print(len(df))
+    #print(df['all_concepts'].iloc[0][0])
     tfidf = vectorizer.fit_transform(df['all_concepts'].values.astype('U'))
     similarity_matrix = cosine_similarity(tfidf, tfidf)
     return getForPropagationNetworkNew2TreeOnlyOne(similarity_matrix, df)
     
     
 def getForPropagationNetworkNew2TreeOnlyOne(matrix, df):
-    #print("type of matrix")
-    # print(type(matrix))
-    # print(len(matrix))
-    #columns = []
-    #for a in range(len(matrix)):
-    #    columns.append("Col_" + str(a))
-    #ndf = pd.DataFrame(matrix, columns=columns)
-    # print(len(ndf))
-
     rows, cols = np.where((matrix >= threshold))
-    # print(rows)
-    # print(cols)
-    edges = zip(rows.tolist(), cols.tolist())
-    # print(type(edges))
-    # print(edges)
+    edges = list(zip(rows.tolist(), cols.tolist()))
+
     gr = nx.Graph()
     gr.add_edges_from(edges)
 
-    #print("here is graph")
-    # print(gr.edges())
-    #print("len of edges")
-    print(len(gr.edges()))
-    #gr.remove_edges_from(nx.selfloop_edges(gr))
-    print(len(gr.edges()))
-    #print(gr.edges())
+    print(f"Graph edges: {len(gr.edges())}")
+    gr.remove_edges_from(nx.selfloop_edges(gr))
+    print(f"Graph edges after removing self-loops: {len(gr.edges())}")
+
     keys = df['uri'].tolist()
+
+    # Multiprocessing
+    pool = mp.Pool(mp.cpu_count())
+    results = pool.starmap(process_edge, [(edge, keys, df) for edge in gr.edges])
+    pool.close()
+    pool.join()
+
     nodesTree = [["Event", "", "", "0", "", "", "", "", "", "", "", ""]]
-    count = 0
-    #print(keys);
-    #for val in keys:
-     #   print(val);
-      #  if "-" in val:
-       #     arr = val.split("-")
-        #    print("here is the value");
-        #    print(arr);
-        #    print(len(arr));
-        #    rv = arr[len(arr)-1]
-        #    print("here is the value");
-        #    print(rv);
-        #    keys[count] = rv
-        #count = count + 1
-            
-    count = 0
-    print(keys);
-    for u, v in gr.edges:
-        print(count)
-        count += 1
-        uri1 = keys[u]
-        uri2 = keys[v]
-        art1 = df[df["uri"] == uri1]
-        art2 = df[df["uri"] == uri2]
-        idx1 = df.index[df["uri"] == uri1].values[0]
-        idx2 = df.index[df["uri"] == uri2].values[0]
-        d1s = art1["dateTime"].tolist()
-        #print(d1s)
-        d1 = datetime.datetime.strptime(str(d1s[0]), '%Y-%m-%d %H:%M:%S')
-        d2s = art2["dateTime"].tolist()
-        d2 = datetime.datetime.strptime(str(d2s[0]), '%Y-%m-%d %H:%M:%S')
-
-        if d2 > d1:
-            if df.at[idx1, 'parent'] == "":
-                if "-" in uri1:
-                    arr = uri1.split("-")
-                    uri1 = arr[len(arr)-1]
-                df.at[idx1, 'parent'] = "Event/" + str(uri1)
-                print(str(uri1))
-
-                nodesTree.append(["Event/" + str(uri1),
-                                  str(d1).replace(" ", "T"), str(d1).replace(" ", "T"), "0", df.at[idx1, 'source.uri'], df.at[idx1, 'con_name'], df.at[idx1, 'country'], df.at[idx1, 'lang'], df.at[idx1, 'Political-Alignment'], 
-                                  df.at[idx1, 'wiki-url'], df.at[idx1, 'Cultural-Class'], df.at[idx1, 'Economic-Class'], df.at[idx1, 'Continent'], df.at[idx1, 'Religions'],df.at[idx1, 'economicblocs'], df.at[idx1, 'militarydefenseblocs'],
-                                  df.at[idx1, 'politicalregionalblocs'], df.at[idx1, 'linguisticblocs'],
-                                  df.at[idx1, 'SafetyandSecurity'], df.at[idx1, 'PersonalFreedom'], df.at[idx1, 'Governance'], df.at[idx1, 'SocialCapital'],
-                                  df.at[idx1, 'InvestmentEnvironment'], df.at[idx1, 'EnterpriseConditions'], df.at[idx1, 'MarketAccessandInfrastructure'], df.at[idx1, 'EconomicQuality'],
-                                  df.at[idx1, 'LivingConditions'], df.at[idx1, 'Health'], df.at[idx1, 'Education'], df.at[idx1, 'NaturalEnvironment'],
-                                  df.at[idx1, 'PowerDistance'], df.at[idx1, 'Individualism'], df.at[idx1, 'UncertaintyAvoidance'], df.at[idx1, 'Masculinity'],
-                                  df.at[idx1, 'LongTermOrientation'], df.at[idx1, 'Indulgence']
-                                  ])
-
-                df.at[idx1, 'status'] = True
-
-            if not df.at[idx2, 'status']:
-                if "-" in uri2:
-                    arr = uri2.split("-")
-                    uri2 = arr[len(arr)-1]
-                df.at[idx2, 'parent'] = df.at[idx1, 'parent'] + "/" + str(uri2)
-                print(str(uri2))
-
-                color = df.at[idx1, 'parent'].split('/')
-
-                nodesTree.append([df.at[idx1, 'parent'] + "/" + str(uri2),
-                              str(d1).replace(" ", "T"), str(d2).replace(" ", "T"), color[1], df.at[idx2, 'source.uri'],df.at[idx1, 'con_name'], 
-                              df.at[idx2, 'country'], df.at[idx2, 'lang'], df.at[idx2, 'Political-Alignment'],
-                              df.at[idx2, 'wiki-url'], df.at[idx2, 'Cultural-Class'], 
-                              df.at[idx2, 'Economic-Class'], df.at[idx2, 'Continent'], df.at[idx2, 'Religions']
-                             ,df.at[idx2, 'economicblocs'], df.at[idx2, 'militarydefenseblocs'], 
-                              df.at[idx2, 'politicalregionalblocs'], df.at[idx2, 'linguisticblocs'],
-                              df.at[idx1, 'SafetyandSecurity'], df.at[idx1, 'PersonalFreedom'], df.at[idx1, 'Governance'], df.at[idx1, 'SocialCapital'],
-                              df.at[idx1, 'InvestmentEnvironment'], df.at[idx1, 'EnterpriseConditions'], df.at[idx1, 'MarketAccessandInfrastructure'], df.at[idx1, 'EconomicQuality'],
-                              df.at[idx1, 'LivingConditions'], df.at[idx1, 'Health'], df.at[idx1, 'Education'], df.at[idx1, 'NaturalEnvironment'],
-                              df.at[idx1, 'PowerDistance'], df.at[idx1, 'Individualism'], df.at[idx1, 'UncertaintyAvoidance'], df.at[idx1, 'Masculinity'],
-                              df.at[idx1, 'LongTermOrientation'], df.at[idx1, 'Indulgence']
-                              ])
-
-                df.at[idx2, 'status'] = True
-
+    for result in results:
+        if result:
+            nodesTree.extend(result)
 
     path_data = pd.DataFrame(nodesTree, columns=['Path', 'dateFrom', 'dateTo', 'group', 'source', 'con_name', 'country', 'lang',
                                                  'polalign', 'url', 'culture', 'economic', 'continent', 'religions',
                                                  'economicblocs', 'militarydefenseblocs','politicalregionalblocs',
                                                  'linguisticblocs', 'SafetyandSecurity', 'PersonalFreedom', 'Governance','SocialCapital','InvestmentEnvironment','EnterpriseConditions','MarketAccessandInfrastructure','EconomicQuality',
                                                  'LivingConditions','Health', 'Education','NaturalEnvironment','PowerDistance','Individualism','UncertaintyAvoidance','Masculinity','LongTermOrientation', 'Indulgence'],)
-    # print(len(path_data))
+
     path_data = path_data.drop_duplicates(subset=["Path"], keep='first')
     return path_data, False, False
+
+def process_edge(edge, keys, df):
+    u, v = edge
+    uri1 = keys[u]
+    uri2 = keys[v]
+    art1 = df[df["uri"] == uri1]
+    art2 = df[df["uri"] == uri2]
+    idx1 = df.index[df["uri"] == uri1].values[0]
+    idx2 = df.index[df["uri"] == uri2].values[0]
+    d1s = art1["dateTime"].tolist()
+    d1 = datetime.datetime.strptime(str(d1s[0]), '%Y-%m-%d %H:%M:%S%z')
+    d2s = art2["dateTime"].tolist()
+    d2 = datetime.datetime.strptime(str(d2s[0]), '%Y-%m-%d %H:%M:%S%z')
+
+    nodes = []
+    if d2 > d1:
+        if df.at[idx1, 'parent'] == "":
+            if "-" in str(uri1):
+                arr = uri1.split("-")
+                uri1 = arr[len(arr) - 1]
+            df.at[idx1, 'parent'] = "Event/" + str(uri1)
+
+            nodes.append(["Event/" + str(uri1),
+                          str(d1).replace(" ", "T"), str(d1).replace(" ", "T"), "0", df.at[idx1, 'source.uri'], df.at[idx1, 'con_name'], 
+                          df.at[idx1, 'country'], df.at[idx1, 'lang'], df.at[idx1, 'Political_Alignment'], df.at[idx1, 'wiki-url'], 
+                          df.at[idx1, 'Cultural_Class'], df.at[idx1, 'Economic_Class'], df.at[idx1, 'Continent'], df.at[idx1, 'Religions'], 
+                          df.at[idx1, 'economicblocs'], df.at[idx1, 'militarydefenseblocs'], df.at[idx1, 'politicalregionalblocs'], 
+                          df.at[idx1, 'linguisticblocs'], df.at[idx1, 'SafetyandSecurity'], df.at[idx1, 'PersonalFreedom'], df.at[idx1, 
+                          'Governance'], df.at[idx1, 'SocialCapital'], df.at[idx1, 'InvestmentEnvironment'], df.at[idx1, 
+                          'EnterpriseConditions'], df.at[idx1, 'MarketAccessandInfrastructure'], df.at[idx1, 'EconomicQuality'], 
+                          df.at[idx1, 'LivingConditions'], df.at[idx1, 'Health'], df.at[idx1, 'Education'], df.at[idx1, 'NaturalEnvironment'], 
+                          df.at[idx1, 'PowerDistance'], df.at[idx1, 'Individualism'], df.at[idx1, 'UncertaintyAvoidance'], df.at[idx1, 
+                          'Masculinity'], df.at[idx1, 'LongTermOrientation'], df.at[idx1, 'Indulgence']])
+
+            df.at[idx1, 'status'] = True
+
+        if not df.at[idx2, 'status']:
+            if "-" in str(uri2):
+                arr = uri2.split("-")
+                uri2 = arr[len(arr) - 1]
+            df.at[idx2, 'parent'] = df.at[idx1, 'parent'] + "/" + str(uri2)
+
+            color = df.at[idx1, 'parent'].split('/')
+
+
+                          
+            nodes.append([df.at[idx1, 'parent'] + "/" + str(uri2),
+                          str(d1).replace(" ", "T"), str(d2).replace(" ", "T"), color[1], df.at[idx2, 'source.uri'], df.at[idx1, 'con_name'], 
+                          df.at[idx2, 'country'], df.at[idx2, 'lang'], df.at[idx2, 'Political_Alignment'], df.at[idx2, 'wiki-url'], 
+                          df.at[idx2, 'Cultural_Class'], df.at[idx2, 'Economic_Class'], df.at[idx2, 'Continent'], df.at[idx2, 'Religions'], 
+                          df.at[idx2, 'economicblocs'], df.at[idx2, 'militarydefenseblocs'], df.at[idx2, 'politicalregionalblocs'], 
+                          df.at[idx2, 'linguisticblocs'], df.at[idx1, 'SafetyandSecurity'], df.at[idx1, 'PersonalFreedom'], 
+                          df.at[idx1, 'Governance'], df.at[idx1, 'SocialCapital'], df.at[idx1, 'InvestmentEnvironment'], df.at[idx1, 
+                          'EnterpriseConditions'], df.at[idx1, 'MarketAccessandInfrastructure'], df.at[idx1, 'EconomicQuality'], 
+                          df.at[idx1, 'LivingConditions'], df.at[idx1, 'Health'], df.at[idx1, 'Education'], df.at[idx1, 
+                          'NaturalEnvironment'], df.at[idx1, 'PowerDistance'], df.at[idx1, 'Individualism'], df.at[idx1, 
+                          'UncertaintyAvoidance'], df.at[idx1, 'Masculinity'], df.at[idx1, 'LongTermOrientation'], df.at[idx1, 'Indulgence']])
+
+            df.at[idx2, 'status'] = True
+
+    return nodes
+
+
+
+@blueprint.route('/getForPropagationNetworkNew2Tree_Static2/<string:name>', methods=['GET'])
+def getForPropagationNetworkNew2Tree_Static2(name):
+    #columns_to_filter = #[ 'Cultural_Class', 'Economic_Class']
+    
+    columns_to_filter = ['Political_Alignment', 'country', 'language', 'Cultural_Class',
+                     'Economic_Class', 'Continent', 'Religions', 'SafetyandSecurity', 
+                     'PersonalFreedom', 'Governance', 'SocialCapital', 'InvestmentEnvironment', 
+                     'EnterpriseConditions', 'MarketAccessandInfrastructure', 'EconomicQuality', 'LivingConditions', 
+                     'Health', 'Education', 'NaturalEnvironment', 'PowerDistance', 'Individualism', 'Masculinity', 
+                     'UncertaintyAvoidance', 'LongTermOrientation', 'Indulgence',   'economicblocs', 
+                      'militarydefenseblocs',  
+                     'politicalregionalblocs',  'linguisticblocs']
+
+# Original file name
+    print(name)
+    df = pd.read_csv(os.path.join("/home/shared/", name))
+    print(df.columns)
+
+# Read and merge the database DataFrame
+    database = pd.read_csv(dbfileName, encoding='latin1')
+    print(database.columns)
+    df = df.merge(database, on="source.uri", how='left')
+    print(len(df))
+
+# Drop rows where 'country' is missing
+    
+    #df = df.dropna(subset=['country'])
+    #print(len(df))
+
+# Perform your usual operations on 'df' here...
+
+# Iterate through each column in 'columns_to_filter'
+    for col in columns_to_filter:
+        if col in df.columns:
+        # Create a new DataFrame that only contains the current column
+            try:
+                df_filtered = df[['source.uri','concepts', 'dateTime','uri', 'con_name', col]]  # Keep 'source.uri' for merging reference
+                df_filtered.replace("", pd.NA, inplace=True)
+                df_filtered = df_filtered.dropna(subset=col)
+                df_filtered = df_filtered.dropna(subset='dateTime')
+                df_filtered['dateTime'] = pd.to_datetime(df_filtered['dateTime'], errors='coerce')
+         
+                new_file_name = f"{name.split('.')[0]}_{col}.csv"
+        
+                print(f"Saved {new_file_name} with column {col}")
+
+                df_filtered['concepts_str'] = df_filtered['concepts'].apply(lambda x: str(x))
+                df_filtered['all_concepts'] = df_filtered['concepts_str'].apply(parse_and_merge_labels)
+                df_filtered['proScore'] = -1
+                df_filtered['destination'] = ""
+                df_filtered['parent'] = ""
+                df_filtered['count'] = 0
+                df_filtered['status'] = False
+
+                df_filtered['dateTime'] = pd.to_datetime(df_filtered['dateTime'], format='%Y-%m-%d %H:%M:%S%z', errors='coerce')
+            
+                df_filtered = df_filtered.sort_values(by='dateTime', ascending=True)
+
+ 
+                df_filtered, dateFrom, dateTo = getSimilarityTree2(df_filtered, col)
+                root = dataframe_to_tree(df_filtered, path_col="Path", attribute_cols=["dateFrom", "dateTo", "group"], )
+                df_filtered = tree_to_dataframe(root, all_attrs=True)
+                print(len(df_filtered))
+
+                final_output_path = os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/", name)
+                output_path = os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/", new_file_name)
+                df_filtered.to_csv(output_path, index=False)
+                #print(f"Final DataFrame saved as {name}")
+            except Exception as e:
+                print(f"An error occurred: {e}")
+    return 1
+
+
+
+
+        #print(name)
+        #df = pd.read_csv(os.path.join("/home/shared/", name))
+        #print(df.columns)
+        
+
+        #database = pd.read_csv(dbfileName, encoding='latin1')
+        #print(database.columns)
+        #df = df.merge(database, on="source.uri", how='left')
+        #print(len(df))
+        #df = df.dropna(subset=['country'])
+        
+        ##['country', 'lang-name', 'language', 'Political_Alignment', 'wiki-url', 'Cultural_Class', 'Economic_Class', 'Continent-name', 'Continent', 'Religions', 'SafetyandSecurity', 'PersonalFreedom',
+        ##                      'Governance','SocialCapital','InvestmentEnvironment', 'EnterpriseConditions', 'MarketAccessandInfrastructure', 'EconomicQuality', 'LivingConditions', 'Health', 
+        ##                      'Education','NaturalEnvironment','PowerDistance','Individualism','Masculinity','UncertaintyAvoidance', 'LongTermOrientation','Indulgence','economicblocs-name','economicblocs'
+        ##                      ,'militarydefenseblocs-name','militarydefenseblocs','politicalregionalblocs-name','politicalregionalblocs', 'linguisticblocs-name','linguisticblocs'])
+        #print(len(df))
+        ##df.rename(columns={'dateTimePub': 'dateTime'}, inplace=True)
+        ##df_new = df.groupby(['uri'], as_index = False).agg({'_label.eng': ' '.join})
+        ##df = df1.merge(df_new, on='uri', how='left')
+        ##df = df[df['concepts'].notna() & df['concepts'].str.strip().astype(bool)]
+        #df['concepts_str'] = df['concepts'].apply(lambda x: str(x))
+        #df['all_concepts'] = df['concepts_str'].apply(parse_and_merge_labels)
+        #df['proScore'] = -1
+        #df['destination'] = ""
+        #df['parent'] = ""
+        #df['count'] = 0
+        #df['status'] = False
+        ##df['dateTime'] = df['dateTime'].fillna('')
+        ##df = df[df['dateTime'].str.match(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\+\d{4}')]
+        ##try:
+        ##    df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S%z')
+        ##except ValueError as e:
+        ##    print(f"Error encountered: {e}")
+
+        ## Handling invalid data (removing or fixing)
+        #df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S%z', errors='coerce')
+
+        ##df['dateTime'] = pd.to_datetime(df['dateTime'], format='%Y-%m-%d %H:%M:%S%z')
+        #df = df.sort_values(by='dateTime', ascending=True)
+
+    #  getForPropagationNetworkNew2Tree
+        #df, dateFrom, dateTo = getSimilarityTree(df)
+        #df.head(10)
+        #root = dataframe_to_tree(df, path_col="Path", attribute_cols=["dateFrom", "dateTo", "group"], )
+        #df = tree_to_dataframe(root, all_attrs=True)
+        #print(len(df))
+        #glo_dataframes = df
+        #print("the final dataframes have been created222")
+        #print(os.getcwd())
+        #df.to_csv(os.path.join("/home/adbuls/visualisation/PropagationNetwork/Network/app/graphs/static/", name))
+    #df.#to_csv("http://cleopatra.ijs.si/sensoranalysis/static/"+)
+        #return "1"
+    
+
+def getSimilarityTree2(df ,col):
+    #print("getSimilarityTree")
+    vectorizer = TfidfVectorizer()
+    print(len(df))
+    #print(df['all_concepts'].iloc[0][0])
+    tfidf = vectorizer.fit_transform(df['all_concepts'].values.astype('U'))
+    similarity_matrix = cosine_similarity(tfidf, tfidf)
+    return getForPropagationNetworkNew2TreeOnlyOne2(similarity_matrix, df, col)
+    
+    
+def getForPropagationNetworkNew2TreeOnlyOne2(matrix, df, col):
+    rows, cols = np.where((matrix >= threshold))
+    edges = list(zip(rows.tolist(), cols.tolist()))
+
+    gr = nx.Graph()
+    gr.add_edges_from(edges)
+
+    print(f"Graph edges: {len(gr.edges())}")
+    gr.remove_edges_from(nx.selfloop_edges(gr))
+    print(f"Graph edges after removing self-loops: {len(gr.edges())}")
+
+    keys = df['uri'].tolist()
+
+    # Multiprocessing
+    pool = mp.Pool(mp.cpu_count())
+    results = pool.starmap(process_edge2, [(edge, keys, df, col) for edge in gr.edges])
+    pool.close()
+    pool.join()
+
+    nodesTree = [["Event", "", "", "0", "", ""]]
+    for result in results:
+        if result:
+            nodesTree.extend(result)
+
+    path_data = pd.DataFrame(nodesTree, columns=['Path', 'dateFrom', 'dateTo', 'group', 'source', col])
+
+    path_data = path_data.drop_duplicates(subset=["Path"], keep='first')
+    return path_data, False, False
+
+def process_edge2(edge, keys, df, col):
+    u, v = edge
+    uri1 = keys[u]
+    uri2 = keys[v]
+    art1 = df[df["uri"] == uri1]
+    art2 = df[df["uri"] == uri2]
+    idx1 = df.index[df["uri"] == uri1].values[0]
+    idx2 = df.index[df["uri"] == uri2].values[0]
+    d1s = art1["dateTime"].tolist()
+    d1 = datetime.datetime.strptime(str(d1s[0]), '%Y-%m-%d %H:%M:%S%z')
+    d2s = art2["dateTime"].tolist()
+    d2 = datetime.datetime.strptime(str(d2s[0]), '%Y-%m-%d %H:%M:%S%z')
+
+    nodes = []
+    if d2 > d1:
+        if df.at[idx1, 'parent'] == "":
+            if "-" in str(uri1):
+                arr = uri1.split("-")
+                uri1 = arr[len(arr) - 1]
+            df.at[idx1, 'parent'] = "Event/" + str(uri1)
+            
+            nodes.append(["Event/" + str(uri1),
+                          str(d1).replace(" ", "T"), str(d1).replace(" ", "T"), "0", df.at[idx1, 'source.uri'], df.at[idx1, col]])
+
+            #nodes.append(["Event/" + str(uri1),
+            #              str(d1).replace(" ", "T"), str(d1).replace(" ", "T"), "0", df.at[idx1, 'source.uri'], df.at[idx1, 'con_name'], 
+            #              df.at[idx1, 'country'], df.at[idx1, 'lang'], df.at[idx1, 'Political_Alignment'], df.at[idx1, 'wiki-url'], 
+            #              df.at[idx1, 'Cultural_Class'], df.at[idx1, 'Economic_Class'], df.at[idx1, 'Continent'], df.at[idx1, 'Religions'], 
+            #              df.at[idx1, 'economicblocs'], df.at[idx1, 'militarydefenseblocs'], df.at[idx1, 'politicalregionalblocs'], 
+            #              df.at[idx1, 'linguisticblocs'], df.at[idx1, 'SafetyandSecurity'], df.at[idx1, 'PersonalFreedom'], df.at[idx1, 
+            #              'Governance'], df.at[idx1, 'SocialCapital'], df.at[idx1, 'InvestmentEnvironment'], df.at[idx1, 
+            #              'EnterpriseConditions'], df.at[idx1, 'MarketAccessandInfrastructure'], df.at[idx1, 'EconomicQuality'], 
+            #              df.at[idx1, 'LivingConditions'], df.at[idx1, 'Health'], df.at[idx1, 'Education'], df.at[idx1, 'NaturalEnvironment'], 
+            #              df.at[idx1, 'PowerDistance'], df.at[idx1, 'Individualism'], df.at[idx1, 'UncertaintyAvoidance'], df.at[idx1, 
+            #              'Masculinity'], df.at[idx1, 'LongTermOrientation'], df.at[idx1, 'Indulgence']])
+
+            df.at[idx1, 'status'] = True
+
+        if not df.at[idx2, 'status']:
+            if "-" in str(uri2):
+                arr = uri2.split("-")
+                uri2 = arr[len(arr) - 1]
+            df.at[idx2, 'parent'] = df.at[idx1, 'parent'] + "/" + str(uri2)
+
+            color = df.at[idx1, 'parent'].split('/')
+
+
+            nodes.append([df.at[idx1, 'parent'] + "/" + str(uri2),
+                          str(d1).replace(" ", "T"), str(d2).replace(" ", "T"), color[1], df.at[idx2, 'source.uri'], df.at[idx1, col]])
+                          
+            #nodes.append([df.at[idx1, 'parent'] + "/" + str(uri2),
+            #              str(d1).replace(" ", "T"), str(d2).replace(" ", "T"), color[1], df.at[idx2, 'source.uri'], df.at[idx1, 'con_name'], 
+            #              df.at[idx2, 'country'], df.at[idx2, 'lang'], df.at[idx2, 'Political_Alignment'], df.at[idx2, 'wiki-url'], 
+            #              df.at[idx2, 'Cultural_Class'], df.at[idx2, 'Economic_Class'], df.at[idx2, 'Continent'], df.at[idx2, 'Religions'], 
+            #              df.at[idx2, 'economicblocs'], df.at[idx2, 'militarydefenseblocs'], df.at[idx2, 'politicalregionalblocs'], 
+            #              df.at[idx2, 'linguisticblocs'], df.at[idx1, 'SafetyandSecurity'], df.at[idx1, 'PersonalFreedom'], 
+            #              df.at[idx1, 'Governance'], df.at[idx1, 'SocialCapital'], df.at[idx1, 'InvestmentEnvironment'], df.at[idx1, 
+            #              'EnterpriseConditions'], df.at[idx1, 'MarketAccessandInfrastructure'], df.at[idx1, 'EconomicQuality'], 
+            #              df.at[idx1, 'LivingConditions'], df.at[idx1, 'Health'], df.at[idx1, 'Education'], df.at[idx1, 
+            #              'NaturalEnvironment'], df.at[idx1, 'PowerDistance'], df.at[idx1, 'Individualism'], df.at[idx1, 
+            #              'UncertaintyAvoidance'], df.at[idx1, 'Masculinity'], df.at[idx1, 'LongTermOrientation'], df.at[idx1, 'Indulgence']])
+
+            df.at[idx2, 'status'] = True
+
+    return nodes
+
+
+
 
 def text_preprocessing(text):
     

@@ -1,24 +1,1062 @@
-,uri,lang,isDuplicate,date,time,dateTime,dateTimePub,dataType,sim,url,title,body,authors,concepts,image,eventUri,sentiment,wgt,relevance,source.uri,source.dataType,source.title,all_concepts,con-name,country,lang-name,language,Political-Alignment,wiki-url,Cultural-Class,Economic-Class,Continent-name,Continent,Religions,2019Rank-From,SafetyandSecurity,PersonalFreedom,Governance,SocialCapital,InvestmentEnvironment,EnterpriseConditions,MarketAccessandInfrastructure,EconomicQuality,LivingConditions,Health,Education,NaturalEnvironment,PowerDistance,Individualism,Masculinity,UncertaintyAvoidance,LongTermOrientation,Indulgence,economicblocs-name,economicblocs,militarydefenseblocs-name,militarydefenseblocs,politicalregionalblocs-name,politicalregionalblocs,linguisticblocs-name,linguisticblocs,proScore,destination,parent,count,status,year,month,day,min,hour,MD
-223,323571827,eng,False,2015-10-19,07:18:00,2015-10-19 07:18:00,2015-10-19T07:18:00Z,news,0.686274528503418,http://bbj.hu/politics/only-41-asylum-seekers-enter-as-hungary-seals-borders_105810,Only 41 asylum seekers enter as Hungary seals borders,"Only 41 asylum seekers entered Hungary yesterday, and all of them came from the Serbian border, as the Croatia border fencing apparently prevented any asylum seekers from entering, officials said.
+,Unnamed: 0,uri,lang,isDuplicate,date,time,dateTime,dateTimePub,dataType,sim,url,title,body,authors,concepts,image,eventUri,sentiment,wgt,relevance,source.uri,source.dataType,source.title,all_concepts,url2,word_count,Category,year,month,day,min,hour,MD
+214,14475,8114534613,eng,False,2024-05-06,22:41:44,5/6/2024 22:41,2024-05-06 22:41:12,news,0.768627465,http://hosted.ap.org/article/d85423ad066fe41ac5783db5bd9ecffd/biden-speaks-netanyahu-israelis-appear-closer-major-rafah,Biden speaks with Netanyahu as Israelis appear closer to major Rafah offensive,"WASHINGTON (AP) -- President Joe Biden again urged Israeli Prime Minister Benjamin Netanyahu against launching an offensive in the southern Gaza city of Rafah as Israel on Monday appeared to be moving closer to a major offensive to root out Hamas militants.
 
-Hungary closed its border with Croatia as of midnight Saturday morning in an effort to prevent refugees from passing through the country. Only last week, thousands of refugees were said to be coming into Hungary from Croatia, but the new fencing and border patrols appear to have effectively stopped them from going through this country on their way west.
+But soon after Israel announced that it was ordering about 100,000 Palestinians to begin evacuating from Rafah, Hamas said in a statement it has accepted an Egyptian-Qatari proposal for a cease-fire to halt the seven-month-long war with Israel in Gaza.
 
-Currently, as both the Serbian and Croatian borders are fenced off, the majority of refugees apparently have been bypassing Hungary on their way towards Austria, and go through Slovenia instead.
+Israeli military spokesman Rear Adm. Daniel Hagari said Israel will continue its operations in Gaza as officials deliberate the cease-fire proposal approved by Hamas. And the Israeli War Cabinet voted unanimously to approve a Rafah military operation but will continue cease-fire efforts.
 
-The ""southern border closure is successful"", government spokesperson Zoltán Kovács said yesterday at a press conference, almost two days after Hungary closed its Croatian border.
+The Israeli military also said it was conducting ""targeted strikes"" against Hamas in eastern Rafah. The nature of the strikes was not immediately known, but the move appeared aimed at keeping the pressure on as talks continue.
 
-Although he said ""illegal migrants have practically stopped"", Kovács added that ""authorities are continuously observing happenings and are ready for possible changes"". That is why it was needed to temporarily reinstate border control on the Slovenian border, Kovács said.
+Biden administration officials on Monday continued to express concerns to the Israelis that a major military operation into Rafah's densely populated areas could be catastrophic.
 
-Hungary's Foreign Minister Péter Szijjártó announced on Saturday that Hungary reinstated border control on the Slovenian border, and informed both the Slovenian government and the European Commission about the decision. As Slovenia is a Schengen border, no fence is planned there, but patrols were beefed up, officials said.
+White House officials on Monday also were privately concerned about the latest strikes on Rafah -- though they did not appear to be the widescale attack Netanyahu has been threatening, according to a person familiar with administration thinking who was not authorized to comment publicly.
 
-Outside Hungary
+White House national security spokesman John Kirby said that Biden had been briefed on Hamas' response. CIA Director William Burns, who was in Qatar for hostage talks with regional officials, was discussing the Hamas statement with allies in the region. Kirby declined to discuss the parameters of what Hamas is saying it has agreed to.
 
-Slovenia is not able to accept ""limitless numbers of migrants"", therefore Croatia, Serbia and Macedonia need to ""slow down the influx"", Boštjan Šefic, Slovenian State secretary at the Ministry of Internal Affairs, said yesterday, according to Hungarian news agency MTI.
+""Bill Burns is looking at that response. He's talking to the Israelis about it,"" Kirby told reporters. ""And we'll see where this goes. Hopefully, it can lead to those hostages getting out real, real soon.""
 
-The state secretary said that Croatia had asked the country to accept 5,000 refugees on a daily basis, while Austria had signalled that it cannot accept more than 1,500 daily. ""We cannot accept migrants in limitless numbers if we know that they are unable to continue their ways,"" the state secretary said, adding that it will only accept the number of ""migrants"" who can leave their country.
+In recent days, Egyptian and Hamas officials have said the cease-fire would take place in a series of stages during which Hamas would release hostages it is holding in exchange for Israeli troop pullbacks from Gaza.
 
-While MTI reported that Slovenia is building a tranzit zone for ""migrants"" on the Austrian border, Hungarian state-owned all news channel M1 reported yesterday that the number of ""migrants"" keep growing at the Croatian-Slovenian border, as Slovenia only accepts as many refugees as Austria does on a daily basis.
+Top Biden administration officials have been publicly pressing Hamas to accept what they have described as a generous offer by the Israelis that would also lead to an extended truce and the release of Palestinian prisoners being held in Israeli prisons and perhaps lay the groundwork for a permanent end to the current conflict.
 
-As the majority of refugees keep crossing Slovenia and Austria in order to get to Germany, a fence should be built on the German-Austrian border to stem the flow of migrants, Rainer Wend, the chairman of the German Police Union (DPolG), told the ""Welt am Sonntag"" newspaper, according to dw.com. Wend said that other countries would then follow suit. ""If we close our borders in this way, Austria will also close the border with Slovenia. Thatʼs exactly the effect we need,"" Wendt said according to dw.com.
+The White House said Biden in a Monday morning phone call with Netanyahu underscored U.S. concerns about an invasion of Rafah, where more than 1 million civilians from other parts of Gaza are sheltering as the war sparked by Hamas' Oct. 7 attack on Israel has led to the deaths of more than 34,000 Palestinians and deprivation in the territory.
 
-German Chancellor Angela Merkel opposes the idea of a fence on the German border, and she has said many times that she believes border fences do not stop the flow of refugees, but only sidetrack them.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Asylum_seeker', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Asylum seeker'}}, {'uri': 'http://en.wikipedia.org/wiki/Fencing', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Fencing'}}, {'uri': 'http://en.wikipedia.org/wiki/Refugee', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Refugee'}}, {'uri': 'http://en.wikipedia.org/wiki/Slovenia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Slovenia'}, 'location': {'type': 'country', 'label': {'eng': 'Slovenia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Serbia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Serbia'}, 'location': {'type': 'country', 'label': {'eng': 'Serbia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Hungary', 'type': 'loc', 'score': 5, 'label': {'eng': 'Hungary'}, 'location': {'type': 'country', 'label': {'eng': 'Hungary'}}}, {'uri': 'http://en.wikipedia.org/wiki/Croatia', 'type': 'loc', 'score': 5, 'label': {'eng': 'Croatia'}, 'location': {'type': 'country', 'label': {'eng': 'Croatia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Border_control', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Border control'}}, {'uri': 'http://en.wikipedia.org/wiki/Austria', 'type': 'loc', 'score': 4, 'label': {'eng': 'Austria'}, 'location': {'type': 'country', 'label': {'eng': 'Austria'}}}, {'uri': 'http://en.wikipedia.org/wiki/Secretary_of_state', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Secretary of state'}}, {'uri': 'http://en.wikipedia.org/wiki/Péter_Szijjártó', 'type': 'person', 'score': 3, 'label': {'eng': 'Péter Szijjártó'}}, {'uri': 'http://en.wikipedia.org/wiki/Magyar_Távirati_Iroda', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Magyar Távirati Iroda'}}, {'uri': 'http://en.wikipedia.org/wiki/Illegal_immigration', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Illegal immigration'}}, {'uri': 'http://en.wikipedia.org/wiki/Foreign_minister', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Foreign minister'}}, {'uri': 'http://en.wikipedia.org/wiki/European_Commission', 'type': 'org', 'score': 3, 'label': {'eng': 'European Commission'}}, {'uri': 'http://en.wikipedia.org/wiki/North_Macedonia', 'type': 'loc', 'score': 2, 'label': {'eng': 'North Macedonia'}, 'location': {'type': 'country', 'label': {'eng': 'North Macedonia'}}}, {'uri': 'http://en.wikipedia.org/wiki/Schengen_Area', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Schengen Area'}}, {'uri': 'http://en.wikipedia.org/wiki/Wends', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Wends'}}, {'uri': 'http://en.wikipedia.org/wiki/Nationalization', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Nationalization'}}, {'uri': 'http://en.wikipedia.org/wiki/News_agency', 'type': 'wiki', 'score': 2, 'label': {'eng': 'News agency'}}, {'uri': 'http://en.wikipedia.org/wiki/Germany', 'type': 'loc', 'score': 2, 'label': {'eng': 'Germany'}, 'location': {'type': 'country', 'label': {'eng': 'Germany'}}}, {'uri': 'http://en.wikipedia.org/wiki/Chancellor_of_Germany', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Chancellor of Germany'}}, {'uri': 'http://en.wikipedia.org/wiki/Angela_Merkel', 'type': 'person', 'score': 1, 'label': {'eng': 'Angela Merkel'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States', 'type': 'loc', 'score': 1, 'label': {'eng': 'United States'}, 'location': {'type': 'country', 'label': {'eng': 'United States'}}}]",http://bbj.hu/images2/201510/144523920034390vSVQWe7WI3h_L.jpg,eng-1686923,0.0117647058823529,182935080,1,bbj.hu,news,Budapest Business Journal,Asylum seeker Fencing Refugee Slovenia Serbia Hungary Croatia Border control Austria Secretary of state Péter Szijjártó Magyar Távirati Iroda Illegal immigration Foreign minister European Commission North Macedonia Schengen Area Wends Nationalization News agency Germany Chancellor of Germany Angela Merkel United States,Hungary,HU,,,,,C5,C4,Europe,EU,Christian,42.0,35.0,76.0,92.0,47.0,45.0,96.0,44.0,29.0,37.0,46.0,41.0,36.0,46.0,80.0,88.0,82.0,58.0,31.0,European Union (EU),EU,North Atlantic Treaty Organization (NATO),NATO,,,,,-1,,,0,False,2015,10,19,18,7,2015-10-19
+Biden told Netanyahu he still believes reaching a cease-fire with Hamas is the best way to protect the lives of Israeli hostages held in Gaza, officials said. Israel says Hamas is holding about 100 hostages and the remains of more than 30 others in Gaza.
+
+The leaders' call occurred before Hamas announced it had accepted a cease-fire proposal.
+
+""The president was consistent again this morning that we don't support ground operations in Rafah,"" Kirby said.
+
+The latest developments come as Biden hosted King Abdullah II of Jordan for a private lunch meeting at the White House on Monday to discuss the war and hostage talks. Jordan's embassy in Washington said in a posting on the social media site X following the leaders' meeting that Abdullah warned that an Israeli operation on Rafah ""threatens to lead to a new massacre.""
+
+On Sunday, Netanyahu rejected international pressure to halt the war in Gaza in a fiery speech marking the country's annual Holocaust memorial day, declaring, ""If Israel is forced to stand alone, Israel will stand alone.""
+
+""I say to the leaders of the world: No amount of pressure, no decision by any international forum will stop Israel from defending itself,"" he said, speaking in English. ""Never again is now.""
+
+The Israeli army ordered about 100,000 Palestinians on Monday to begin evacuating from Rafah, signaling that a ground invasion there could be imminent and further complicating efforts to broker a cease-fire.
+
+Tensions escalated Sunday when Hamas fired rockets at Israeli troops positioned on the border with Gaza near Israel's main crossing for delivering humanitarian aid, killing four soldiers. Meanwhile, Israeli airstrikes on Rafah killed 22 people, including children and two infants, according to a hospital.
+
+Netanyahu also told Biden that he would ensure the Kerem Shalom crossing between Gaza and Israel would remain open for humanitarian aid deliveries, according to the White House.
+
+Israeli officials last week briefed Biden administration officials on a plan to evacuate Palestinian civilians ahead of a potential operation, according to U.S. officials familiar with the matter.
+
+The officials, who were not authorized to comment publicly and requested anonymity to speak about the sensitive exchange, said the plan detailed by the Israelis did not change the U.S. administration's view that moving forward with an operation in Rafah would put too many innocent Palestinian civilians at risk.
+
+Pentagon press secretary Maj. Gen. Pat Ryder said Defense Secretary Lloyd Austin had previously stressed with Israeli Defense Minister Yoav Gallant that Israel needed a ""credible plan"" to evacuate those civilians and maintain humanitarian aid. Ryder said Austin had seen ""the concepts"" from the Israelis on their plan for an operation in Rafah ""but nothing detailed at this point.""
+
+Israeli officials said those being ordered evacuated would move from parts of Rafah to a nearby Israel-declared humanitarian zone called Muwasi, a makeshift camp on the coast.
+
+___
+
+AP writers Tara Copp in Washington and Josef Federman in Jerusalem contributed reporting.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Palestinians', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Palestinians'}}, {'uri': 'http://en.wikipedia.org/wiki/Ceasefire', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Ceasefire'}}, {'uri': 'http://en.wikipedia.org/wiki/Hamas', 'type': 'org', 'score': 5, 'label': {'eng': 'Hamas'}}, {'uri': 'http://en.wikipedia.org/wiki/Gaza_City', 'type': 'loc', 'score': 5, 'label': {'eng': 'Gaza City'}, 'location': {'type': 'place', 'label': {'eng': 'Gaza City'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Benjamin_Netanyahu', 'type': 'person', 'score': 5, 'label': {'eng': 'Benjamin Netanyahu'}}, {'uri': 'http://en.wikipedia.org/wiki/Israel_Defense_Forces', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Israel Defense Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Joe_Biden', 'type': 'person', 'score': 5, 'label': {'eng': 'Joe Biden'}}, {'uri': 'http://en.wikipedia.org/wiki/Hostage', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Hostage'}}, {'uri': 'http://en.wikipedia.org/wiki/White_House', 'type': 'wiki', 'score': 5, 'label': {'eng': 'White House'}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah', 'type': 'loc', 'score': 5, 'label': {'eng': 'Rafah'}, 'location': {'type': 'place', 'label': {'eng': 'Rafah'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Israel', 'type': 'loc', 'score': 5, 'label': {'eng': 'Israel'}, 'location': {'type': 'country', 'label': {'eng': 'Israel'}}}, {'uri': 'http://en.wikipedia.org/wiki/William_J._Burns_(diplomat)', 'type': 'wiki', 'score': 4, 'label': {'eng': 'William J. Burns (diplomat)'}}, {'uri': 'http://en.wikipedia.org/wiki/Presidency_of_Joe_Biden', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Presidency of Joe Biden'}}, {'uri': 'http://en.wikipedia.org/wiki/Military_operation', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Military operation'}}, {'uri': 'http://en.wikipedia.org/wiki/2021_Taliban_offensive', 'type': 'wiki', 'score': 3, 'label': {'eng': '2021 Taliban offensive'}}, {'uri': 'http://en.wikipedia.org/wiki/Six-Day_War', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Six-Day War'}}, {'uri': 'http://en.wikipedia.org/wiki/Izz_ad-Din_al-Qassam_Brigades', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Izz ad-Din al-Qassam Brigades'}}, {'uri': 'http://en.wikipedia.org/wiki/Prime_Minister_of_Israel', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Prime Minister of Israel'}}, {'uri': 'http://en.wikipedia.org/wiki/National_security', 'type': 'wiki', 'score': 3, 'label': {'eng': 'National security'}}, {'uri': 'http://en.wikipedia.org/wiki/Cabinet_(government)', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Cabinet (government)'}}, {'uri': 'http://en.wikipedia.org/wiki/Washington,_D.C.', 'type': 'loc', 'score': 3, 'label': {'eng': 'Washington, D.C.'}, 'location': {'type': 'place', 'label': {'eng': 'Washington, D.C.'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/John_Kirby_(admiral)', 'type': 'person', 'score': 2, 'label': {'eng': 'John Kirby (admiral)'}}, {'uri': 'http://en.wikipedia.org/wiki/Director_of_the_Central_Intelligence_Agency', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Director of the Central Intelligence Agency'}}, {'uri': 'http://en.wikipedia.org/wiki/Abdullah_II_of_Jordan', 'type': 'person', 'score': 2, 'label': {'eng': 'Abdullah II of Jordan'}}, {'uri': 'http://en.wikipedia.org/wiki/Qatar', 'type': 'loc', 'score': 2, 'label': {'eng': 'Qatar'}, 'location': {'type': 'country', 'label': {'eng': 'Qatar'}}}, {'uri': 'http://en.wikipedia.org/wiki/Egypt', 'type': 'loc', 'score': 2, 'label': {'eng': 'Egypt'}, 'location': {'type': 'country', 'label': {'eng': 'Egypt'}}}, {'uri': 'http://en.wikipedia.org/wiki/2014_Gaza_War', 'type': 'wiki', 'score': 1, 'label': {'eng': '2014 Gaza War'}}, {'uri': 'http://en.wikipedia.org/wiki/The_Holocaust', 'type': 'wiki', 'score': 1, 'label': {'eng': 'The Holocaust'}}, {'uri': 'http://en.wikipedia.org/wiki/Lloyd_Austin', 'type': 'person', 'score': 1, 'label': {'eng': 'Lloyd Austin'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_Defense_(Israel)', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Ministry of Defense (Israel)'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_Secretary_of_Defense', 'type': 'wiki', 'score': 1, 'label': {'eng': 'United States Secretary of Defense'}}, {'uri': 'http://en.wikipedia.org/wiki/Major_general', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Major general'}}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/Jerusalem', 'type': 'loc', 'score': 1, 'label': {'eng': 'Jerusalem'}, 'location': {'type': 'place', 'label': {'eng': 'Jerusalem'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}]",summary_large_image,eng-9541882,-0.364705882,452731304,1,hosted.ap.org,news,Associated Press,"Palestinians Ceasefire Hamas Gaza City Benjamin Netanyahu Israel Defense Forces Joe Biden Hostage White House Rafah Israel William J. Burns (diplomat) Presidency of Joe Biden Military operation 2021 Taliban offensive Six-Day War Izz ad-Din al-Qassam Brigades Prime Minister of Israel National security Cabinet (government) Washington, D.C. John Kirby (admiral) Director of the Central Intelligence Agency Abdullah II of Jordan Qatar Egypt 2014 Gaza War The Holocaust Lloyd Austin Ministry of Defense (Israel) United States Secretary of Defense Major general Associated Press Jerusalem",ap.org,958,Chat-GPT,2024,5,6,41,22,2024-05-06
+215,14508,8114576764,eng,False,2024-05-06,23:38:31,5/6/2024 23:38,2024-05-06 23:37:07,news,0.752941191,http://hosted.ap.org/article/59c2a6eda826993d394efa6b979df691/latest-israel-launches-strikes-rafah-hours-after-hamas,"The Latest | Israel launches strikes in Rafah, hours after Hamas agrees to a Gaza cease-fire","Israel's military says it is conducting ""targeted strikes"" against Hamas in the southern Gaza city of Rafah after the country's War Cabinet approved a military operation there, officials said late Monday.
+
+Hours earlier, the Hamas militant group announced it had accepted a cease-fire proposal brought forward by mediators Egypt and Qatar. A cease-fire could end seven months of war in Gaza -- however it's uncertain whether a deal had been sealed. Israel responded by saying the proposal did not meet its ""core demands.""
+
+More than a million people are huddled in tents and overcrowded apartments in Rafah after fleeing Israel's military offensive in other parts of the Gaza Strip. Israel says Rafah is Hamas' last stronghold, but the United States opposes a full-scale invasion of the city bordering Egyptian unless Israel provides a ""credible"" plan for protecting civilians there.
+
+The war in Gaza has driven around 80% of the territory's population of 2.3 million from their homes and caused vast destruction to homes, hospitals, mosques and schools across several cities. The death toll in Gaza has soared to more than 34,500 people, according to local health officials.
+
+The war began Oct. 7 when Hamas attacked southern Israel, killing around 1,200 people, mostly civilians, and abducting about 250 others. Israel says militants still hold around 100 hostages and the remains of more than 30 others.
+
+-- Biden speaks with Netanyahu as Israelis appear closer to major Rafah offensive
+
+-- Israel orders Al Jazeera to close its local operation and seizes some of its equipment.
+
+-- Netanyahu uses Holocaust ceremony to brush off international pressure against Gaza offensive.
+
+CAIRO -- A Palestinian security official and an Egyptian official say Israeli tanks entered the southern Gaza town of Rafah, reaching as close as 200 meters (yards) from its crossing with neighboring Egypt.
+
+The Egyptian official said the operation appeared to be limited in scope. He and Hamas' Al-Aqsa TV said Israeli officials informed the Egyptians that the troops would withdraw after completing the operation.
+
+The Israeli military declined to comment. On Sunday, Hamas fighters near the Rafah crossing fired mortars into southern Israel, killing four Israeli soldiers.
+
+The Egyptian official, located on the Egyptian side of Rafah, and the Palestinian security official spoke on condition of anonymity because they were not authorized to talk to the press.
+
+The Associated Press could not independently verify the scope of the operation.
+
+Earlier Monday, Israel's War Cabinet decided to push ahead with a military operation in Rafah, after Hamas announced its acceptance of an Egyptian-Qatari proposal for a cease-fire deal. The Israeli military said it was conducting ""targeted strikes"" against Hamas in Rafah without providing details.
+
+The Rafah border crossing is a critical entry point for humanitarian aid into Gaza.
+
+___
+
+Associated Press writer Lee Keath contributed to this report.
+
+WASHINGTON -- Biden administration officials on Monday continued to express concerns to the Israelis that a major military operation into Rafah's densely populated areas could be catastrophic.
+
+White House officials on Monday also were privately concerned about the latest strikes on Rafah -- although the strikes did not appear to be the widescale attack Israeli Prime Minister Benjamin Netanyahu has been threatening., according to a person familiar with Biden administration thinking who was not authorized to comment publicly.
+
+___
+
+Associated Press writer Zeke Miller contributed to this report.
+
+BEIRUT -- Hamas has published a copy of the cease-fire and hostage release proposal that the militant group said it had agreed to on Monday.
+
+The framework brought forward by Qatar and Egypt aims to bring a halt to seven months of war in Gaza. However, it's unclear if Israel will agree to the terms.
+
+The proposal outlines a phased release of Israeli hostages held in Gaza alongside the gradual withdrawal of Israeli troops from the entire enclave and ending with a ""sustainable calm"" or ""permanent cessation of military and hostile operations.""
+
+Israel has previously said it would not agree to either a full withdrawal of its forces or a permanent cease-fire as part of a hostage release deal.
+
+The first stage would last 42 days and would involve a partial withdrawal of Israeli forces from the Gaza Strip and the release of about 33 hostages held in the territory, including the remaining Israeli women -- both civilians and soldiers -- as well as children, older adults and people who are ill.
+
+Thirty Palestinian prisoners held in Israel would be released in exchange for each Israeli civilian hostage and 50 in exchange for each female soldier.
+
+Palestinians displaced in Gaza would be allowed to return to their home neighborhoods during that time.
+
+The parties would then negotiate the terms of the next stage, under which the remaining civilian men and soldiers would be released, while Israeli forces would withdraw from the rest of Gaza. This phase would be conditioned on achievement of a ""sustainable calm.""
+
+The final stage would involve exchange of the bodies of hostages who died in captivity and the beginning of a reconstruction plan for the enclave that would take place over three to five years ""under the supervision of a number of countries and organizations, including: Egypt, Qatar and the United Nations.""
+
+TEL AVIV, Israel -- Thousands of Israelis rallied around the country Monday night calling for an immediate deal to release the hostages still held in the Gaza Strip.
+
+The protests came as Israel's War Cabinet voted to begin an operation on the city of Rafah, saying that a cease-fire proposal Hamas accepted earlier in the night was not in line with Israeli demands.
+
+In Tel Aviv, about 1,000 protesters swelled near Israel's military headquarters, some blocking the city's main highway until late into the night. Police tried to clear the road, lifting some protesters off the street and extinguishing fires lit during the demonstration. Other officers on horseback surrounded crowds who chanted ""deal now!""
+
+In Jerusalem, hundreds of protesters called for a hostage deal. They marched toward the home of Israeli Prime Minister Benjamin Netanyahu, holding a banner reading ""the blood is on your hands.""
+
+There were also smaller protests in the cities of Haifa, Beersheba and Raanana.
+
+Israeli police did not immediately respond to a request about the number of people arrested.
+
+In front of Netanyahu's house stood Mai Albini Peri, the grandson of Haim Peri, a hostage in Gaza. He held a sign that read, ""Rafah, not at the expense of my grandfather.""
+
+JERUSALEM -- Israeli leaders have approved a military operation into the Gaza Strip city of Rafah, and Israeli forces are now striking targets in the area, officials announced Monday.
+
+The move came hours after Hamas announced it had accepted an Egyptian-Qatari cease-fire proposal.
+
+Prime Minister Benjamin Netanyahu's office said that the proposal was ""far from Israel's essential demands,"" but that it would nonetheless send negotiators to continue talks on a cease-fire agreement.
+
+The United States says it opposes a Rafah invasion unless Israel provides a ""credible"" plan for protecting civilians there. More than a million people in Rafah are huddled in tents and overcrowded apartments after fleeing Israel's military offensive in other parts of the territory.
+
+Earlier Monday, Israel's military said it ordered around 100,000 people to evacuate Rafah, signaling the long-promised ground invasion could be imminent. Israel says Rafah is Hamas' last stronghold.
+
+JERUSALEM -- Israel will keep carrying out operations in Gaza as officials deliberate over a cease-fire proposal approved by Hamas, an Israeli military spokesperson says.
+
+Rear Adm. Daniel Hagari spoke after the Hamas militant group said it accepted an Egyptian-Qatari cease-fire proposal to halt the seven-month war with Israel. Israeli officials were studying the proposal late Monday and did not immediately comment.
+
+""We examine every answer and reply very seriously,"" said Hagari. ""At the same time, we continue our operations in the Gaza Strip and will continue to do so.""
+
+During the same address, Hagari said that Israel would reopen a major crossing for humanitarian aid to pass into Gaza as soon as possible, without specifying exactly when.
+
+Israel closed the Kerem Shalom crossing Sunday after a Hamas mortar attack in the area killed four Israeli soldiers.
+
+The White House said earlier Monday that Israeli Prime Minister Benjamin Netanyahu had agreed to reopen the crossing on a phone call with President Joe Biden.
+
+WASHINGTON -- President Joe Biden has been briefed on Hamas' response in ongoing cease-fire talks, White House National Security Council spokesman John Kirby said, adding only that the U.S. and its partners were still reviewing that response.
+
+CIA Director Bill Burns was actively engaged with partners in the region to evaluate the Hamas statement and next steps, Kirby said.
+
+Hamas announced Monday it has accepted an Egyptian-Qatari cease-fire proposal, but Israel said it was studying the offer, leaving it uncertain whether a deal had been sealed to bring a halt to the seven-month-long war in Gaza.
+
+ANKARA, Turkey -- Turkish President Recep Tayyip Erdogan welcomed a statement by the Hamas militant group that it has accepted a cease-fire proposal, and he called on Israel to also accept the deal.
+
+Speaking at the end of Cabinet meeting Monday, Erdogan also urged Western nations to exert pressure on Israeli to accept the deal. He suggested that Turkey had urged Hamas to accept the proposal.
+
+""We were happy by the statement from Hamas that it accepted the cease-fire with our recommendations. The same step must now be also taken by Israel. I call on all Western actors to exert pressure on Israel,"" Erdogan said.
+
+Turkey, a vocal critic of Israel's military actions in Gaza, suspended trade relations with Israel last week. It said the commercial ties won't be restored until a permanent cease-fire is installed and obstructions to the flow of aid into Gaza are removed.
+
+JERUSALEM -- An official familiar with Israeli thinking says Israeli officials are examining the cease-fire proposal approved by Hamas.
+
+But the official warns that the plan approved by Hamas ""is not the framework Israel proposed.""
+
+The official, speaking on condition of anonymity because Israel is still formulating a formal response, did not elaborate.
+
+The language signaled that a deal could still be a ways off.
+
+___
+
+Associated Press writer Josef Federman contributed to this report.
+
+WASHINGTON -- A U.S. official said that Washington was still waiting to learn more about the Hamas position and whether it reflected an agreement to what had already been signed off on by Israel and international negotiators or to something else.
+
+Details of the proposal haven't been released. The official was speaking on condition of anonymity because they weren't authorized to publicly discuss the matter.
+
+Hamas announced Monday it has accepted an Egyptian-Qatari cease-fire proposal, but there was no immediate word from Israel, leaving it uncertain whether a deal had been sealed to bring a halt to the seven-month-long war in Gaza.
+
+___
+
+Associated Press writer Zeke Miller contributed to this report.
+
+The Hamas militant group says it has accepted an Egyptian-Qatari cease-fire proposal to halt the seven-month war with Israel.
+
+It issued a statement Monday saying its supreme leader, Ismail Haniyeh, had delivered the news in a phone call with Qatar's prime minister and Egypt's intelligence minister. The two Middle Eastern nations have been mediating months of talks between Israel and Hamas. There was no immediate comment from Israel.
+
+The announcement came hours after Israel ordered Palestinians to begin evacuating the southern Gaza town of Rafah ahead of an Israeli military operation. Israel says Rafah is Hamas' last stronghold.
+
+News of Hamas' announcement sent people in Rafah cheering in the streets. People rushed into the streets in front of Al-Aqsa Hospital in Deir al-Balah in the Gaza Strip, chanting and cheering the news.
+
+Details of the proposal were not immediately released. But in recent days, Egyptian and Hamas officials have said the cease-fire would take place in a series of stages in which Hamas would release hostages it is holding in exchange for Israeli troop pullbacks from Gaza.
+
+It is not clear whether the deal will meet Hamas' key demand of bringing about an end to the war and complete Israeli withdrawal.
+
+GENEVA -- The U.N. human rights chief says it's ""inhumane"" that people in Gaza are being told to move again as Israel plans an invasion into the southern city of Rafah.
+
+Volker Türk warned that civilian suffering, death and destruction appear set to swell further, insisting that protection of civilians is the ""overriding concern"" of international humanitarian and human rights law -- and those who ""flout"" it must be held to account.
+
+""Forcibly relocating hundreds of thousands from Rafah to areas which have already been flattened and where there is little shelter and virtually no access to humanitarian assistance necessary for their survival is inconceivable,"" he said in a statement.
+
+Türk noted that Rafah has become the main hub for distribution of humanitarian aid into the Gaza Strip. He reiterated calls for a cease-fire, the free flow of aid into Gaza, and the release of Israeli hostages held in the territory.
+
+Hundreds of thousands of people in Gaza have been ordered to evacuate their homes and shelters since Israeli forces launched a military action in the strip following the Oct. 7 attacks in Israel
+
+JERUSALEM -- Israel's blockage of Al Jazeera's news website appeared to take effect Monday, a day after Israel shut the local offices of the Qatari network and halted its broadcasts in Israel.
+
+The network's website was no longer accessible on local Wi-Fi networks in Israel as of Monday afternoon, although it could still be viewed using virtual private networks, or VPNs. Access to the network's YouTube livestream and social media feeds appeared undisturbed. Al Jazeera went off Israel's main cable and satellite providers Sunday.
+
+Believed to be the first time Israel has closed a foreign news outlet operating in the country, the shuttering of Al-Jazeera's operation marks the culmination of a long-running feud that has only been exacerbated by the network's coverage of the current Israel-Hamas war.
+
+Since Hamas militants' initial cross-border attack Oct. 7, the network has maintained 24-hour coverage of Israel's grinding ground offensive in the Gaza Strip. While including on-the-ground reporting of the war's casualties, including the deaths of members of its own staff, its Arabic arm often publishes verbatim video statements from Hamas and other regional militant groups.
+
+Israel's Prime Minister Benjamin Netanyahu said Sunday that it had become necessary to remove the network, calling it a ""Hamas mouthpiece.""
+
+The Foreign Press Association in Israel criticized the order.
+
+""With this decision, Israel joins a dubious club of authoritarian governments to ban the station,"" it said. ""This is a dark day for the media."" The New York-based Committee to Project Journalists similarly warned the move represented an ""extremely alarming precedent for restricting international media outlets working in Israel.""
+
+JERUSALEM -- The U.N. children's agency says an Israeli ground operation in Rafah would pose ""catastrophic risks"" to children sheltering in the southern Gaza city.
+
+UNICEF estimates some 600,000 children are in Rafah - roughly half the city's population. Most of those people are huddling in tents and overcrowded apartments after fleeing Israel's military offensive in other parts of the territory.
+
+In a statement Monday, UNICEF warned that many of the children are ""highly vulnerable.""
+
+It said an estimated 65,000 children suffer from a pre-existing disability and an estimated 175,000 children under the age of 5 suffer from one or more infectious diseases. Almost all children, it said require mental health services.
+
+""More than 200 days of war have taken an unimaginable toll on the lives of children,"" said Catherine Russell, UNICEF's executive director. ""Rafah is now a city of children, who have nowhere safe to go in Gaza. If large scale military operations start, not only will children be at risk from the violence, but also from chaos and panic, and at a time where their physical and mental states are already weakened.""
+
+UNICEF called for a lasting cease-fire and release of hostages held by Hamas.
+
+WASHINGTON -- President Joe Biden and Israeli Prime Minister Benjamin Netanyahu spoke Monday morning, a White House official said, as Israel appeared closer to launching an offensive on the southern Gaza city of Rafah -- a move staunchly opposed by the U.S. on humanitarian grounds.
+
+A National Security Council spokesperson said Biden reiterated U.S. concerns about an invasion of Rafah said he believes reaching a ceasefire with Hamas is the best way to protect the lives of Israeli hostages held in Gaza.
+
+The two officials spoke on the condition of anonymity to discuss the call before an official White House statement was released.
+
+The Biden administration, which provides Israel crucial military and diplomatic support, says it opposes a Rafah invasion unless Israel provides a ""credible"" plan for protecting civilians there.
+
+The United Nations humanitarian aid agency has warned that hundreds of thousands of people would be ""at imminent risk of death"" if Israel carries out a military assault into Rafah. The city on the border with Egypt is a critical entry point for humanitarian aid and is filled with displaced Palestinians, many in densely packed tent camps.
+
+___
+
+Associated Press writer Zeke Miller contributed to this report.
+
+CAIRO -- Egypt has urged Israel to ""exercise maximum restraint and avoid further escalation at this extremely sensitive time in the process of cease-fire negotiations.""
+
+In a statement Monday, the Egyptian Foreign Ministry warned against Israel's imminent offensive in Gaza's southernmost city of Rafah. It says such an escalation will cause grave humanitarian risks to over a million Palestinians packed in the city.
+
+The statement said Egypt continues to communicate with all parties to ""prevent the situation from getting worse or getting out of control.""
+
+Egypt has been a key mediator in ongoing efforts to broker a cease-fire that would halt Israel's offensive in Gaza in exchange for the release of Israeli hostages held by Hamas.
+
+BERLIN -- Germany and France have reiterated their opposition to Israel's planned offensive on Rafah in the south of the Gaza Strip.
+
+A spokesperson for the German Foreign Office said Monday that more than 1 million people are currently living in the area, adding that ""these people need protection ... and the German government and the foreign minister have already said repeatedly in the past that a large-scale ground offensive on Rafah would be a humanitarian disaster.""
+
+At the same time, the spokesperson, Kathrin Deschauer, condemned the continued attacks by Hamas on Israel from the Gaza Strip, and called for the release of over 100 people ""who are still held hostage by Hamas, who need to be freed.""
+
+All sides must now make ""maximum efforts,"" she said, so that Palestinians in Gaza can be supplied with humanitarian goods and the hostages can be freed at the same time.
+
+In Paris, the Foreign Ministry reiterated France's ""firm opposition to Israel's offensive in Rafah,"" saying more than 1.3 million people are ""in grave situation"" after seeking shelter there.
+
+France warned that ""displacing civilian population by force constitutes a war crime under international law.""
+
+The Foreign Ministry reiterated its position on the Israel-Hamas war, demanding an immediate release of Israeli hostages and a sustained cease-fire in Gaza to protect civilians.
+
+On Sunday, French President Emmanuel Macron spoke with Israeli Prime Minister Netanyahu and urged him to follow through with the negotiations that could ''lead to the release of hostages, the protection of civilians by a cease-fire and regional de-escalation,'' according to Macron's office.
+
+""'The destiny of the Palestinians of Gaza can no longer be subject to the terrorist actions of Hamas, and the Israeli operations should stop,'' Macron said, and reiterated his ''firmest opposition'' to an Israeli offensive in Rafah.
+
+BEIRUT -- The militant Palestinian group Hamas warned Israel on Monday that any military operation in the southern city of Rafah in the Gaza Strip ""will not be a picnic.""
+
+Hamas said in statement that Palestinian militant groups, led by Hamas' military wing, the Qassam Brigades, ""are ready to defend our people and defeat the enemy.""
+
+The statement was the first official comment since the Israeli army ordered tens of thousands of Palestinians in Rafah to start evacuating, signaling that a long-promised ground invasion could be imminent.
+
+Hamas called on the international community to move quickly ""to stop the crime that is threatening the lives of hundreds of thousands of civilians."" It also called on international agencies including the U.N. agency for Palestinian refugees to stay in Rafah and support the people there.
+
+BEIRUT -- The Gaza Health Ministry said Monday the bodies of 52 people killed by Israeli strikes have been brought to local hospitals over the past 24 hours. Hospitals also received 90 wounded, it said in its daily report.
+
+That brings the overall Palestinian death toll from the Israel-Hamas war to at least 34,735 the ministry said, and 78,108 wounded.
+
+The Health Ministry does not distinguish between fighters and civilians in its tallies, but says that women and children make up around two-thirds of those killed.
+
+The Israeli military says it has killed 13,000 militants, without providing evidence to back up the claim.
+
+BEIRUT -- Dutch Foreign Minister Hanke Bruins Slot on Monday called for an urgent ""diplomatic solution"" to end intensifying clashes between the Lebanese Hezbollah militant group and the Israeli military along the tense Lebanon-Israel border.
+
+""The Netherlands has grave concerns about rising tensions in the border region and intensified fighting, and we regret the loss of innocent civilian lives,"" Bruins Slot said following a meeting with her Lebanese counterpart, caretaker Foreign Minister Fouad Bou Habib in Beirut. ""And this has implications for Lebanon and the wider region.""
+
+Israel, which sees Hezbollah as its most direct threat, has not ruled out a war in southern Lebanon. It estimates that the Iran-backed Shiite group has some 150,000 rockets and missiles aimed at the country. Hezbollah and Israel fought a monthlong war in 2006 that ended in a tense stalemate.
+
+Western diplomats have scrambled to halt the hostilities. Hezbollah, and ally of the militant Palestinian group Hamas, has maintained that it would stop its attacks on northern Israel when the Hamas-Israel war ends.
+
+JERUSALEM -- The Norwegian Refugee Council has condemned the Israeli army's ""forced, unlawful"" evacuation order in Rafah, saying that it could lead to ""the deadliest phase of this conflict.""
+
+Jan Egeland, secretary-general of the international nonprofit organization, says there are not enough resources in Israel's self-declared Muwasi humanitarian zone, where the army instructed some 100,000 people in Rafah to relocate on Monday.
+
+""The area is already overstretched and devoid of vital services,"" Egeland said.
+
+He says his organization and other international humanitarian groups are struggling to provide essential support for Palestinians in Gaza. More than half of Gaza's 2.3 million residents are currently located in Rafah, while Israel's government has vowed to press on with a military operation in Gaza's southernmost city.
+
+JERUSALEM -- The Israeli army says a fourth soldier has died from wounds sustained in a Hamas rocket attack on the border with Gaza.
+
+Hamas launched at least 10 rockets toward soldiers positioned on the border Sunday, killing three other soldiers.
+
+The attack occurred near Kerem Shalom, a major crossing point for international aid being delivered to Gaza, and came as Israel is preparing a possible invasion into the nearby Palestinian city of Rafah.
+
+Israel has shuttered Kerem Shalom indefinitely, and on Monday, it began ordering civilians to evacuate parts of eastern Rafah, near the border, ahead of an expected military operation.
+
+RAFAH, Gaza Strip -- The United Nations agency serving Palestinian refugees says it will not comply with an Israeli military order to evacuate parts of the southern Gaza city of Rafah.
+
+Juliette Touma, communications director for UNRWA, says the agency has not evacuated the area and has no plans to do so. She says it has thousands of employees in the city.
+
+""UNRWA will not take part in any forced evacuation of the population in Rafah or elsewhere in Gaza,"" she said. ""We are committed to staying and delivering humanitarian assistance."" She called for a cease-fire.
+
+Relations between Israel and UNRWA have long been strained and further deteriorated during the seven-month war.
+
+Israel has accused UNRWA of collaborating with the Hamas militant group and called for the agency's closure.
+
+UNRWA, the largest international provider of aid and services in Gaza, denies the accusations.
+
+BERLIN -- Germany's Foreign Office on Monday condemned the shutdown of Qatar's Al Jazeera satellite news network in Israel.
+
+The Foreign Office wrote on X that ""a free and diverse press landscape is the cornerstone of every liberal democracy. In times of conflict especially, it is of crucial importance to protect the freedom of the press.""
+
+""The decision of the Israeli authorities to shut down Al Jazeera in Israel is the wrong signal,"" the ministry said.
+
+Germany has for decades been a staunch supporter of Israel. Berlin, however, has gradually shifted its tone as civilian casualties in Gaza have soared, becoming increasingly critical of the humanitarian situation in Gaza and speaking out against a ground offensive in Rafah.
+
+JERUSALEM -- The Israeli army has ordered tens of thousands of people in the southern Gaza city of Rafah to begin evacuating, signaling that a long-promised ground invasion could be imminent.
+
+The announcement on Monday complicated last-ditch efforts by international mediators, including the director of the CIA, to broker a cease-fire. Hamas and Qatar, a key mediator, have warned that an invasion of Rafah could derail the talks.
+
+Israel has described Rafah as the last significant Hamas stronghold after seven months of war, and its leaders have repeatedly said they need to carry out a ground invasion to defeat the Islamic militant group.
+
+Lt. Col. Nadav Shoshani, an army spokesman, said some 100,000 people were being ordered to move to a nearby Israel-declared humanitarian zone called Muwasi. He said Israel was preparing a ""limited scope operation"" and would not say whether this was the beginning of a broader invasion of the city. But last October, Israel did not formally announce the launch of a ground invasion that continues to this day.
+
+BEIRUT -- An Israeli airstrike on northeastern Lebanon wounded three people and destroyed a building, Lebanon's state-run National News Agency says.
+
+The strike on the village of Safri early Monday targeted a factory in the eastern Bekaa Valley, the agency said without giving further details.
+
+The Israeli military said its fighter jets struck a Hezbollah military structure in Safri.
+
+Monday's strike came after a tense day along the Lebanon-Israel border during which an Israeli airstrike on a village near the border killed four Lebanese civilians.
+
+The militant Hezbollah group said it fired dozens of rockets in retaliation toward northern Israel.
+
+The Lebanon-Israel border has seen almost daily exchange of fire since a day after the Israel-Hamas war started on Oct. 7.
+
+Israeli strikes have killed more than 350 people in Lebanon, most of them fighters with Hezbollah and allied groups but also including more than 50 civilians. In Israel, strikes from Lebanon have killed at least 10 civilians and 12 soldiers.",[],"[{'uri': 'http://en.wikipedia.org/wiki/2014_Gaza_War', 'type': 'wiki', 'score': 5, 'label': {'eng': '2014 Gaza War'}}, {'uri': 'http://en.wikipedia.org/wiki/Presidency_of_Joe_Biden', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Presidency of Joe Biden'}}, {'uri': 'http://en.wikipedia.org/wiki/2019_Turkish_offensive_into_north-eastern_Syria', 'type': 'wiki', 'score': 5, 'label': {'eng': '2019 Turkish offensive into north-eastern Syria'}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah_Border_Crossing', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Rafah Border Crossing'}}, {'uri': 'http://en.wikipedia.org/wiki/Palestinians', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Palestinians'}}, {'uri': 'http://en.wikipedia.org/wiki/Cabinet_of_the_United_Kingdom', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Cabinet of the United Kingdom'}}, {'uri': 'http://en.wikipedia.org/wiki/Ceasefire', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Ceasefire'}}, {'uri': 'http://en.wikipedia.org/wiki/Military_operation', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Military operation'}}, {'uri': 'http://en.wikipedia.org/wiki/Al_Jazeera', 'type': 'org', 'score': 5, 'label': {'eng': 'Al Jazeera'}}, {'uri': 'http://en.wikipedia.org/wiki/Hamas', 'type': 'org', 'score': 5, 'label': {'eng': 'Hamas'}}, {'uri': 'http://en.wikipedia.org/wiki/Benjamin_Netanyahu', 'type': 'person', 'score': 5, 'label': {'eng': 'Benjamin Netanyahu'}}, {'uri': 'http://en.wikipedia.org/wiki/Prime_Minister_of_Israel', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Prime Minister of Israel'}}, {'uri': 'http://en.wikipedia.org/wiki/Israel_Defense_Forces', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Israel Defense Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Humanitarian_aid', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Humanitarian aid'}}, {'uri': 'http://en.wikipedia.org/wiki/Joe_Biden', 'type': 'person', 'score': 5, 'label': {'eng': 'Joe Biden'}}, {'uri': 'http://en.wikipedia.org/wiki/Hostage', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Hostage'}}, {'uri': 'http://en.wikipedia.org/wiki/United_Nations', 'type': 'org', 'score': 5, 'label': {'eng': 'United Nations'}}, {'uri': 'http://en.wikipedia.org/wiki/White_House', 'type': 'wiki', 'score': 5, 'label': {'eng': 'White House'}}, {'uri': 'http://en.wikipedia.org/wiki/Gaza_Strip', 'type': 'loc', 'score': 5, 'label': {'eng': 'Gaza Strip'}, 'location': {'type': 'place', 'label': {'eng': 'Gaza Strip'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah', 'type': 'loc', 'score': 5, 'label': {'eng': 'Rafah'}, 'location': {'type': 'place', 'label': {'eng': 'Rafah'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Qatar', 'type': 'loc', 'score': 5, 'label': {'eng': 'Qatar'}, 'location': {'type': 'country', 'label': {'eng': 'Qatar'}}}, {'uri': 'http://en.wikipedia.org/wiki/Israel', 'type': 'loc', 'score': 5, 'label': {'eng': 'Israel'}, 'location': {'type': 'country', 'label': {'eng': 'Israel'}}}, {'uri': 'http://en.wikipedia.org/wiki/Egypt', 'type': 'loc', 'score': 5, 'label': {'eng': 'Egypt'}, 'location': {'type': 'country', 'label': {'eng': 'Egypt'}}}, {'uri': 'http://en.wikipedia.org/wiki/Temple_Mount', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Temple Mount'}}, {'uri': 'http://en.wikipedia.org/wiki/Gaza_City', 'type': 'loc', 'score': 4, 'label': {'eng': 'Gaza City'}, 'location': {'type': 'place', 'label': {'eng': 'Gaza City'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Mortar_(weapon)', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Mortar (weapon)'}}, {'uri': 'http://en.wikipedia.org/wiki/UNICEF', 'type': 'wiki', 'score': 4, 'label': {'eng': 'UNICEF'}}, {'uri': 'http://en.wikipedia.org/wiki/Recep_Tayyip_Erdoğan', 'type': 'person', 'score': 4, 'label': {'eng': 'Recep Tayyip Erdoğan'}}, {'uri': 'http://en.wikipedia.org/wiki/Tel_Aviv', 'type': 'loc', 'score': 4, 'label': {'eng': 'Tel Aviv'}, 'location': {'type': 'place', 'label': {'eng': 'Tel Aviv'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/United_States', 'type': 'loc', 'score': 4, 'label': {'eng': 'United States'}, 'location': {'type': 'country', 'label': {'eng': 'United States'}}}, {'uri': 'http://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Russian invasion of Ukraine'}}, {'uri': 'http://en.wikipedia.org/wiki/The_Holocaust', 'type': 'wiki', 'score': 3, 'label': {'eng': 'The Holocaust'}}, {'uri': 'http://en.wikipedia.org/wiki/Six-Day_War', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Six-Day War'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_National_Security_Council', 'type': 'wiki', 'score': 3, 'label': {'eng': 'United States National Security Council'}}, {'uri': 'http://en.wikipedia.org/wiki/Beersheba', 'type': 'loc', 'score': 3, 'label': {'eng': 'Beersheba'}, 'location': {'type': 'place', 'label': {'eng': 'Beersheba'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Haifa', 'type': 'loc', 'score': 3, 'label': {'eng': 'Haifa'}, 'location': {'type': 'place', 'label': {'eng': 'Haifa'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Jerusalem', 'type': 'loc', 'score': 3, 'label': {'eng': 'Jerusalem'}, 'location': {'type': 'place', 'label': {'eng': 'Jerusalem'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Turkey', 'type': 'loc', 'score': 3, 'label': {'eng': 'Turkey'}, 'location': {'type': 'country', 'label': {'eng': 'Turkey'}}}, {'uri': 'http://en.wikipedia.org/wiki/John_Kirby_(admiral)', 'type': 'person', 'score': 2, 'label': {'eng': 'John Kirby (admiral)'}}, {'uri': 'http://en.wikipedia.org/wiki/Ismail_Haniyeh', 'type': 'person', 'score': 2, 'label': {'eng': 'Ismail Haniyeh'}}, {'uri': 'http://en.wikipedia.org/wiki/Deir_al-Balah', 'type': 'loc', 'score': 2, 'label': {'eng': 'Deir al-Balah'}, 'location': {'type': 'place', 'label': {'eng': 'Deir al-Balah'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Hezbollah', 'type': 'org', 'score': 2, 'label': {'eng': 'Hezbollah'}}, {'uri': 'http://en.wikipedia.org/wiki/Western_world', 'type': 'loc', 'score': 2, 'label': {'eng': 'Western world'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Middle_East', 'type': 'loc', 'score': 2, 'label': {'eng': 'Middle East'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Washington,_D.C.', 'type': 'loc', 'score': 2, 'label': {'eng': 'Washington, D.C.'}, 'location': {'type': 'place', 'label': {'eng': 'Washington, D.C.'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Ankara', 'type': 'loc', 'score': 2, 'label': {'eng': 'Ankara'}, 'location': {'type': 'place', 'label': {'eng': 'Ankara'}, 'country': {'type': 'country', 'label': {'eng': 'Turkey'}}}}, {'uri': 'http://en.wikipedia.org/wiki/France', 'type': 'loc', 'score': 2, 'label': {'eng': 'France'}, 'location': {'type': 'country', 'label': {'eng': 'France'}}}, {'uri': 'http://en.wikipedia.org/wiki/Germany', 'type': 'loc', 'score': 2, 'label': {'eng': 'Germany'}, 'location': {'type': 'country', 'label': {'eng': 'Germany'}}}, {'uri': 'http://en.wikipedia.org/wiki/Northern_District_(Israel)', 'type': 'loc', 'score': 1, 'label': {'eng': 'Northern District (Israel)'}, 'location': {'type': 'place', 'label': {'eng': 'Northern District (Israel)'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Caretaker_government', 'type': 'org', 'score': 1, 'label': {'eng': 'Caretaker government'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Egypt)', 'type': 'org', 'score': 1, 'label': {'eng': 'Ministry of Foreign Affairs (Egypt)'}}, {'uri': 'http://en.wikipedia.org/wiki/Jan_Egeland', 'type': 'person', 'score': 1, 'label': {'eng': 'Jan Egeland'}}, {'uri': 'http://en.wikipedia.org/wiki/Emmanuel_Macron', 'type': 'person', 'score': 1, 'label': {'eng': 'Emmanuel Macron'}}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}]",summary_large_image,eng-9541882,-0.317647059,452734711,1,hosted.ap.org,news,Associated Press,"2014 Gaza War Presidency of Joe Biden 2019 Turkish offensive into north-eastern Syria Rafah Border Crossing Palestinians Cabinet of the United Kingdom Ceasefire Military operation Al Jazeera Hamas Benjamin Netanyahu Prime Minister of Israel Israel Defense Forces Humanitarian aid Joe Biden Hostage United Nations White House Gaza Strip Rafah Qatar Israel Egypt Temple Mount Gaza City Mortar (weapon) UNICEF Recep Tayyip Erdoğan Tel Aviv United States Russian invasion of Ukraine The Holocaust Six-Day War United States National Security Council Beersheba Haifa Jerusalem Turkey John Kirby (admiral) Ismail Haniyeh Deir al-Balah Hezbollah Western world Middle East Washington, D.C. Ankara France Germany Northern District (Israel) Caretaker government Ministry of Foreign Affairs (Egypt) Jan Egeland Emmanuel Macron Associated Press",ap.org,4476,Chat-GPT,2024,5,6,38,23,2024-05-06
+216,9112,8115554393,eng,False,2024-05-07,12:31:10,5/7/2024 12:31,2024-05-07 12:30:35,news,0.788235307,http://hosted.ap.org/article/07f27c40c8712594b5488b6de80e84ce/latest-stormy-daniels-expected-appear-tuesday-witness,The Latest | Stormy Daniels is expected to appear Tuesday as a witness in Trump's hush money trial,"NEW YORK (AP) -- As the third week of witness testimony in Donald Trump's hush money trial takes place, all eyes are on who will be called next and whether the former president will be able to abide by the terms of his now twice-broken gag order that bars him from speaking publicly about jurors, witnesses and some others connected to the case.
+
+Before Monday's testimony began, Judge Juan M. Merchan found Trump in contempt of court for a second time, fining him $1,000 for a single violation and sternly warning the loquacious former president that jail time would be considered for future violations ""if necessary and appropriate.""
+
+Two people tied to the Trump Organization took the stand on Monday -- former controller Jeffrey McConney and accounts payable supervisor Deborah Tarasoff -- elaborating on a key piece of the charges against Trump: Michael Cohen's reimbursement for the $130,000 Stormy Daniels payment.
+
+Tuesday's witness testimony is set to dig further into the events and people involved in what prosecutors have said was a scheme to influence the 2016 presidential election by buying and burying negative stories about the then-candidate.
+
+The trial is in its 13th day.
+
+Trump is accused of falsifying internal business records to cover up hush money payments -- including the payment to Daniels -- recording them instead as legal expenses.
+
+Trump has pleaded not guilty to 34 felony counts of falsifying business records.
+
+The case is the first-ever criminal trial of a former U.S. president and the first of four prosecutions of Trump to reach a jury.
+
+An attorney for Stormy Daniels says the porn actor is expected to appear as a witness in Donald Trump's hush money trial on Tuesday.
+
+Clark Brewster tells The Associated Press that Daniels, whose real name is Stephanie Clifford, is ""likely"" to be called as a witness in the trial on Tuesday.
+
+Trump said earlier Tuesday that he was ""recently told"" who the witness would be on Tuesday and complained he should've been given more notice.
+
+Assistant District Attorney Joshua Steinglass on Monday afternoon told Judge Juan M. Merchan in Donald Trump's hush money trial that the prosecution's case is proceeding ahead of schedule.
+
+Steinglass said he estimates being finished with calling witnesses two weeks from Tuesday. While there's the possibility of rebuttal witnesses, the estimate is related to the primary portions of the trial.
+
+Once the prosecution is done, Trump's lawyers can then call their witnesses.
+
+The judge presiding over former President Donald Trump's hush money trial fined him $1,000 on Monday for again violating a gag order barring him from speaking publicly about jurors, witnesses and some others connected to the case.
+
+Judge Juan M. Merchan warned Trump that additional gag order violations could potentially result in jail time.
+
+""The last thing I want to do is put you in jail. You are the former president of the United States and possibly the next president as well,"" Merchan said. ""There are many reasons why incarceration is truly a last resort for me. To take that step would be disruptive to these proceedings.""
+
+While prosecutors flagged four prospective violations, Merchan only concurred with one -- comments that Trump gave to a program called ""Just the News No Noise"" on April 22, which is broadcast on Real America's Voice.
+
+On the program, Trump criticized the speed at which the jury was picked and claimed it was stacked with Democrats. ""The jury was picked so fast. 95 percent Democrats. The area's mostly all Democrat,"" he is quoted as saying.
+
+Trump was fined $9,000 last week for nine earlier violations of the order.
+
+Donald Trump was set to return to the courthouse in lower Manhattan on Tuesday for the 13th day of his hush money trial.
+
+The third week of witness testimony began on Monday with two people tied to the Trump Organization taking the stand to elaborate on the hows and whys of Michael Cohen's financial reimbursement for a $130,000 hush money payment paid to lawyer Keith Davidson in exchange for porn actor Stormy Daniels' silence about a sexual encounter she said she had with Trump years earlier.
+
+During the course of testimony, jurors saw notes, bank statements and other documents related to the financial reimbursement that is at the heart of the charges against the former president.
+
+The 34 felony counts of falsifying business records accuse Trump of labeling the money paid to Cohen in his company's records as legal fees. Prosecutors contend that by paying him income and giving him extra to account for taxes, the Trump executives were able to conceal the reimbursement.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Stormy_Daniels', 'type': 'person', 'score': 5, 'label': {'eng': 'Stormy Daniels'}}, {'uri': 'http://en.wikipedia.org/wiki/Hush_money', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Hush money'}}, {'uri': 'http://en.wikipedia.org/wiki/Donald_Trump', 'type': 'person', 'score': 5, 'label': {'eng': 'Donald Trump'}}, {'uri': 'http://en.wikipedia.org/wiki/Gag_order', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Gag order'}}, {'uri': 'http://en.wikipedia.org/wiki/The_Trump_Organization', 'type': 'org', 'score': 3, 'label': {'eng': 'The Trump Organization'}}, {'uri': 'http://en.wikipedia.org/wiki/Contempt_of_court', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Contempt of court'}}, {'uri': 'http://en.wikipedia.org/wiki/2016_United_States_presidential_election', 'type': 'wiki', 'score': 3, 'label': {'eng': '2016 United States presidential election'}}, {'uri': 'http://en.wikipedia.org/wiki/Jury', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Jury'}}, {'uri': 'http://en.wikipedia.org/wiki/Plea', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Plea'}}, {'uri': 'http://en.wikipedia.org/wiki/Michael_Cohen_(lawyer)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Michael Cohen (lawyer)'}}, {'uri': 'http://en.wikipedia.org/wiki/Falsifying_business_records', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Falsifying business records'}}, {'uri': 'http://en.wikipedia.org/wiki/District_attorney', 'type': 'wiki', 'score': 2, 'label': {'eng': 'District attorney'}}, {'uri': 'http://en.wikipedia.org/wiki/Criminal_procedure', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Criminal procedure'}}, {'uri': 'http://en.wikipedia.org/wiki/Lawyer', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Lawyer'}}, {'uri': 'http://en.wikipedia.org/wiki/Democratic_Party_(United_States)', 'type': 'org', 'score': 2, 'label': {'eng': 'Democratic Party (United States)'}}, {'uri': 'http://en.wikipedia.org/wiki/Felony', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Felony'}}, {'uri': 'http://en.wikipedia.org/wiki/Clark_County,_Nevada', 'type': 'loc', 'score': 2, 'label': {'eng': 'Clark County, Nevada'}, 'location': {'type': 'place', 'label': {'eng': 'Clark County, Nevada'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Lower_Manhattan', 'type': 'wiki', 'score': 1, 'label': {'eng': 'Lower Manhattan'}}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/Davidson_County,_Tennessee', 'type': 'loc', 'score': 1, 'label': {'eng': 'Davidson County, Tennessee'}, 'location': {'type': 'place', 'label': {'eng': 'Davidson County, Tennessee'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/United_States', 'type': 'loc', 'score': 1, 'label': {'eng': 'United States'}, 'location': {'type': 'country', 'label': {'eng': 'United States'}}}]",summary_large_image,eng-9543332,-0.388235294,452781070,1,hosted.ap.org,news,Associated Press,"Stormy Daniels Hush money Donald Trump Gag order The Trump Organization Contempt of court 2016 United States presidential election Jury Plea Michael Cohen (lawyer) Falsifying business records District attorney Criminal procedure Lawyer Democratic Party (United States) Felony Clark County, Nevada Lower Manhattan Associated Press Davidson County, Tennessee United States",ap.org,763,Graph Neural Networks,2024,5,7,31,12,2024-05-07
+217,9285,8115774528,eng,False,2024-05-07,14:47:23,5/7/2024 14:47,2024-05-07 14:47:02,news,0.717647076,http://hosted.ap.org/article/07f27c40c8712594b5488b6de80e84ce/latest-stormy-daniels-takes-witness-stand-trumps-hush,The Latest | Stormy Daniels takes the witness stand in Trump's hush money trial,"NEW YORK (AP) -- As the third week of witness testimony in Donald Trump's hush money trial takes place, all eyes are on who will be called next and whether the former president will be able to abide by the terms of his now twice-broken gag order that bars him from speaking publicly about jurors, witnesses and some others connected to the case.
+
+Porn actor Stormy Daniels, whose real name is Stephanie Clifford, was called to the witness stand by mid-morning, following testimony of a Penguin Random House executive.
+
+Before Monday's testimony began, Judge Juan M. Merchan found Trump in contempt of court for a second time, fining him $1,000 for a single violation and sternly warning the loquacious former president that jail time would be considered for future violations ""if necessary and appropriate.""
+
+Two people tied to the Trump Organization took the stand on Monday -- former controller Jeffrey McConney and accounts payable supervisor Deborah Tarasoff -- elaborating on a key piece of the charges against Trump: Michael Cohen's reimbursement for the $130,000 Daniels payment.
+
+Tuesday's witness testimony is set to dig further into the events and people involved in what prosecutors have said was a scheme to influence the 2016 presidential election by buying and burying negative stories about the then-candidate.
+
+The trial is in its 13th day.
+
+Trump is accused of falsifying internal business records to cover up hush money payments -- including the payment to Daniels -- recording them instead as legal expenses.
+
+Trump has pleaded not guilty to 34 felony counts of falsifying business records.
+
+The case is the first-ever criminal trial of a former U.S. president and the first of four prosecutions of Trump to reach a jury.
+
+Stormy Daniels has been called to the witness stand in Donald Trump's hush money trial.
+
+The porn actor was paid $130,000 in the final weeks of the 2016 presidential race to keep quiet about what she says was an awkward and unexpected sexual encounter with Trump at a celebrity golf outing in Lake Tahoe in July 2006.
+
+Trump denies having sex with Daniels.
+
+At the time of the payment, Trump and his campaign were reeling from the Oct. 7, 2016 publication of the never-before-seen 2005 ""Access Hollywood"" footage -- in which he boasted about grabbing women without their permission.
+
+Michael Cohen, Trump's personal attorney, paid Daniels through a shell corporation he created and the deal was finalized on Nov. 1, 2016, just a week before Election Day.
+
+Prosecutors have said that payments from Trump reimbursing Cohen were falsely -- and illegally -- logged as legal fees to cover up their actual purpose. Trump's lawyers contend the payments were legitimate legal expenses.
+
+Over the objections of defense attorneys, prosecutors in Donald Trump's hush money trial on Tuesday introduced additional excerpts from one of his books, ""How to Get Rich,"" including an epigraph from Trump's mother and a page thanking the book's co-writer, Meredith McIver.
+
+The line of questioning seems designed to undercut the defense's suggestion, made on cross-examination, that the books were written by a ghostwriter, with little involvement from Trump.
+
+""Are quotes attributed to an author's mother typically written by a ghost writer or the author?"" Mangold asked.
+
+""The author,"" Franklin replied.
+
+While sitting in court Tuesday morning, Donald Trump's son Eric posted on the social platform X about his father's hush money trial, calling it ""unbelievable"" that a former president and current presidential candidate ""is being tried for 34 felonies (based on a bookkeepers entry who never spoke with the President and sat in New York while he was in the Oval Office 240 miles away from Washington DC).""
+
+Sally Franklin, an executive at Penguin Random House, was the first witness to take the stand Tuesday in Donald Trump's hush money trial. One of the publishing house's imprints published a couple of Trump's books, ""Trump: How to Get Rich"" and ""Trump: Think Like a Billionaire.""
+
+Prosecutor Becky Mangold began questioning by having Franklin read excerpts from the 2004 volume ""Trump: How to Get Rich"" that get at Trump's approach to business.
+
+The readings appeared to be designed to show that Trump was hands-on at his company and willing to retaliate against those he perceived to have done him wrong.
+
+Among the excerpts: ""If you don't know every aspect of what you're doing, down to the paper clips, you're setting yourself up for some unwanted surprises,"" and ""for many years, I've said that if someone screws you, screw them back.""
+
+Testimony eventually moved on to excerpts from Trump's 2005 ""Trump: Think Like a Billionaire,"" including sections in praise of penny-pinching (""I call it financial smarts"") and keeping a close eye on bills.
+
+As Trump lawyer Todd Blanche got his chance to cross-examine Franklin, he underscored that Trump worked with a writer on the manuscripts.
+
+Judge Juan M. Merchan will allow limited testimony about Stormy Daniels' alleged sexual encounter with Donald Trump when she takes the stand in his hush money case.
+
+Merchan agreed with the prosecution that the details will be necessary because of the porn actor's credibility concerns and past denials. Prosecutor Susan Hoffinger said that prosecutors intend to establish that Daniels and Trump did have intercourse but that the testimony ""will not involve descriptions of genitalia"" or other seamy details.
+
+After court got underway in Donald Trump's criminal trial on Tuesday morning, Trump lawyer Susan Necheles asked that Stormy Daniels, who is expected to appear as a witness today, be barred from testifying about ""the details"" of her alleged sexual encounter with Trump. Necheles said it's irrelevant to ""a case about books and records.""
+
+Prosecutor Susan Hoffinger countered that the details are important to buttress Daniels' credibility, which the defense has questioned. Hoffinger assured Judge Juan M. Merchan that the description of the alleged sexual act would be ""really basic,"" and would not ""involve any details of genitalia.""
+
+Trump has denied having sex with Daniels.
+
+Donald Trump spoke to reporters as he entered the courtroom Tuesday morning and read from a piece of paper he held that he said had statements of people commenting on television about the hush money case's weakness.
+
+He then started defending some of the actions at the heart of the case, saying that paying his lawyer and listing it as a ""legal expense"" is what it was.
+
+'We didn't put it down as construction costs,"" he said. ""The legal expense that we paid was put down as legal expense. There's nothing else you could say.""
+
+Monday's testimony, from Trump Organization controller Jeffrey McConney, had focused on whether money paid to Michael Cohen -- reimbursing him for payments to Stormy Daniels -- was correctly logged as a legal expense.
+
+Donald Trump has arrived at court in lower Manhattan for the 13th day of his hush money trial.
+
+Ahead of his arrival, Trump dove back into local New York City news, posting on his social media network a complaint about a plan to charge a $15 toll to most drivers entering Manhattan's central business district. ""What office tenant or business would want to be here with this tax,"" Trump said.
+
+An attorney for Stormy Daniels says the porn actor is expected to appear as a witness in Donald Trump's hush money trial on Tuesday.
+
+Clark Brewster tells The Associated Press that Daniels, whose real name is Stephanie Clifford, is ""likely"" to be called as a witness in the trial on Tuesday.
+
+Trump said earlier Tuesday that he was ""recently told"" who the witness would be on Tuesday and complained he should've been given more notice.
+
+Assistant District Attorney Joshua Steinglass on Monday afternoon told Judge Juan M. Merchan in Donald Trump's hush money trial that the prosecution's case is proceeding ahead of schedule.
+
+Steinglass said he estimates being finished with calling witnesses two weeks from Tuesday. While there's the possibility of rebuttal witnesses, the estimate is related to the primary portions of the trial.
+
+Once the prosecution is done, Trump's lawyers can then call their witnesses.
+
+The judge presiding over former President Donald Trump's hush money trial fined him $1,000 on Monday for again violating a gag order barring him from speaking publicly about jurors, witnesses and some others connected to the case.
+
+Judge Juan M. Merchan warned Trump that additional gag order violations could potentially result in jail time.
+
+""The last thing I want to do is put you in jail. You are the former president of the United States and possibly the next president as well,"" Merchan said. ""There are many reasons why incarceration is truly a last resort for me. To take that step would be disruptive to these proceedings.""
+
+While prosecutors flagged four prospective violations, Merchan only concurred with one -- comments that Trump gave to a program called ""Just the News No Noise"" on April 22, which is broadcast on Real America's Voice.
+
+On the program, Trump criticized the speed at which the jury was picked and claimed it was stacked with Democrats. ""The jury was picked so fast. 95 percent Democrats. The area's mostly all Democrat,"" he is quoted as saying.
+
+Trump was fined $9,000 last week for nine earlier violations of the order.
+
+Donald Trump was set to return to the courthouse in lower Manhattan on Tuesday for the 13th day of his hush money trial.
+
+The third week of witness testimony began on Monday with two people tied to the Trump Organization taking the stand to elaborate on the hows and whys of Michael Cohen's financial reimbursement for a $130,000 hush money payment paid to lawyer Keith Davidson in exchange for porn actor Stormy Daniels' silence about a sexual encounter she said she had with Trump years earlier.
+
+During the course of testimony, jurors saw notes, bank statements and other documents related to the financial reimbursement that is at the heart of the charges against the former president.
+
+The 34 felony counts of falsifying business records accuse Trump of labeling the money paid to Cohen in his company's records as legal fees. Prosecutors contend that by paying him income and giving him extra to account for taxes, the Trump executives were able to conceal the reimbursement.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Pornographic_film_actor', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Pornographic film actor'}}, {'uri': 'http://en.wikipedia.org/wiki/Stormy_Daniels', 'type': 'person', 'score': 5, 'label': {'eng': 'Stormy Daniels'}}, {'uri': 'http://en.wikipedia.org/wiki/Hush_money', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Hush money'}}, {'uri': 'http://en.wikipedia.org/wiki/Lawyer', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Lawyer'}}, {'uri': 'http://en.wikipedia.org/wiki/Donald_Trump', 'type': 'person', 'score': 5, 'label': {'eng': 'Donald Trump'}}, {'uri': 'http://en.wikipedia.org/wiki/Franklin_County,_Ohio', 'type': 'loc', 'score': 5, 'label': {'eng': 'Franklin County, Ohio'}, 'location': {'type': 'place', 'label': {'eng': 'Franklin County, Ohio'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Michael_Cohen_(lawyer)', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Michael Cohen (lawyer)'}}, {'uri': 'http://en.wikipedia.org/wiki/Ghostwriter', 'type': 'person', 'score': 4, 'label': {'eng': 'Ghostwriter'}}, {'uri': 'http://en.wikipedia.org/wiki/Penguin_Random_House', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Penguin Random House'}}, {'uri': 'http://en.wikipedia.org/wiki/2016_United_States_presidential_election', 'type': 'wiki', 'score': 4, 'label': {'eng': '2016 United States presidential election'}}, {'uri': 'http://en.wikipedia.org/wiki/Plea', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Plea'}}, {'uri': 'http://en.wikipedia.org/wiki/The_Trump_Organization', 'type': 'org', 'score': 3, 'label': {'eng': 'The Trump Organization'}}, {'uri': 'http://en.wikipedia.org/wiki/Gag_order', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Gag order'}}, {'uri': 'http://en.wikipedia.org/wiki/Access_(U.S._TV_series)', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Access (U.S. TV series)'}}, {'uri': 'http://en.wikipedia.org/wiki/Contempt_of_court', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Contempt of court'}}, {'uri': 'http://en.wikipedia.org/wiki/Election_Day_(United_States)', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Election Day (United States)'}}, {'uri': 'http://en.wikipedia.org/wiki/Lake_Tahoe', 'type': 'loc', 'score': 3, 'label': {'eng': 'Lake Tahoe'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Shell_corporation', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Shell corporation'}}, {'uri': 'http://en.wikipedia.org/wiki/Cross-examination', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Cross-examination'}}, {'uri': 'http://en.wikipedia.org/wiki/Criminal_procedure', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Criminal procedure'}}, {'uri': 'http://en.wikipedia.org/wiki/Felony', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Felony'}}, {'uri': 'http://en.wikipedia.org/wiki/Jury', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Jury'}}, {'uri': 'http://en.wikipedia.org/wiki/Golf', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Golf'}}, {'uri': 'http://en.wikipedia.org/wiki/Social_media', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Social media'}}, {'uri': 'http://en.wikipedia.org/wiki/Oval_Office', 'type': 'wiki', 'score': 2, 'label': {'eng': 'Oval Office'}}, {'uri': 'http://en.wikipedia.org/wiki/New_York_(state)', 'type': 'wiki', 'score': 2, 'label': {'eng': 'New York (state)'}}, {'uri': 'http://en.wikipedia.org/wiki/Washington,_D.C.', 'type': 'loc', 'score': 2, 'label': {'eng': 'Washington, D.C.'}, 'location': {'type': 'place', 'label': {'eng': 'Washington, D.C.'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Democratic_Party_(United_States)', 'type': 'org', 'score': 1, 'label': {'eng': 'Democratic Party (United States)'}}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/Brewster_County,_Texas', 'type': 'loc', 'score': 1, 'label': {'eng': 'Brewster County, Texas'}, 'location': {'type': 'place', 'label': {'eng': 'Brewster County, Texas'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Clark_County,_Nevada', 'type': 'loc', 'score': 1, 'label': {'eng': 'Clark County, Nevada'}, 'location': {'type': 'place', 'label': {'eng': 'Clark County, Nevada'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/New_York_City', 'type': 'loc', 'score': 1, 'label': {'eng': 'New York City'}, 'location': {'type': 'place', 'label': {'eng': 'New York City'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Manhattan', 'type': 'loc', 'score': 1, 'label': {'eng': 'Manhattan'}, 'location': {'type': 'place', 'label': {'eng': 'Manhattan'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/United_States', 'type': 'loc', 'score': 1, 'label': {'eng': 'United States'}, 'location': {'type': 'country', 'label': {'eng': 'United States'}}}]",summary_large_image,eng-9543332,-0.341176471,452789243,1,hosted.ap.org,news,Associated Press,"Pornographic film actor Stormy Daniels Hush money Lawyer Donald Trump Franklin County, Ohio Michael Cohen (lawyer) Ghostwriter Penguin Random House 2016 United States presidential election Plea The Trump Organization Gag order Access (U.S. TV series) Contempt of court Election Day (United States) Lake Tahoe Shell corporation Cross-examination Criminal procedure Felony Jury Golf Social media Oval Office New York (state) Washington, D.C. Democratic Party (United States) Associated Press Brewster County, Texas Clark County, Nevada New York City Manhattan United States",ap.org,1683,Graph Neural Networks,2024,5,7,47,14,2024-05-07
+218,17,8117596894,eng,False,2024-05-08,14:53:53,5/8/2024 14:53,2024-05-08 14:53:28,news,0.647058845,http://hosted.ap.org/article/385416e25c74f57c4286fbc2eb93ebc1/latest-blasts-and-gunfire-heard-near-rafah-crossing-still,"The Latest | Blasts and gunfire heard near Rafah crossing, still closed under Israeli control","Gaza's vital Rafah crossing remained closed Wednesday after Israeli forces seized it the day before. Associated Press journalists heard sporadic explosions and gunfire in the area overnight, including two large blasts early Wednesday.
+
+Rafah has been a vital conduit for humanitarian aid since the start of the war and is the only place where people can enter and exit. Israel now controls all of Gaza's border crossings for the first time since it withdrew troops and settlers from the territory nearly two decades ago.
+
+Gaza's Health Ministry says at least 46 patients and wounded people who had been scheduled to leave Tuesday for medical treatment have been left stranded.
+
+The Israeli military said Wednesday it has reopened the Kerem Shalom crossing into Gaza, a key terminal for the entry of humanitarian aid that was closed over the weekend after a Hamas rocket attack killed four Israeli soldiers nearby. But the United Nations agency for Palestinian refugees said no aid has yet entered and there is no one to receive it on the Palestinian side.
+
+The U.N. says northern Gaza is already in a state of ""full-blown famine.""
+
+The war in Gaza has driven around 80% of the territory's population of 2.3 million from their homes and caused vast destruction to apartments, hospitals, mosques and schools across several cities. The death toll in Gaza has soared to more than 34,500 people, according to local health officials.
+
+The war began Oct. 7 when Hamas attacked southern Israel, killing around 1,200 people, mostly civilians, and abducting about 250 others. Israel says militants still hold around 100 hostages and the remains of more than 30 others.
+
+Currently:
+
+-- Israel says it reopened a key Gaza crossing after a rocket attack but the UN says no aid has entered.
+
+-- US paused bomb shipment to Israel to signal concerns over Rafah invasion, official says.
+
+-- Has Israel followed the law in its war in Gaza? The US is due to render a first-of-its-kind verdict.
+
+-- Israeli tanks have rolled into Rafah. What does this mean for the Palestinians sheltering there?
+
+-- Scenes from Israel and Gaza reflect dashed hopes as an imminent cease-fire seems unlikely.
+
+TEL AVIV, Israel -- The mayor of Tel Aviv said Wednesday the city will not be holding its traditional Pride Parade this year because of the war in Gaza, instead opting for a scaled down rally.
+
+The liberal coastal metropolis normally throws a weeklong bash with concerts and events in June that culminates in tens of thousands of people marching in a rainbow-drenched parade, which is the Middle East's largest celebration of Pride.
+
+Tel Aviv Mayor Ron Huldai said that the decision was made in coordination with the city's LGBTQ+ organizations. He said much of the budget for the parade will go towards the city's LGBTQ+ community center.
+
+""This is not the time for celebrations,"" he wrote on X.
+
+JERUSALEM -- The Israeli military said Wednesday that Palestinian workers heading to the Gaza side of the Kerem Shalom border crossing were wounded after their vehicle came under fire.
+
+Shortly after the military's announcement, the militant group Hamas said it struck Israeli forces near Kerem Shalom. It was not immediately clear if the two attacks were related. The military had no immediate comment about the Hamas claim and said it was investigating the apparent firing.
+
+Israel on Wednesday reopened Kerem Shalom after closing it over the weekend following a rocket attack that killed four soldiers. The Rafah crossing with Egypt remains after Israeli forces seized it Tuesday.
+
+TEL AVIV -- Israel has suspended farming within 4 kilometers (2.5 miles) of the Gaza border over security concerns, the military announced on Wednesday.
+
+Four soldiers were killed and 11 wounded on the border with Gaza on Sunday by rockets fired from Rafah in southern Gaza as the militant Hamas group continued to launch weapons at Israel.
+
+The area directly around the Gaza border was also closed to agriculture in the weeks after the Hamas-led Oct. 7 attack that triggered the war in Gaza, but slowly reopened as projectiles from Gaza decreased in frequency. The bulk of Israel's leafy greens, tomatoes, cucumbers and bell peppers come from the area close to Gaza, according to the Israel Farmers Association.
+
+WASHINGTON -- A U.S. official says that CIA Director William Burns is in Israel as international mediators push for a cease-fire.
+
+The official said Burns arrived on Wednesday and was meeting with Israeli Prime Minister Benjamin Netanyahu. The official spoke on condition of anonymity to discuss closed-door negotiations.
+
+The official gave no details on the discussions. But Burns has been in the region meeting with Egyptian and Qatari officials in recent days. He had been scheduled to travel to Israel from Qatar earlier this week, but that meeting was postponed without explanation.
+
+All three countries have been involved in months of talks aimed at halting the seven-month war between Israel and Hamas.
+
+Hamas announced on Sunday that it had accepted an Egyptian-Qatari cease-fire plan. But Israel says the proposal does not meet its ""core"" demands.
+
+-- By ELLEN KNICKMEYER
+
+TEL AVIV, Israel -- Israel has destroyed dozens of homes in an Arab Bedouin town in the Negev Desert, alleging that they were constructed without proper permits.
+
+The demolition of 47 homes in the village of Umm al-Batin, which began early Wednesday, appeared to be among the largest mass demolitions in recent years.
+
+Tens of thousands of semi-nomadic Arab Bedouin have lived for decades in unrecognized communities across southern Israel. They are largely cut off from basic services and are rarely granted construction permits, forcing them to build illegally.
+
+Israel has been trying to relocate them to planned communities with better services, but critics view that as an assault on their traditional life and a way of clearing them off land earmarked for Jewish development.
+
+Far-right National Security Minister Itamar Ben-Gvir celebrated the demolitions as the result of ""intensive work"" aimed at combatting illegal construction in the Negev.
+
+Waleed Alhwashla, a member of Raam, a small Arab party in Israel's parliament, condemned the move and the escalating number of such demolitions under Prime Minister Benjamin Netanyahu's right-wing government.
+
+""This step ignores the Arab community, its needs and issues, and leads to more racism, exclusion, and violations of the basic rights of citizens, such as housing and security,"" he said.
+
+The Negev Coexistence Forum for Civil Equality, a rights group that closely tracks home demolitions in the area, says they have steadily increased from 697 in 2013 to 2,850 in 2022.
+
+JERUSALEM -- Human Rights Watch has documented the deaths of eight Palestinians in the occupied West Bank who it says were killed by Israeli forces while posing no apparent threat.
+
+The investigation published Wednesday found that Israeli forces ""unlawfully used lethal force"" against Palestinians in the volatile territory, where violence has surged since Hamas' Oct. 7 attack triggered the ongoing war in Gaza.
+
+Richard Weir, senior crisis and conflict researcher at the New York-based rights group, said the killing of Palestinians is ""taking place at a level without recent precedent in an environment in which Israeli forces have no need to fear that their government will hold them accountable.""
+
+The investigation examined four shootings of Palestinians from 2022 and 2023. Researchers interviewed witnesses and family members of the Palestinians, and conducted a review of news reports and videos of the shootings posted to social media.
+
+Two of the four shootings occurred during Israeli raids into West Bank cities and towns, which the military says are aimed at rooting out militants. Rights groups say civilians and individuals posing no immediate threat have also been killed.
+
+In one case, the investigation found, a Palestinian father and son were both shot dead by Israeli forces in the built-up Nur Shams refugee camp last October. Taha Matamid, 15, was shot as he stepped outside to look at the military jeeps encircling the camp, his sister told Human Rights Watch.
+
+In a video taken by the sister and reviewed by The Associated Press, Taha does not appear to hold a weapon or pose a threat. Taha's father, Ibrahim, was shot minutes later after running into the street to help his son -- though the exact moment is not caught on camera. Later, Ibrahim can be seen in the video rolling around on the ground next to Taha.
+
+Ambulances could not immediately reach the two, the U.N. later said, because Israeli vehicles were blocking entry to the camp. Ibrahim Matamid died from his wounds months later.
+
+It is not clear whether the military has launched an investigation into the two deaths, and it did not respond to a request for comment.
+
+Even when the military does investigate such cases, rights groups say soldiers are rarely punished, contributing to a culture of impunity in the territory, which Israel seized in the 1967 war and which the Palestinians want as the main part of their future state.
+
+Palestinian health officials say nearly 500 Palestinians have been killed by Israeli fire in the West Bank since the start of the war in Gaza.
+
+RAFAH, Gaza Strip -- Gaza's vital Rafah crossing remained closed early Wednesday after an Israeli tank brigade seized it the day before. Associated Press journalists heard sporadic explosions and gunfire in the area overnight, including two large blasts early Wednesday.
+
+Rafah has been a vital conduit for humanitarian aid since the start of the war and is the only place where people can enter and exit. Israel now controls all of Gaza's border crossings for the first time since it withdrew troops and settlers from the territory nearly two decades ago.
+
+Gaza's Health Ministry says at least 46 patients and wounded people who had been scheduled to leave for medical treatment have been left stranded.
+
+U.N. agencies and aid groups have ramped up humanitarian assistance in recent weeks as Israel has lifted some restrictions and opened an additional crossing in the north under pressure from the United States, its closest ally. But aid workers say the closure of Rafah, which is the only gateway for the entry of fuel for trucks and generators, could have severe repercussions.
+
+The U.N. says northern Gaza is already in a state of ""full-blown famine.""
+
+The operation to capture the crossing appears to have been a limited incursion and not the start of the massive invasion of Rafah that Israel has promised. But Israel has said it will expand the operation if ongoing indirect talks with Hamas over a cease-fire and hostage release fail to make progress.
+
+The U.S. paused a shipment of bombs to Israel last week over concerns Israel was approaching a decision on launching a full-scale assault on the southern Gaza city of Rafah, a senior administration official said Tuesday.
+
+The shipment was supposed to consist of 1,800 2,000-pound bombs and 1,700 500-pound bombs, according to the official, who spoke on the condition of anonymity to discuss the sensitive matter, with the focus of U.S. concern being the larger explosives and how they could be used in a dense urban setting. More than 1 million civilians are sheltering in Rafah after evacuating other parts of Gaza amid Israel's war on Hamas, which came after the militant group's deadly attack on Israel on Oct. 7.
+
+President Joe Biden's administration in April began reviewing future transfers of military assistance to Israel as Prime Minister Benjamin Netanyahu's government appeared to move closer toward an invasion of Rafah, despite months of opposition from the White House.
+
+The official said the decision to pause the shipment was made last week and no final decision had been made yet on whether to proceed with the shipment at a later date.
+
+-- By ZEKE MILLER and AAMER MADHANI in Washington
+
+WASHINGTON -- The U.S. military has finished construction of a temporary pier and causeway that will be used to deliver aid to Gaza through a maritime system, but plans to move it into place on the shore are on hold due to weather and other logistics.
+
+Sabrina Singh, a Pentagon spokeswoman, told reporters on Tuesday that U.S. military ships and the assembled pier are at Israel's Ashdod port. High winds and sea swells are making it too dangerous for the U.S. military to install the pier at the Gaza beach.
+
+Singh says the U.S. hopes to install the pier and causeway later this week, if the weather permits.
+
+Meanwhile, humanitarian aid is being loaded onto a large container ship, the Sagamore, in Cyprus, for eventual delivery to Gaza, Singh said.
+
+The U.S. hopes the pier can be used to bring more humanitarian aid into Gaza, where the U.N. says there is a full-blown famine in the north.
+
+UNITED NATIONS -- Critical diesel fuel to pump drinking water, maintain communications and deliver aid in Gaza will run out Wednesday and it's estimated that food already in the south will be gone by the end of the week, a senior U.N. humanitarian said following Israel's closure of the two key crossing points into the territory.
+
+Andrea De Domenico, the head of the U.N.'s humanitarian office in the Palestinian territories, said Tuesday that Israel's military operation and evacuation order in Rafah has resulted in ""the forced displacement of tens of thousands of people.""
+
+The area Israel told Palestinians to go is mainly sand dunes and has no latrines, water points, drainage, shelter or health facilities, De Domenico said in a virtual news conference from Jerusalem.
+
+The Israelis are not on the ground providing services and are looking for humanitarian partners, he said. And it is impossible to improve conditions without the arrival of supplies and fuel to transport them to the new locations.
+
+Without fuel and more flour, he said, the 16 bakeries supported by the U.N. World Food Program throughout Gaza will be forced to suspend operations. If supplemental nutrition supplies can't be delivered, the treatment of more than 3,000 children suffering from acute malnutrition will be interrupted, he said, and three of the main remaining hospitals ""will become inoperable.""
+
+De Domenico said the U.N. normally uses 200,000 liters of diesel fuel a day in Gaza. As of Tuesday night, it had 30,000 liters left.
+
+Without a fuel delivery on Wednesday, he said, the main water production facility in the north will be shut, ""depriving the entire population of access to drinking water."" The same shutdown will happen in another day for the middle and south of Gaza, impacting 1.9 million people.
+
+""The reality is that we are confronting a situation where we have probably one of the least resilient populations in Gaza because of the seven months of war in one of the most violent and lethal conflicts that we have seen in recent years,"" he said.
+
+De Domenico said there is a risk that no humanitarian assistance will be available in the coming days unless a way can be found to bring in and sustain aid deliveries.
+
+The Israelis have assured the U.N. they are working on ways to bring in more fuel, hopefully on Wednesday, he said, and they said they hope to reopen the crossings rapidly, but didn't give a timeline.",[],"[{'uri': 'http://en.wikipedia.org/wiki/.tel', 'type': 'wiki', 'score': 5, 'label': {'eng': '.tel'}}, {'uri': 'http://en.wikipedia.org/wiki/Kerem_Shalom_border_crossing', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Kerem Shalom border crossing'}}, {'uri': 'http://en.wikipedia.org/wiki/2014_Gaza_War', 'type': 'wiki', 'score': 5, 'label': {'eng': '2014 Gaza War'}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah_Border_Crossing', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Rafah Border Crossing'}}, {'uri': 'http://en.wikipedia.org/wiki/Humanitarian_aid', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Humanitarian aid'}}, {'uri': 'http://en.wikipedia.org/wiki/Ceasefire', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Ceasefire'}}, {'uri': 'http://en.wikipedia.org/wiki/United_Nations', 'type': 'org', 'score': 5, 'label': {'eng': 'United Nations'}}, {'uri': 'http://en.wikipedia.org/wiki/Prime_Minister_of_Israel', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Prime Minister of Israel'}}, {'uri': 'http://en.wikipedia.org/wiki/Israel_Defense_Forces', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Israel Defense Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Rocket', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Rocket'}}, {'uri': 'http://en.wikipedia.org/wiki/Hamas', 'type': 'org', 'score': 5, 'label': {'eng': 'Hamas'}}, {'uri': 'http://en.wikipedia.org/wiki/Palestinians', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Palestinians'}}, {'uri': 'http://en.wikipedia.org/wiki/Gaza_City', 'type': 'loc', 'score': 5, 'label': {'eng': 'Gaza City'}, 'location': {'type': 'place', 'label': {'eng': 'Gaza City'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah', 'type': 'loc', 'score': 5, 'label': {'eng': 'Rafah'}, 'location': {'type': 'place', 'label': {'eng': 'Rafah'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Israel', 'type': 'loc', 'score': 5, 'label': {'eng': 'Israel'}, 'location': {'type': 'country', 'label': {'eng': 'Israel'}}}, {'uri': 'http://en.wikipedia.org/wiki/Negev', 'type': 'loc', 'score': 4, 'label': {'eng': 'Negev'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Agriculture', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Agriculture'}}, {'uri': 'http://en.wikipedia.org/wiki/Arabs', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Arabs'}}, {'uri': 'http://en.wikipedia.org/wiki/Kerem_Shalom', 'type': 'loc', 'score': 4, 'label': {'eng': 'Kerem Shalom'}, 'location': {'type': 'place', 'label': {'eng': 'Kerem Shalom'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Tel_Aviv', 'type': 'loc', 'score': 4, 'label': {'eng': 'Tel Aviv'}, 'location': {'type': 'place', 'label': {'eng': 'Tel Aviv'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Qatar', 'type': 'loc', 'score': 4, 'label': {'eng': 'Qatar'}, 'location': {'type': 'country', 'label': {'eng': 'Qatar'}}}, {'uri': 'http://en.wikipedia.org/wiki/Egypt', 'type': 'loc', 'score': 4, 'label': {'eng': 'Egypt'}, 'location': {'type': 'country', 'label': {'eng': 'Egypt'}}}, {'uri': 'http://en.wikipedia.org/wiki/Ron_Huldai', 'type': 'person', 'score': 3, 'label': {'eng': 'Ron Huldai'}}, {'uri': 'http://en.wikipedia.org/wiki/Pride_parade', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Pride parade'}}, {'uri': 'http://en.wikipedia.org/wiki/LGBT_community', 'type': 'loc', 'score': 3, 'label': {'eng': 'LGBT community'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Bedouin', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Bedouin'}}, {'uri': 'http://en.wikipedia.org/wiki/Liberalism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Liberalism'}}, {'uri': 'http://en.wikipedia.org/wiki/Ministry_of_Health,_Palestine', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Ministry of Health, Palestine'}}, {'uri': 'http://en.wikipedia.org/wiki/Human_Rights_Watch', 'type': 'org', 'score': 3, 'label': {'eng': 'Human Rights Watch'}}, {'uri': 'http://en.wikipedia.org/wiki/Palestinian_refugees', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Palestinian refugees'}}, {'uri': 'http://en.wikipedia.org/wiki/LGBT', 'type': 'wiki', 'score': 3, 'label': {'eng': 'LGBT'}}, {'uri': 'http://en.wikipedia.org/wiki/Metropolis', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Metropolis'}}, {'uri': 'http://en.wikipedia.org/wiki/Abraham', 'type': 'person', 'score': 3, 'label': {'eng': 'Abraham'}}, {'uri': 'http://en.wikipedia.org/wiki/Hostage', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Hostage'}}, {'uri': 'http://en.wikipedia.org/wiki/Benjamin_Netanyahu', 'type': 'person', 'score': 3, 'label': {'eng': 'Benjamin Netanyahu'}}, {'uri': 'http://en.wikipedia.org/wiki/Middle_East', 'type': 'loc', 'score': 3, 'label': {'eng': 'Middle East'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Gaza_Strip', 'type': 'loc', 'score': 3, 'label': {'eng': 'Gaza Strip'}, 'location': {'type': 'place', 'label': {'eng': 'Gaza Strip'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Nomad', 'type': 'org', 'score': 2, 'label': {'eng': 'Nomad'}}, {'uri': 'http://en.wikipedia.org/wiki/Jeep', 'type': 'org', 'score': 2, 'label': {'eng': 'Jeep'}}, {'uri': 'http://en.wikipedia.org/wiki/Jews', 'type': 'loc', 'score': 2, 'label': {'eng': 'Jews'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Knesset', 'type': 'org', 'score': 2, 'label': {'eng': 'Knesset'}}, {'uri': 'http://en.wikipedia.org/wiki/West_Bank', 'type': 'loc', 'score': 2, 'label': {'eng': 'West Bank'}, 'location': {'type': 'place', 'label': {'eng': 'West Bank'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/World_Food_Programme', 'type': 'org', 'score': 1, 'label': {'eng': 'World Food Programme'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_Armed_Forces', 'type': 'org', 'score': 1, 'label': {'eng': 'United States Armed Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/The_Pentagon', 'type': 'loc', 'score': 1, 'label': {'eng': 'The Pentagon'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/White_House', 'type': 'loc', 'score': 1, 'label': {'eng': 'White House'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Joe_Biden', 'type': 'person', 'score': 1, 'label': {'eng': 'Joe Biden'}}, {'uri': 'http://en.wikipedia.org/wiki/Washington_(state)', 'type': 'loc', 'score': 1, 'label': {'eng': 'Washington (state)'}, 'location': {'type': 'place', 'label': {'eng': 'Washington (state)'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Ashdod', 'type': 'loc', 'score': 1, 'label': {'eng': 'Ashdod'}, 'location': {'type': 'place', 'label': {'eng': 'Ashdod'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Jerusalem', 'type': 'loc', 'score': 1, 'label': {'eng': 'Jerusalem'}, 'location': {'type': 'place', 'label': {'eng': 'Jerusalem'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/United_States', 'type': 'loc', 'score': 1, 'label': {'eng': 'United States'}, 'location': {'type': 'country', 'label': {'eng': 'United States'}}}, {'uri': 'http://en.wikipedia.org/wiki/Cyprus', 'type': 'loc', 'score': 1, 'label': {'eng': 'Cyprus'}, 'location': {'type': 'country', 'label': {'eng': 'Cyprus'}}}]",summary_large_image,eng-9545004,-0.254901961,452876033,1,hosted.ap.org,news,Associated Press,".tel Kerem Shalom border crossing 2014 Gaza War Rafah Border Crossing Humanitarian aid Ceasefire United Nations Prime Minister of Israel Israel Defense Forces Rocket Hamas Palestinians Gaza City Rafah Israel Negev Agriculture Arabs Kerem Shalom Tel Aviv Qatar Egypt Ron Huldai Pride parade LGBT community Bedouin Liberalism Ministry of Health, Palestine Human Rights Watch Palestinian refugees LGBT Metropolis Abraham Hostage Benjamin Netanyahu Middle East Gaza Strip Nomad Jeep Jews Knesset West Bank World Food Programme United States Armed Forces The Pentagon Associated Press White House Joe Biden Washington (state) Ashdod Jerusalem United States Cyprus",ap.org,2511,Zero-shot Learning,2024,5,8,53,14,2024-05-08
+219,127,8117974210,eng,False,2024-05-08,19:40:56,5/8/2024 19:40,2024-05-08 19:40:37,news,0.65882355,http://hosted.ap.org/article/385416e25c74f57c4286fbc2eb93ebc1/latest-rafahs-last-hospitals-have-only-3-days-fuel-left-un,"The Latest | Rafah's last hospitals have only 3 days of fuel left, UN says","The U.N. World Health Organization says it has only three days of fuel for its medical operations in southern Gaza, and shortages have already forced one of three hospitals in the city of Rafah to shut down.
+
+The Rafah border crossing with Egypt has been closed since Israel's military took control of the Palestinian side early Tuesday, blocking the entry of vital humanitarian aid.
+
+Israel said it reopened the Kerem Shalom crossing, the other main aid entry point, early Wednesday. However, the U.N. World Food Program says no aid has entered, and there is no one to receive it on the Palestinian side. The WFP says northern Gaza is already in a state of ""full-blown famine.""
+
+CIA chief William Burns has been shuttling around the region for talks on a possible agreement for at least a temporary cease-fire in Gaza between Israel and the Palestinian militant group Hamas. Burns met with Israeli Prime Minister Benjamin Netanyahu on Wednesday, a U.S. official said, speaking on condition of anonymity to discuss closed-door negotiations.
+
+The war in Gaza has driven around 80% of the territory's population of 2.3 million from their homes and caused vast destruction to apartments, hospitals, mosques and schools across several cities. The death toll in Gaza has soared to more than 34,500 people, according to local health officials.
+
+The war began Oct. 7 when Hamas attacked southern Israel, killing around 1,200 people, mostly civilians, and abducting about 250 others. Israel says militants still hold around 100 hostages and the remains of more than 30 others.
+
+Currently:
+
+-- Israel says it reopened a key Gaza crossing after a rocket attack. The U.N. says no aid has entered.
+
+-- U.S. paused bomb shipment to Israel to signal concerns over Rafah invasion, official says.
+
+-- Has Israel followed the law in its war in Gaza? The U.S. is due to render a first-of-its-kind verdict.
+
+-- Israeli tanks have rolled into Rafah. What does this mean for the Palestinians sheltering there?
+
+-- Scenes from Israel and Gaza reflect dashed hopes as an imminent cease-fire seems unlikely.
+
+JERUSALEM -- The Israeli army has confirmed a Hamas attack on the Kerem Shalom border crossing -- a main entry point used to deliver aid into Gaza.
+
+A military official said Hamas had fired unidentified projectiles at the crossing on Wednesday, which landed nearby. There were no immediate reports of serious injuries.
+
+Hamas earlier had said it shelled the area, saying it had targeted a military base.
+
+The attack came shortly after Israel reopened the Kerem Shalom crossing for aid deliveries. It had been closed since a Hamas attack on Sunday killed four soldiers near the crossing.
+
+The official, speaking on condition of anonymity pending an official announcement, said the attack would make it difficult to continue aid deliveries. The crossing is expected to reopen on Thursday for its regular daytime operating hours.
+
+___
+
+Associated Press writer Josef Federman contributed.
+
+JERUSALEM -- Israel's ambassador to the United Nations said Wednesday that his government feels let down by the U.S. pausing a shipment of bombs to Israel.
+
+""It's a very disappointing decision, even frustrating,"" Ambassador Gilan Erdan told Israeli Channel 12 TV, however he said he didn't think the move signaled a broader halt to U.S. aid to Israel.
+
+Erdan suggested the decision stemmed from political pressure on the Biden administration from Congress, the nationwide campus protests and the upcoming U.S. presidential election.
+
+He said President Joe Biden was at once urging people to remember that the war started with Hamas' attack on Oct. 7, while at the same time holding back ""the means intended to destroy Hamas.""
+
+""You can't win the war without allowing Israel to win it,"" Erdan said.
+
+The U.S. paused a shipment of bombs to Israel last week over concerns that the country was approaching a decision on launching a full-scale assault on the southern Gaza city of Rafah. Israel this week launched what it says is a ""targeted"" operation on the city that has included taking over the Palestinian side of a key border crossing.
+
+JERUSALEM -- Dozens of bodies were buried in a mass grave on the grounds of Shifa hospital in northern Gaza, where Israeli forces staged two major operations during the war, the Health Ministry in Gaza said Wednesday.
+
+It is unclear who was buried in the grave or how they died. The Health Ministry says it was the third mass grave found at Shifa since the war began. A two-week Israeli raid in March left Gaza's largest medical complex in ruins.
+
+Mass graves have also been uncovered at other hospitals Israel raided. In some cases hospital officials said they had been dug purposely to bury the dead until it was safe to move the bodies to a final resting place.
+
+Israel says it has nothing to do with the mass graves, claiming the people buried there either died in battle or were patients who died in the hospital. The United Nations has called for ""a clear, transparent and credible investigation"" of the mass graves.
+
+GENEVA -- The head of the World Health Organization said the U.N. health agency only has enough fuel to run its medical operations in the south of Gaza for another three days.
+
+At a press briefing Wednesday, WHO Director-General Tedros Adhanom Ghebreyesus said one of Rafah's three hospitals has already had to close, saying the closure of the Rafah crossing into Egypt means no fuel has been able to make it into the territory -- with dire consequences.
+
+""Without more aid flowing into Rafah, we cannot sustain our lifesaving support to hospitals,"" Tedros said. He said an estimated 1.4 million people in Rafah remain at risk, including 600,000 children.
+
+Dr. Rik Peeperkorn, WHO's representative to the occupied Palestinian territory, said that due to a lack of fuel, the agency had suspended its operations in the north of Gaza ""for now and for the coming week."" He said that although WHO was providing the region with some medical equipment, including 15 dialysis machines and had warehouses of supplies, all of that was still inadequate.
+
+""It's what I call a Band-aid,"" Peeperkorn said. ""It will not help avoid substantial additional mortality and morbidity when there will be a full-scale military operation.""
+
+Andrea De Domenico, the head of the U.N.'s humanitarian office in the Palestinian territories, said Tuesday the U.N. normally uses 200,000 liters of diesel fuel a day in Gaza. As of Tuesday night, it had 30,000 liters left.
+
+WASHINGTON -- U.S. Treasury's Financial Crimes Enforcement Network issued an advisory on Wednesday meant to help banks and financial institutions identify potentially illicit transactions related to Iran-backed militant groups, Hamas, Hezbollah, the Palestinian Islamic Jihad and groups in Iraq and Syria.
+
+The advisory comes ""in light of intensified terrorist activity in the Middle East,"" according to U.S. Treasury.
+
+""As we witness continuing instability and violence in the Middle East, we are issuing this Advisory to help financial institutions protect the financial system from abuse by terrorists and to encourage financial institutions to stay vigilant in identifying and reporting related suspicious activity,"" said FinCEN Director Andrea Gacki.
+
+The advisory lists the ways that militant groups use to raise funds, and how to identify them. For instance, Hamas has a history of using fake charities to raise funds, where donations are often placed in bank accounts in third countries such as Lebanon, Qatar and Turkey. Hezbollah uses a network of front companies and legitimate businesses as well as cryptocurrencies to raise, launder and transfer funds.
+
+U.S. Treasury says Hezbollah financiers use free trade zones and countries with weak regulatory frameworks to establish import-export companies to build out money laundering schemes, using companies often held in the name of a relative of the financier.
+
+TEL AVIV, Israel -- The mayor of Tel Aviv said Wednesday the city will not be holding its traditional Pride Parade this year because of the war in Gaza, instead opting for a scaled down rally.
+
+The liberal coastal metropolis normally throws a weeklong bash with concerts and events in June that culminates in tens of thousands of people marching in a rainbow-drenched parade, which is the Middle East's largest celebration of Pride.
+
+Tel Aviv Mayor Ron Huldai said that the decision was made in coordination with the city's LGBTQ+ organizations. He said much of the budget for the parade will go towards the city's LGBTQ+ community center.
+
+""This is not the time for celebrations,"" he wrote on X.
+
+JERUSALEM -- The Israeli military said Wednesday that Palestinian workers heading to the Gaza side of the Kerem Shalom border crossing were wounded after their vehicle came under fire.
+
+Shortly after the military's announcement, the militant group Hamas said it struck Israeli forces near Kerem Shalom. It was not immediately clear if the two attacks were related. The military had no immediate comment about the Hamas claim and said it was investigating the apparent firing.
+
+Israel on Wednesday reopened Kerem Shalom after closing it over the weekend following a rocket attack that killed four soldiers. The Rafah crossing with Egypt remains after Israeli forces seized it Tuesday.
+
+TEL AVIV -- Israel has suspended farming within 4 kilometers (2.5 miles) of the Gaza border over security concerns, the military announced on Wednesday.
+
+Four soldiers were killed and 11 wounded on the border with Gaza on Sunday by rockets fired from Rafah in southern Gaza as the militant Hamas group continued to launch weapons at Israel.
+
+The area directly around the Gaza border was also closed to agriculture in the weeks after the Hamas-led Oct. 7 attack that triggered the war in Gaza, but slowly reopened as projectiles from Gaza decreased in frequency. The bulk of Israel's leafy greens, tomatoes, cucumbers and bell peppers come from the area close to Gaza, according to the Israel Farmers Association.
+
+WASHINGTON -- A U.S. official says that CIA Director William Burns is in Israel as international mediators push for a cease-fire.
+
+The official said Burns arrived on Wednesday and was meeting with Israeli Prime Minister Benjamin Netanyahu. The official spoke on condition of anonymity to discuss closed-door negotiations.
+
+The official gave no details on the discussions. But Burns has been in the region meeting with Egyptian and Qatari officials in recent days. He had been scheduled to travel to Israel from Qatar earlier this week, but that meeting was postponed without explanation.
+
+All three countries have been involved in months of talks aimed at halting the seven-month war between Israel and Hamas.
+
+Hamas announced on Sunday that it had accepted an Egyptian-Qatari cease-fire plan. But Israel says the proposal does not meet its ""core"" demands.
+
+-- By ELLEN KNICKMEYER
+
+TEL AVIV, Israel -- Israel has destroyed dozens of homes in an Arab Bedouin town in the Negev Desert, alleging that they were constructed without proper permits.
+
+The demolition of 47 homes in the village of Umm al-Batin, which began early Wednesday, appeared to be among the largest mass demolitions in recent years.
+
+Tens of thousands of semi-nomadic Arab Bedouin have lived for decades in unrecognized communities across southern Israel. They are largely cut off from basic services and are rarely granted construction permits, forcing them to build illegally.
+
+Israel has been trying to relocate them to planned communities with better services, but critics view that as an assault on their traditional life and a way of clearing them off land earmarked for Jewish development.
+
+Far-right National Security Minister Itamar Ben-Gvir celebrated the demolitions as the result of ""intensive work"" aimed at combatting illegal construction in the Negev.
+
+Waleed Alhwashla, a member of Raam, a small Arab party in Israel's parliament, condemned the move and the escalating number of such demolitions under Prime Minister Benjamin Netanyahu's right-wing government.
+
+""This step ignores the Arab community, its needs and issues, and leads to more racism, exclusion, and violations of the basic rights of citizens, such as housing and security,"" he said.
+
+The Negev Coexistence Forum for Civil Equality, a rights group that closely tracks home demolitions in the area, says they have steadily increased from 697 in 2013 to 2,850 in 2022.
+
+JERUSALEM -- Human Rights Watch has documented the deaths of eight Palestinians in the occupied West Bank who it says were killed by Israeli forces while posing no apparent threat.
+
+The investigation published Wednesday found that Israeli forces ""unlawfully used lethal force"" against Palestinians in the volatile territory, where violence has surged since Hamas' Oct. 7 attack triggered the ongoing war in Gaza.
+
+Richard Weir, senior crisis and conflict researcher at the New York-based rights group, said the killing of Palestinians is ""taking place at a level without recent precedent in an environment in which Israeli forces have no need to fear that their government will hold them accountable.""
+
+The investigation examined four shootings of Palestinians from 2022 and 2023. Researchers interviewed witnesses and family members of the Palestinians, and conducted a review of news reports and videos of the shootings posted to social media.
+
+Two of the four shootings occurred during Israeli raids into West Bank cities and towns, which the military says are aimed at rooting out militants. Rights groups say civilians and individuals posing no immediate threat have also been killed.
+
+In one case, the investigation found, a Palestinian father and son were both shot dead by Israeli forces in the built-up Nur Shams refugee camp last October. Taha Matamid, 15, was shot as he stepped outside to look at the military jeeps encircling the camp, his sister told Human Rights Watch.
+
+In a video taken by the sister and reviewed by The Associated Press, Taha does not appear to hold a weapon or pose a threat. Taha's father, Ibrahim, was shot minutes later after running into the street to help his son -- though the exact moment is not caught on camera. Later, Ibrahim can be seen in the video rolling around on the ground next to Taha.
+
+Ambulances could not immediately reach the two, the U.N. later said, because Israeli vehicles were blocking entry to the camp. Ibrahim Matamid died from his wounds months later.
+
+It is not clear whether the military has launched an investigation into the two deaths, and it did not respond to a request for comment.
+
+Even when the military does investigate such cases, rights groups say soldiers are rarely punished, contributing to a culture of impunity in the territory, which Israel seized in the 1967 war and which the Palestinians want as the main part of their future state.
+
+Palestinian health officials say nearly 500 Palestinians have been killed by Israeli fire in the West Bank since the start of the war in Gaza.
+
+RAFAH, Gaza Strip -- Gaza's vital Rafah crossing remained closed early Wednesday after an Israeli tank brigade seized it the day before. Associated Press journalists heard sporadic explosions and gunfire in the area overnight, including two large blasts early Wednesday.
+
+Rafah has been a vital conduit for humanitarian aid since the start of the war and is the only place where people can enter and exit. Israel now controls all of Gaza's border crossings for the first time since it withdrew troops and settlers from the territory nearly two decades ago.
+
+Gaza's Health Ministry says at least 46 patients and wounded people who had been scheduled to leave for medical treatment have been left stranded.
+
+U.N. agencies and aid groups have ramped up humanitarian assistance in recent weeks as Israel has lifted some restrictions and opened an additional crossing in the north under pressure from the United States, its closest ally. But aid workers say the closure of Rafah, which is the only gateway for the entry of fuel for trucks and generators, could have severe repercussions.
+
+The U.N. says northern Gaza is already in a state of ""full-blown famine.""
+
+The operation to capture the crossing appears to have been a limited incursion and not the start of the massive invasion of Rafah that Israel has promised. But Israel has said it will expand the operation if ongoing indirect talks with Hamas over a cease-fire and hostage release fail to make progress.
+
+The U.S. paused a shipment of bombs to Israel last week over concerns Israel was approaching a decision on launching a full-scale assault on the southern Gaza city of Rafah, a senior administration official said Tuesday.
+
+The shipment was supposed to consist of 1,800 2,000-pound bombs and 1,700 500-pound bombs, according to the official, who spoke on the condition of anonymity to discuss the sensitive matter, with the focus of U.S. concern being the larger explosives and how they could be used in a dense urban setting. More than 1 million civilians are sheltering in Rafah after evacuating other parts of Gaza amid Israel's war on Hamas, which came after the militant group's deadly attack on Israel on Oct. 7.
+
+President Joe Biden's administration in April began reviewing future transfers of military assistance to Israel as Prime Minister Benjamin Netanyahu's government appeared to move closer toward an invasion of Rafah, despite months of opposition from the White House.
+
+The official said the decision to pause the shipment was made last week and no final decision had been made yet on whether to proceed with the shipment at a later date.
+
+-- By ZEKE MILLER and AAMER MADHANI in Washington
+
+WASHINGTON -- The U.S. military has finished construction of a temporary pier and causeway that will be used to deliver aid to Gaza through a maritime system, but plans to move it into place on the shore are on hold due to weather and other logistics.
+
+Sabrina Singh, a Pentagon spokeswoman, told reporters on Tuesday that U.S. military ships and the assembled pier are at Israel's Ashdod port. High winds and sea swells are making it too dangerous for the U.S. military to install the pier at the Gaza beach.
+
+Singh says the U.S. hopes to install the pier and causeway later this week, if the weather permits.
+
+Meanwhile, humanitarian aid is being loaded onto a large container ship, the Sagamore, in Cyprus, for eventual delivery to Gaza, Singh said.
+
+The U.S. hopes the pier can be used to bring more humanitarian aid into Gaza, where the U.N. says there is a full-blown famine in the north.
+
+UNITED NATIONS -- Critical diesel fuel to pump drinking water, maintain communications and deliver aid in Gaza will run out Wednesday and it's estimated that food already in the south will be gone by the end of the week, a senior U.N. humanitarian said following Israel's closure of the two key crossing points into the territory.
+
+Andrea De Domenico, the head of the U.N.'s humanitarian office in the Palestinian territories, said Tuesday that Israel's military operation and evacuation order in Rafah has resulted in ""the forced displacement of tens of thousands of people.""
+
+The area Israel told Palestinians to go is mainly sand dunes and has no latrines, water points, drainage, shelter or health facilities, De Domenico said in a virtual news conference from Jerusalem.
+
+The Israelis are not on the ground providing services and are looking for humanitarian partners, he said. And it is impossible to improve conditions without the arrival of supplies and fuel to transport them to the new locations.
+
+Without fuel and more flour, he said, the 16 bakeries supported by the U.N. World Food Program throughout Gaza will be forced to suspend operations. If supplemental nutrition supplies can't be delivered, the treatment of more than 3,000 children suffering from acute malnutrition will be interrupted, he said, and three of the main remaining hospitals ""will become inoperable.""
+
+De Domenico said the U.N. normally uses 200,000 liters of diesel fuel a day in Gaza. As of Tuesday night, it had 30,000 liters left.
+
+Without a fuel delivery on Wednesday, he said, the main water production facility in the north will be shut, ""depriving the entire population of access to drinking water."" The same shutdown will happen in another day for the middle and south of Gaza, impacting 1.9 million people.
+
+""The reality is that we are confronting a situation where we have probably one of the least resilient populations in Gaza because of the seven months of war in one of the most violent and lethal conflicts that we have seen in recent years,"" he said.
+
+De Domenico said there is a risk that no humanitarian assistance will be available in the coming days unless a way can be found to bring in and sustain aid deliveries.
+
+The Israelis have assured the U.N. they are working on ways to bring in more fuel, hopefully on Wednesday, he said, and they said they hope to reopen the crossings rapidly, but didn't give a timeline.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Mass_grave', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Mass grave'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_Department_of_the_Treasury', 'type': 'org', 'score': 5, 'label': {'eng': 'United States Department of the Treasury'}}, {'uri': 'http://en.wikipedia.org/wiki/Kerem_Shalom_border_crossing', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Kerem Shalom border crossing'}}, {'uri': 'http://en.wikipedia.org/wiki/2014_Gaza_War', 'type': 'wiki', 'score': 5, 'label': {'eng': '2014 Gaza War'}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah_Border_Crossing', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Rafah Border Crossing'}}, {'uri': 'http://en.wikipedia.org/wiki/Humanitarian_aid', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Humanitarian aid'}}, {'uri': 'http://en.wikipedia.org/wiki/World_Food_Programme', 'type': 'org', 'score': 5, 'label': {'eng': 'World Food Programme'}}, {'uri': 'http://en.wikipedia.org/wiki/World_Health_Organization', 'type': 'org', 'score': 5, 'label': {'eng': 'World Health Organization'}}, {'uri': 'http://en.wikipedia.org/wiki/Ceasefire', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Ceasefire'}}, {'uri': 'http://en.wikipedia.org/wiki/United_Nations', 'type': 'org', 'score': 5, 'label': {'eng': 'United Nations'}}, {'uri': 'http://en.wikipedia.org/wiki/Prime_Minister_of_Israel', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Prime Minister of Israel'}}, {'uri': 'http://en.wikipedia.org/wiki/Israel_Defense_Forces', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Israel Defense Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Rocket', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Rocket'}}, {'uri': 'http://en.wikipedia.org/wiki/Hamas', 'type': 'org', 'score': 5, 'label': {'eng': 'Hamas'}}, {'uri': 'http://en.wikipedia.org/wiki/Palestinians', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Palestinians'}}, {'uri': 'http://en.wikipedia.org/wiki/Tel_Aviv', 'type': 'loc', 'score': 5, 'label': {'eng': 'Tel Aviv'}, 'location': {'type': 'place', 'label': {'eng': 'Tel Aviv'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Gaza_City', 'type': 'loc', 'score': 5, 'label': {'eng': 'Gaza City'}, 'location': {'type': 'place', 'label': {'eng': 'Gaza City'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah', 'type': 'loc', 'score': 5, 'label': {'eng': 'Rafah'}, 'location': {'type': 'place', 'label': {'eng': 'Rafah'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Israel', 'type': 'loc', 'score': 5, 'label': {'eng': 'Israel'}, 'location': {'type': 'country', 'label': {'eng': 'Israel'}}}, {'uri': 'http://en.wikipedia.org/wiki/Egypt', 'type': 'loc', 'score': 5, 'label': {'eng': 'Egypt'}, 'location': {'type': 'country', 'label': {'eng': 'Egypt'}}}, {'uri': 'http://en.wikipedia.org/wiki/William_J._Burns_(diplomat)', 'type': 'wiki', 'score': 4, 'label': {'eng': 'William J. Burns (diplomat)'}}, {'uri': 'http://en.wikipedia.org/wiki/Tedros_Adhanom', 'type': 'person', 'score': 4, 'label': {'eng': 'Tedros Adhanom'}}, {'uri': 'http://en.wikipedia.org/wiki/Hezbollah', 'type': 'org', 'score': 4, 'label': {'eng': 'Hezbollah'}}, {'uri': 'http://en.wikipedia.org/wiki/Benjamin_Netanyahu', 'type': 'person', 'score': 4, 'label': {'eng': 'Benjamin Netanyahu'}}, {'uri': 'http://en.wikipedia.org/wiki/Middle_East', 'type': 'loc', 'score': 4, 'label': {'eng': 'Middle East'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Qatar', 'type': 'loc', 'score': 4, 'label': {'eng': 'Qatar'}, 'location': {'type': 'country', 'label': {'eng': 'Qatar'}}}, {'uri': 'http://en.wikipedia.org/wiki/Financial_Crimes_Enforcement_Network', 'type': 'org', 'score': 3, 'label': {'eng': 'Financial Crimes Enforcement Network'}}, {'uri': 'http://en.wikipedia.org/wiki/Israel–United_States_relations', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Israel–United States relations'}}, {'uri': 'http://en.wikipedia.org/wiki/Central_Intelligence_Agency', 'type': 'loc', 'score': 3, 'label': {'eng': 'Central Intelligence Agency'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Palestinian_fedayeen', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Palestinian fedayeen'}}, {'uri': 'http://en.wikipedia.org/wiki/Military_base', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Military base'}}, {'uri': 'http://en.wikipedia.org/wiki/Negev', 'type': 'loc', 'score': 3, 'label': {'eng': 'Negev'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Border_control', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Border control'}}, {'uri': 'http://en.wikipedia.org/wiki/Palestinian_territories', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Palestinian territories'}}, {'uri': 'http://en.wikipedia.org/wiki/Hostage', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Hostage'}}, {'uri': 'http://en.wikipedia.org/wiki/Presidency_of_Joe_Biden', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Presidency of Joe Biden'}}, {'uri': 'http://en.wikipedia.org/wiki/2016_United_States_presidential_election', 'type': 'wiki', 'score': 3, 'label': {'eng': '2016 United States presidential election'}}, {'uri': 'http://en.wikipedia.org/wiki/Agriculture', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Agriculture'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_Congress', 'type': 'org', 'score': 3, 'label': {'eng': 'United States Congress'}}, {'uri': 'http://en.wikipedia.org/wiki/Joe_Biden', 'type': 'person', 'score': 3, 'label': {'eng': 'Joe Biden'}}, {'uri': 'http://en.wikipedia.org/wiki/Ron_Huldai', 'type': 'person', 'score': 2, 'label': {'eng': 'Ron Huldai'}}, {'uri': 'http://en.wikipedia.org/wiki/LGBT_community', 'type': 'loc', 'score': 2, 'label': {'eng': 'LGBT community'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Palestinian_Islamic_Jihad', 'type': 'org', 'score': 2, 'label': {'eng': 'Palestinian Islamic Jihad'}}, {'uri': 'http://en.wikipedia.org/wiki/Human_Rights_Watch', 'type': 'org', 'score': 2, 'label': {'eng': 'Human Rights Watch'}}, {'uri': 'http://en.wikipedia.org/wiki/Nomad', 'type': 'org', 'score': 2, 'label': {'eng': 'Nomad'}}, {'uri': 'http://en.wikipedia.org/wiki/Abraham', 'type': 'person', 'score': 2, 'label': {'eng': 'Abraham'}}, {'uri': 'http://en.wikipedia.org/wiki/Kerem_Shalom', 'type': 'loc', 'score': 2, 'label': {'eng': 'Kerem Shalom'}, 'location': {'type': 'place', 'label': {'eng': 'Kerem Shalom'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/West_Bank', 'type': 'loc', 'score': 2, 'label': {'eng': 'West Bank'}, 'location': {'type': 'place', 'label': {'eng': 'West Bank'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Turkey', 'type': 'loc', 'score': 2, 'label': {'eng': 'Turkey'}, 'location': {'type': 'country', 'label': {'eng': 'Turkey'}}}, {'uri': 'http://en.wikipedia.org/wiki/Syria', 'type': 'loc', 'score': 2, 'label': {'eng': 'Syria'}, 'location': {'type': 'country', 'label': {'eng': 'Syria'}}}, {'uri': 'http://en.wikipedia.org/wiki/Lebanon', 'type': 'loc', 'score': 2, 'label': {'eng': 'Lebanon'}, 'location': {'type': 'country', 'label': {'eng': 'Lebanon'}}}, {'uri': 'http://en.wikipedia.org/wiki/Iraq', 'type': 'loc', 'score': 2, 'label': {'eng': 'Iraq'}, 'location': {'type': 'country', 'label': {'eng': 'Iraq'}}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_Armed_Forces', 'type': 'org', 'score': 1, 'label': {'eng': 'United States Armed Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Jeep', 'type': 'org', 'score': 1, 'label': {'eng': 'Jeep'}}, {'uri': 'http://en.wikipedia.org/wiki/The_Pentagon', 'type': 'loc', 'score': 1, 'label': {'eng': 'The Pentagon'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/White_House', 'type': 'loc', 'score': 1, 'label': {'eng': 'White House'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Jews', 'type': 'loc', 'score': 1, 'label': {'eng': 'Jews'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Knesset', 'type': 'org', 'score': 1, 'label': {'eng': 'Knesset'}}, {'uri': 'http://en.wikipedia.org/wiki/Washington,_D.C.', 'type': 'loc', 'score': 1, 'label': {'eng': 'Washington, D.C.'}, 'location': {'type': 'place', 'label': {'eng': 'Washington, D.C.'}, 'country': {'type': 'country', 'label': {'eng': 'United States'}}}}]",summary_large_image,eng-9545004,-0.301960784,452893256,1,hosted.ap.org,news,Associated Press,"Mass grave United States Department of the Treasury Kerem Shalom border crossing 2014 Gaza War Rafah Border Crossing Humanitarian aid World Food Programme World Health Organization Ceasefire United Nations Prime Minister of Israel Israel Defense Forces Rocket Hamas Palestinians Tel Aviv Gaza City Rafah Israel Egypt William J. Burns (diplomat) Tedros Adhanom Hezbollah Benjamin Netanyahu Middle East Qatar Financial Crimes Enforcement Network Israel–United States relations Central Intelligence Agency Palestinian fedayeen Military base Negev Border control Palestinian territories Hostage Presidency of Joe Biden 2016 United States presidential election Agriculture United States Congress Joe Biden Ron Huldai LGBT community Palestinian Islamic Jihad Human Rights Watch Nomad Abraham Kerem Shalom West Bank Turkey Syria Lebanon Iraq United States Armed Forces Jeep The Pentagon Associated Press White House Jews Knesset Washington, D.C.",ap.org,3434,Zero-shot Learning,2024,5,8,40,19,2024-05-08
+220,160,8118119785,eng,False,2024-05-08,22:03:22,5/8/2024 22:03,2024-05-08 22:02:21,news,0.639215708,http://hosted.ap.org/article/385416e25c74f57c4286fbc2eb93ebc1/latest-rafahs-hospitals-will-run-out-fuel-3-days-who-says,"The Latest | Rafah's hospitals will run out of fuel in 3 days, WHO says","The World Health Organization says it has only three days of fuel for its medical operations in southern Gaza, with shortages already forcing one of three remaining hospitals in the city of Rafah to shut down.
+
+The Rafah border crossing with Egypt has been closed since Israel's military took control of the Palestinian side early Tuesday, blocking the entry of desperately needed humanitarian aid. The U.N. says northern Gaza is already in a state of ""full-blown famine.""
+
+Israel said it reopened Kerem Shalom crossing, the other main entry point for aid, early Wednesday. U.N. officials say no aid has entered Gaza, and there is no one to receive it on the Palestinian side because of ongoing fighting.
+
+The war in Gaza has driven around 80% of the territory's population of 2.3 million from their homes and caused vast destruction to apartments, hospitals, mosques and schools across several cities. The death toll in Gaza has soared to more than 34,500 people, according to local health officials.
+
+The war began Oct. 7 when Hamas attacked southern Israel, killing around 1,200 people, mostly civilians, and abducting about 250 others. Israel says militants still hold around 100 hostages and the remains of more than 30 others.
+
+-- Israel says it reopened a key Gaza crossing after a rocket attack. The U.N. says no aid has entered.
+
+-- Has Israel followed the law in its war in Gaza? The U.S. is due to render a first-of-its-kind verdict.
+
+-- Israeli tanks have rolled into Rafah. What does this mean for the Palestinians sheltering there?
+
+-- Scenes from Israel and Gaza reflect dashed hopes as an imminent cease-fire seems unlikely.
+
+UNITED NATIONS -- The United Nations is engaged in intensive discussions with Israeli and Egyptian authorities to restart fuel shipments to Gaza as soon as possible in order keep providing humanitarian operations.
+
+U.N. humanitarian staff in Gaza are rationing fuel to stretch what's available for as long as possible, ""but it is clear that it is a matter of hours, if not days, where we will have no more fuel,"" U.N. spokesman Stephane Dujarric told reporters Wednesday
+
+Between May 1 and May 5, a daily average of 48 trucks carrying more than 160,000 liters of fuel entered Gaza through the now-closed Rafah crossing with Egypt, Dujarric said.
+
+The U.N. spokesman confirmed that nothing has entered Gaza from the Kerem Shalom crossing, which Israel said it reopened Wednesday, because fighting is still ongoing. With rockets falling and other military activities, there is an issue of safety of humanitarian personnel, he said.
+
+On the health front, Dujarric said the abrupt closure of one of the three hospitals in Rafah on Tuesday - Al Najjar - because of its location in an area Israel ordered to be vacated, left Gaza without its only operating facility for kidney dialysis. According to the World Health Organization, 200 patients now have no place to go for treatment, he said.
+
+Dujarric also reported a tweet by Philippe Lazzarini, head of the U.N. agency for Palestinian refugees known as UNRWA, saying a protest at its headquarters in East Jerusalem called by an elected member of the Jerusalem municipality on Tuesday ""was nothing less than harassment, intimidation, vandalism.""
+
+The protesters damaged the gates of the UNRWA office, which is supposed to protected by Israeli authorities, Dujarric said. Israeli police were outside the UNRWA office, and the U.N. has lodged a protest with Israeli authorities, he said.
+
+JERUSALEM -- The Israeli army has confirmed a Hamas attack on the Kerem Shalom border crossing -- a main entry point used to deliver aid into Gaza.
+
+A military official said Hamas had fired unidentified projectiles at the crossing on Wednesday, which landed nearby. There were no immediate reports of serious injuries.
+
+Hamas earlier had said it shelled the area, saying it had targeted a military base.
+
+The attack came shortly after Israel reopened the Kerem Shalom crossing for aid deliveries. It had been closed since a Hamas attack on Sunday killed four soldiers near the crossing.
+
+The official, speaking on condition of anonymity pending an official announcement, said the attack would make it difficult to continue aid deliveries. The crossing is expected to reopen on Thursday for its regular daytime operating hours.
+
+___
+
+Associated Press writer Josef Federman contributed.
+
+JERUSALEM -- Israel's ambassador to the United Nations said Wednesday that his government feels let down by the U.S. pausing a shipment of bombs to Israel.
+
+""It's a very disappointing decision, even frustrating,"" Ambassador Gilan Erdan told Israeli Channel 12 TV, however he said he didn't think the move signaled a broader halt to U.S. aid to Israel.
+
+Erdan suggested the decision stemmed from political pressure on the Biden administration from Congress, the nationwide campus protests and the upcoming U.S. presidential election.
+
+He said President Joe Biden was at once urging people to remember that the war started with Hamas' attack on Oct. 7, while at the same time holding back ""the means intended to destroy Hamas.""
+
+""You can't win the war without allowing Israel to win it,"" Erdan said.
+
+The U.S. paused a shipment of bombs to Israel last week over concerns that the country was approaching a decision on launching a full-scale assault on the southern Gaza city of Rafah. Israel this week launched what it says is a ""targeted"" operation on the city that has included taking over the Palestinian side of a key border crossing.
+
+JERUSALEM -- Dozens of bodies were buried in a mass grave on the grounds of Shifa hospital in northern Gaza, where Israeli forces staged two major operations during the war, the Health Ministry in Gaza said Wednesday.
+
+It is unclear who was buried in the grave or how they died. The Health Ministry says it was the third mass grave found at Shifa since the war began. A two-week Israeli raid in March left Gaza's largest medical complex in ruins.
+
+Mass graves have also been uncovered at other hospitals Israel raided. In some cases hospital officials said they had been dug purposely to bury the dead until it was safe to move the bodies to a final resting place.
+
+Israel says it has nothing to do with the mass graves, claiming the people buried there either died in battle or were patients who died in the hospital. The United Nations has called for ""a clear, transparent and credible investigation"" of the mass graves.
+
+GENEVA -- The head of the World Health Organization said the U.N. health agency only has enough fuel to run its medical operations in the south of Gaza for another three days.
+
+At a press briefing Wednesday, WHO Director-General Tedros Adhanom Ghebreyesus said one of Rafah's three hospitals has already had to close, saying the closure of the Rafah crossing into Egypt means no fuel has been able to make it into the territory -- with dire consequences.
+
+""Without more aid flowing into Rafah, we cannot sustain our lifesaving support to hospitals,"" Tedros said. He said an estimated 1.4 million people in Rafah remain at risk, including 600,000 children.
+
+Dr. Rik Peeperkorn, WHO's representative to the occupied Palestinian territory, said that due to a lack of fuel, the agency had suspended its operations in the north of Gaza ""for now and for the coming week."" He said that although WHO was providing the region with some medical equipment, including 15 dialysis machines and had warehouses of supplies, all of that was still inadequate.
+
+""It's what I call a Band-aid,"" Peeperkorn said. ""It will not help avoid substantial additional mortality and morbidity when there will be a full-scale military operation.""
+
+Andrea De Domenico, the head of the U.N.'s humanitarian office in the Palestinian territories, said Tuesday the U.N. normally uses 200,000 liters of diesel fuel a day in Gaza. As of Tuesday night, it had 30,000 liters left.
+
+WASHINGTON -- U.S. Treasury's Financial Crimes Enforcement Network issued an advisory on Wednesday meant to help banks and financial institutions identify potentially illicit transactions related to Iran-backed militant groups, Hamas, Hezbollah, the Palestinian Islamic Jihad and groups in Iraq and Syria.
+
+The advisory comes ""in light of intensified terrorist activity in the Middle East,"" according to U.S. Treasury.
+
+""As we witness continuing instability and violence in the Middle East, we are issuing this Advisory to help financial institutions protect the financial system from abuse by terrorists and to encourage financial institutions to stay vigilant in identifying and reporting related suspicious activity,"" said FinCEN Director Andrea Gacki.
+
+The advisory lists the ways that militant groups use to raise funds, and how to identify them. For instance, Hamas has a history of using fake charities to raise funds, where donations are often placed in bank accounts in third countries such as Lebanon, Qatar and Turkey. Hezbollah uses a network of front companies and legitimate businesses as well as cryptocurrencies to raise, launder and transfer funds.
+
+U.S. Treasury says Hezbollah financiers use free trade zones and countries with weak regulatory frameworks to establish import-export companies to build out money laundering schemes, using companies often held in the name of a relative of the financier.
+
+TEL AVIV, Israel -- The mayor of Tel Aviv said Wednesday the city will not be holding its traditional Pride Parade this year because of the war in Gaza, instead opting for a scaled down rally.
+
+The liberal coastal metropolis normally throws a weeklong bash with concerts and events in June that culminates in tens of thousands of people marching in a rainbow-drenched parade, which is the Middle East's largest celebration of Pride.
+
+Tel Aviv Mayor Ron Huldai said that the decision was made in coordination with the city's LGBTQ+ organizations. He said much of the budget for the parade will go towards the city's LGBTQ+ community center.
+
+""This is not the time for celebrations,"" he wrote on X.
+
+JERUSALEM -- The Israeli military said Wednesday that Palestinian workers heading to the Gaza side of the Kerem Shalom border crossing were wounded after their vehicle came under fire.
+
+Shortly after the military's announcement, the militant group Hamas said it struck Israeli forces near Kerem Shalom. It was not immediately clear if the two attacks were related. The military had no immediate comment about the Hamas claim and said it was investigating the apparent firing.
+
+Israel on Wednesday reopened Kerem Shalom after closing it over the weekend following a rocket attack that killed four soldiers. The Rafah crossing with Egypt remains after Israeli forces seized it Tuesday.
+
+TEL AVIV -- Israel has suspended farming within 4 kilometers (2.5 miles) of the Gaza border over security concerns, the military announced on Wednesday.
+
+Four soldiers were killed and 11 wounded on the border with Gaza on Sunday by rockets fired from Rafah in southern Gaza as the militant Hamas group continued to launch weapons at Israel.
+
+The area directly around the Gaza border was also closed to agriculture in the weeks after the Hamas-led Oct. 7 attack that triggered the war in Gaza, but slowly reopened as projectiles from Gaza decreased in frequency. The bulk of Israel's leafy greens, tomatoes, cucumbers and bell peppers come from the area close to Gaza, according to the Israel Farmers Association.
+
+WASHINGTON -- A U.S. official says that CIA Director William Burns is in Israel as international mediators push for a cease-fire.
+
+The official said Burns arrived on Wednesday and was meeting with Israeli Prime Minister Benjamin Netanyahu. The official spoke on condition of anonymity to discuss closed-door negotiations.
+
+The official gave no details on the discussions. But Burns has been in the region meeting with Egyptian and Qatari officials in recent days. He had been scheduled to travel to Israel from Qatar earlier this week, but that meeting was postponed without explanation.
+
+All three countries have been involved in months of talks aimed at halting the seven-month war between Israel and Hamas.
+
+Hamas announced on Sunday that it had accepted an Egyptian-Qatari cease-fire plan. But Israel says the proposal does not meet its ""core"" demands.
+
+-- By ELLEN KNICKMEYER
+
+TEL AVIV, Israel -- Israel has destroyed dozens of homes in an Arab Bedouin town in the Negev Desert, alleging that they were constructed without proper permits.
+
+The demolition of 47 homes in the village of Umm al-Batin, which began early Wednesday, appeared to be among the largest mass demolitions in recent years.
+
+Tens of thousands of semi-nomadic Arab Bedouin have lived for decades in unrecognized communities across southern Israel. They are largely cut off from basic services and are rarely granted construction permits, forcing them to build illegally.
+
+Israel has been trying to relocate them to planned communities with better services, but critics view that as an assault on their traditional life and a way of clearing them off land earmarked for Jewish development.
+
+Far-right National Security Minister Itamar Ben-Gvir celebrated the demolitions as the result of ""intensive work"" aimed at combatting illegal construction in the Negev.
+
+Waleed Alhwashla, a member of Raam, a small Arab party in Israel's parliament, condemned the move and the escalating number of such demolitions under Prime Minister Benjamin Netanyahu's right-wing government.
+
+""This step ignores the Arab community, its needs and issues, and leads to more racism, exclusion, and violations of the basic rights of citizens, such as housing and security,"" he said.
+
+The Negev Coexistence Forum for Civil Equality, a rights group that closely tracks home demolitions in the area, says they have steadily increased from 697 in 2013 to 2,850 in 2022.
+
+JERUSALEM -- Human Rights Watch has documented the deaths of eight Palestinians in the occupied West Bank who it says were killed by Israeli forces while posing no apparent threat.
+
+The investigation published Wednesday found that Israeli forces ""unlawfully used lethal force"" against Palestinians in the volatile territory, where violence has surged since Hamas' Oct. 7 attack triggered the ongoing war in Gaza.
+
+Richard Weir, senior crisis and conflict researcher at the New York-based rights group, said the killing of Palestinians is ""taking place at a level without recent precedent in an environment in which Israeli forces have no need to fear that their government will hold them accountable.""
+
+The investigation examined four shootings of Palestinians from 2022 and 2023. Researchers interviewed witnesses and family members of the Palestinians, and conducted a review of news reports and videos of the shootings posted to social media.
+
+Two of the four shootings occurred during Israeli raids into West Bank cities and towns, which the military says are aimed at rooting out militants. Rights groups say civilians and individuals posing no immediate threat have also been killed.
+
+In one case, the investigation found, a Palestinian father and son were both shot dead by Israeli forces in the built-up Nur Shams refugee camp last October. Taha Matamid, 15, was shot as he stepped outside to look at the military jeeps encircling the camp, his sister told Human Rights Watch.
+
+In a video taken by the sister and reviewed by The Associated Press, Taha does not appear to hold a weapon or pose a threat. Taha's father, Ibrahim, was shot minutes later after running into the street to help his son -- though the exact moment is not caught on camera. Later, Ibrahim can be seen in the video rolling around on the ground next to Taha.
+
+Ambulances could not immediately reach the two, the U.N. later said, because Israeli vehicles were blocking entry to the camp. Ibrahim Matamid died from his wounds months later.
+
+It is not clear whether the military has launched an investigation into the two deaths, and it did not respond to a request for comment.
+
+Even when the military does investigate such cases, rights groups say soldiers are rarely punished, contributing to a culture of impunity in the territory, which Israel seized in the 1967 war and which the Palestinians want as the main part of their future state.
+
+Palestinian health officials say nearly 500 Palestinians have been killed by Israeli fire in the West Bank since the start of the war in Gaza.
+
+RAFAH, Gaza Strip -- Gaza's vital Rafah crossing remained closed early Wednesday after an Israeli tank brigade seized it the day before. Associated Press journalists heard sporadic explosions and gunfire in the area overnight, including two large blasts early Wednesday.
+
+Rafah has been a vital conduit for humanitarian aid since the start of the war and is the only place where people can enter and exit. Israel now controls all of Gaza's border crossings for the first time since it withdrew troops and settlers from the territory nearly two decades ago.
+
+Gaza's Health Ministry says at least 46 patients and wounded people who had been scheduled to leave for medical treatment have been left stranded.
+
+U.N. agencies and aid groups have ramped up humanitarian assistance in recent weeks as Israel has lifted some restrictions and opened an additional crossing in the north under pressure from the United States, its closest ally. But aid workers say the closure of Rafah, which is the only gateway for the entry of fuel for trucks and generators, could have severe repercussions.
+
+The U.N. says northern Gaza is already in a state of ""full-blown famine.""
+
+The operation to capture the crossing appears to have been a limited incursion and not the start of the massive invasion of Rafah that Israel has promised. But Israel has said it will expand the operation if ongoing indirect talks with Hamas over a cease-fire and hostage release fail to make progress.
+
+The U.S. paused a shipment of bombs to Israel last week over concerns Israel was approaching a decision on launching a full-scale assault on the southern Gaza city of Rafah, a senior administration official said Tuesday.
+
+The shipment was supposed to consist of 1,800 2,000-pound bombs and 1,700 500-pound bombs, according to the official, who spoke on the condition of anonymity to discuss the sensitive matter, with the focus of U.S. concern being the larger explosives and how they could be used in a dense urban setting. More than 1 million civilians are sheltering in Rafah after evacuating other parts of Gaza amid Israel's war on Hamas, which came after the militant group's deadly attack on Israel on Oct. 7.
+
+President Joe Biden's administration in April began reviewing future transfers of military assistance to Israel as Prime Minister Benjamin Netanyahu's government appeared to move closer toward an invasion of Rafah, despite months of opposition from the White House.
+
+The official said the decision to pause the shipment was made last week and no final decision had been made yet on whether to proceed with the shipment at a later date.
+
+-- By ZEKE MILLER and AAMER MADHANI in Washington
+
+WASHINGTON -- The U.S. military has finished construction of a temporary pier and causeway that will be used to deliver aid to Gaza through a maritime system, but plans to move it into place on the shore are on hold due to weather and other logistics.
+
+Sabrina Singh, a Pentagon spokeswoman, told reporters on Tuesday that U.S. military ships and the assembled pier are at Israel's Ashdod port. High winds and sea swells are making it too dangerous for the U.S. military to install the pier at the Gaza beach.
+
+Singh says the U.S. hopes to install the pier and causeway later this week, if the weather permits.
+
+Meanwhile, humanitarian aid is being loaded onto a large container ship, the Sagamore, in Cyprus, for eventual delivery to Gaza, Singh said.
+
+The U.S. hopes the pier can be used to bring more humanitarian aid into Gaza, where the U.N. says there is a full-blown famine in the north.
+
+UNITED NATIONS -- Critical diesel fuel to pump drinking water, maintain communications and deliver aid in Gaza will run out Wednesday and it's estimated that food already in the south will be gone by the end of the week, a senior U.N. humanitarian said following Israel's closure of the two key crossing points into the territory.
+
+Andrea De Domenico, the head of the U.N.'s humanitarian office in the Palestinian territories, said Tuesday that Israel's military operation and evacuation order in Rafah has resulted in ""the forced displacement of tens of thousands of people.""
+
+The area Israel told Palestinians to go is mainly sand dunes and has no latrines, water points, drainage, shelter or health facilities, De Domenico said in a virtual news conference from Jerusalem.
+
+The Israelis are not on the ground providing services and are looking for humanitarian partners, he said. And it is impossible to improve conditions without the arrival of supplies and fuel to transport them to the new locations.
+
+Without fuel and more flour, he said, the 16 bakeries supported by the U.N. World Food Program throughout Gaza will be forced to suspend operations. If supplemental nutrition supplies can't be delivered, the treatment of more than 3,000 children suffering from acute malnutrition will be interrupted, he said, and three of the main remaining hospitals ""will become inoperable.""
+
+De Domenico said the U.N. normally uses 200,000 liters of diesel fuel a day in Gaza. As of Tuesday night, it had 30,000 liters left.
+
+Without a fuel delivery on Wednesday, he said, the main water production facility in the north will be shut, ""depriving the entire population of access to drinking water."" The same shutdown will happen in another day for the middle and south of Gaza, impacting 1.9 million people.
+
+""The reality is that we are confronting a situation where we have probably one of the least resilient populations in Gaza because of the seven months of war in one of the most violent and lethal conflicts that we have seen in recent years,"" he said.
+
+De Domenico said there is a risk that no humanitarian assistance will be available in the coming days unless a way can be found to bring in and sustain aid deliveries.
+
+The Israelis have assured the U.N. they are working on ways to bring in more fuel, hopefully on Wednesday, he said, and they said they hope to reopen the crossings rapidly, but didn't give a timeline.",[],"[{'uri': 'http://en.wikipedia.org/wiki/Mass_grave', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Mass grave'}}, {'uri': 'http://en.wikipedia.org/wiki/Kerem_Shalom_border_crossing', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Kerem Shalom border crossing'}}, {'uri': 'http://en.wikipedia.org/wiki/2014_Gaza_War', 'type': 'wiki', 'score': 5, 'label': {'eng': '2014 Gaza War'}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah_Border_Crossing', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Rafah Border Crossing'}}, {'uri': 'http://en.wikipedia.org/wiki/Humanitarian_aid', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Humanitarian aid'}}, {'uri': 'http://en.wikipedia.org/wiki/World_Health_Organization', 'type': 'org', 'score': 5, 'label': {'eng': 'World Health Organization'}}, {'uri': 'http://en.wikipedia.org/wiki/UNRWA', 'type': 'org', 'score': 5, 'label': {'eng': 'UNRWA'}}, {'uri': 'http://en.wikipedia.org/wiki/United_Nations', 'type': 'org', 'score': 5, 'label': {'eng': 'United Nations'}}, {'uri': 'http://en.wikipedia.org/wiki/Israel_Defense_Forces', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Israel Defense Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Rocket', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Rocket'}}, {'uri': 'http://en.wikipedia.org/wiki/Hamas', 'type': 'org', 'score': 5, 'label': {'eng': 'Hamas'}}, {'uri': 'http://en.wikipedia.org/wiki/Palestinians', 'type': 'wiki', 'score': 5, 'label': {'eng': 'Palestinians'}}, {'uri': 'http://en.wikipedia.org/wiki/Gaza_City', 'type': 'loc', 'score': 5, 'label': {'eng': 'Gaza City'}, 'location': {'type': 'place', 'label': {'eng': 'Gaza City'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Rafah', 'type': 'loc', 'score': 5, 'label': {'eng': 'Rafah'}, 'location': {'type': 'place', 'label': {'eng': 'Rafah'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Israel', 'type': 'loc', 'score': 5, 'label': {'eng': 'Israel'}, 'location': {'type': 'country', 'label': {'eng': 'Israel'}}}, {'uri': 'http://en.wikipedia.org/wiki/Egypt', 'type': 'loc', 'score': 5, 'label': {'eng': 'Egypt'}, 'location': {'type': 'country', 'label': {'eng': 'Egypt'}}}, {'uri': 'http://en.wikipedia.org/wiki/.tel', 'type': 'wiki', 'score': 4, 'label': {'eng': '.tel'}}, {'uri': 'http://en.wikipedia.org/wiki/Kidney_dialysis', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Kidney dialysis'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_Department_of_the_Treasury', 'type': 'org', 'score': 4, 'label': {'eng': 'United States Department of the Treasury'}}, {'uri': 'http://en.wikipedia.org/wiki/Tedros_Adhanom', 'type': 'person', 'score': 4, 'label': {'eng': 'Tedros Adhanom'}}, {'uri': 'http://en.wikipedia.org/wiki/Ceasefire', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Ceasefire'}}, {'uri': 'http://en.wikipedia.org/wiki/Hezbollah', 'type': 'org', 'score': 4, 'label': {'eng': 'Hezbollah'}}, {'uri': 'http://en.wikipedia.org/wiki/Prime_Minister_of_Israel', 'type': 'wiki', 'score': 4, 'label': {'eng': 'Prime Minister of Israel'}}, {'uri': 'http://en.wikipedia.org/wiki/Middle_East', 'type': 'loc', 'score': 4, 'label': {'eng': 'Middle East'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Financial_Crimes_Enforcement_Network', 'type': 'org', 'score': 3, 'label': {'eng': 'Financial Crimes Enforcement Network'}}, {'uri': 'http://en.wikipedia.org/wiki/Israel–United_States_relations', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Israel–United States relations'}}, {'uri': 'http://en.wikipedia.org/wiki/Vandalism', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Vandalism'}}, {'uri': 'http://en.wikipedia.org/wiki/Military_base', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Military base'}}, {'uri': 'http://en.wikipedia.org/wiki/Negev', 'type': 'loc', 'score': 3, 'label': {'eng': 'Negev'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Border_control', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Border control'}}, {'uri': 'http://en.wikipedia.org/wiki/Israel_Police', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Israel Police'}}, {'uri': 'http://en.wikipedia.org/wiki/Palestinian_refugees', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Palestinian refugees'}}, {'uri': 'http://en.wikipedia.org/wiki/Palestinian_territories', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Palestinian territories'}}, {'uri': 'http://en.wikipedia.org/wiki/Hostage', 'type': 'wiki', 'score': 3, 'label': {'eng': 'Hostage'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_Congress', 'type': 'org', 'score': 3, 'label': {'eng': 'United States Congress'}}, {'uri': 'http://en.wikipedia.org/wiki/East_Jerusalem', 'type': 'loc', 'score': 3, 'label': {'eng': 'East Jerusalem'}, 'location': {'type': 'place', 'label': {'eng': 'East Jerusalem'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Kerem_Shalom', 'type': 'loc', 'score': 3, 'label': {'eng': 'Kerem Shalom'}, 'location': {'type': 'place', 'label': {'eng': 'Kerem Shalom'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Tel_Aviv', 'type': 'loc', 'score': 3, 'label': {'eng': 'Tel Aviv'}, 'location': {'type': 'place', 'label': {'eng': 'Tel Aviv'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Qatar', 'type': 'loc', 'score': 3, 'label': {'eng': 'Qatar'}, 'location': {'type': 'country', 'label': {'eng': 'Qatar'}}}, {'uri': 'http://en.wikipedia.org/wiki/Ron_Huldai', 'type': 'person', 'score': 2, 'label': {'eng': 'Ron Huldai'}}, {'uri': 'http://en.wikipedia.org/wiki/LGBT_community', 'type': 'loc', 'score': 2, 'label': {'eng': 'LGBT community'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Palestinian_Islamic_Jihad', 'type': 'org', 'score': 2, 'label': {'eng': 'Palestinian Islamic Jihad'}}, {'uri': 'http://en.wikipedia.org/wiki/Human_Rights_Watch', 'type': 'org', 'score': 2, 'label': {'eng': 'Human Rights Watch'}}, {'uri': 'http://en.wikipedia.org/wiki/Abraham', 'type': 'person', 'score': 2, 'label': {'eng': 'Abraham'}}, {'uri': 'http://en.wikipedia.org/wiki/Joe_Biden', 'type': 'person', 'score': 2, 'label': {'eng': 'Joe Biden'}}, {'uri': 'http://en.wikipedia.org/wiki/Benjamin_Netanyahu', 'type': 'person', 'score': 2, 'label': {'eng': 'Benjamin Netanyahu'}}, {'uri': 'http://en.wikipedia.org/wiki/West_Bank', 'type': 'loc', 'score': 2, 'label': {'eng': 'West Bank'}, 'location': {'type': 'place', 'label': {'eng': 'West Bank'}, 'country': {'type': 'country', 'label': {'eng': 'Palestine'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Jerusalem', 'type': 'loc', 'score': 2, 'label': {'eng': 'Jerusalem'}, 'location': {'type': 'place', 'label': {'eng': 'Jerusalem'}, 'country': {'type': 'country', 'label': {'eng': 'Israel'}}}}, {'uri': 'http://en.wikipedia.org/wiki/Turkey', 'type': 'loc', 'score': 2, 'label': {'eng': 'Turkey'}, 'location': {'type': 'country', 'label': {'eng': 'Turkey'}}}, {'uri': 'http://en.wikipedia.org/wiki/Syria', 'type': 'loc', 'score': 2, 'label': {'eng': 'Syria'}, 'location': {'type': 'country', 'label': {'eng': 'Syria'}}}, {'uri': 'http://en.wikipedia.org/wiki/Lebanon', 'type': 'loc', 'score': 2, 'label': {'eng': 'Lebanon'}, 'location': {'type': 'country', 'label': {'eng': 'Lebanon'}}}, {'uri': 'http://en.wikipedia.org/wiki/Iraq', 'type': 'loc', 'score': 2, 'label': {'eng': 'Iraq'}, 'location': {'type': 'country', 'label': {'eng': 'Iraq'}}}, {'uri': 'http://en.wikipedia.org/wiki/World_Food_Programme', 'type': 'org', 'score': 1, 'label': {'eng': 'World Food Programme'}}, {'uri': 'http://en.wikipedia.org/wiki/Nomad', 'type': 'org', 'score': 1, 'label': {'eng': 'Nomad'}}, {'uri': 'http://en.wikipedia.org/wiki/United_States_Armed_Forces', 'type': 'org', 'score': 1, 'label': {'eng': 'United States Armed Forces'}}, {'uri': 'http://en.wikipedia.org/wiki/Jeep', 'type': 'org', 'score': 1, 'label': {'eng': 'Jeep'}}, {'uri': 'http://en.wikipedia.org/wiki/The_Pentagon', 'type': 'loc', 'score': 1, 'label': {'eng': 'The Pentagon'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Associated_Press', 'type': 'org', 'score': 1, 'label': {'eng': 'Associated Press'}}, {'uri': 'http://en.wikipedia.org/wiki/White_House', 'type': 'loc', 'score': 1, 'label': {'eng': 'White House'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Jews', 'type': 'loc', 'score': 1, 'label': {'eng': 'Jews'}, 'location': None}, {'uri': 'http://en.wikipedia.org/wiki/Knesset', 'type': 'org', 'score': 1, 'label': {'eng': 'Knesset'}}]",summary_large_image,eng-9545004,-0.42745098,452901802,1,hosted.ap.org,news,Associated Press,Mass grave Kerem Shalom border crossing 2014 Gaza War Rafah Border Crossing Humanitarian aid World Health Organization UNRWA United Nations Israel Defense Forces Rocket Hamas Palestinians Gaza City Rafah Israel Egypt .tel Kidney dialysis United States Department of the Treasury Tedros Adhanom Ceasefire Hezbollah Prime Minister of Israel Middle East Financial Crimes Enforcement Network Israel–United States relations Vandalism Military base Negev Border control Israel Police Palestinian refugees Palestinian territories Hostage United States Congress East Jerusalem Kerem Shalom Tel Aviv Qatar Ron Huldai LGBT community Palestinian Islamic Jihad Human Rights Watch Abraham Joe Biden Benjamin Netanyahu West Bank Jerusalem Turkey Syria Lebanon Iraq World Food Programme Nomad United States Armed Forces Jeep The Pentagon Associated Press White House Jews Knesset,ap.org,3661,Zero-shot Learning,2024,5,8,3,22,2024-05-08

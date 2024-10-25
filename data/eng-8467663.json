@@ -941,7 +941,7 @@
                     "source": {
                         "uri": "sputniknews.com",
                         "dataType": "news",
-                        "title": "Sputnik"
+                        "title": "Sputnik International"
                     },
                     "authors": [],
                     "concepts": [
@@ -1508,7 +1508,7 @@
                     "source": {
                         "uri": "torontosun.com",
                         "dataType": "news",
-                        "title": "Toronto Sun"
+                        "title": "torontosun"
                     },
                     "authors": [],
                     "concepts": [
@@ -2055,7 +2055,7 @@
                     "source": {
                         "uri": "theguardian.com",
                         "dataType": "news",
-                        "title": "The Guardian"
+                        "title": "the Guardian"
                     },
                     "authors": [],
                     "concepts": [
@@ -5475,7 +5475,7 @@
                     "source": {
                         "uri": "news24.com",
                         "dataType": "news",
-                        "title": "news24"
+                        "title": "Sport"
                     },
                     "authors": [],
                     "concepts": [
@@ -5911,7 +5911,7 @@
                     "source": {
                         "uri": "latimes.com",
                         "dataType": "news",
-                        "title": "Los Angeles Times"
+                        "title": "Daily Pilot"
                     },
                     "authors": [],
                     "concepts": [
@@ -9204,7 +9204,7 @@
                     "source": {
                         "uri": "seattlepi.com",
                         "dataType": "news",
-                        "title": "Seattle Pi"
+                        "title": "Seattle Post-Intelligencer"
                     },
                     "authors": [
                         {
@@ -11060,7 +11060,7 @@
                     "source": {
                         "uri": "edition.cnn.com",
                         "dataType": "news",
-                        "title": "CNN International"
+                        "title": "CNN"
                     },
                     "authors": [
                         {
@@ -11663,7 +11663,7 @@
                     "source": {
                         "uri": "cbc.ca",
                         "dataType": "news",
-                        "title": "CBC News"
+                        "title": "CBC"
                     },
                     "authors": [],
                     "concepts": [
@@ -13316,7 +13316,7 @@
                     "source": {
                         "uri": "ndtv.com",
                         "dataType": "news",
-                        "title": "NDTV"
+                        "title": "NDTV.com"
                     },
                     "authors": [
                         {
@@ -13552,7 +13552,7 @@
                     "source": {
                         "uri": "euronews.com",
                         "dataType": "news",
-                        "title": "Euronews English"
+                        "title": "euronews"
                     },
                     "authors": [],
                     "concepts": [
@@ -16628,7 +16628,7 @@
                     "source": {
                         "uri": "news24.com",
                         "dataType": "news",
-                        "title": "news24"
+                        "title": "Sport"
                     },
                     "authors": [
                         {
@@ -19556,7 +19556,7 @@
                     "source": {
                         "uri": "standardmedia.co.ke",
                         "dataType": "news",
-                        "title": "Standard Digital News - Kenya"
+                        "title": "The Standard"
                     },
                     "authors": [
                         {
@@ -21895,7 +21895,7 @@
                     "source": {
                         "uri": "news24.com",
                         "dataType": "news",
-                        "title": "news24"
+                        "title": "Sport"
                     },
                     "authors": [],
                     "concepts": [
@@ -26955,7 +26955,7 @@
                     "source": {
                         "uri": "theguardian.com",
                         "dataType": "news",
-                        "title": "The Guardian"
+                        "title": "the Guardian"
                     },
                     "authors": [],
                     "concepts": [
@@ -28390,7 +28390,7 @@
                     "source": {
                         "uri": "belfasttelegraph.co.uk",
                         "dataType": "news",
-                        "title": "Belfast Telegraph"
+                        "title": "belfasttelegraph"
                     },
                     "authors": [],
                     "concepts": [
@@ -33993,7 +33993,7 @@
                     "source": {
                         "uri": "cbc.ca",
                         "dataType": "news",
-                        "title": "CBC News"
+                        "title": "CBC"
                     },
                     "authors": [],
                     "concepts": [
@@ -34323,7 +34323,7 @@
                     "source": {
                         "uri": "bloomberg.com",
                         "dataType": "news",
-                        "title": "Bloomberg Business"
+                        "title": "Bloomberg.com"
                     },
                     "authors": [
                         {
@@ -35800,7 +35800,7 @@
                     "source": {
                         "uri": "voanews.com",
                         "dataType": "news",
-                        "title": "VOA Voice of America"
+                        "title": "VOA"
                     },
                     "authors": [],
                     "concepts": [
@@ -39409,7 +39409,7 @@
                     "source": {
                         "uri": "news24.com",
                         "dataType": "news",
-                        "title": "news24"
+                        "title": "Sport"
                     },
                     "authors": [],
                     "concepts": [
@@ -41226,7 +41226,7 @@
                     "source": {
                         "uri": "allafrica.com",
                         "dataType": "news",
-                        "title": "allAfrica"
+                        "title": "allAfrica.com"
                     },
                     "authors": [],
                     "concepts": [
@@ -42280,7 +42280,7 @@
                     "source": {
                         "uri": "news24.com",
                         "dataType": "news",
-                        "title": "news24"
+                        "title": "Sport"
                     },
                     "authors": [],
                     "concepts": [
@@ -45040,7 +45040,7 @@
                     "source": {
                         "uri": "edition.cnn.com",
                         "dataType": "news",
-                        "title": "CNN International"
+                        "title": "CNN"
                     },
                     "authors": [
                         {
@@ -52966,7 +52966,7 @@
                     "source": {
                         "uri": "ctvnews.ca",
                         "dataType": "news",
-                        "title": "CTV News"
+                        "title": "CTVNews"
                     },
                     "authors": [],
                     "concepts": [
@@ -53075,7 +53075,7 @@
                     "source": {
                         "uri": "ctpost.com",
                         "dataType": "news",
-                        "title": "CTPost"
+                        "title": "Connecticut Post"
                     },
                     "authors": [],
                     "concepts": [
@@ -53440,7 +53440,7 @@
                     "source": {
                         "uri": "arkansasonline.com",
                         "dataType": "news",
-                        "title": "ArkansasOnline"
+                        "title": "Arkansas Online"
                     },
                     "authors": [],
                     "concepts": [
@@ -57663,7 +57663,7 @@
                     "source": {
                         "uri": "torontosun.com",
                         "dataType": "news",
-                        "title": "Toronto Sun"
+                        "title": "torontosun"
                     },
                     "authors": [],
                     "concepts": [
@@ -58767,7 +58767,7 @@
                     "source": {
                         "uri": "arkansasonline.com",
                         "dataType": "news",
-                        "title": "ArkansasOnline"
+                        "title": "Arkansas Online"
                     },
                     "authors": [],
                     "concepts": [
@@ -61835,7 +61835,7 @@
                     "source": {
                         "uri": "voanews.com",
                         "dataType": "news",
-                        "title": "VOA Voice of America"
+                        "title": "VOA"
                     },
                     "authors": [],
                     "concepts": [
@@ -67176,7 +67176,7 @@
                     "source": {
                         "uri": "edition.cnn.com",
                         "dataType": "news",
-                        "title": "CNN International"
+                        "title": "CNN"
                     },
                     "authors": [
                         {
@@ -70186,7 +70186,7 @@
                     "source": {
                         "uri": "sputniknews.com",
                         "dataType": "news",
-                        "title": "Sputnik"
+                        "title": "Sputnik International"
                     },
                     "authors": [
                         {

@@ -1,0 +1,9 @@
+,path,name,continent,country,culture,dateFrom,dateTo,economic,group,lang,polalign,source,url,economicblocs,linguisticblocs,militarydefenseblocs,politicalregionalblocs,religions
+0,/Event,Event,,,,,,,0,,,,,,,,,
+1,/Event/269284807,269284807,,USA,C4,2015-04-11T20:49:00,2015-04-11T20:49:00,C2,0,eng,?,latimes.com,?,NAFTA,Eng,NATO,?,Christian
+2,/Event/269284807/269523084,269523084,,,,2015-04-11T20:49:00,2015-04-12T20:57:00,,269284807,eng,,sanluisobispo.com,,,,,,
+3,/Event/269284807/269523084/269530139,269530139,,,,2015-04-12T20:57:00,2015-04-12T21:44:00,,269284807,eng,,nbcsandiego.com,,,,,,
+4,/Event/269284807/269523084/269539498,269539498,,,,2015-04-12T20:57:00,2015-04-12T22:45:00,,269284807,eng,,nbclosangeles.com,,,,,,
+5,/Event/269284807/269588286,269588286,,USA,C4,2015-04-11T20:49:00,2015-04-13T01:58:00,C2,269284807,eng,?,keyt.com,?,NAFTA,Eng,NATO,?,Christian
+6,/Event/269284807/269666345,269666345,,,,2015-04-11T20:49:00,2015-04-13T10:32:00,,269284807,eng,,sanluisobispo.com,,,,,,
+7,/Event/269284807/269861058,269861058,,,,2015-04-11T20:49:00,2015-04-13T21:47:00,,269284807,eng,,920kvec.com,,,,,,

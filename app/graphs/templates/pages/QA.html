@@ -10,20 +10,20 @@
 <div class="row" id="dropdown2"">
 	<select id="barrier" onchange="BarrierSelectedQA(event)">
 		<option value="select" selected="selected">Select Barrier</option>
-					<option value="Linguistic">Linguistic</option>
+					<option value="language">Linguistic</option>
 					
-					<option value="Political">Political</option>
-					<option value="Geographical">Geographical</option>
+					<option value="Political_Alignment">Political</option>
+					<option value="country">Geographical</option>
 
 					<option value="Continent">Continent</option>
 					<option value="Religions">Religions</option>
 					<option value="economicblocs">Economic Blocs</option>
-					<option value="militarydefensebloc">Military/Defense Bloc</option>
-					<option value="politicalregionalbloc">Political/Regional Bloc</option>
-					<option value="linguisticbloc">Linguistic Bloc</option>
+					<option value="militarydefenseblocs">Military/Defense Bloc</option>
+					<option value="politicalregionalblocs">Political/Regional Bloc</option>
+					<option value="linguisticblocs">Linguistic Bloc</option>
 					
-					<optgroup  label="Economic">
-					<option value="SafetyandSecurity">Safety and Security</option>
+					<optgroup  label="Economic_Class">
+					<option value="Economic_Class">Safety and Security</option>
 					<option value="PersonalFreedom">Personal Freedom</option>
 					<option value="Governance">Governance</option>
 					<option value="SocialCapital">Social Capital</option>
@@ -37,12 +37,12 @@
 					<option value="NaturalEnvironment">Natural Environment</option>
 					</optgroup>
 					
-					<optgroup label="Cultural">
+					<optgroup label="Cultural_Class">
 					<option value="PowerDistance">Power Distance</option>
-					<option value="individualism">Individualism vs. collectivism</option>
-					<option value="unscertainty">Uncertainty avoidance</option>
-					<option value="masculinity">Masculinity vs. feminity</option>
-					<option value="longterm">Long-term orientation vs. short-term orientation</option>
+					<option value="Individualism">Individualism vs. collectivism</option>
+					<option value="UncertaintyAvoidance">Uncertainty avoidance</option>
+					<option value="Masculinity">Masculinity vs. feminity</option>
+					<option value="LongTermOrientation">Long-term orientation vs. short-term orientation</option>
 					<option value="indulgence">Indulgence vs. restraint</option>
 					</optgroup>
 	</select>
@@ -65,30 +65,30 @@
 	
 	}
 
-	else if (selected == "Linguistic"){ 
+	else if (selected == "language"){ 
 	$("#QAform_1").html(
 	
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="spa">Spanish</option><option value="ita">Italian</option><option value="rus">Russian</option><option value="deu">German</option><option value="ara">Arabic</option><option value="ben">ben</option><option value="bos">bos</option><option value="bur">bur</option><option value="can">can</option><option value="cat">cat</option><option value="chi">chi</option><option value="dut">dut</option><option value="ecc">ecc</option><option value="fre">fre</option><option value="ger">ger</option><option value="hrv">hrv</option><option value="ind">ind</option><option value="mal">mal</option><option value="por">por</option><option value="mon">mon</option><option value="ser">ser</option><option value="tur">tur</option><option value="eng">eng</option></select><br><br>'+
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')
 	}
 
-	else if ( selected == "Cultural" || selected == "Economic") { $("#QAform_1").html(
+	else if ( selected == "Cultural_Class" || selected == "Economic_Class") { $("#QAform_1").html(
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="C1">C1</option><option value="C2">C2</option><option value="C3">C3</option><option value="C4">C4</option><option value="C5">C5</option><option value="C6">C6</option><option value="C7">C7</option><option value="C8">C8</option><option value="C9">C9</option><option value="C10">C10</option><option value="C11">C11</option><option value="C12">C12</option><option value="C13">C13</option><option value="C14">C14</option><option value="C15">C15</option><option value="C16">C16</option><option value="C17">C17</option><option value="C18">C18</option><option value="C19">C19</option><option value="C20">C20</option></select><br><br>'+
 
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
 	
-	else if (selected == "Geographical") { $("#QAform_1").html(
+	else if (selected == "country") { $("#QAform_1").html(
 
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="AE">United-Arab-Emirates</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="AM">Armenia</option><option value="AO">Angola</option><option value="AR">Argentina</option><option value="AT">Austria</option><option value="AU">Australia</option><option value="AZ">Azerbaijan</option><option value="BA">Bosnia</option><option value="BB">Barbados</option><option value="BD">Bangladesh</option><option value="BE">Belgium</option><option value="BF">Burkina-Faso</option><option value="BG">Bulgaria</option><option value="BH">Bahrain</option><option value="BN">Brunei</option><option value="BO">Bolivia</option><option value="BR">Brazil</option><option value="BS">Bahamas</option><option value="BT">Bhutan</option><option value="BY">Belarus</option><option value="BZ">Belize</option><option value="CA">Canada</option><option value="CD">Congo</option><option value="CH">Switzerland</option><option value="CI">Republic-of-Cote</option><option value="CL">Chile</option><option value="CM">Cameroon</option><option value="CN">China</option><option value="CO">Colombia</option><option value="CU">Cuba</option><option value="CV">Cabe Verde</option><option value="CY">Cyprus</option><option value="CZ">Czech-Republic</option><option value="DE">Germany</option><option value="DK">Denmark</option><option value="DO">Dominican-Republic</option><option value="DZ">Algeria</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="ES">Spain</option><option value="ET">Ethiopia</option><option value="FI">Finland</option><option value="FJ">Fiji</option><option value="FR">France</option><option value="GA">Gabon</option><option value="GE">Georgia</option><option value="GG">Guernsey</option><option value="GH">Ghana</option><option value="GM">Gambia</option><option value="GN">Guinea</option><option value="GR">Greece</option><option value="GT">Guatemala</option><option value="GY">Guyana</option><option value="HK">Hong-Kong</option><option value="HN">Honduras</option><option value="HR">Croatia</option><option value="HU">Hungary</option><option value="ID">Indonesia</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IN">India</option><option value="IQ">Iraq</option><option value="IR">Iran</option><option value="IS">Iceland</option><option value="IT">Italy</option><option value="JO">Jordan</option><option value="JP">Japan</option><option value="KE">Kenya</option><option value="KG">Kyrgyzstan</option><option value="KH">Cambodia</option><option value="KN">Saint-Kitts-Nevis</option><option value="KP">North-Korea</option><option value="KR">South-Korea</option><option value="KW">Kuwait</option><option value="KZ">Kazakhstan</option><option value="LB">Lebanon</option><option value="LI">Liechtenstein</option><option value="LK">Sri-Lanka</option><option value="LU">Luxembourg</option><option value="LV">Latvia</option><option value="LY">Libya</option><option value="MA">Morocco</option><option value="MC">Monaco</option><option value="MD">Moldova</option><option value="ME">Montenegro</option><option value="MK">Macedonia</option><option value="MM">Myanmar</option><option value="MO">Missouri</option><option value="MT">Malta</option><option value="MU">Mauritius</option><option value="MX">Mexico</option><option value="MY">Malaysia</option><option value="NG">Nigeria</option><option value="NI">Nicaragua</option><option value="NL">Netherlands</option><option value="NO">Norway</option><option value="NP">Nepal</option><option value="NZ">New-Zealand</option><option value="OM">Oman</option><option value="PA">Panama</option><option value="PE">Peru</option><option value="MPGA">Papua-New-Guinea</option><option value="PH">Philippines</option><option value="PK">Pakistan</option><option value="PL">Poland</option><option value="PR">Puerto-Rico</option><option value="PS">Palestine</option><option value="PT">Portugal</option><option value="PY">Paraguay</option><option value="QA">Qatar</option><option value="RO">Romania</option><option value="RS">Serbia</option><option value="RU">Russia</option><option value="SA">Saudi-Arabia</option><option value="SE">Sweden</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SL">Slovenia</option><option value="SM">San-Marino</option><option value="SN">Senegal</option><option value="SO">Somalia</option><option value="SR">Suriname</option><option value="SV">El-Salvador</option><option value="SY">Syria</option><option value="TH">Thailand</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TT">Trinidad-and-Tobago</option><option value="TW">Taiwan</option><option value="TZ">Tanzania</option><option value="UA">Ukraine</option><option value="UG">Uganda</option><option value="UK">United-Kingdom</option><option value="USA">United-States</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="WS">Samoa</option><option value="XK">kosovo</option><option value="YE">Yemen</option><option value="ZA">South-Africa</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select><br><br>'+
 
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
 
-	else if (selected == "Political") { $("#QAform_1").html(
+	else if (selected == "Political_Alignment") { $("#QAform_1").html(
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="Center-left">Center-left</option><option value="Centre">Centre</option><option value="Centre-right">Centre-right</option><option value="unknown">unknown</option><option value="Catholic">Catholic</option><option value="Center-left-liberal">Center-left-liberal</option><option value="Center-left-nationalism">Center-left-nationalism</option><option value="Center-right-liberal">Center-right-liberal</option><option value="Center-right-populist">Center-right-populist</option><option value="Chinese-Communist-Party">Chinese-Communist-Party</option><option value="Conservative">Conservative</option><option value="Government-owned">Government-owned</option><option value="Independent">Independent</option><option value="Islamist">Islamist</option><option value="Liberal">Liberal</option><option value="Pro-government">Pro-government</option><option value="Progressive">Progressive</option><option value="Pro-opposition">Pro-opposition</option><option value="Pro-Western">Pro-Western</option><option value="Public broadcaster">Public broadcaster</option><option value="Publicly funded">Publicly funded</option><option value="Right-wing-conservative">Right-wing-conservative</option><option value="Secular">Secular</option><option value="State-controlled">State-controlled</option></select><br><br>'+
 	
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
 	
-	else if (selected == "Economic") { $("#QAform_1").html(
+	else if (selected == "Economic_Class") { $("#QAform_1").html(
 	'<label style="color:black;"> Input classes separated by commas (C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20) </label>  '+
 	'<input type="text" class="form-control" id="commaValues" value="C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20"><br>'+
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
@@ -109,17 +109,17 @@
 	
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
 	
-	else if (selected == "militarydefensebloc") { $("#QAform_1").html(
+	else if (selected == "militarydefenseblocs") { $("#QAform_1").html(
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="CSTO">Collective Security Treaty Organization (CSTO)</option><option value="NATO">North Atlantic Treaty Organization (NATO)</option><option value="UNASUR">Union of South American Nations (UNASUR)</option></select><br><br>'+
 	
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
 	
-	else if (selected == "politicalregionalbloc") { $("#QAform_1").html(
+	else if (selected == "politicalregionalblocs") { $("#QAform_1").html(
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="AU">African Union</option><option value="AL">Arab League</option><option value="CIS">Commonwealth of Independent States (CIS)</option><option value="PIF">Pacific Islands Forum (PIF)</option><option value="UNASUR">Union of South American Nations (UNASUR)</option></select><br><br>'+
 	
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
 	
-	else if (selected == "linguisticbloc") { $("#QAform_1").html(
+	else if (selected == "linguisticblocs") { $("#QAform_1").html(
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="Ara">Arabic-speaking</option><option value="Eng">English-speaking</option><option value="Fre">French-speaking</option><option value="Ger">German-speaking</option><option value="Por">Portuguese-speaking</option><option value="Spa">Spanish-speaking</option></select><br><br>'+
 	
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
@@ -130,8 +130,8 @@
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="best">best</option><option value="worst">worst</option><option value="average">average</option></select><br><br>'+
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
 	
-	else if (selected == "PowerDistance" || selected == "individualism" || selected == "unscertainty" ||
-	selected == "masculinity" || selected == "longterm" || selected == "indulgence") {$("#QAform_1").html(
+	else if (selected == "PowerDistance" || selected == "Individualism" || selected == "UncertaintyAvoidance" ||
+	selected == "Masculinity" || selected == "LongTermOrientation" || selected == "Indulgence") {$("#QAform_1").html(
 	'<select style="width: 250px;" name="commaValues" id="commaValues" multiple multiselect-search="true" multiselect-select-all="true" multiselect-hide-x="true" onchange="//console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))" multiselect-hide-x="true"><option value="high">high</option><option value="low">low</option></select><br><br>'+
 
 	'<button id="trendsQA" class="btn btn-sm bg-gradient-success  text-white" onclick="GetTrendsQA(event)">Get Trends</button>')}
@@ -147,14 +147,14 @@
 <br><br>
 <div class="container-fluid">
 <div style="color:black;" class='row'>
-<div  style="color:black;'fontSize': 20;height:50%;width:80%;margin-right:auto;margin-left:auto;background:#fdfdfd;" class="chart" id="qalinegraph">
+<div  style="color:black;'fontSize': 20;height:50%;width:100%;margin-right:auto;margin-left:auto;background:#fdfdfd;" class="chart" id="qalinegraph">
 </div>  
 </div>
 </div>
 <br><br>
 <div class="container-fluid">
 <div style="color:black;" class='row'>
-<div  style="color:black;'fontSize':20;height:50%;width:80%;margin-right:auto;margin-left:auto;background:#fdfdfd;" id="qatrendtable">
+<div  style="color:black;'fontSize':20;height:50%;width:100%;margin-right:auto;margin-left:auto;background:#fdfdfd;" id="qatrendtable">
 </div>
 </div>
 </div>

@@ -126,11 +126,7 @@
 											'<h5 id="count_text" style="margin-left:50px;horiz-align: middle;display:inline-block;">0</h5>' +
 											'<div id="graph" style="width:100%;height:100%;margin:0;">'
 										);
-									 
-										//console.log("barrier is selected")
-										
-										var selected = $("select#customEventSelection option:selected").val();
-										//console.log(selected)
+										var selected = $("select#customEventSelection option:selected").val(); 
 										eventSelected = ""
 										
 										if (selectedBar == "first") {
@@ -146,21 +142,108 @@
 
 										var barrierSelected = $("select#barrierSelection option:selected").val();
 										var event = "";
-										var range = document.getElementById('slider');
+										var range = document.getElementById('slider'); 
 
-										//console.log("selected values")
-										//console.log(delaySelected)
-										//console.log(eventSelected)
-
-										if (barrierSelected == "select") {
+									if (barrierSelected == "select") {
+																			
+									} else {
+									
+									if (barrierSelected == "SafetyandSecurity") {
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+"Economic_Class"+'.csv'
+																				 
+									 } else if (barrierSelected == "PersonalFreedom") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "Governance") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "SocialCapital") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "InvestmentEnvironment") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "EnterpriseConditions") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "MarketAccessandInfrastructure") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "EconomicQuality") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "LivingConditions") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "Health") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "Education") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "NaturalEnvironment") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "PowerDistance") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+																				 
+									 } else if (barrierSelected == "individualism") {
+									 event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_Individualism"+'.csv'
+																				 
+									 } else if (barrierSelected == "unscertainty") {
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_UncertaintyAvoidance"+'.csv'
 										
-										} else {
-											
-											//console.log("selected file")
-											event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +'.csv'
-											//console.log(event)
-										}
-
+									 } else if (barrierSelected == "masculinity") {
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_Masculinity"+'.csv' 
+										
+									 } else if (barrierSelected == "longterm") {
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_LongTermOrientation"+'.csv'
+										
+									 } else if (barrierSelected == "indulgence") {
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_Indulgence"+'.csv'
+										
+									 } else if (barrierSelected == "Political") {
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_Political_Alignment"+'.csv'
+									 } else if (barrierSelected == "Geographical") {
+									    event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_country"+'.csv'
+									 }
+									 else if (barrierSelected == "Continent") 
+									{
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+									}
+									else if (barrierSelected == "Religions") 
+									{
+									event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+									}
+									else if (barrierSelected == "economicblocs") 
+									{
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_economicblocs"+'.csv'
+									}
+									else if (barrierSelected == "militarydefensebloc") 
+									{
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_militarydefenseblocs"+'.csv'
+									}
+									else if (barrierSelected == "Political/Regional Bloc") 
+									{
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_politicalregionalblocs"+'.csv'
+									}
+									else if (barrierSelected == "linguisticblocs") 
+									{
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_"+barrierSelected+'.csv'
+									}
+									else if (barrierSelected == "Linguistic") 
+									{
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_language"+'.csv'
+									}else if (barrierSelected == "culture") 
+									{
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_Cultural_Class"+'.csv'
+									}
+									else if (barrierSelected == "economy") 
+									{
+										event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ eventSelected +"_Economic_Class"+'.csv'
+									}
+								}
+										
 									if (delaySelected == "0") {
 										time_delay = 0.1
 										
@@ -181,11 +264,12 @@
 										
 									}
 
-										var barrier = "";
+									var barrier = "";
 									if (barrierSelected == "select") {
+									
 									} else {
-										if (barrierSelected == "Linguistic") {
-										barrier = 'lang_y'
+										if (barrierSelected == "") {
+										barrier = 'language'
 										let data = ["Each dot represents a news article.", 
 										"The color of each dot represents the publishing language of an article."
 										,"The news articles are connected based on Wikipedia-concepts based similarity."];
@@ -198,7 +282,7 @@
 									});
 
 									 } else if (barrierSelected == "SafetyandSecurity") {
-											barrier = 'SafetyandSecurity'
+											barrier = 'Economic_Class'
 									 
 									 } else if (barrierSelected == "PersonalFreedom") {
 											barrier = 'PersonalFreedom'
@@ -290,7 +374,7 @@
 									});
 
 									} else if (barrierSelected == "Political") {
-										barrier = 'polalign'
+										barrier = 'Political_Alignment'
 
 										let data = ["Each dot represents a news article."
 										, "The color of each dot represents the political alignment of its news publisher."
@@ -318,7 +402,7 @@
 										list.appendChild(li);
 									});
 
-									} else if (barrierSelected == "test2") {
+									} else if (barrierSelected == "Economic") {
 										barrier = 'economic'
 
 										let data = ["Each dot represents a news article.", 
@@ -502,25 +586,31 @@
 										.nodeThreeObject(node => {
 									var sprite;
 									if (barrierSelected == "Linguistic") {
-										sprite = new SpriteText(node.lang_y);
+										sprite = new SpriteText(node.language);
 										
 									} else if (barrierSelected == "Cultural") {
-										sprite = new SpriteText(node.culture);
+										sprite = new SpriteText(node.Cultural_Class);
 										
 									} else if (barrierSelected == "Political") {
-										sprite = new SpriteText(node.polalign);
+										sprite = new SpriteText(node.Political_Alignment);
 										
 									} else if (barrierSelected == "Geographical") {
 										sprite = new SpriteText(node.country);
 										
+									} else if (barrierSelected == "Continent") {
+										sprite = new SpriteText(node.Continent);
+										
+									} else if (barrierSelected == "Geographical") {
+										sprite = new SpriteText(node.Country);
+										
 									} else if (barrierSelected == "Economic") {
-										sprite = new SpriteText(node.economic);
+										sprite = new SpriteText(node.Economic_Class);
 										
 									} else if (barrierSelected == "Continent") {
-										sprite = new SpriteText(node.continent);
+										sprite = new SpriteText(node.Continent);
 										
 									} else if (barrierSelected == "Religions") {
-										sprite = new SpriteText(node.religions);
+										sprite = new SpriteText(node.Religions);
 										
 									} else if (barrierSelected == "economicblocs") {
 										sprite = new SpriteText(node.economicblocs);
@@ -535,7 +625,7 @@
 										sprite = new SpriteText(node.linguisticblocs);
 										
 									} else if (barrierSelected == "SafetyandSecurity") {
-											sprite = new SpriteText(node.SafetyandSecurity);
+											sprite = new SpriteText(node.Economic_Class);
 									 
 									 } else if (barrierSelected == "PersonalFreedom") {
 											sprite = new SpriteText(node.PersonalFreedom);
@@ -573,19 +663,19 @@
 									 } else if (barrierSelected == "PowerDistance") {
 											sprite = new SpriteText(node.PowerDistance);
 									 
-									 } else if (barrierSelected == "individualism") {
+									 } else if (barrierSelected == "Individualism") {
 											sprite = new SpriteText(node.Individualism);
 									 
-									 } else if (barrierSelected == "unscertainty") {
+									 } else if (barrierSelected == "Unscertainty") {
 											sprite = new SpriteText(node.UncertaintyAvoidance);
 									 
-									 } else if (barrierSelected == "masculinity") {
+									 } else if (barrierSelected == "Masculinity") {
 											sprite = new SpriteText(node.Masculinity);
 									 
-									 } else if (barrierSelected == "longterm") {
+									 } else if (barrierSelected == "Longterm") {
 											sprite = new SpriteText(node.LongTermOrientation);
 									 
-									 } else if (barrierSelected == "indulgence") {
+									 } else if (barrierSelected == "Indulgence") {
 											sprite = new SpriteText(node.Indulgence);
 									}
 										sprite.material.depthWrite = false;
@@ -614,49 +704,114 @@
 										node.fy = node.y;
 										node.fz = node.z;
 									});
+									
+									function handleMissingValue(value, defaultValue = "?") {
+                                        return (value && value.trim() !== "") ? value : defaultValue;
+									}
 										Graph.d3Force('charge').strength(-25);
 													
 										var data = [];
 										d3.csv(event, function(d) {
-											return {size: d.size, path: d.path, dateFrom: d.dateFrom, group: d.group, 
-											country: (d.country.trim() == "")? "?": d.country, 
-											con_name: (d.con_name.trim() == "")? "?": d.con_name, 
-											culture: (d.culture.trim() == "")? "?": d.culture, 
-											economic: (d.economic.trim() == "")? "?": d.economic,
-											lang_y: (d.lang.trim() == "")? "?": d.lang,
-											source: (d.source.trim() == "")? "?": d.source,
-											dateTo: d.dateTo, 
-											url: d.url, 
-											polalign: (d.polalign.trim() == "")? "?": d.polalign,
-											continent: (d.continent.trim() == "")? "?": d.continent,
-											religions: (d.religions.trim() == "")? "?": d.religions,
-											economicblocs: (d.economicblocs.trim() == "")? "?": d.economicblocs,
-											militarydefenseblocs: (d.militarydefenseblocs.trim() == "")? "?": d.militarydefenseblocs,
-											politicalregionalblocs: (d.politicalregionalblocs.trim() == "")? "?": d.politicalregionalblocs,
-											linguisticblocs: (d.linguisticblocs.trim() == "")? "?": d.linguisticblocs, 
-											SafetyandSecurity: (d.SafetyandSecurity.trim() == "")? "?": d.SafetyandSecurity,
-											PersonalFreedom: (d.PersonalFreedom.trim() == "")? "?": d.PersonalFreedom,
-											Governance: (d.Governance.trim() == "")? "?": d.Governance,
-											SocialCapital: (d.SocialCapital.trim() == "")? "?": d.SocialCapital,
-											InvestmentEnvironment: (d.InvestmentEnvironment.trim() == "")? "?": d.InvestmentEnvironment,
-											EnterpriseConditions: (d.EnterpriseConditions.trim() == "")? "?": d.EnterpriseConditions,
-											MarketAccessandInfrastructure: (d.MarketAccessandInfrastructure.trim() == "")? "?": d.MarketAccessandInfrastructure,
-											EconomicQuality: (d.EconomicQuality.trim() == "")? "?": d.EconomicQuality,
-											LivingConditions: (d.LivingConditions.trim() == "")? "?": d.LivingConditions,
-											Health: (d.Health.trim() == "")? "?": d.Health,
-											Education: (d.Education.trim() == "")? "?": d.Education,
-											NaturalEnvironment: (d.NaturalEnvironment.trim() == "")? "?": d.NaturalEnvironment, 
-											PowerDistance : (d.PowerDistance.trim() == "")? "?": d.PowerDistance, 
-											Individualism: (d.Individualism.trim() == "")? "?": d.Individualism, 
-											Masculinity: (d.Masculinity.trim() == "")? "?": d.Masculinity, 
-											UncertaintyAvoidance: (d.UncertaintyAvoidance.trim() == "")? "?": d.UncertaintyAvoidance,
-											LongTermOrientation: (d.LongTermOrientation.trim() == "")? "?": d.LongTermOrientation,
-											Indulgence: (d.Indulgence.trim() == "")? "?": d.Indulgence
-										}	
-									}).then(function(d){
-										//console.log("data is here")
-										data.push(d);
-										//console.log(d.lang)
+										let result = {
+											size: d.size,
+											path: d.path,
+											dateFrom: d.dateFrom,
+											group: d.group,
+											dateTo: d['dateTo'],
+											url: d['url']
+										};
+
+										// Set the corresponding property based on the barrierSelected value
+										if (barrierSelected == "SafetyandSecurity") {
+											result.Economic_Class = d.Economic_Class;
+											
+										} else if (barrierSelected == "PersonalFreedom") {
+											result.PersonalFreedom = d.PersonalFreedom;
+											
+										} else if (barrierSelected == "Governance") {
+											result.Governance = d.Governance;
+											
+										} else if (barrierSelected == "SocialCapital") {
+											result.SocialCapital = d.SocialCapital;
+											
+										} else if (barrierSelected == "InvestmentEnvironment") {
+											result.InvestmentEnvironment = d.InvestmentEnvironment;
+											
+										} else if (barrierSelected == "EnterpriseConditions") {
+											result.EnterpriseConditions = d.EnterpriseConditions;
+											
+										} else if (barrierSelected == "MarketAccessandInfrastructure") {
+											result.MarketAccessandInfrastructure = d.MarketAccessandInfrastructure;
+											
+										} else if (barrierSelected == "EconomicQuality") {
+											result.EconomicQuality = d.EconomicQuality;
+											
+										} else if (barrierSelected == "LivingConditions") {
+											result.LivingConditions = d.LivingConditions;
+											
+										} else if (barrierSelected == "Health") {
+											result.Health = d.Health;
+											
+										} else if (barrierSelected == "Education") {
+											result.Education = d.Education;
+											
+										} else if (barrierSelected == "NaturalEnvironment") {
+											result.NaturalEnvironment = d.NaturalEnvironment;
+											
+										} else if (barrierSelected == "PowerDistance") {
+											result.PowerDistance = d.PowerDistance;
+											
+										} else if (barrierSelected == "Individualism") {
+											result.Individualism = d.Individualism;
+											
+										} else if (barrierSelected == "UncertaintyAvoidance") {
+											result.UncertaintyAvoidance = d.UncertaintyAvoidance;
+											
+										} else if (barrierSelected == "Masculinity") {
+											result.Masculinity = d.Masculinity;
+										} else if (barrierSelected == "LongTermOrientation") {
+											result.LongTermOrientation = d.LongTermOrientation;
+										} else if (barrierSelected == "Indulgence") {
+											result.Indulgence = d.Indulgence;
+											
+										} else if (barrierSelected == "Political") {
+											result.Political_Alignment = d.Political_Alignment;
+											
+										} else if (barrierSelected == "Geographical") {
+											result.country = d.country;
+											
+										} else if (barrierSelected == "Continent") {
+											result.Continent = d.Continent;
+											
+										} else if (barrierSelected == "Religions") {
+											result.Religions = d.Religions;
+											
+										} else if (barrierSelected == "economicblocs") {
+											result.economicblocs = d.economicblocs;
+											
+										} else if (barrierSelected == "militarydefensebloc") {
+											result.militarydefenseblocs = d.militarydefenseblocs;
+											
+										} else if (barrierSelected == "Political/Regional Bloc") {
+											result.politicalregionalblocs = d.politicalregionalblocs;
+											
+										} else if (barrierSelected == "linguisticblocs") {
+											result.linguisticblocs = d.linguisticblocs;
+											
+										} else if (barrierSelected == "Linguistic") {
+											result.language = d.language;
+											
+										} else if (barrierSelected == "culture") {
+											result.CulturalClass = d.CulturalClass;
+											
+										} else if (barrierSelected == "economy") {
+											result.EconomicClass = d.EconomicClass;
+											
+										}
+
+										return result;
+									}).then(function(d) {
+											data.push(d); 
 										let i = 0;
 										let prevTime = 0
 										d.forEach((obj, index) => {
@@ -665,15 +820,8 @@
 
 										if (d.length-1 == index) {;	}
 										const levels = obj.path.split('/'), level = levels.length - 1, module = level > 0 ? levels[1] : null, leaf = levels.pop(), parent = levels.join('/');
-										const node = obj
-										//console.log("Total links");
-										//console.log(index);
-										//console.log(node.path);
-										//if(index != 0){
-										nodes.push(node);
-										//}
-										
-
+										const node = obj 
+										nodes.push(node); 
 										if (parent) {
 										if (links.length == 0) {
 												
@@ -684,6 +832,7 @@
 											prevTime = node.dateTo
 										}else{
 											console.log(index)
+											console.log(node.Political_Alignment)
 											let d1 = new Date(prevTime)
 											console.log(d1)
 											let d2 = new Date(node.dateTo)
@@ -699,31 +848,29 @@
 											var seconds = Math.abs(delta % 60);											
 											document.getElementById("time_text").innerHTML = "Difference: "+ days.toString() +" days: "+hours.toString()+" hours: "+minutes.toString()+" minutes: "+seconds.toString()+" seconds:";
 										}
-										prevTime = node.dateTo
-										
-										//document.getElementById("time_text").innerHTML = "Date: "+ node.dateTo.replace("T", " Time: ");;
+										prevTime = node.dateTo 
 										document.getElementById("count_text").innerHTML = index;
 										document.getElementById("barLbl").innerHTML = "Country: " + node.con_name;
 									if (barrierSelected == "Linguistic") {
-										document.getElementById("barLbl_value").innerHTML = node.lang_y;
+										document.getElementById("barLbl_value").innerHTML = node.language;
 										
 									} else if (barrierSelected == "Cultural") {
-										document.getElementById("barLbl_value").innerHTML = node.culture;
+										document.getElementById("barLbl_value").innerHTML = node.Cultural_Class;
 										
 									} else if (barrierSelected == "Political") {
-										document.getElementById("barLbl_value").innerHTML = node.polalign;
+										document.getElementById("barLbl_value").innerHTML = node.Political_Alignment;
 										
 									} else if (barrierSelected == "Geographical") {
 										document.getElementById("barLbl_value").innerHTML = node.country;
 										
 									} else if (barrierSelected == "Economic") {
-										document.getElementById("barLbl_value").innerHTML = node.economic;
+										document.getElementById("barLbl_value").innerHTML = node.Economic_Class;
 										
 									} else if (barrierSelected == "Continent") {
-										document.getElementById("barLbl_value").innerHTML = node.continent;
+										document.getElementById("barLbl_value").innerHTML = node.Continent;
 										
 									} else if (barrierSelected == "Religions") {
-										document.getElementById("barLbl_value").innerHTML = node.religions;
+										document.getElementById("barLbl_value").innerHTML = node.Religions;
 										
 									} else if (barrierSelected == "economicblocs") {
 										document.getElementById("barLbl_value").innerHTML = node.economicblocs;
@@ -738,7 +885,7 @@
 										document.getElementById("barLbl_value").innerHTML = node.linguisticblocs;
 										
 									} else if (barrierSelected == "SafetyandSecurity") {
-											document.getElementById("barLbl_value").innerHTML = node.SafetyandSecurity;
+											document.getElementById("barLbl_value").innerHTML = node.Economic_Class;
 									 
 									 } else if (barrierSelected == "PersonalFreedom") {
 										document.getElementById("barLbl_value").innerHTML = node.PersonalFreedom;
@@ -792,31 +939,23 @@
 											document.getElementById("barLbl_value").innerHTML = node.Indulgence;
 									}
 
-
-
-										
-
-										links.push({source: parent, target: obj.path, targetNode: node});
-										Graph.graphData({
-										nodes: [...nodes, {parent}],
-										links: [...links, {source: parent, target: obj.path, targetNode: node}]
-										});
-									
-										i = i + 1
-										
-										}}, index * time_delay);
-										
-										var dropdown = document.getElementById("barrierSelection");
-										dropdown.addEventListener("change", function() {
-											clearInterval(timer);
-										});
-
+									links.push({source: parent, target: obj.path, targetNode: node});
+									Graph.graphData({
+									nodes: [...nodes, {parent}],
+									links: [...links, {source: parent, target: obj.path, targetNode: node}]
 									});
 									
-									
+									i = i + 1
+										
+									}}, index * time_delay);
+										
+									var dropdown = document.getElementById("barrierSelection");
+									dropdown.addEventListener("change", function() {
+									clearInterval(timer);
+									}); 
+									}); 
 									});
-									Graph.cameraPosition({ z: 300 });
-									
+									Graph.cameraPosition({ z: 300 }); 
 									}
 									}
 									
@@ -873,7 +1012,7 @@
 												for (const [key, value] of Object.entries(data)){
 													label = ""
 													//console.log(key)
-													if(key == 'eng-8467663' || key == 'eng-8468195' || key == 'eng-8468865' || key == 'eng-8471915' || key ==
+													if(key == 'eng-8467663' || key == 'Israel_War_2023-07' || key == 'eng-8468865' || key == 'eng-8471915' || key ==
 	'eng-8472550' || key == 'eng-8473149'){
 														if(isAdded == false){
 															isAdded = true
@@ -966,6 +1105,49 @@
 													optgroup.appendChild(new Option(value, key));
 													}
 												}
+												eventSelection.appendChild(optgroup);
+												isAdded = false
+												for (const [key, value] of Object.entries(data)){
+													label = ""
+													if(key == 'Israel_War_2023-10' || key == 'Israel_War_2023-11' || key == 'Israel_War_2023-12' || key == 'Israel_War_2024-01' 
+													|| key == 'Israel_War_2024-02' || key == 'Israel_War_2024-03' || key == 'Israel_War_2024-04' || key == 'Israel_War_2024-05'
+													|| key == 'Israel_War_2024-06' || key == 'Israel_War_2024-07'){
+														if(isAdded == false){
+															isAdded = true
+															label = "Israeli–Palestinian War"
+															console.log(label)
+															optgroup = document.createElement("optgroup");
+															optgroup.setAttribute("label", label);
+															addedEvents.push(key);
+														}
+													optgroup.appendChild(new Option(value, key));
+													}
+												}
+												eventSelection.appendChild(optgroup);
+												isAdded = false
+												for (const [key, value] of Object.entries(data)){
+													label = ""
+													if(key == 'Russian_war_2022-02' || key == 'Russian_war_2022-03' || key == 'Russian_war_2022-04' || key == 'Russian_war_2022-05' 
+													|| key == 'Russian_war_2022-06' || key == 'Russian_war_2022-07' || key == 'Russian_war_2022-08' || key == 'Russian_war_2022-09'
+													|| key == 'Russian_war_2022-10' || key == 'Russian_war_2022-11' || key == 'Russian_war_2022-12' || key == 'Russian_war_2023-01'
+													|| key == 'Russian_war_2023-02' || key == 'Russian_war_2023-03' || key == 'Russian_war_2023-04' || key == 'Russian_war_2023-05'
+													|| key == 'Russian_war_2023-06' || key == 'Russian_war_2023-07' || key == 'Russian_war_2023-08' || key == 'Russian_war_2023-09'
+													|| key == 'Russian_war_2023-10' || key == 'Russian_war_2023-11' || key == 'Russian_war_2023-12' || key == 'Russian_war_2024-01'
+													|| key == 'Russian_war_2024-02' || key == 'Russian_war_2024-03' || key == 'Russian_war_2024-04' || key == 'Russian_war_2024-05'
+													){
+														if(isAdded == false){
+															isAdded = true
+															label = "Russo-Ukrainian War"
+															console.log(label)
+															optgroup = document.createElement("optgroup");
+															optgroup.setAttribute("label", label);
+															addedEvents.push(key);
+														}
+													optgroup.appendChild(new Option(value, key));
+													}
+												}
+												eventSelection.appendChild(optgroup);
+												isAdded = false
 												for (const [key, value] of Object.entries(data)){
 													if(key == ''){
 														label = "Innovations/Autos"
@@ -978,7 +1160,7 @@
 												}
 												count = count + 1
 												
-											for (const [key, value] of Object.entries(data)){
+											/*for (const [key, value] of Object.entries(data)){
 													if (addedEvents.includes(key)){
 													
 													} else {
@@ -989,7 +1171,8 @@
 															optgroup.appendChild(new Option(value, key));
 															addedEvents.push(key);
 													}
-												}	
+												}*/
+												
 												}
 										});	
 									});
@@ -1006,7 +1189,30 @@
 					var Graph = null;
 					var selectedBar = "no"
 									
+									
 					$('select#eventSelection').on('change', function () {
+
+						
+						var selected = $("select#eventSelection option:selected").val();
+						topbar.show()
+						$.ajax({
+							url: '/sensoranalysis/downloadArticles',
+							type: 'GET',
+							contentType: 'application/json;charset=UTF-8',
+							data: {
+								'selected_event': selected+'.csv'
+							},
+							dataType: "json",
+							success: function (data) {
+							//console.log(data)
+								//console.log("file downloaded complete")
+								showAlert("Analytical files have been downloaded!");
+								topbar.hide()
+							}
+						});
+
+
+
 
 						Graph = new ForceGraph3D()
 						
@@ -1059,8 +1265,8 @@
 						} else {
 							selectedBar="second"
 							
-						
-
+						console.log("seelcetd value check now")
+						console.log(selected)
 						var event = 'http://cleopatra.ijs.si/sensoranalysis/static/'+ selected +'.csv'
 
 						d3.csv(event, function(d) {	

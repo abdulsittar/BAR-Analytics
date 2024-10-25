@@ -1,0 +1,132 @@
+<!-- Main content -->
+<div class="main-content">
+<div class="container-fluid bg-gradient-success">
+<div class="row">
+	<h1 class="text-white">Sentiment Analysis</h1>
+</div>
+</div>
+<br>
+<div class="container-fluid" id="dynamicSelectCont" style="margin-left:0px;  display: inline-block;height:70px;float: left;">
+	<div class="row" id="animationContContainer" style="display:block;">
+		<div id="forslider" style="display: inline-block;float: left;">
+		</div>
+	</div>
+	<select id="barrierSelection" style="height:50px;margin-top:35px;">
+		<option value="select" selected="selected">Select Barrier</option>
+		<option value="language">Linguistic</option>
+		
+		<option value="Political_Alignment">Political</option>
+		<option value="country">Geographical</option>
+
+		<option value="Continent">Continent</option>
+		<option value="Religions">Religions</option>
+		<option value="economicblocs">Economic Blocs</option>
+		<option value="militarydefenseblocs">Military/Defense Bloc</option>
+		<option value="politicalregionalblocs">Political/Regional Bloc</option>
+		<option value="linguisticblocs">Linguistic Bloc</option>
+		
+		<optgroup  label="Economic_Class">
+		<option value="Economic_Class">Safety and Security</option>
+		<option value="PersonalFreedom">Personal Freedom</option>
+		<option value="Governance">Governance</option>
+		<option value="SocialCapital">Social Capital</option>
+		<option value="InvestmentEnvironment">Investment Environment</option>
+		<option value="EnterpriseConditions">Enterprise Conditions</option>
+		<option value="MarketAccessandInfrastructure">Infrastructure and Market Access</option>
+		<option value="EconomicQuality">Economic Quality</option>
+		<option value="LivingConditions">Living Conditions</option>
+		<option value="Health">Health</option>
+		<option value="Education">Education</option>
+		<option value="NaturalEnvironment">Natural Environment</option>
+		</optgroup>
+		
+		<optgroup label="Cultural_Class">
+		<option value="PowerDistance">Power Distance</option>
+		<option value="Individualism">Individualism vs. collectivism</option>
+		<option value="UncertaintyAvoidance">Uncertainty avoidance</option>
+		<option value="Masculinity">Masculinity vs. feminity</option>
+		<option value="LongTermOrientation">Long-term orientation vs. short-term orientation</option>
+		<option value="indulgence">Indulgence vs. restraint</option>
+		</optgroup>
+</select>		
+						
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container-fluid">
+<div id="ThemeRiverHC" class='row'>
+	<div style="height:200%;width:100%;margin-right:auto;margin-left:auto;color:black;display:inline-block;" >
+		<div style="height:200%;width:100%;margin-right:auto;margin-left:auto;'fontSize':20;background:#fdfdfd;float:left;" class="chart" id="sentiGraph"></div>
+	</div>
+</div>
+</div>
+<br><br>
+<br><br>
+<div class="container-fluid">
+<script src="http://cleopatra.ijs.si/sensoranalysis/static/assets/js/nouislider/nouislider.js"></script>
+<script type="module">
+				
+				$('select#barrierSelection').on('change', function () {
+										 
+										var selected = $("select#barrierSelection option:selected").val();
+										console.log(selected)
+										topbar.show();
+									$.ajax({
+										url: '/sensoranalysis/get_line_pub_sentiment2',
+										type: 'GET',
+										contentType: 'application/json;charset=UTF-8',
+										data: {	"selBarrier": selected 	},
+										dataType: "json",
+										success: function (data) {
+										var layout = {'xaxis.range': [1, 30]}
+										console.log(data);
+										console.log("data");
+									if(data != ""){
+										Plotly.newPlot('sentiGraph', data);
+									}else{
+										$('#sentiGraph').empty();
+									}
+									topbar.hide()
+									},
+									error: function (err) {
+										topbar.hide()
+										alert("Unfortunately, failed to create line graph!");
+									}
+								});
+							});
+						
+</script>
+<div id="HCstreamGraph">
+	<div style="color:black;" class='row'>
+		<div style="height:50%;width:100%;color:black;background:#fdfdfd;'fontSize':20;margin-right:auto;margin-left:auto;" id="hcsg"></div>
+	</div>
+</div>
+</div>
+<br><br>
+<div class="container-fluid">
+<div  class='row'>
+	<div style="height:50%;width:100%;color:black;background:#fdfdfd;'fontSize':20;margin-right:auto;margin-left:auto;" id="trendtable">
+	</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div style="color:black;" class='row' >
+	<br>
+<h4 id="txtID" style="color:black; margin-left:auto;margin-right:auto;display:none;"">We consider a minimum of ten news articles as the foundational data for training BERTopic, while establishing the minimum topic size at 10.</h4>
+<br>
+	<div  style="color:black;'fontSize': 20;height:60%;overflow: hidden;width:55%;margin-right:auto;margin-left:auto;background:#fdfdfd;" class="chart" id="hcwordcloud">
+	</div>  
+</div>
+</div>
+<br><br>
+<div class="container-fluid">
+<div  class='row' id='explanation'  style="margin-left:160px;">
+<h3 style='clear:both' class="subhead"></h3>
+</div>
+</div>
+<br><br>
+</div>
